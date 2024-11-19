@@ -343,12 +343,14 @@ div {
   font-family: Menlo, Consolas, monospace !important;
 }
 .post .post-content p a {
-  color: #01579f;
+  color: #444;
   padding-bottom: 2px;
-  word-break: normal;
+  word-break: break-all;
+  text-decoration: none;
+  border-bottom: 0.5px solid;
 }
 .post .post-content p a:hover {
-  text-decoration: underline;
+  border-bottom: none;
 }
 .post .post-content .caption {
   color: #444;
@@ -1607,6 +1609,16 @@ table th {
 }
 table td {
   padding: 5px 10px;
+}
+table td a {
+  color: #444;
+  padding-bottom: 2px;
+  word-break: break-all;
+  text-decoration: none;
+  border-bottom: 0.5px solid;
+}
+table td a:hover {
+  border-bottom: none;
 }
 table tr:nth-child(2n) {
   background: #f7f8f8;
