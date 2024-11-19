@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"2a09af5e5f81c325","x":-300,"y":-407,"width":250,"height":60,"type":"text","text":"会"},
+		{"id":"5cc946707482fd92","x":-343,"y":-226,"width":250,"height":60,"type":"text","text":"xf"}
+	],
+	"edges":[
+		{"id":"2577cd18f395fd94","fromNode":"2a09af5e5f81c325","fromSide":"bottom","toNode":"5cc946707482fd92","toSide":"top"}
+	]
+}

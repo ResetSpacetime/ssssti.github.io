@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>写</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #editor {
+            width: 60%;
+            height: 500px;
+            border: 1px solid #ddd;
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 15px;
+            overflow: auto;
+        }
+        #filename {
+            width: 155px;
+            margin-top: 20px;
+        }
+        #saveButton {
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="editor" contenteditable="true"></div>
+    <input id="filename" type="text" placeholder=" ~ universe peace ~">
+    <button id="saveButton" onclick="saveTextAsFile()">save</button>
+    <script>
+        function saveTextAsFile() {
+            var textToWrite = document.getElementById("editor").innerText;
+            var fileNameToSaveAs = document.getElementById("filename").value;
+
+            if (!fileNameToSaveAs) {
+                alert('~ universe peace ~');
+                return;
+            }
+
+            var textFileAsBlob = new Blob([textToWrite], {type: 'text/plain;charset=UTF-8'});
+            var downloadLink = document.createElement("a");
+            downloadLink.download = fileNameToSaveAs;
+            downloadLink.innerHTML = "Download File";
+            if (window.webkitURL != null) {
+                downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+            } else {
+                downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+                downloadLink.style.display = "none";
+                document.body.appendChild(downloadLink);
+            }
+
+            downloadLink.click();
+        }
+
+        window.onbeforeunload = function(e) {
+            return 'Are you sure you want to leave? Make sure to save your document.';
+        };
+    </script>
+</body>
+</html>
