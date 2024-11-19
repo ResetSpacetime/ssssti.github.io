@@ -238,7 +238,7 @@ div {
   margin: 0;
   color: #555;
   text-align: left;
-  font: bold 30px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+  font: bold 30px/1.1 "source-han-serif-sc", serif, "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
 }
 .post .post-title a {
   color: #555;
