@@ -122,6 +122,7 @@ div {
 }
 
 #sidebar {
+  font: "source-han-serif-sc", serif, "Times New Roman", Georgia, Times, sans-serif !important;
   border-left: 1px solid #ddd;
   padding-left: 35px;
   margin-top: 40px;
