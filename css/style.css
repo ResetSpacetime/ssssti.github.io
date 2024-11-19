@@ -134,6 +134,7 @@ div {
   /* tiered display categories */
 }
 #sidebar .widget .widget-title {
+  font: "source-han-serif-sc", serif, "Times New Roman", Georgia, Times, sans-serif !important;
   color: #6E7173;
   line-height: 2.7;
   margin-top: 0;
