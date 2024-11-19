@@ -21,6 +21,7 @@ textarea,
 .pure-g [class*=pure-u] {
   /* Set your content font stack here: */
   font-family: "source-han-sans-simplified-c", sans-serif, "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important;
+  font-display: swap;
 }
 
 body {
