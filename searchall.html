@@ -4,8 +4,25 @@ layout: false
 <html>
 <head>
 	<title>SEARCH</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="text/javascript" src="js/search.js"></script>>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+  <style>
+  .form-control {
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+  }
+  .form-control::placeholder {
+    font-size: 20px;
+  }
+  .search-keyword {
+  	font-size: 16px;
+  	color: red;
+    font-weight: bold;
+  }
+  </style>
 </head>
 <body>
 	<h1>全文搜索</h1>
@@ -17,11 +34,7 @@ layout: false
 
 
 <script type="text/javascript">      
-     var search_path = "<%= config.search.path %>";
-     if (search_path.length == 0) {
-     	search_path = "searchall.xml";
-     }
-     var path = "<%= config.root %>" + search_path;
+     var path = "searchall.xml";
      searchFunc(path, 'local-search-input', 'local-search-result');
 </script>
 </body>
