@@ -75381,7 +75381,7 @@
       </tags>
   </entry>
   <entry>
-    <title>双语对照电子书</title>
+    <title>双语对照电子书制作</title>
     <url>/posts/Share/Workflow_CNENEdition/</url>
     <content><![CDATA[<p>最早是使用Calibre调用Google的翻译功能，免费，但错误太多太明显，后来使用DeepL翻译全书，费用大概2.5元每本，翻译质量尚可，且没有双语对照。</p>
 <p>沉浸式翻译出现之后，把调用API进行翻译的交互做得非常彻底，只要能找到epub格式的英文书（Amazon只要有电子版，一般就能下载到，或者也可以去淘宝找代下，Internet Archive上也有很多），就可以翻译了，导出格式默认为双语对照版本。</p>

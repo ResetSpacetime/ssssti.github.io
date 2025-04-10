@@ -6,7 +6,7 @@
   <link href="http://z.arlmy.me/atom.xml" rel="self"/>
   
   <link href="http://z.arlmy.me/"/>
-  <updated>2025-04-09T07:20:51.876Z</updated>
+  <updated>2025-04-10T06:02:46.175Z</updated>
   <id>http://z.arlmy.me/</id>
   
   <author>
@@ -17,16 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>双语对照电子书</title>
+    <title>双语对照电子书制作</title>
     <link href="http://z.arlmy.me/posts/Share/Workflow_CNENEdition/"/>
     <id>http://z.arlmy.me/posts/Share/Workflow_CNENEdition/</id>
     <published>2025-04-09T07:19:46.000Z</published>
-    <updated>2025-04-09T07:20:51.876Z</updated>
+    <updated>2025-04-10T06:02:46.175Z</updated>
     
     <content type="html"><![CDATA[<p>最早是使用Calibre调用Google的翻译功能，免费，但错误太多太明显，后来使用DeepL翻译全书，费用大概2.5元每本，翻译质量尚可，且没有双语对照。</p><p>沉浸式翻译出现之后，把调用API进行翻译的交互做得非常彻底，只要能找到epub格式的英文书（Amazon只要有电子版，一般就能下载到，或者也可以去淘宝找代下，Internet Archive上也有很多），就可以翻译了，导出格式默认为双语对照版本。</p><p>后来使用闲鱼上比较便宜的OpenAI的API，9.9元大致能翻完4-5本书，翻译质量比Google的好一些，但阅读时仍要经常回看英文部分，Deepseek横空出世后，一直在找更便宜的API流量，国内各大厂的平台也充值了，但核算下来价格都不便宜，均价甚至要5元每本。对比下来，火山引擎的支持并发较高，翻译速度较快。</p><p>最近闲鱼出现了一些便宜的Deepseek的API，价格降得很低，平均下来只要之前的1&#x2F;10，使用V3模型即可，不必用R1，核算下来0.3-0.6元每本，产出稳定。翻译的细节（比如文风，措辞）都还可以进一步优化，不过我没有测试。使用教程在购买API服务后都会提供，在沉浸式翻译插件内进行单独配置，插件内还支持不同平台的翻译横向对比。</p><p>相比之下，我的感觉是，Deepseek的中文翻译明显更通顺，我阅读的速度提升了不少，比之前的国外翻译服务都要好一截，知道更多约定俗成的翻译习惯，另外，可以很快读起较新的书，不用再等译介和出版审查（也可以借此去重读一些公认删减较多的书籍）。双语对照也方便随时回看，避免歧义。</p><p>总结一下：现在已经可以通过使用低成本的API流量，生成双语对照版本的电子书，平均下来五毛一本，推荐跑步进场。</p><hr><p>CHANGLOG</p><ul><li>20250409 Arlmy 创建、发布</li></ul>]]></content>
     
     
-    <summary type="html">「」</summary>
+    <summary type="html">「一个分享。」</summary>
     
     
     
