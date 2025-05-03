@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">10。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">10。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>终于开始认真听这两张唱片了……听到许多熟悉的曲子，但出现在专辑里仍旧是那么完整那么刺激人的肾上腺。<br>好吧，我是个力量男没错。<br>草盒说力量男都充满力量充满生活的激情时曾经使我兴奋了一阵子。<br>开始最后期末的复习，没错确实很无聊，今天的一场演出也没有去，但是没有觉得遗憾，幻想下学期自己也会出现在那样的舞台上，开始我的音乐梦想，圆一个属于自己的青春梦。<br>一个动画片，寒蝉鸣泣之时，看到了一点可以让我思考的东西。<br>绿巨人，永不妥协，21克，迷幻公园。<br>Blackwinds 08，Bishop Of Hexen 06，Blutklinge 07，Hollenthon 08。<br>自习听金属摇头晃脑吓走了一圈潜心致学的好同学。<br>我觉得我的嗓子还是可以做主唱的，真的。</p>
 <hr>
 <p>CHANGELOG</p>

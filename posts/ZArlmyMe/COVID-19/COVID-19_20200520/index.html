@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">复工见闻之十五</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">复工见闻之十五</h1><div class="post-meta">2020-06-02<span> | </span><span class="category"><a href="/categories/COVID-19/">COVID-19</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.7k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 5</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>15 日，吉林省吉林市封锁，吉林市高三学子全部离校，教学改为线上。老家在吉林的朋友感叹，还好此前买了 100 个口罩寄回家。</p>
 <p>多所大学通知返校，其中湖北、黑龙江、吉林籍的学生先返校，并要求提供核酸检测证明。很多学生的考研复试进度受到影响（吉林大学）。留学生的入学已中断，因为拿不到签证。</p>
 <p>跟同事一起去理发，是家没来过的店，店内用品都改成了一次性的，一次性的塑料布，一次性的棉柔纸巾，感觉……有点高端啊。</p>

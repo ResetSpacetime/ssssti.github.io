@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">一个梦</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">一个梦</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>一个梦，被一个巴掌分成了两个片段</p>
 <p>第一个片段很流畅，很静，只是在大风吹过的地方敞开双臂慢慢走着，张着嘴呼喊着</p>
 <p>然后…一个四哥横飞过来的巴掌把我打醒，记得他嘴里还同时叫嚷着：“你这个不争气的东西！”十多分钟楞是再没睡过去…</p>

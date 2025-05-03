@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">摘：《动中觉察》</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">摘：《动中觉察》</h1><div class="post-meta">2024-10-21<span> | </span><span class="category"><a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2.2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 7</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>《动中觉察》的一个部分，名为<strong>发展阶段</strong></p>
 <p><strong>前两个阶段的探索，是每个人本来的自由！</strong></p>
 <h3 id="第一阶段：自然发展"><a href="#第一阶段：自然发展" class="headerlink" title="第一阶段：自然发展"></a>第一阶段：自然发展</h3><p>人类所有的活动可分为三个连续的发展阶段。孩子们说话、走路、打斗、跳舞，然后休息。史前人类也说话、走路、奔跑、打斗、跳舞，然后休息。起初，这些事情是“自然”发生的，也就是说，跟动物一样为了存活而去做所有必要做的事情。虽然对人类而言这些是自然而然的，但这一切绝不简单。即使是最简单的人类活动，也与鸽子能飞越千里回窝、蜜蜂能筑巢一样充满奥秘。</p>

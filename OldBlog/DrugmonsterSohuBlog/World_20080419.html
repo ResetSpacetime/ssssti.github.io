@@ -41,14 +41,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">世界。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">世界。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><img src="/pics/2008-04-19_World.jpg" alt="World"></p>
 <p>这张照片很比约克，这个女人现在对于好多歌迷来说成了个又爱又恨的对象，来中国演出的一嗓子喊出了西藏的躁动，然后勾出了所谓第一世界的联合与中国的对抗，激怒中国民众。看到照片和视频，青岛的家乐福基本无人问津，大连的家乐福门口人群躁动，一个敏感的词–家乐福。有人说大伙不理智，确实有那么一帮人，不过不能以偏概全把这事儿，在现在的实际情况看来还是很正常很理智的，ONE WORLD ONE CHINA</p>
 <p>两张唱片过去一片的无聊，EMO，EMOCORE似乎可以划句号了，已经无语，一周来也没有听见让我真正满意的声音，MCR，SOY，FFF，都已经成为历史了？迅速消失</p>

@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">霸气。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">霸气。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>霸气的专辑，霸气的这几天<br>一段时间没有写文字的感觉，直到今早听完这张专辑，一张流行金属式的东西，旋律化的情感<br>耳朵里听的是GIL，那个那时长发的流行男孩，几年前就在HIT上见汪汪疯狂追捧这个家伙，昨天突然发现电脑里居然有他的专辑，小试一下发现自己英语学的还是可以的~<br>这些天冒出了很多想法，很多怪异的想法，其中之一居然是我想入党了，用这样的语调说这事儿似乎有点反动，但是确实是有这样的想法来着，写完一份思想汇报后，发现自己觉悟似乎也提升了那么一丁点儿，算是另一个让俺不摆脱语文的理由吧<br>那多新书纸婴，虽然凭空让人消失之类有点接受不了，但着实又找回了那么一点读小说的畅快感，最近看的几本都实在没办法忍受，几本过期的爱摇俺甚是喜欢，一遍遍看着<br>今天要去陪老婆<del>HOHO</del>一说这事儿心情就会蓦然地大好<del>那是无数欢喜和快乐的所在，爱这个事儿着实奇妙</del></p>
 <hr>
 <p>CHANGELOG</p>

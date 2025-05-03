@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">摘：《阅读不息》</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">摘：《阅读不息》</h1><div class="post-meta">2024-12-30<span> | </span><span class="category"><a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 8k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 26</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>充值豆瓣阅读发现有电子版，篇幅不长，但却没有读得很快。小津安二郎、夏目漱石、德里达、约翰·凯奇等其实蛮熟悉了，但还是透过坂本龙一的表达发现了遗漏的信息。还记住了李禹焕、工藤进、九鬼周造、恩德等人，对他们的作品产生了浓厚的兴趣。</p>
 <p>阅读果然是极度私人的事情，能串联起很多自己近期既有的思考，所以读得很开心，透过思考看到的可能性越来越多，就是没有停止阅读带给我最大的收益了。</p>
 <h3 id="章节：推荐序：万物的声音"><a href="#章节：推荐序：万物的声音" class="headerlink" title="章节：推荐序：万物的声音"></a>章节：推荐序：万物的声音</h3><blockquote>

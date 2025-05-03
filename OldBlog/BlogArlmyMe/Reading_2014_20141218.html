@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">2014 阅读</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">2014 阅读</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><a target="_blank" rel="noopener" href="https://www.douban.com/doulist/3402306/">2014阅读豆列</a></p>
 <p>今年莫名读了蛮多，还是一贯不设限地阅读，倒序地做做总结，挑有感受的写一下</p>
 <p>【地下室手记】<br>还在读，很多文字特别真实，真实得可怕。人会从从堕落中得到快感；人会有意识地做对自己有害的事、希望自己做蠢事；越正派的人越会是奴才和懦夫。<br>书中的“地下室人”把最真实、甚至倘若你是正常人便不会告诉任何人的隐私全部敞露出来，什么都不是，什么都不像，没有标签，摧毁所有二元论调。别人告诉你好的美的优秀的高尚的，并不是你的终极答案。<br>任何所谓观点、所谓进步、所谓先进性、所谓美学都是在做划线的工作，划一条本就不存在的线，可怕的地方就在于：你和你厌恶的人是同一种人。</p>

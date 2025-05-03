@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><h1 id="下厨房"><a href="#下厨房" class="headerlink" title="下厨房"></a>下厨房</h1><h2 id="酱汁"><a href="#酱汁" class="headerlink" title="酱汁"></a>酱汁</h2><h3 id="北美酱汁"><a href="#北美酱汁" class="headerlink" title="北美酱汁"></a>北美酱汁</h3><ol>
 <li>Ranch Dressing &#x2F; 牧场沙拉<br> 家庭必备。酪乳、酸奶油、盐、洋葱、大蒜和香草组合制成的调味品，作为疏菜蘸料和沙拉调味品颇受欢迎。三明治、卷饼常用（赛百味）。</li>
 <li>Thousand Island Dressing &#x2F; 千岛酱<br> 蛋黄酱（mayonnaise）和俄式沙拉酱（Russian dressing）的衍生。蛋黄酱、橄榄油、柠檬汁、辣椒粉、辣酱油、芥末、番茄酱混合。蔬菜沙拉、三明治、汉堡常用（麦当劳、KFC）。</li>

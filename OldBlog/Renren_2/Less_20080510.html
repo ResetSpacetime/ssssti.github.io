@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">淡了。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">淡了。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>德国黑金Todessehnsucht，听黑金属写东西有那么点感觉。<br>一件黑色的蛮帅的衬衫到手，不过由于手机像素的原因，自拍的计划暂时搁浅。在前天认识了一个学校里听金属的噪友，一样凌乱的桌子一样另类的体恤，一样对电锯杀人狂的热爱，实在让我很开心，有想弄一个金属社团的想法，还有想组乐队的想法，他会吉他，还有一个鼓手，我可以练习贝司，一个MS遥不可及的梦瞬间来到眼前，有一点点眩晕。似乎为这个梦可以付出一切代价。<br>生活很糙，生命很噪。<br>整天弄艺术节的东西，下周解脱，不太想下次的升官了，累。毕竟这距离我的梦想有点太过遥远。淡了都淡了。<br>跟着感觉走的人，这次要再做一个不背叛自己不违心的选择。</p>
 <hr>
 <p>CHANGELOG</p>

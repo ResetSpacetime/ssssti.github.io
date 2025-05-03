@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">表情，自恋。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">表情，自恋。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>俩小表情俺是贼喜欢，给俺的博客加点动态效果吧<br>纪念中共十一届三中全会召开三十周年大会，我居然在那么多条新闻里抓到了这一条…哥们已经决定不入党了，尽管毛主席是我现在最崇拜的人，改革开放确实是…各路杂志全都是改革开放三十周年的专题报道，又小岗村又东莞的，一堆典型最开始时被打击得不成样子现在也没人记得了<br>油价下调，股票涨起。贪官们多来炒股吧，你们赔了咱们才有钱赚嘛<br>押宝两道六级作文，临时背了一百高频单词，做了点阅读，基本就这样了，过了最好不过拉倒，爷也懒得伺候<br>昨天注册一个台湾的互动社区，结果今天验证信也没发到我的邮箱里，据说两岸要实现三通了到时候是不是会好一点..<br>看见一个叫Livemocha的网站，交互式语言学习交流网站，别人教你他的母语，你教别人你的母语，感觉蛮有意思<br>比如一个老外的作业，描写人：这个女人有金色的长发。她没有黑色的卷发。 这个男人的小胡子不是黑色的。 他的白色的胡须。 这个年轻的女孩的头发不是短。她有长发。 这个男孩没有小胡子。他有棕色的短发。 我有棕色的短发。 它不是红色的。 你没有短发。 你有红色的长发。<br>–….<br>我现在真自恋<br>一个测试显示我是个强迫症+偏执狂，而且有强烈的敌对情绪</p>
 <hr>
 <p>CHANGELOG</p>

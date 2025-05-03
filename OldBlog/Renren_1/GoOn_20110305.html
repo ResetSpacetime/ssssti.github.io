@@ -42,14 +42,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">GO ON</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">GO ON</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><img src="/pics/2011-03-05_Sth_1.jpg" alt="插图1"></p>
 <p>楠楠说这照片一看就是人造江南，我说我一北方人反正没见过的我都喜欢呗。老爸老妈一直在催我把去桂林的照片传上QQ空间他们等着看，3000多张照片我想想都晕，不过下周一开始的工作就是把照片和录像剪辑成一个视频，供没有得到国内游资格的员工羡慕，弄好了再传上一份吧。去旅游这么一次，倒不如说是去工作，每天的任务就是不间断地记录，偷拍印象刘三姐，在溶洞里记录那些虚伪的色彩，四天的行程却并没有和山水打过多的交道，我总是热衷于自己游山玩水，不能说尽兴，只能说在枯萎中找寻色彩。</p>
 <p>似乎闭塞了很久，关键是每天的工作忙得不可开交，剪片子固然有快乐，但费时费力又完全没有提高效率的方法，只能尽量让自己每一次重复都比上一次更快更好，似乎这就是我最近对于工作的认知。过年7天回来，上了一天班，然后就去了桂林，四天回来，公司的总结会，公司内训，还有各种项目的回训，整个二月都是在忙碌中度过，以至于前两天静坐下来思考的时候完全想不出收获在哪里，蓦然地有些恐慌，这种不自觉的感受很让自己惶恐，日程本上最常出现的词语就是加班。</p>

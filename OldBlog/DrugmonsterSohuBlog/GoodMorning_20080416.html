@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">早安。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">早安。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>这里唯一的看客消失了，还有没有继续文字的必要<br>答应要好好吃饭，怀疑自己能否做到<br>一会儿要跳绳，俺注定是摇绳子的，从小到大跳绳，绝对超不过十下，运动神经很垃圾，INDEEED<br>这不是巴格达，加州之王，卡廷惨案<br>太阳底下的混子<br>晚上要自习了，在寝室呆着越来越无趣<br>对着电脑，只是数着时间过去<br>听回流行小调，简单旋律的女声，很美好<br>FS2U传上去似乎总是无人理睬，顺其自然该删就删吧<br>天暖了，以后的晚上就练吉他吧，需要一点打发时间的东西<br>确实是无聊的，一早起来还是感觉到疲倦，一觉睡到现在，很久没有这样的感觉了，每天都感觉很累，积蓄着<br>把喜欢的东西刻录出来，去洗洗再来一觉<br>亲爱，只想来跟你说一声早安</p>
 <hr>
 <p>CHANGELOG</p>

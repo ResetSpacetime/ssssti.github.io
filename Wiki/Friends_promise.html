@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a class="current" href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><h1 id="朋友的约定"><a href="#朋友的约定" class="headerlink" title="朋友的约定"></a>朋友的约定</h1><p>刘二妞，十年老友 since 2018<br>凋寒，欠一个名字，十个拥抱</p>
 </div><script type="text/javascript" src="/js/share.js?v=1.0.0" async><a class="article-share-link" data-url="http://z.arlmy.me/Wiki/Friends_promise" data-id="cm8wpfe0n000yewvp7upxa9jx" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3ay46DMAwF0P7/TzPSbCvg2iYRlU5WCBA9zcKKH59PvI7/9X199ub3qn5ntHBxccfc43J9v3N25/r+NTcx4OLi7udWP52EvOv7yTdxcXHfzy18tBjscHFxf517HZJyKC4u7vu5eTkjCUavyNVwcXEH3EnB9KnrTfVdXFzccVciCSt5yyQPW6e/i4uLu4U7SXLmb+Z3PusQuLi4l+eKpOjZK31WmytR2oOLi7uYWw0xvaNMbxdvqji4uLgLuL0DSnWQYlKKPc3VcHFxl3GrQSofzKoGwXxrcHFx93CrRcxnh7eSoQ1cXNyd3GoaU96Dccv2pomCi4u7gNuLEtVSaX4kKk+T4eLiLuDmx5dyZ2aQ9tzEXVxc3O3cFYebKrqZn+Hi4j7E7dVRegEub8+UZ0ZwcXEf5VZx1XLG/A9EPWFcXNxHudWyZp4glZum8Tbh4uKu5h7FlR90JmMZ0cgmLi7uMm6vLZrHxWrBpVeWxcXFXcHNy6bJ02rBNG/i4uLi7udWk58qsZr24OLi/iI3H9KaP8XFxX0zt9cuTUquhVEMXFzcjdzJBEcvZWo2YHBxcbdwJwXTZHSjF+aW1HdxcXHvuX+MmLR7y/cfCAAAAABJRU5ErkJggg==">分享</a></script></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',

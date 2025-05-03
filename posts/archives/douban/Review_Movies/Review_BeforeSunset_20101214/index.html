@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">任何时候，我们都可以在一起（《爱在日落黄昏时》评论）</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">任何时候，我们都可以在一起（《爱在日落黄昏时》评论）</h1><div class="post-meta">2010-12-14<span> | </span><span class="category"><a href="/categories/%E8%A7%82%E5%90%8E/">观后</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 913</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 3</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>任何时候，我们都可以在一起。<br>夫妻&#x3D;恋人&#x3D;朋友，才是所谓爱情的完美等式，没有任何契约没有任何条件，只需要三个字：在一起。</p>
 <p>前天入夜看了before sunrise，带着完美的感受睡了一觉，因为这是我印象中第一部完美地解释了“相见恨晚”这个词的电影。循着感觉的召唤做一个决定，无所谓勇敢或大胆，因为你知道，这是个与你一样的孤独的灵魂，抛弃世界，只剩下可以帮助感知彼此的媒介，然后姑且把它当做一个未竟的梦境，害怕告别却又期待重逢。爱情观和友情观有有何不同。漫无边际漫无边际漫无边际，一个个小插曲创造着独一无二的记忆，为彼此照一张照片后，闭上双眼，回归现实。</p>
 <p>昨天一早被朋友告知还有续集，罪恶地在公司打开迅雷下载了下来，在我的午夜场，看完这场无法让人拒绝的再会。</p>

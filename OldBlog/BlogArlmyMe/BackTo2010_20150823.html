@@ -43,14 +43,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">那年</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">那年</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>写写我最爱的那张毕业照的故事</p>
 <hr>
 <p>我是在沈阳读的大学<br>毕业前，组团去棋盘山（景区里有山、湖、庙、娱乐设施），住景区门口的农家院，全程两天<br>计划第一天一早出发，景区游玩，晚上狂欢，第二天睡到中午后回程<br>第一天由于时间和门票的原因，没爬棋盘山的最高峰（其实才265米）<br>我有点怨念，和一个关系好的女同学嘀咕，她说她也想爬<br>于是相约第二天一早来爬山，还能看日出<br>后来又动员到了几个人<br>到了晚上的时候有8个人想一起爬山<br>班干部怕有危险不让去，但我执意要去（至少是我）<br>大家都在狂欢，烧烤，喝酒吃肉，玩牌<br>我借好了手电，10点多钟便去睡</p>

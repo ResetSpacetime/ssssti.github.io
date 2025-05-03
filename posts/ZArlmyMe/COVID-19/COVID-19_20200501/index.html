@@ -39,14 +39,8 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => {
-      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
-    })
-    .catch(err => {
-      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
-    });
-}
-.then(err => console.error('复制失败:', err));
+    .then(() => alert('已复制: ' + segment))
+    .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">复工见闻之十一</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">复工见闻之十一</h1><div class="post-meta">2020-05-10<span> | </span><span class="category"><a href="/categories/COVID-19/">COVID-19</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.5k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 5</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>4 月 27 日，看到一篇音乐剧从业者失业、转行、等待演出重启的公号文章，咳，乐队们恐怕也是如此吧？不过乐队们早已习惯这种低存在感的生存方式了，它们的健壮性&#x2F;鲁棒性&#x2F;生命力可谓极强，比建立在中产消费及以上（特指国内市场）的音乐剧灵活太多。不过当然，二者需调动的资源和营收模式其实也有很大差别。然而，其实乐队、音乐剧，加上此前关注到的戏团，都被疫情复位到了相近的起跑线上，早做打算、模式创新、多做尝试，对各方而言，机会都是均等的。</p>
 <p>看全球果蔬网的邮件推送，一篇文章提到国外已有公司开始用航班进出口水果蔬菜（真·新零售），新常态无疑推动了新形式和新逻辑，反观国内，除了一些互联网产品搭了便车，其他都还是一副按部就班的样子。或许，国外会比国内更快出现并适应新模式。常常觉得，中国不过才有几种创新模式，却试图去与全球的复杂市场竞争，本就极不切实际。</p>
 <p>方所重庆店近日发出公告：6 月起将结束营业。这样的短讯，总是负载着大量的背景信息，而这次终于能清楚地知道，产生这个结果的来龙去脉了。</p>
