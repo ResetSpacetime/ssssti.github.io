@@ -38,8 +38,9 @@ html.dataset.dark = localStorage.dark;
 });</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
-  navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
+  const segmentWithMd = segment + '.md';
+  navigator.clipboard.writeText(segmentWithMd)
+    .then(() => alert('已复制: ' + segmentWithMd))
     .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Five Mornings</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Five Mornings</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><ul>
 <li><a href="http://z.arlmy.me/project/FiveMornings/2021/FiveMornings_0101to0107.html">Jan.1 - Jan.7</a></li>

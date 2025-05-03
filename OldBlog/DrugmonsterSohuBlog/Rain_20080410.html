@@ -38,8 +38,9 @@ html.dataset.dark = localStorage.dark;
 });</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
-  navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
+  const segmentWithMd = segment + '.md';
+  navigator.clipboard.writeText(segmentWithMd)
+    .then(() => alert('已复制: ' + segmentWithMd))
     .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">雨。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">雨。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>晴天里，期待雨的来临，如同假期里又重期待学期的来到<br>写下了一些暗色文字来宣泄，然后删掉<br>米粒儿的城市，阿宁的短篇集<br>残雪500多页的厚书进展缓慢<br>大卫芬奇访谈录，蓝丝绒七宗罪<br>依旧金属，豆瓣分享音乐小组，成为我的落脚<br>只是想找到一个窝结识一些朋友，孤单的人不可活<br>自习的时候自己是充实的<br>一身的黑颜色，冒冷在里面只穿一件体恤<br>过与灵魂相近的生活<br>远方的朋友，似乎距离更能增加心灵的亲近，不设防<br>客观是屁</p>
 <hr>

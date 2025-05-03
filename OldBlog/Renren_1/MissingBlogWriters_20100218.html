@@ -38,8 +38,9 @@ html.dataset.dark = localStorage.dark;
 });</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
-  navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
+  const segmentWithMd = segment + '.md';
+  navigator.clipboard.writeText(segmentWithMd)
+    .then(() => alert('已复制: ' + segmentWithMd))
     .catch(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">渐渐被遗弃的博客们</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">渐渐被遗弃的博客们</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>周黎明：<br>我基本上已经转移到新浪微博。<br><a target="_blank" rel="noopener" href="http://t.sina.com.cn/1650690660/profile">http://t.sina.com.cn/1650690660/profile</a></p>
 <p>又一个被微博取代的博客，每每看见这样的广告都会涌起一阵阵心凉。<br>微博在我看来只是一个传播分享即时信息和思考的媒介，远不应得到如此的重视。中国人娱乐精神越来越高，实干精神越来越低是最让人无法接受的事实，SNS和围脖无疑都是其中的一架梯子。</p>
