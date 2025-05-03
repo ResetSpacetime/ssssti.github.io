@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">意大利流水账 Roma DAY4</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">意大利流水账 Roma DAY4</h1><div class="post-meta">2015-05-24<span> | </span><span class="category"><a href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.7k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 5</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>1.今天的早饭没去西西里餐馆，是在火车站里解决的，我还是潜意识地选择高热量加巧克力的面包。旁边的海鲜摊位的大厨正在把食材摆上摊位，左边几个橙子，右边几条鱿鱼，呆梨人对橱窗真的很看重。</p>
 <p>2.今天的地铁出行出现惨剧，坐错线，还坐错了方向，不过好在距离还能接受，走了3站地来到斗兽场。绕场一周，采了两朵罂粟花到本子里。</p>
 <p>3.罗马斗兽场感受：古罗马时，人虽不平等，但相互易见难于区隔，城市设施开放，斗兽这类不收分毫、却极尽挥霍的娱乐项目，可以称为统治的艺术，转移民众的不满，公用的发泄场，我想，和咱们的微博、电视剧之类是一个作用。绝佳的安慰剂。</p>

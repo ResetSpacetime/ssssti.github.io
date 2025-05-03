@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a class="current" href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><h1 id="PE投资尽职调查最关心的18个维度"><a href="#PE投资尽职调查最关心的18个维度" class="headerlink" title="PE投资尽职调查最关心的18个维度"></a>PE投资尽职调查最关心的18个维度</h1><h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a><strong>导语</strong></h2><p>PE 开展尽调工作是需要根据不同公司的具体情况，并结合尽调人员的工作经验进行的，为了保证尽调前期工作和中期工作的顺利进行，特别为自己的团队做出一些工作的指引，同时也希望和大家交流分享。</p>
 <h2 id="1-设立与发展历程"><a href="#1-设立与发展历程" class="headerlink" title="1  设立与发展历程"></a>1  设立与发展历程</h2><p><strong>1 设立的合法性</strong></p>
 <p>取得公司设立时的政府批准文件、营业执照、公司章程、合资协议、评估报告、审计报告、验资报告、工商登记文件等资料，核查其设立程序、工商注册登记的合法性、真实性。</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0511</p>
 <p>上午干活下午锻炼<br>下班前还喝点儿酒<br>苑下班来公司，于是又耽搁了会儿<br>lili一直等我<br>走之前外面狂风大作<br>还下了一点儿雨<br>路上所有的车都满是泥点子<br>感觉风里的赃污也特别多<br>就是春夏之交的无奈吧<br>到家一起看二十世纪的直播<br>因为在腾讯会议上，ppt清楚了不少<br>回家路上讨论了好多<br>下午聊了下中国制造圆珠笔的事<br>后来发现就是一些功利性的计算和判断<br>这不意外<br>但这种资本游戏，似乎就是大吃小<br>足够大的规模，才能支撑多产品线全面的发展<br>有赚钱的有不赚钱的<br>而都是中小企业的话，不能把能力集中起来<br>无法在世界格局和巨大市场中快速吃下份额<br>信息流动太快了<br>不能加快覆盖，就会被抄走、淘汰<br>或者人们由于注意力被占据，甚至无法得知小众品牌的存在<br>想到这，是因为下午闲了的时候<br>搜了下梧州和西昌的小吃<br>跟着小城夜食记的逻辑<br>然后看到的产品包装和设计，就像穿越了时间<br>这种产品无法适应新时代，如果不能以资本形式改造和快速推广<br>这种本地早期工业化的食用产品，就会被快速淘汰<br>或许高翎投资的逻辑也与此有关<br>啊又产生了很多新的想法<br>然而……其实还是没有基于对事实的清晰认识<br>然后做推理<br>不如先把项飙这本好好读读，找到些切入角度如何<br>没完没了地看了五六集叔的片子<br>喝了粥，吃了咪咪，还有公司带回来的荔枝<br>可谓过得充实有趣<br>每天都规划思考好多事儿，最后其实到了家就不做了<br>阳台的书落了一地，可能哪里不稳<br>把玛格丽特的c位换上了giger，哈哈<br>这就是突发事件带来的变化吧</p>
 <p>0512</p>

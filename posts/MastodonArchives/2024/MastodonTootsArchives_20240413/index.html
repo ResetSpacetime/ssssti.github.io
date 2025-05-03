@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Toots 2024 Apr.7 - Apr.13</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Toots 2024 Apr.7 - Apr.13</h1><div class="post-meta">2024-04-15<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-7"><span class="toc-text">Apr.7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-8"><span class="toc-text">Apr.8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-9"><span class="toc-text">Apr.9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-10"><span class="toc-text">Apr.10</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-11"><span class="toc-text">Apr.11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-12"><span class="toc-text">Apr.12</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Apr-13"><span class="toc-text">Apr.13</span></a></li></ol></div></div><div class="post-content"><h2 id="Apr-7"><a href="#Apr-7" class="headerlink" title="Apr.7"></a>Apr.7</h2><ul>
 <li>川粤食间，宁味夏语，多好听的两个饭馆名，现在都还能记住</li>
 </ul>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">复工见闻之十三</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">复工见闻之十三</h1><div class="post-meta">2020-05-28<span> | </span><span class="category"><a href="/categories/COVID-19/">COVID-19</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.4k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>5 月 7 日，听快车司机的讲述，东莞市内的苏宁卖场总十一家，疫情后关停了八家；一个去年在武汉开店的小老板朋友，因为忽然倒闭关店，压力过大，在家猝死。</p>
 <p>身处北京，无法亲身感受南方制造业目前的境况，工人返工遭到解聘，工厂因无订单停止例行招工，失业的人去了哪里，工厂的宿舍还有没有住着人，闲置的厂房现在又是怎样。一些工厂的设备要有持续的订单才能保持稳定产能，每次关机重启都要重新调试，多日后方能重新进入稳定状态。工厂的管理者们在哪里奔波，如何清理库存、争取更多订单。这些正在如何进行与发生，我统统无法触达。</p>
 <p>听来的传闻太多，即便直接从相关人口中得知，也很难直接触达受到波及的特定个体，也即活生生的人，每多一层转述，定已损失五成以上的生动信息。</p>

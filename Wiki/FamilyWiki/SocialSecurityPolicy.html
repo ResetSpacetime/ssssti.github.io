@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a class="current" href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><h1 id="社保政策"><a href="#社保政策" class="headerlink" title="社保政策"></a>社保政策</h1><p><a target="_blank" rel="noopener" href="http://www.gov.cn/zwgk/2009-12/29/content_1499072.htm">国务院办公厅关于转发人力资源社会保障部财政部城镇企业职工基本养老保险关系转移接续暂行办法的通知</a></p>
 <p>第六条　跨省流动就业的参保人员达到待遇领取条件时，按下列规定确定其待遇领取地：</p>
 <p>（一）基本养老保险关系在户籍所在地的，由户籍所在地负责办理待遇领取手续，享受基本养老保险待遇。<br><strong>（二）基本养老保险关系不在户籍所在地，而在其基本养老保险关系所在地累计缴费年限满10年的，在该地办理待遇领取手续，享受当地基本养老保险待遇。</strong><br><strong>（三）基本养老保险关系不在户籍所在地，且在其基本养老保险关系所在地累计缴费年限不满10年的，将其基本养老保险关系转回上一个缴费年限满10年的原参保地办理待遇领取手续，享受基本养老保险待遇。</strong><br>（四）基本养老保险关系不在户籍所在地，且在每个参保地的累计缴费年限均不满10年的，将其基本养老保险关系及相应资金归集到户籍所在地，由户籍所在地按规定办理待遇领取手续，享受基本养老保险待遇。</p>

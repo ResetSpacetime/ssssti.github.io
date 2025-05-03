@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">京</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">京</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>我现在爱上坐地铁的感觉了，空调吹来的冷风，窗外一切飞速掠过，尽管拥堵，却很美丽<br>昨天是参加草莓音乐节，真美。第一次跟这么多人一起听音乐，我真的太激动了，第一次进京，第一次音乐节。<br>昨个是一雨天，下到下午一点多，满地泥泞后便达到要求不再追加，走过SKO的一首似乎叫my gril的歌（查后应该叫”bad girl”），其他只是静静听着。万能的没一首听过，在那里跟朋友静静欣赏。<br>逃跑计划的08年我们结婚，真TM美好。钢铁的心，没准备返场的乐队被热情的歌迷喊回来又唱了一遍之前的歌，现在还记得旋律。南城二哥，不说啥了，段子包袱以及加引号的段子包袱一个接一个，真有味儿，后头还一段bass’的solo，让我晓得他们也不止是玩玩这么简单。<br>刺猬，小红帽鼓手发疯了，场子躁了，pogo团们借着一点旋律和音墙给自己找乐，撞，举，跑圈……真爽啊<br>左右，不说了，脖子疼，哈哈<br>xiuxiu没来，我很想骂娘</p>
 <p>朋友~俩丫头，都是老乡，一个在北科大，导游加宿舍借助首席执行官。一位从抚顺来，极其能尖叫让我羡慕的丫头。抚顺一中03，04，05三届荟萃。<br>胡子，北京的，3号约见。</p>
 <p>2日<br>导游的打扮忒惊艳了，短裙（非超短）就出来，当时我就震惊了<br>今天的行程，西直门，天安门广场，王府井，北海，宝钞胡同，南锣鼓巷，后海<br>照完一卷</p>

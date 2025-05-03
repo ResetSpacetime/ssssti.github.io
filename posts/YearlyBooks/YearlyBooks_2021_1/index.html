@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">2021 阅读（上）</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">2021 阅读（上）</h1><div class="post-meta">2021-07-05<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2.6k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 9</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="Jan"><a href="#Jan" class="headerlink" title="Jan"></a>Jan</h2><p>《超然物外》<br>杨威 &#x2F; 中国社会科学出版社 &#x2F; 2016<br>1.8 任意性、抽离、忘我、非知。盖亚、异质、他者、连续与周期。</p>
 <p>《末日松茸》<br>[美国] 罗安清（Anna Tsing） &#x2F; 华东师范大学出版社 &#x2F; 2020<br>1.17 共生关系，复杂的图景与简单的事实。供应链发展的信息非常有趣。对自由联合（团伙作业）之基本准则的探讨。各取所需，因而也成为了整体的一部分。被埋没在资本主义废墟中的历史和生存方式，还有与国家意志的平衡。真是无所不包了。</p>
 <p>《秋园》<br>杨本芬 &#x2F; 北京联合出版公司 &#x2F; 2020<br>1.20 三种文字，一种为正文，一种为后记，一种为遗言。异种的文脉与求生的遗迹，像慢速播放的老实人。苦难转眼就会被遗忘，只剩聚光灯下的起点，和旁边若干个安静的背影。</p>

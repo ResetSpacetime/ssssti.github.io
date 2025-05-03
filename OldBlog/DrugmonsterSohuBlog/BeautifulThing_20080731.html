@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">做一件美好的事。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">做一件美好的事。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>人类制造的废墟上，机器亦存在着对爱的追求，携子之手与子偕老是一件多么美好的事情~<br>刚刚发现的清晰版BT下载，值得收藏的电影，游戏也蛮好玩，于是就传上来了，尽管没玩多少<br>Wall-E清晰版   Wall-E游戏</p>
 <p>sevendust的新专辑惊到我了，MS有几天没有下歌听了，恩，主要是在家开着下载上网实在是件很不爽的事情。pro-pain还是老样子，有空研究下歌词再做评论。iced earth也基本没有大的变化，老家伙们没有突破，新手们技术又不够好，有种空乏的感觉。</p>
 <p>有多久没这样仰望星空了，有多久没有看见那倾泻而下的月光，人不再有意愿与自然亲近在一起<br>坐在电脑前抱着贝司，练上一天，似乎没了更多的追求，但血是热的。<br>蓝色，最干净的颜色，没有邪恶</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0824</p>
 <p>昨天瘫了一天<br>还是觉得累<br>身上还疼着<br>脖子也痛<br>lili给涂了药膏<br>但还正在缓解<br>晚上睡不着<br>因为摩擦枕巾就会不适<br>于是就只好侧躺<br>天津招行那边差不多确定搞不了了<br>哎，白浪费两个星期<br>很着急<br>下午晚些开始过投资协议<br>没过完然后又一起去涮肉了<br>喝啤酒，于是状态还好<br>没吐，差不多十一点半到家<br>先送我去了阜成路，然后再打车回家的<br>身上很燥热<br>早上嘴唇有点起泡的迹象<br>明明把西瓜霜放在了桌上<br>也没有记着背走<br>于是……就没收住<br>下午再去买一瓶<br>回来也差不多于事无补<br>火气很大啊<br>好像同时起了好几个包<br>都在面部三角区里<br>似乎头脑持续发热和胀痛的前移<br>不知道跟什么有关<br>因为肌体自我修复么？<br>还是排酸什么的<br>感觉是自己不太懂的东西<br>真的蛮难受<br>晚上又吃了不少肉<br>应该也算发物吧……<br>但……还是吃了不少<br>席间有点困，但都挺过来了<br>似乎比红酒的力量容易克服一些<br>回家就倒下睡了……<br>身心俱疲</p>
 <p>0825 *</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">精神（《摇滚多多》评论）</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">精神（《摇滚多多》评论）</h1><div class="post-meta">2009-09-27<span> | </span><span class="category"><a href="/categories/%E8%A7%82%E5%90%8E/">观后</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 638</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 2</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>纳莎空间观影<br>RMB 10元<br>121分钟双语字幕导演剪辑加长版</p>
 <p>两个小时的电影一点都不觉得疲惫，比起上个星期看《破碎》明显这部更能吸引我的注意<br>刘东虹那段我内急去上厕所，回来这个悔啊…..&#x3D;&#x3D;</p>
 <p>几个兴奋点：<br>1.黄燎原，这是我在看电影时心里默念次数最多的人名，对我来说是一个完全陌生的名字，所以我想记住他，记住那几个特别的镜头和他低调说出的那几段话，台上高峰在说感谢他的话的时候的被举起和与兄弟相拥的时候我第一次热泪盈眶<br>2.田然的婚礼，第二次热泪盈眶，最完美的一天做配乐绝了，下婚车时她幸福的笑，第二天启程开往音乐节，他上台她在台下合唱，这样的蜜月让人艳羡，每个人脸上的笑容都让我难以忘怀，嫁给摇滚乐，这个女孩是幸运的<br>3.张楚那两段歌唱，说实话五一在草莓音乐节的时候看张楚我对这两首歌一点感觉都没有，而这次在银幕上他脸上所有的细节都尽收眼底，是那样享受那样动情的时候，我突然感伤了，第三次热泪盈眶<br>4.一无所有，每次都热泪盈眶，这次也不例外</p>

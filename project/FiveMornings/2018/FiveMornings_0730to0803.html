@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0730</p>
 <p>六点半醒一次，睡过去<br>醒了便七点半了，起床<br>朋友圈里已无metoo，豆瓣上还在继续，果然这种话题与朋友圈关系不大，当事人和被告才有关朋友圈，与名誉相连<br>昨晚太饱，早上完全没饿感<br>简单吃了一点，微微困倦<br>嚼了一颗葡萄，感觉心脏震颤了半天，有点发慌，晚上好好休息，明天拔完牙，之后去医院查查吧，如果有危险可不应忽视<br>胸闷偶尔也有的<br>齐木楠雄，觉得节奏很快，才弥补了它的故事的不可靠性，lili问，有经得起推敲的动画？我说猎人呀，反正全是假的<br>lili走，我也收拾东西出发<br>周末没有带电脑回家，好像也没受什么影响，好在这周末没什么重要的工作<br>呆爷蹲在了净化器盖子上<br>还是呆爷的生活随意，常常有创举<br>拖了很久也没有给呆爷写写文，如果少了文字的印证，好像他就不存在了呢<br>或许在零星几人的屏幕的出现过，但也好像没人会挂念他，果然只有时间能换得记忆的倾心<br>呆爷这算，任意的生活么<br>在公交车站兀自出汗<br>右肩膀阵痛着<br>心想老胳膊老腿还是该花点时间运动运动了<br>肿瘤医院门口排起车队</p>
 <p>0731</p>

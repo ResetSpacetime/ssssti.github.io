@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">29 步的舷梯（《海上钢琴师》评论）</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">29 步的舷梯（《海上钢琴师》评论）</h1><div class="post-meta">2009-05-26<span> | </span><span class="category"><a href="/categories/%E8%A7%82%E5%90%8E/">观后</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>第一次看这部电影是在初三时的电影频道上，但今天才看到了这电影的加长版。还记得那时候到处找这部电影的原声，买到了附赠原声的DVD却也还不满足，直到拿到那张原版的OST，看见心爱的两首钢琴曲《The Crave》和《Playing Love》赫然在列，心情激动万分。</p>
 <p>电影一如海报上的那个背影，孤独地面对着属于他的那条船和那片海，讲述了一个孤独的天才——1900——的故事。</p>
 <p>生来孤独，被丢弃在头等舱里；成长孤独，无人知道他的存在；心底孤独，似乎没有人可以体验他的快乐；死去孤独，甘愿静静逝去悄无声息。在他巨大的孤独面前，似乎我们一切的高傲都瞬间变得渺小。<br>孩童时与丹尼为伴，随后丹尼意外逝去，葬礼上与钢琴结缘，与所有人分享来自他灵魂的音乐，一步步成名，赢得与爵士乐创始人的钢琴对决，录制一张“前途未卜”的唱片，一段未尽的情愫和那个夜晚里的偷吻，以致后来急于下船的体验，直到最后生命随船的引爆而飘逝，导演讲述了1900完整的一生，没有丝毫遗漏，也带来了思考。</p>

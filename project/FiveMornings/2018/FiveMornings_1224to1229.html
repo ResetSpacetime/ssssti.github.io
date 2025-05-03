@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>1224</p>
 <p>去看四个春天吧，看了一席的演讲<br>有趣的导演，剪辑了二十个月<br>自学成才，发疯拍摄<br>若日常被极大量地留存下来，是否每个人都能做出这样的电影呢<br>黑暗中的晶石，留下了深刻的印象<br>最黑暗，最危险，最未被料到的地方，出现那样的东西，亲眼见到，亲身经历，才会真觉知<br>他是幸运的，一直游走在边缘，但又保持敏感<br>往往人们没有自信，而他有<br>看到时间的雕琢<br>生命总是难以置信<br>还说到感谢豆瓣<br>平日里随便拍的照片，会有那么多人来评论，表示喜爱，让他对自己有了再次的审视<br>是啊，一切就是这么开始的<br>一些微小的意外和巧合<br>好像做梦在喝酒，跟同事一起，然后总在不停坐电梯，想不起来为何<br>三点多醒了一次，突然醒的，看到手机的留言<br>然看了眼就收起来，接着睡下了<br>好像不是非常困，但还是很快睡着<br>最近常常梦到几位同事，想来是在一起的时间太久了吧<br>要冲个头，晚一点出发，然后去开会，讨论文化产业基金的事儿<br>不知今天又会听到多少有趣的事情<br>信息量是那么大，太多八卦和小道消息搅和在一起，根本没空困倦<br>lili最近总是笑，出门亲了一口，出门前刚好我下楼刷碗，她在门口等我，噘嘴，再亲一口<br>拥抱，就是因为抱不够<br>最近睡觉都要握着手<br>下午看到lili说昨晚很清醒，可能是因为白天喝了咖啡的缘故，有点惊奇<br>我好像昨天下午也很清醒（不过也是睡得比较多<br>出门有点晚，到的时候恰好，看地图有ole的超市，结果很失望<br>开会地点就在商超后面，外面看着破，里面却很典雅，相当多样的树种，办公室在整个小区中心<br>三层，再上一层，会议室阳光明媚<br>开会时阳光晒手<br>喝着不知名的茶，说是只有草原上才喝，还要加盐的<br>水笔终于用光了墨，还想再买一根继续用<br>中午杨记兴，臭鳜鱼，还是没有大爷家的好吃<br>这世上到底要有多少错误的概念呢<br>有人提到不存在与内容相分的形式，我比较赞同，千万别试图定义什么</p>
 <p>1225</p>

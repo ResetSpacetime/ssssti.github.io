@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">去桑斯</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">去桑斯</h1><div class="post-meta">2017-07-23<span> | </span><span class="category"><a href="/categories/SOLARIS/">SOLARIS</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 742</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 2</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>书呆子出来旅行的原因，总是大同小异的：从来不是因为向往，而是因为某位作者写到了那里独特的美，文字蕴藏着无可替代的画面感，于是一直心有戚戚焉，必要亲自体验一番才肯罢休，循着好作者的指点，按图索骥，还要希冀着再偶遇些新鲜体验。出发的欲望总是有的，只是常常不知从哪开始。</p>
 <p>这次出行，是去近些年走红的「桑斯星」。既然走红，就自然有专夸赞其自然美景的游记和图册，也有怒骂其开发商黑心骗钱用人造路线滥竽充数，而让我不能忘怀的，是很早就去到桑斯、后来因绝症早逝的 Le 星探险家朗森・海茵，她在一篇名为《永恒之春》的“回忆文章”里，这样提到桑斯：</p>
 <blockquote>

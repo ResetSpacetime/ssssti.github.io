@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0224</p>
 <p>可以打车去公司咳报销<br>于是就顺路送lili<br>很快叫到车<br>很快出发<br>昨天我笑着说有点激动<br>是很久后的第一次出门放风<br>确实是<br>心情还好<br>但坐上快车<br>一道塑料布屏障放在前后排座中间<br>才终于切实感受到了不同<br>一路没说什么话<br>顺着四环就到了<br>lili下车<br>我的心忽地开始加速，极其快<br>慌张<br>心慌到快要想吐的程度</p>
 </div><script type="text/javascript" src="/js/share.js?v=1.0.0" async><a class="article-share-link" data-url="http://z.arlmy.me/project/FiveMornings/2020/FiveMornings_0224" data-id="cm8wpfehe01uyewvpglzd8gp3" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIklEQVR42u3awW6EMAxFUf7/p6nUdYH74syo2DcrVDHAycK1Yx8HXufvurq+Wke4Kr+VIUNGbwb5FPJo8gTyoYvbJEOGjAEM/rj74Eh+tXb98M0yZMiQcftoEkzJFsiQIUPG3oBLHk0STRKyZciQIYMXsbzE3Zsybq7FZciQ8UJGvTHwueuv9jdkyJDxLxlnuPhzeBhNg+wf75IhQ0ZrBk/sSJla+TtvP1xuqAwZMlozPv1i/sZ0O2TIkDGBwctFfty2N0EsdTZkyJDRlJG2IcmIalqOxk1NGTJktGbwW/m4Kt8Onm4GI2gyZMhoylgrU8nerCE5W4YMGRMY/JgsHYZIU73SoZ4MGTLGMNLAV0kE0yblw3fKkCFjDIME3zQ4pg1OPlohQ4aMOYxKqF0bbK2kmGiYQ4YMGWMY9WN9UqymR3hoxk2GDBntGOmBftwXBUgeyi9hMmTIaM1A46EkISvcv7aVwXCYDBkyGjF40pYeq/EAystgGTJkzGHsKix3HdWlo2MyZMiYw6hcr4XpuCi9/8cgQ4aM1gxSuPIKuFKIVspdGTJk9Gac4eLHZPUhjGA0TYYMGa0ZfJGULk370lI2HUqTIUNGJwYJsvyjCWmtTH1IVWXIkDGAsXeEKw3ia/fLkCFDRqWdmXYY0wmRh0amDBkyZODUjR+QbeDJkCFjACMtRNNRib3DGXEjU4YMGS9n1AvO0jjXV47wZMiQ8VrGD03s8C7GFkHRAAAAAElFTkSuQmCC">分享</a></script></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({

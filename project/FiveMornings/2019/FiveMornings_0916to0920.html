@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0916</p>
 <p>假期结束了<br>一起腻腻两天，外出一天<br>看完三本精酿啤酒的书<br>终于<br>不过原计划早上去还书<br>结果要晨起健身<br>健身时在想要不要抽时间去看看中医<br>明明睁着眼睛，却仿佛觉得很困<br>酸得爆炸<br>稍稍用力闭眼就能挤出眼泪<br>是不是中医能描述的症状？<br>能时刻看着lili就是舒服的<br>外出去了美术馆，但闭馆了<br>去看一个市集<br>然后就开始了乱转<br>吃汉堡，卤煮，溜达去地铁<br>再换乘公交<br>不停地说话说话<br>手机的指纹识别坏掉了，只剩下按键功能仍可用<br>按键要是坏了恐怕都没法打电话了<br>可恶，还是要修一次么<br>还是应该换手机了呢<br>早上又是练胸<br>练得力竭<br>明确地知道，胸又将酸痛起来<br>午饭蛋白粉<br>下午的瞎忙<br>好像没有很routine的事情<br>不能大块完整地占领事件<br>莫不如说是沉浸在巨量的讯息中<br>感觉现在的自己少了些这样的沉浸<br>沉浸，会有一种塑造的力量<br>可以塑形，修身<br>问哦吧最近怎么样<br>哦吧说不好，爸爸还在持续衰弱<br>说心态得调整好呀<br>就还好了<br>看这样的话，似乎只能叹气<br>好像自己甚至都没有太不顺，或难过<br>很少觉得日子难以为继，不好过<br>截至目前，还是个积极的人<br>仍不知会面对怎样的重压或失意<br>算了<br>公交加速快开<br>现在只想回家</p>
 <p>0917</p>

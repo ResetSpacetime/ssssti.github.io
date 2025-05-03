@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0323</p>
 <p>啊，花都开了<br>温度也很舒服<br>冬天的萧索，至少视觉上，会很让人低落下去<br>北方的景观，一年一度有它的节奏<br>可能不同地区的人，对这种季节节奏的理解也有不同吧<br>家里的洗浴中心都开了<br>一下子就能让东北人放弃抵抗吧<br>然而北京还是没有松口<br>昨晚睡前看到消息说来北京的航班都将分流至其他城市机场<br>还是不能有懈怠<br>或者说，每个人都无法完全自保？<br>医护工作者算是这时，最重要的也能有持续的关注和收入的群体了吧<br>但是打赌这回报一定不对等<br>很多表面的工夫确实做到位了<br>守护了所有人的安全<br>而普通人们对这疾病仍是余悸，且不知实情<br>只等专家的几句发言<br>对民智这个词语，不能给予过高的期待<br>生死，对于所有人，其概念似乎也并未彻底普及<br>人的认知就是千差万别的，没有一模一样的经验，就没有一模一样的刻板<br>身体的记忆最可靠<br>说到底，要依靠的只有自己这具肉身<br>还有一切基于肉身的初始设置和冲撞时袭来的一切（记忆，潜意识，伤口，划痕……）<br>冲撞，与，伤口<br>昨晚看了天才女友作者的访谈<br>前天睡前看了天才女友的纪录片<br>真是不一样的，神奇作品<br>谈了很多很多，但她看待历史的眼光，直男学者视角的批评，对作品之阐释权利的留白<br>都非常对味<br>就是那种神奇的女性视角之味<br>张力，无不来自经历，那些故事，服从于自我的冲撞，对自我的怀疑<br>还有从复杂的友情中，提取出的无限力量<br>今天上班的路径不太一样<br>玲珑路，然后三环，再蓟门桥<br>以为只要二十分钟，结果走了近二十五分钟<br>阳光灼热，晒在我胳膊上<br>一路揉搓着lili的衣角，后来换成左手小指<br>偶尔的对视<br>短暂的分离前的时光<br>诸多思绪都沉降，无言，享受路上的宁静<br>收音机播着搞笑节目，开着床，风的声音盖过了收音机里的笑声<br>沉默<br>司机戴着n95口罩，紧紧箍在头上</p>
 <p>0324</p>

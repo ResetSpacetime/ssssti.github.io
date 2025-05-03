@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0114</p>
 <p>早上没给lili装钥匙，现在提前离开公司<br>去地铁站与她会和<br>lili发来百万朵玫瑰的传说故事<br>一个忧伤的爱情故事<br>单恋<br>俄国天后级女性原版，日本韩国都有翻唱<br>点开听<br>是的，俄国味道，有忧伤的底调<br>路上跟超儿讨论起书，下午看了会儿巴塔耶，耗散理论，只是得知就已经很开心<br>这种细节一定不会逃过我的眼<br>说起看书，说起看书速度，怎么选书，都是老问题，我似乎都能肯定地给出自己之言了，不在意别人的方法<br>上午有点忙，杂七杂八的事儿都得了结了<br>牙还是不舒服，明天去好好看看<br>反正今天一天都在想回家看电视剧<br>周末两天过得有点虚幻，好像过了一周那么长<br>可能因为周末看了太多电视剧，陷进了那个情绪和状态里了<br>现实于是显得不真实<br>情绪在不断蔓延着<br>那是一种精心构筑好的复杂，陷阱一样<br>一个穿着和我一件外套同款的大叔跟我搭话<br>一对情侣以一条长长的围巾相连<br>比亚内<br>心里盘算着等下要这样跟lili说话<br>中了大叔的毒</p>
 <p>0115</p>

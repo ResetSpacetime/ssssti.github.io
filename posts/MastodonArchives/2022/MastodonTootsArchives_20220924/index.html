@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Toots 2022 Sep.18 - Sep.24</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Toots 2022 Sep.18 - Sep.24</h1><div class="post-meta">2022-09-27<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 3.2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 11</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="Sep-18"><a href="#Sep-18" class="headerlink" title="Sep.18"></a>Sep.18</h2><ul>
 <li>无法完全了解 vs 1:1的世界地图</li>
 <li>「第五块水泥墩子，证明在特定的历史机缘下，某些本属个人化的话语，也可以成为一种公共记忆，这些话语可能产生自某种完全个人化的情感和情境，由于特殊个人的能量，也由于呼应了某种集体无意识，他们有缘成为关乎某一历史的集体记忆，和前三块水泥墩子之正史有所不同，这些稗史野史构造了我们的心灵史，这些具公共性的私人话语，有的只是口语或传说，却在时间中像诅咒一样暗自发酵。多年以后，当事实烟消云散，细节渐渐模糊，留给我们的或许正是这样一句话，在夜深人静时，会不经意的脱口而出。这样一部心灵史，每个人应该都在组织他自己的版本，而此处是我的版本。」</li>

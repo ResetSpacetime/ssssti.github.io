@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">罗兹</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">罗兹</h1><div class="post-meta">2017-06-25<span> | </span><span class="category"><a href="/categories/SOLARIS/">SOLARIS</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 3</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>罗兹号本星年的末班发射了，此时 Ro 星已过午夜。<br>从这颗银河系最边缘的星球，以人造飞行器的最快速度，到达最近的星系也要 5200 年，Ro 是目前人类足迹的极限。<br>Ro 星的星球参数很奇妙，刚好让 Ro 星整个星年的夜晚，都看不见银河的踪影，仿佛它不曾存在。夜里起飞的飞船，都像是在向无尽的虚空发射。</p>
 <p>除此之外，人们来 Ro 星，大多因为一个“秘密”：23 年前，曾有一艘从 Ro 星发射的货运飞船出现故障，错以跃迁速度飞出了银河系，而仅 8 秒钟后，飞船便启动了自毁程序，原因不明。星际公示板上曾有人讨论，但所有证据都被清除，讨论者也都一个个销声匿迹。<br>因为这个“秘密”，Ro 星成了银河系观光客的猎奇之选。</p>
 <p>资源星球（总质量的 15% 以上为可用矿物）的开采，早已不需要人类的参与，机械生命体（能够自行进化的人造生物）能够比人类更高效地完成这项工作，它们能在十年间挖空大半的矿藏，并运送到生产星球。被开采后的资源星球，将被一层几千米的矿雾包裹，不再适宜人类居住，于是成为机械生命体的繁衍乐园，人类也默许不加干涉。<br>人类开采的速度越来越快，银河系俨然变成一个大工地。<br>而 Ro 星仅开采了不到一年便出了事，随后，Ro 星上的机械生命体也都突然停止了工作。</p>

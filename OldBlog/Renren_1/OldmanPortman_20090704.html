@@ -41,8 +41,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">最近不着调的生活</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">最近不着调的生活</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><img src="/pics/OldmanPortman.jpg" alt="插图"></p>
 <p>我最近在纳闷，现在的我哪点像个要考研的家伙，整天无所事事看电影听音乐，电影看得越来越独立化音乐听得越来越民谣化国土化，发现无数国内的好乐队好民谣，一周精听两张的速度一点点赶着进度，倒是跟高三时的状态甚为契合。</p>
 <p>入手沙子的星星落在我的头上和刺猬的白日梦蓝，这又买了云蓬的中国孩子，carsick cars的两张，白水的色彩和黑撒的我的黄金时代，资金原因撇下了梵高先生爆浆和LAVA|OX|SEA，很败家很败家但是都是一直狂爱着的专辑。摩登天空的歌词本实在是让我汗颜，加之最近他们老总沈黎晖最近电视上的上佳表现和黑刀叔的狼狈替补使我对这个公司的印象瞬间下落。</p>

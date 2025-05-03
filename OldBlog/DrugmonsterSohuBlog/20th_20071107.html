@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">maybe I'm 20 years old today~~</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">maybe I'm 20 years old today~~</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><h1 id="KEEP-ON-LIVING-，KEEP-ON-DYING-。"><a href="#KEEP-ON-LIVING-，KEEP-ON-DYING-。" class="headerlink" title="KEEP ON LIVING ，KEEP ON DYING 。"></a>KEEP ON LIVING ，KEEP ON DYING 。</h1><p>二十岁的生日来到了，一人等到了十二点，没有钟声，一瞬间就二十岁了，有预兆，没有结果。<br>一早起来听着AT VANCE的歌，一下下重重的鼓声敲响，开始了二十岁以后的生活。用大家的话是，奔三十了。<br>不知道为什么一过生日就要小小的感伤一下，或许是对过去的怀念和总结，又或许是对生命的反省和对照。生活还在继续，梦想还未完成。二十岁，决不可以作为我生活和梦想的暂歇。<br>二十岁，摇滚开场。<br>看看走过的岁月，似乎没有什么值得后悔的；看看自己的样子，似乎有了一点成熟。不喜欢做大学生，因为那根本不是什么天之骄子，做个流氓也要比这强。但生命到此，总要换个马甲穿。成熟是很美好的词么？我还不想变得愚钝，变成凡事要守成规的凡夫俗子，我的灵魂告诫我不可以妥协。做个愤青，做个流氓，拒绝平凡。</p>
 <h1 id="KEEP-ON-LIVING-，-KEEP-ON-ROCKING-。"><a href="#KEEP-ON-LIVING-，-KEEP-ON-ROCKING-。" class="headerlink" title="KEEP ON LIVING ， KEEP ON ROCKING 。"></a>KEEP ON LIVING ， KEEP ON ROCKING 。</h1><hr>
 <p>CHANGELOG</p>

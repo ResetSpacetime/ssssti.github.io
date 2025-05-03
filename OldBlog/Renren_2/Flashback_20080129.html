@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">闪回 &amp; Incubus – alive at red</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">闪回 &amp; Incubus – alive at red</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>优质摇滚<del>喜欢这样称呼</del>姐姐推荐听了他们的LOVE HURTS之前似乎只听过他们的一张，都有些淡忘了，这张是一现场专辑，质量蛮高的，听完觉得应该着手收他们的专辑试试了~呵呵~~<br>喜欢MEGALOMANIAC和STELLER<br>上午还在学新东方口语，NND发现俺的英语水平确实差了太多了。昨晚看发胶找回的内点自信瞬间灰飞烟灭，唉唉唉…下学期还要考四级，真得趁假期撵撵，J假期实在太忙咧…</p>
 <p>又拿起RHAPSODY的专辑听了，崇拜崇拜崇拜…..HAIL HAIL HAIL!!!!<br>每次复习都有新鲜的感觉，都能让我回到那个起点，金属膜拜的起点，心潮澎湃的那时。激情永在心不死。</p>
 <hr>

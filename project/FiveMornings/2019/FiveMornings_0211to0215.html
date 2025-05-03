@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0211</p>
 <p>上班了<br>七点十分闹铃响起，动了几下，呆爷就爬过来<br>在头边，手边猛蹭<br>真的黏人，好像每年过年回来都是这样<br>拿手机记梦，想起开会的情节才回想起梦里的情节，开会，搭讪，买衣服帽子<br>左手举着手机，右手按键，呆爷就把脑袋靠在我的左手上，毛茸茸滑腻腻的，然后他闭上眼睛像要睡觉<br>光线不好，拍不清楚<br>差不多记了些就起床上厕所<br>呆爷也跟过来，然后十秒一次地腻叫着<br>不停顶我的手<br>赶快蹲完，把他搂上床<br>lili一脸嫌弃，掉毛！<br>我说人家都黏成这样了，别那么挑剔了吧<br>呆爷不管，就在那呼噜呼噜，lili摸头，我揪了两撮毛下来<br>干燥，都是静电，毛粘在墙上<br>下楼做饭<br>煎饺，牛排，冲的豆浆<br>又回到了日常轨迹里<br>每年一次的打点，又一个社会周期<br>一起出门，今天可能去健身<br>早点去公司，看看要不要收拾卫生<br>近藤麻里惠的网飞纪录片，到欧美人家里做整理，这策划真好，终于能看到些实例<br>牛排没吃光<br>单一条秋裤，不冷<br>有点凉，跟lili走去地铁<br>支付宝买了地铁月卡，试试多坐几次地铁<br>今天应该不太忙<br>到公司楼下有点有趣，迎面来了位财神爷，还给塞了个红包<br>一下子懵逼，进了电梯又突然心情变好<br>跟同在电梯里的人说了句过年好<br>没人到公司，于是就收拾起卫生<br>想来保洁阿姨也可能还没返京<br>打开虾米，随机到mana，连上蓝牙听歌<br>有点爽<br>浇花，这几天肯定是无人照料吧<br>然后一整天就都被杂事填满了<br>等苑的时候，徐妈和田玩起了生化危机2<br>有点恐怖，但完全不想参与</p>
 <p>0212</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">北京疫情之三</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">北京疫情之三</h1><div class="post-meta">2020-06-21<span> | </span><span class="category"><a href="/categories/COVID-19/">COVID-19</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 6</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>6 月 17 日，北新桥地区升级为中风险地区，也即簋街附近。看不到对升级的解释。</p>
 <p>早上跟媳妇下楼，楼道里遇到的人，为避开我俩退了一阶楼梯。</p>
 <p>上周出差的绍兴项目公司，进一步要求提供健康证明，北京健康宝、杭州健康码、绍兴健康码、防疫健康信息码都可以。通知中，以两个时间段划分了从北京到绍兴的所有人，第一段为 5 月 30 日至 6 月 16 日，其中与新发地相关的人员需隔离管控 14 天，备案并做核酸检测，每日随访，14 天后再次核酸检测，若呈阴性可解除隔离，其他人仅做核酸检测并隔离 7 天，7 天后再次核酸检测呈阴性可解除隔离；第二段为 6 月 17 日后到绍兴的，全部都要隔离 14 天，核酸检测、备案、每日随访，14 天后做“核酸+血清”检测，结果为阴性才可解除隔离。</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">显形。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">显形。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>异端符号，种种奇怪的印记<br>水妖，SIRENIA，三张专辑，女声主唱吸引人驻足<br>依旧是旋律的，背景音乐很美好<br>北极传说，八月迷情<br>生命是奇妙的，充满巧合和希望</p>
 <p>艺术节唱生如夏花，昨天找歌的时候不禁怀念高中时代，那时听朴树的歌，一遍一遍，生如夏花，改编第一张专辑的冲出你的窗口，现在听来除了怀念没有其他感动<br>到了大学是麻木的，失去了一些方向，在新的所谓路途上与人竞争着几条通往未来的路</p>
 <p>穿上了T恤在校园里装逼阳光照在身上永远都是温暖，习惯了热的意义<br>清晨醒来，一点微弱的光照得无法再找回睡意，穿上裤衩下床，想不起梦里的味道，只有梦中的你<br>很多杂念，很多想象</p>

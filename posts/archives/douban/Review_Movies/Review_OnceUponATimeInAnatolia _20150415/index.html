@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">那颗苹果（《小亚细亚往事》评论）</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">那颗苹果（《小亚细亚往事》评论）</h1><div class="post-meta">2015-04-15<span> | </span><span class="category"><a href="/categories/%E8%A7%82%E5%90%8E/">观后</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 242</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 1</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>现在追评：反映普遍人性的片子，朴实却厚重。导演只拍下了真相的50%，另一半不可见的真相需要通过思考得到。困扰自己的问题，从与别人的对话中找到答案。大路向天边延展，颜色晦暗，车灯划一道明亮的线，近至眼前。有一搭没一搭地对话，却句句都在引出问题。</p>
 <p>现在依然印象深刻的，是那颗自己从果树上落下，随着水流载浮载沉，最后搁浅的苹果。世人所能观察到的，往往就只是搁浅了的事实。时间流逝，大风吹过，真相不易寻觅，于是有了种种解读与猜测，你可以知晓它从哪条小溪漂流而下，但可能永远无法知晓它从哪棵果树上落下。透过这个长镜头，可以映射全片。</p>
 <hr>

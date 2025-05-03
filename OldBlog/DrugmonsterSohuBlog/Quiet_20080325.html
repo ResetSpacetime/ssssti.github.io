@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">宁。</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">宁。</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>这个冬天过得真是不可思议，昨天又下雨又下雪的。一冬天都没见的大雪花昨天倒见了不少，可怜我昨天出去时还穿的单衣。一下午的课加上晚上的选修简直要崩溃。<br>想找点噪音专辑听。都是非音乐给害的。<br>今天下午的实验要屠杀数十只小白鼠，可怜的小耗子们，在这里先有礼了。<br>又是一天的课，只有第一节李苏的英语课让我有点兴奋劲儿，然后就是越来越让我无语的生化老师。我备遍课都能比他讲得明白。<br>战争论看得不是很习惯，但是看过之后的感觉却是难以言表的，或许我缺少一种自己独有的思考方式，或许读完了就会有所收获吧。<br>Wykked Wytch，好独特的一支哥特金属，一早上这张专辑充实了我的耳朵。<br>每天起来都需要一种声音的唤醒，一天生活的基调，总是需要方向。我喜欢放肆自己。“绝望一样也是一种美”，花边金属党区的这句介绍总能说明一切愿望。<br>想做电子杂志，可是害怕自己的文字吓到世人……<br>这张图片给了我另一种快乐~</p>
 <hr>
 <p>CHANGELOG</p>

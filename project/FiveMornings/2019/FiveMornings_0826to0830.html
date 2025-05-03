@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0826</p>
 <p>结构复杂的梦<br>醒来跟lili亲昵的时候还有点印象<br>接了个电话之后就全忘了（保洁阿姨要钥匙）<br>很懊恼<br>有点头疼，晕晕的<br>外面多云，天气预报说是雾霾<br>去蹲厕接着想<br>终于想起来一些<br>起得有点晚，下楼弄吃的<br>煎蛋，把前一天买的春饼剩菜都装着<br>周一了，又上班，lili在床上不愿起来<br>看了两眼phoebe的采访，就是fleabag的女主<br>大嘴高鼻子，很聪明机灵的眼神<br>让她在剧里也显得并不是很丧<br>收拾东西出发<br>去西直门修手机背板<br>还换了电池<br>路上飘忽，新路，发现一些新的未知角落<br>城市就是这样<br>路线之外都是雾状区域<br>回公司，又出很多汗<br>弄名片的事，更新博客<br>犯困，很困，搞得心情也不佳<br>下班去买抄手，等车等很久，路程又很远<br>在预料之外<br>一路整理照片，删视频，然后做几个gif表情<br>lili还在问我到哪了<br>太慢太慢<br>看杀死伊芙<br>想看两集就停下的，感觉还有很多事要做<br>不能总是看啊看<br>自己的存在感越来越弱了<br>会让自己总觉得慌张<br>到了睡前晨记也没有写<br>应该说没有“留下”<br>心里慌得一逼<br>不停叹气（出声的和无声的）<br>对自己失望，总是这样<br>周末也没有休整，没有和lili在一起恢复<br>没有做计划要做的事<br>太忙乱，慌死</p>
 <p>0827</p>

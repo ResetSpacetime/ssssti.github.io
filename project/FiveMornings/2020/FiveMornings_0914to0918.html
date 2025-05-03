@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0914</p>
 <p>昨天就没有出门了<br>一天在家呆着<br>家里吃的也够<br>晚上炒菜吃<br>整天腻在家里<br>云雨一番<br>觉得日子就这样无尽持续下去就好<br>然而似乎人生总要面临起始和收尾<br>总是一边成长，一边衰败<br>总是想到这些，心情就会down下去的<br>上午也跟lili说这些<br>我们可以就这样无尽无尽下去<br>怎么腻也总是腻不够吖<br>白天各种事情……<br>楼上楼下还折腾<br>烦死了，都是些乱七八糟的杂事<br>忽然也开始收收心，按部就班做些事情了<br>因为发现太多日常好像也都被打乱了似的<br>上周喝酒想了个电台的名字<br>下午晚些他们去机场了<br>我就在整理各种材料<br>搞得头昏脑胀<br>不想加班，干完回家<br>不太饿<br>收了很多快递进来<br>很多零食<br>lili说给我带公司些<br>我说我控制不住，算惹算惹<br>提议把最后一袋冷面吃掉<br>吃完就又撑了……<br>做了米饭，还是小米小黑米加大米<br>喷喷香<br>又没节制地看了好一会儿视频<br>自己都觉得无聊了<br>于是坐下来看看资料，做做整理<br>bigissue 很久没更新了<br>把几个资讯源逐个理了一番<br>弄了一部分<br>把疫情记录也梳理了下<br>感觉世界都变得不好<br>主要是出现了太多的针锋相对<br>其他其实都是已知的<br>只不过这次大家都撕破了脸<br>不在意什么了似的<br>信息的控制让独裁更有信心了吗<br>真可怕……<br>一直整理导很晚<br>直到lili递给我牙刷，才停下来了<br>却好像觉得没干什么事情一样</p>
 <p>0915</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">2018 阅读（下）</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">2018 阅读（下）</h1><div class="post-meta">2018-12-31<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 3.3k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 11</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="Jul"><a href="#Jul" class="headerlink" title="Jul"></a>Jul</h2><p>《怦然心动的人生整理魔法》<br>[日本] 近藤麻理惠 &#x2F; 徐明中 &#x2F; 译林出版社 &#x2F; 2012<br>7.10 心动。简单的原则，经过解释，就成了魔法。一一面对，消化与物品的关系。小小的事，一点点建立自信。一切的方法都在每天的行动里。</p>
 <p>《一个人的花园》<br>谢倩霓 &#x2F; 少年儿童出版社 &#x2F; 2015<br>7.10 能读出刻意平淡化的书写，但有些不伦不类</p>
 <p>《来自液态现代世界的44封信》<br>[英国] 齐格蒙·鲍曼 &#x2F; 鲍磊 &#x2F; 漓江出版社 &#x2F; 2013<br>7.11 前几篇和后几篇好。翻译垃圾。液态世界，选择与拒绝的权力被交还于人们自己。认真生活。自行界定世界。</p>

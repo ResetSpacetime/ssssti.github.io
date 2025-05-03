@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">在 Github 上搭建 Hexo 博客</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">在 Github 上搭建 Hexo 博客</h1><div class="post-meta">2017-01-03<span> | </span><span class="category"><a href="/categories/Hexo/">Hexo</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 461</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 1</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>Tips：非 Mac 系统可能不一样，重点参考下思路。<a target="_blank" rel="noopener" href="https://github.com/jerry011235/hexoblog/blob/master/source/_posts/windows%E4%B8%8B%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%B0%86%E5%85%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitCafe%E5%92%8CGithub%E7%BB%88%E6%9E%81%E6%95%99%E7%A8%8B.md">Windows 配置参考</a></p>
 <h2 id="思路梳理"><a href="#思路梳理" class="headerlink" title="思路梳理"></a>思路梳理</h2><ol>
 <li>配置 Hexo 环境（node.js 和 git）</li>

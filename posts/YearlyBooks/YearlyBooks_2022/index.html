@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">2022 阅读</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">2022 阅读</h1><div class="post-meta">2022-12-31<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2.1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 7</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="Jan"><a href="#Jan" class="headerlink" title="Jan"></a>Jan</h2><p>《欺负人的经济》<br>[法国] 阿尔贝·雅卡尔 &#x2F; 新星出版社 &#x2F; 黄旭颖译 &#x2F; 2019<br>1.22 交换。超出利益纠葛。经济的根基。紧密缠绕加速逃离。</p>
 <p>《拉比的猫》（全两册）<br>[法国] 尤安·史法绘著 &#x2F; 生活·读书·新知三联书店 &#x2F; 张怡译 &#x2F; 2016<br>1.22 布满密集且颇具启发的对话，尤其第一册，逐层拆穿、突破，并非逻辑（异物的假借），仅质疑反问即可，似乎以此打破了很多落后的语言枷锁，打破以语言进行思考时会造成的障碍。另一短评：喜欢上册多一些，思辨密集，怼人甚爽。文明的 bug 无所谓，也并非牢笼，文明和时代所能给予的，无非对话的背景讯息。</p>
 <h2 id="Feb"><a href="#Feb" class="headerlink" title="Feb"></a>Feb</h2><p>《海怪K》<br>[意大利] 迪诺·布扎蒂 &#x2F; 罗国林、吉庆莲译 &#x2F; 陕西人民出版社 &#x2F; 1987<br>2.3 好几篇都非常有趣！短篇，单点的突破，讲述的节奏感，都很精确。对精神与想象的轻柔按摩，混杂着的时代性并不明显。</p>

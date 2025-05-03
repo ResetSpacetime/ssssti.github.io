@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0225</p>
 <p>梦到的好像是同学聚会（还是朋友聚会。。？<br>聊天，喝酒，打闹，嬉笑<br>那种表面的平和的嬉笑，么有内涵<br>煎蛋加面包吃一点<br>咖啡冲得浓，很好喝，这个燕麦做的“奶”<br>味道确实还不错的<br>里面有点颗粒感，那种冲了玉米片之后会有的面面的感觉<br>啊配上咖啡味道好极了<br>昨晚的香水沙漠气场太强，现在鼻子里还有刺激的感觉<br>lili说这款环境氛围营造得好<br>一起地铁吧<br>把周六收拾阳台的东西扔掉些<br>lili拖了那只大狗下去<br>我把换下的面盆扔掉<br>拖着狗下楼的样子实在好笑，我在后面又录视频又拍照<br>扔掉，拉手去地铁<br>一路说说笑笑<br>要去理想国际开会，路上一起挤地铁<br>终点站不对，又下车等了一辆<br>lili说肯定迟到了<br>不过已经是新考勤周了<br>把这几天的照片给lili看，嗯，挑出了三张满意的<br>最近其实也没怎么拍<br>周六在ucca拍了不少<br>在地铁里坐了半天，好几个坐过站的人<br>面前身后，都一波一波地下人<br>人流流淌，又停<br>我在停的时候出站<br>密集碰撞的两小时，投资部门从六十多人变成了二十多人<br>人的成本太高，为什么之前没人发现呢？<br>中午吃了附近的胡辣汤，好味<br>来自河南许昌，不熟悉的地名</p>
 <p>0226</p>

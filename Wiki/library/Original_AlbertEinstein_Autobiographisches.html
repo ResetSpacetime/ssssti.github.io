@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">爱因斯坦：自述 等文章</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a class="current" href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">爱因斯坦：自述 等文章</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/">Index of Wiki&#x2F;library</a></p>
 <h1 id="爱因斯坦：自述"><a href="#爱因斯坦：自述" class="headerlink" title="爱因斯坦：自述"></a>爱因斯坦：自述</h1><p>商务印书馆，爱因斯坦文集，第一卷<br>本文写于1946年</p>
 <p>我已经67岁了，坐在这里，为的是要写点类似自己的讣告那样的东西。我做这件事，不仅因为希耳普博士已经说服了我，而且我自己也确实相信，向共同奋斗着的人们讲一讲一个人自己努力和探索过的事情在回顾中看起来是怎样的，那该是一件好事。稍作考虑以后，我就觉得，这种尝试的结果肯定不会是完美无缺的。因为，工作的一生不论怎样短暂和有限，其间经历的歧途不论怎样占优势，要把那些值得讲的东西讲清楚，毕竟是不容易的——现在67岁的人已完全不同于他50岁、30岁或者20岁的时候了。任何回忆都染上了当前的色彩，因而也带有不可靠的观点。这种考虑可能使人畏难而退。然而，一个人还是可以从自己的经验里提取许多别人所意识不到的东西。</p>

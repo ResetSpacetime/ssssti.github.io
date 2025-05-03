@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0121</p>
 <p>一早看到老徐提醒带着洗漱用品的微信<br>啊，又要运动了<br>不过目前还没什么兴奋感<br>已经很久记不住梦的内容了<br>最近都在另一个世界做什么呢<br>不太跟得上了<br>有点太现实题材的梦，可能没什么兴趣记住吧<br>很叙事，很有前后的铺垫感<br>故事啊，需要那么紧凑和绵密的描写么<br>或者，需要一定写得那么好么<br>谁来评价好坏啊，不知晓<br>于是做梦也不必多么过瘾，做过忘了也没什么损失<br>就这样安慰着自己<br>好像闹钟没有响，带本书上厕所，结果也没翻看<br>lili这周连上七天，最后一周工作<br>我这边还没计划<br>昨晚的左手世涛，现在也还有幸福感<br>不清晰的自我，总是在用其他的事情填补<br>最近看电视剧，也不看什么短视频了<br>突然的习惯改变，也完全没什么不适，不知道又切入了谁的日常<br>昨天试了换位置睡，结果被lili别着睡了一宿，因为呆爷封印了她的双腿<br>呆爷越来越黏人了，黏着人陪他玩<br>一脸渴望和期盼<br>甚至抬手央求<br>或者恨得咬人<br>是个负能量的小载体<br>只有睡起觉来才可以随意摆弄<br>实在是安慰剂，怎么摸都能治愈所有的伤<br>里面的伤<br>只煎了蛋，灶台又出点问题，猛吸了一会儿燃气<br>未生，看了十几集了<br>整体不错，职场啊，就是这样，但是觉得韩国比中国还更恶劣些</p>
 <p>0122 </p>

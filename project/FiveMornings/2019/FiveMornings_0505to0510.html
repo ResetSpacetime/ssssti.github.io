@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0505</p>
 <p>假期过去了<br>一天外出，三天和lili腻在一起<br>一天烫发一天美术馆一天宅家<br>随了许愿的感觉<br>没有工作，看了很多灭霸<br>莫名喜欢这个冷血的家伙<br>早上忘了解冻牛排，于是又是老几样<br>总是觉得对lili有歉疚，总也不能多陪陪<br>早上lili忘了装钥匙，我说早点回家，结果还是拖到了十点多，中间把钥匙闪送了过去<br>真是方便啊，于是没有了任何逃脱的理由<br>大城市的工具，都是些剥削的利器<br>到了精力真的不够用时，统统都变得可恶<br>消除理由<br>于是更加不自由<br>然后掉入不自由的恶性循环<br>一切都没有借口<br>然而人总是需要借口的<br>总是需要拒绝的<br>昨晚还原了surface，费了点时间，两点多醒来（脑子里有事就睡不好）看了眼，已经还原好了，然而白天测试，电池问题依旧<br>而醒来时正被lili的胳膊绑着<br>发现肌肤相触时，lili呼气声渐起，不相触时，就弱很多，还以为已经醒过来了<br>我在一旁摸手机，两点了，居然还有两个群活跃着<br>看完电脑躺回来，伸手去握lili的手，她呼声渐起，还从被窝伸出腿来<br>emmmm 好暖，把身子和胳膊都歇过去<br>呼声又起来些<br>听着呼声，我也渐渐睡过去了<br>早上时间总是匆忙，夜半醒来竟然收获这么温存的场面<br>躺着，呼声里感受着彼此的需要和依赖<br>心里火热</p>
 <p>0506</p>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">2010 观影</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">2010 观影</h1><div class="post-meta">2011-01-11<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 11.4k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 40</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="Jan"><a href="#Jan" class="headerlink" title="Jan"></a>Jan</h2><p>久石让在武道馆：与宫崎骏动画一同走过的25年<br>2008 日本 纪录片<br>每一刻他的脸上都是那么陶醉，每一曲结束都满怀着自豪和感激，与宫崎骏握手的一刻为25载合作的时光做一个小节。龙猫果然是最后一曲，”一起去散步”，”只有孩子才看得到”，这也是多少中国孩子的心曲啊。</p>
 <p>阿凡达<br>2009 美国 英国 动作 战争 科幻<br>1.4 普通3D原版配音，RMB.40 看完后思绪很难瞬间理清，只有一句在观影时想到的一句话一直在脑海盘旋：“我们的星球也曾如此美丽”。做了一个几近摆脱了整个现实的梦。两个泪点：萨利被接纳蓝色的手臂连成海洋的时候，自然之神作出了选择的时候。跟着JC做一个完美没有缺憾的梦就足够了”</p>
 <p>三枪拍案惊奇<br>2009 中国大陆 中国香港 喜剧 悬疑 古装<br>1.4 由于观看阿凡达时影院的差错，等待下一场阿凡达的空闲免费看了三枪，记忆点：“太刺激了”，小沈阳的两个趔趄，2B孙红雷，海碗油泼面，睡了一觉，没了。</p>

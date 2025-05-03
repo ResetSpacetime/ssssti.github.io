@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0102 </p>
 <p>到了超市才发现今早没记晨记<br>你看<br>突然我就觉得好像没有必要太过执着于晨记<br>因为都没有了时间观察周身，以至于少了很多所见<br>最近又开始每天刷刷刷豆瓣<br>密集取关了一些友邻<br>（嗯，又犯病了<br>今年希望能给豆瓣多贡献些点滴吧<br>我已经不太理解周身了，一切被欲望和评论的权力加成着，一脸我消费我说话我牛逼的状态，抱歉我不喜欢<br>早上跟lili说，happy new year<br>我说我以后每天都跟你说 happy new year 怎么样<br>每天都像新年一样，我能保持住多久呢<br>发现没有办法跳脱年历的宏观力量<br>于是觉得它的最小单位，是我可以突破的<br>那就是每一天，每个日子，每个切实的日子里，我可以拥抱着你，看着你，用自己的方式爱你<br>人会越来越珍惜眼下的时间吗<br>就像四个春天里，女儿离开后，两个老人之间那种状态的变化<br>我需要珍惜，从现在就更加珍惜<br>于是就越来越像热恋时的我们<br>快要到第二个七年了，我说，要不要痒一下<br>lili说，你想怎么痒？<br>我说，sm一下？变个套路如何<br>煎鳕鱼，煎蛋，枣馒头，荷兰豆，香蕉和酸奶装给lili<br>现在回家路上的我有点饥饿，中午只吃了一个巨无霸<br>似乎能明显感知到夜晚在变短<br>晚上呆爷趴在手边睡着，他也喜欢新换的床单<br>把床角的书挪走，呆爷就来了<br>感觉生活和工作都越来越慢不下来了<br>与太多的事情和人羁绊着，相互牵连<br>周记本不断写上新字<br>白白的a4纸每天都被写满<br>早上的缠绵越来越长，喜欢看着侧脸，看两只猫酣睡的模样<br>一席讲着夯土的房子冬暖夏凉，我俩在去地铁的路上讨论<br>一度不说话，突然又聒噪<br>我追着她下楼<br>勾勾手，互用背影告别<br>趁人不注意亲吻额头，抚摸头发<br>愿意多等几分钟坐温暖的公交车<br>烟霾又起<br>归家之心<br>半张大饼，等下就会饱<br>没有找到啤酒和咸菜<br>牛排和肉饼在门口等我<br>豆饭等下就会蒸上<br>佳人等下就能亲吻<br>高速运转的自己<br>三小时后才能安静下来</p>
 <p>0103</p>

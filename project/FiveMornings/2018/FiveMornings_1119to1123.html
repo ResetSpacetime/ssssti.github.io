@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>1119</p>
 <p>很简短<br>早上看牙<br>五点做了个奇怪的梦，醒过来<br>肚子不舒服<br>起来蹲便<br>居然不是很困<br>看手机，没太多信息<br>然后变得更清醒<br>lili哼唧两声，我也又爬回去<br>呆爷没起来，接着睡<br>我把手枕在头后，胡思乱想<br>回想唐诺的访谈，是听到作家们都早起，经典作品写出来时作者都正年轻<br>这些让我醒得早么<br>胡乱想很多，想好一句，就用手机记下来<br>因为一旦过去，就真的过去了<br>然而又不会很明确地有时间重新复习这些想法<br>就这么过去了<br>还是更复杂的文学编织，才能把这些信息一次性倾倒出来，放进故事或者散乱无序的话语里<br>不必强调意义<br>信息很多，还想到superstudio<br>那个拜德雅出的书，近五百块的定价，肉疼<br>还是有点想买<br>睡过去<br>然后又是固定桥段，我的闹钟叫不醒我<br>七点十分才起<br>发现没了面包，热了枣发糕<br>用烤箱热的，没有太透<br>冲豆浆，还有昨晚买的酵素豆奶<br>还不知道今天要不要出差<br>果然一醒来就会有各种各样的事情，冲断头脑里的想法和思绪<br>昨天写完的短篇也是在放空的情况下才得以完成<br>脑子放空，任意而行<br>反而就会出现有意思的东西<br>想象<br>充满可能性<br>赶忙收拾出发<br>一辆92刚走<br>操<br>8:50才有车来，但愿别迟到啊<br>心里心跳不停</p>
 <p>1120</p>

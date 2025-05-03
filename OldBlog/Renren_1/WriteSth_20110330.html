@@ -41,8 +41,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">恩? 写一篇吧~</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">恩? 写一篇吧~</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>明儿去奥林匹克花园拍公司参与的千人瑜伽<br>今儿跟着一惠聚网的摄像师拍店景，三万多的机器看得我眼馋<br>管渠道的武姐路上聊天跟我描述云南的美，向往得不得了<br>进会所前还在讨论别墅区里都住着那些腕儿，结果上了楼就见到了带着女儿的赵文卓<br>不过工作开始从有滋有味走向了单调重复，所以积极让自己快点进修找新的玩儿法<br>下月2日和亲爱在北京会合，用班长的话说就是要开始非法耍流氓了<br>每年一起去几个地方，然后用周末逛遍北京胡同和金五星一类神一般的地方</p>
 <p>总之生活无论怎么拮据都有让自己快乐的方法<br>欣喜地发现每段随手用相机录的小段落里都有自己哼哼歌的声音<br>很惊讶是因为在路上的自己一般都应该处于饿肚子的时候<br>于是确定自己还是那个自己，兴奋无比<br>工作的意义呢就是每天都有理由出来看这蓝蓝的天<br>一段时间里执拗于一种想法心无杂念的感觉最棒</p>
 <p>有的时候开始无暇想念，而发现了之后又有无尽的惶恐<br>犹豫究竟是手头的事情重要还是那些未尽的事情重要<br>迷失于顺序，理不清头绪<br>创想总是在夜晚不切实际地飘进梦里，然后一宿的时间把它实现，然后回到失落的现实<br>虚拟的成就感让自己更加沉重</p>

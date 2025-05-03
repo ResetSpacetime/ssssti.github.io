@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a class="current" href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>1219</p>
 <p>早上蛮晚起来<br>昨晚好在也没聚餐<br>半夜还起来刷基协视频来着<br>今天就一直在整理文件<br>各种记忆碎片被翻A出来<br>经常就看着材料，陷入沉默<br>一晃神就到了下午了<br>然后不知不觉就到了四点<br>点了个螺蛳粉<br>不知道怎么的就点了螺蛳粉<br>次卧整天都满地脏乱<br>满地的碎片<br>螺蛳粉里的腐竹还被lili说<br>为啥不点酸笋……<br>好多乱七八糟的记忆<br>今天信息量过于庞大了<br>晚上收拾好<br>把电脑搬进次卧<br>总算在一起是告一段落了<br>搞得浑身酸痛<br>陷在沙发里也觉得腰空空的<br>不舒服似的<br>定了明天加班，以及要晚上聚餐<br>好像很久没看什么电视剧和电影了<br>生命就是这样一步步空虚下去的么<br>看了犬中之猫<br>好可爱的赤狐<br>单感觉总有些忧伤似的<br>好像在看人类自己<br>或者说<br>另一种人类的潜在<br>他们再荒野与城市的适应和生存<br>各种各样的灾难下<br>难以活过五年<br>就像原住民鹿之民们得感觉<br>有很多种自我，很多种潜在<br>哪一种变成了现在的我们呢？</p>
 <p>1220</p>

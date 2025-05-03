@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">牙</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">牙</h1><div class="post-meta">2017-06-16<span> | </span><span class="category"><a href="/categories/SOLARIS/">SOLARIS</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.4k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>今天早上第一次用了“香皂”，在旧星的旧货市场买浴缸时老板送的，说是碰了温水会有泡沫，抹在身上很舒服。但这东西显然已是久未经水，我刚一用力就先掉了一角。<br>这让我想起嘴里的一颗残牙，昨天吃饭时被石子硌掉了一半，没什么痛感，一忙起别的就忘掉了，但一闲下来就会想用舌头去舔它，有点儿划舌头，还是舔个不停。身体的变化，总能极大地吸引我的注意。</p>
 <p>给父亲上一炷香，相框里的他又用和昨天一样的表情，勉强地对我挤了个眼，二十八张动态照片，用随机模式看了十九年了，当年没多给他拍一些，搞得现在每天都要后悔一次。<br>那时候动态相框刚刚流行，父亲对这东西厌恶极了，哄了百十回才留下了这二十几张剪影。老爸这种极度念旧的人，对科技爆炸、技术奇点之类的预言完全不感冒，甚至像要故意躲过这场爆炸似的匆匆离场，他总是看不惯，说现在的人越活越简单，没意思，没人情味儿。而我其实一直也不懂“人情味儿”是什么意思。</p>
 <p>时间有点迟，我给凯夕喵倒了够吃三天的猫粮，检查了下茜儿（NOTT-6 型）昨晚收拾的行李，拿上一瓶营养液就出门了。<br>“一路顺风！”<br>那是父亲的声音，每次有跨星的巡逻任务出门，门口的扬声器都会自动播放这句。</p>

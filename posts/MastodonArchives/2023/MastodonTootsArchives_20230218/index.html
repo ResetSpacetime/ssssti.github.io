@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Toots 2023 Feb.12 - Feb.18</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Toots 2023 Feb.12 - Feb.18</h1><div class="post-meta">2023-02-20<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 7</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-12"><span class="toc-text">Feb.12</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-13"><span class="toc-text">Feb.13</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-14"><span class="toc-text">Feb.14</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-15"><span class="toc-text">Feb.15</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-16"><span class="toc-text">Feb.16</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-17"><span class="toc-text">Feb.17</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Feb-18"><span class="toc-text">Feb.18</span></a></li></ol></div></div><div class="post-content"><h2 id="Feb-12"><a href="#Feb-12" class="headerlink" title="Feb.12"></a>Feb.12</h2><ul>
 <li>梦。动脉刮伤，踝部，突然心跳变速，试图平静，无法控制，走回家，汩汩流血，好像屏住呼吸会好一点，擦净在家门口流的血，还有新鲜的气泡在地上，家里怎么变成三楼，家里居然都有全套小手术设备，止血止得的腿很快青紫，但终于降下心率，不难受了。</li>
 <li>一夜的梦…好在最近几天的梦完全无关工作！</li>

@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">welcome to my life</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">welcome to my life</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>do you ever feel like breaking down?<br>do you ever feel out of place?<br>like somehow you just don’t belong<br>and no one understands you<br>do you ever wanna run away?<br>do you lock yourself in your room?<br>with the radio on turned up so loud<br>that no one hears you screaming<br>no you don’t know what it’s like<br>when nothing feels alright<br>you don’t know what it’s like to be like me<br>to be hurt<br>to feel lost<br>to be left out in the dark<br>to be kicked<br>when you’re down<br>to feel like you’ve been pushed around<br>to be on the edge of breaking down<br>and no one’s there to save you<br>welcome to my life<br>do you wanna be somebody else?<br>are you sick of feeling so left out?<br>are you desperate to find something more<br>before your life is over?<br>are you stuck inside a world you hate?<br>are you sick of everyone around?<br>with the big fake smiles and stupid lies<br>while deep inside you’re bleeding<br>no one ever lies straight to your face<br>and no one ever stabbed you in the back<br>you might think i’m happy<br>but i’m not gonna be ok!<br>everybody always gave you what you wanted<br>you never had to work it was always there<br>you don’t know what it’s like<br>what it’s like!<br>no you don’t know what it’s like (what it’s like) </p>
 <p>Welcome to my life</p>
 <p>我就喜欢这直爽的话语，呵呵，我的人还是伤感不起来啊</p>

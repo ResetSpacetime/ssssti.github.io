@@ -39,8 +39,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">佳 2018</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">佳 2018</h1><div class="post-meta">2019-01-01<span> | </span><span class="category"><a href="/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">年度精选</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 297</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 1</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>汇总豆列：<a target="_blank" rel="noopener" href="https://www.douban.com/doulist/110285016/">Yearly Best</a></p>
 <h2 id="书"><a href="#书" class="headerlink" title="书"></a>书</h2><p>《鹿之民》<br>《四次讲座》<br>《与火同行》<br>《被禁锢的头脑》<br>《什么让这个世界转动》<br>《符号帝国》<br>《人有人的用处》<br>《本托的素描簿》<br>《文心》<br>《给我的诗》<br>《大天使昂热丽克及其他诗》<br>《导读巴特》<br>《行为社会科学基本问题》<br>《什么是批判？&#x2F; 自我的文化》<br>《文艺杂谈》</p>
 <h2 id="漫画"><a href="#漫画" class="headerlink" title="漫画"></a>漫画</h2><p>《念书，还是工作？》<br>《榛子的味道》<br>《棕色的世界》<br>《谁在床下流口水》<br>《恶魔人》<br>《日常》</p>

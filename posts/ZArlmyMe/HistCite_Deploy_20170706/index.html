@@ -42,8 +42,14 @@ html.dataset.dark = localStorage.dark;
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
   navigator.clipboard.writeText(segment)
-    .then(() => alert('已复制: ' + segment))
-    .catch(err => console.error('复制失败:', err));
+    .then(() => {
+      toastr.success('已复制文件名: ' + segment, '', {timeOut: 3000});
+    })
+    .catch(err => {
+      toastr.error('复制失败: ' + err, '', {timeOut: 3000});
+    });
+}
+.then(err => console.error('复制失败:', err));
 }</script></xx3zssssshead><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">在 macOS 系统内配置 HistCite</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/2025/"><i class="fa fa-check-square"> WISH</i></a><a href="/project/"><i class="fa fa-rocket"> PROJECTS</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a><a href="/categories/til/"><i class="fa fa-paragraph"> TILs</i></a><a href="/Wiki/"><i class="fa fa-university"> WIKI</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">在 macOS 系统内配置 HistCite</h1><div class="post-meta">2017-07-06<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 989</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 3</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p><strong>本文主要适用于 macOS 环境</strong><br><strong>写本文时的版本情况：macOS Sierra 版本 10.12.5</strong></p>
 <h3 id="环境及安装配置"><a href="#环境及安装配置" class="headerlink" title="环境及安装配置"></a>环境及安装配置</h3><ol>
 <li>HistCite 仅有 Windows 版，若要在 macOS 上使用，需先安装一款软件「CrossOver」，空间占用 200M 左右，不用配置虚拟机，即可直接运行 Windows 软件，速度还很快，简直惊呆。<a target="_blank" rel="noopener" href="http://www.xilinjie.com/">西林街</a> 搜一下即可（免费版版本号：14.1，你懂的）。</li>
