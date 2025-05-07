@@ -112,7 +112,7 @@ This file is in BETA. Please test and contribute to the discussion:
               Web Feed Preview
             </h1>
             <h2><xsl:value-of select="/atom:feed/atom:title"/></h2>
-            <p><xsl:value-of select="/atom:feed/atom:description"/></p>
+            <p><xsl:value-of select="/atom:feed/atom:subtitle"/></p>
             <a class="head_link" target="_blank">
               <xsl:attribute name="href">
                 <xsl:value-of select="/atom:feed/atom:link"/>
@@ -133,11 +133,11 @@ This file is in BETA. Please test and contribute to the discussion:
               </h3>
               <p class="mb-0">
                 <xsl:choose>
-                  <xsl:when test="string-length(atom:description) &gt; 200">
-                    <xsl:value-of select="substring(atom:description, 0, 200)" />…
+                  <xsl:when test="string-length(summary) &gt; 200">
+                    <xsl:value-of select="substring(summary, 0, 200)" />…
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="atom:description" />
+                    <xsl:value-of select="summary" />
                   </xsl:otherwise>
                 </xsl:choose>
               </p>
