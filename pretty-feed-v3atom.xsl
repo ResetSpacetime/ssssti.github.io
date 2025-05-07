@@ -126,18 +126,18 @@ This file is in BETA. Please test and contribute to the discussion:
               <h3 class="mb-0">
                 <a target="_blank">
                   <xsl:attribute name="href">
-                    <xsl:value-of select="atom:link"/>
+                    <xsl:value-of select="link"/>
                   </xsl:attribute>
-                  <xsl:value-of select="atom:title"/>
+                  <xsl:value-of select="title"/>
                 </a>
               </h3>
               <p class="mb-0">
                 <xsl:choose>
-                  <xsl:when test="string-length(summary) &gt; 200">
-                    <xsl:value-of select="substring(summary, 0, 200)" />…
+                  <xsl:when test="string-length(atom:summary) &gt; 200">
+                    <xsl:value-of select="substring(atom:summary, 0, 200)" />…
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="summary" />
+                    <xsl:value-of select="atom:summary" />
                   </xsl:otherwise>
                 </xsl:choose>
               </p>
