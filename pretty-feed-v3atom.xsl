@@ -115,7 +115,7 @@ This file is in BETA. Please test and contribute to the discussion:
             <p><xsl:value-of select="/atom:feed/atom:subtitle"/></p>
             <a class="head_link" target="_blank">
               <xsl:attribute name="href">
-                <xsl:value-of select="/atom:feed/atom:link"/>
+                <xsl:value-of select="/atom:feed/atom:id"/>
               </xsl:attribute>
               Visit Website &#x2192;
             </a>
@@ -126,9 +126,9 @@ This file is in BETA. Please test and contribute to the discussion:
               <h3 class="mb-0">
                 <a target="_blank">
                   <xsl:attribute name="href">
-                    <xsl:value-of select="link"/>
+                    <xsl:value-of select="atom:entry/atom:link"/>
                   </xsl:attribute>
-                  <xsl:value-of select="title"/>
+                  <xsl:value-of select="atom:entry/atom:title"/>
                 </a>
               </h3>
               <p class="mb-0">
