@@ -76706,12 +76706,7 @@
 
 <p>或者</p>
 <div>
-<pre class="mermaid">flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]</pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart TD</span><br><span class="line">    A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">    B --&gt; C&#123;Let me think&#125;</span><br><span class="line">    C --&gt;|One| D[Laptop]</span><br><span class="line">    C --&gt;|Two| E[iPhone]</span><br><span class="line">    C --&gt;|Three| F[fa:fa-car Car]</span><br></pre></td></tr></table></figure>
 </div>
 
 
