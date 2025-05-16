@@ -76705,7 +76705,14 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;mermaid&quot;&gt;</span><br><span class="line">flowchart TD</span><br><span class="line">    A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">    B --&gt; C&#123;Let me think&#125;</span><br><span class="line">    C --&gt;|One| D[Laptop]</span><br><span class="line">    C --&gt;|Two| E[iPhone]</span><br><span class="line">    C --&gt;|Three| F[fa:fa-car Car]</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
 <p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;pre class=&quot;mermaid&quot;&gt;flowchart TD</span><br><span class="line">    A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">    B --&gt; C&#123;Let me think&#125;</span><br><span class="line">    C --&gt;|One| D[Laptop]</span><br><span class="line">    C --&gt;|Two| E[iPhone]</span><br><span class="line">    C --&gt;|Three| F[fa:fa-car Car]&lt;/pre&gt;</span><br></pre></td></tr></table></figure>
+<div>
+<pre class="mermaid">flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]</pre>
+</div>
 
 
 <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="mermaid">quadrantChart
