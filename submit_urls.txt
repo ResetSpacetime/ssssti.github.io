@@ -1,3 +1,4 @@
+http://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_24/
 http://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_23/
 http://z.arlmy.me/posts/YearlyBooks/YearlyBooks_2025/
 http://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_22/
@@ -7,4 +8,3 @@ http://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250614/
 http://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_20/
 http://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_19/
 http://z.arlmy.me/posts/Note/Note_RobertFortune_ThreeYearsWanderingsInTheNorthernProvincesOfChina/
-http://z.arlmy.me/posts/TILs/RULES_20250325/
