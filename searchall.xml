@@ -84031,6 +84031,43 @@
       </tags>
   </entry>
   <entry>
+    <title>微信聊天记录导出 Chatlog</title>
+    <url>/posts/Share/WechatArchive/</url>
+    <content><![CDATA[<h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p>因为在微信有个读书打卡群，信息过于分散，于是一直想找到一个好用的微信导出工具来整理一下，之前试过四五款，有一个是好用的，但后来因为微信升级到4.0版本，无效了，4.0版本的聊天数据是另行存储的，好像还加密了，所以一直又搁置。</p>
+<p>上周末看到（可能是阮一峰的博客提到的）Chatlog的推荐，于是又记下链接，准备抽空试试。</p>
+<p>成功了！遂分享！</p>
+<h2 id="免责"><a href="#免责" class="headerlink" title="免责"></a>免责</h2><p>不要将数据泄露给不熟悉的人，以及AI，注意保护个人隐私信息。</p>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p><strong>注：以下是Windows系统，Mac系统请查阅仓库内教程</strong></p>
+<ol>
+<li><p>下载Chatlog，见Github仓库：<a href="https://github.com/sjzar/chatlog">sjzar&#x2F;chatlog</a>，点击右侧Releases获取最新版本，也给出链接<a href="https://github.com/sjzar/chatlog/releases">Releases</a>，右键解压压缩包。</p>
+</li>
+<li><p>回退微信的4.0.3版本（如果就是这个版本，可以免除此步），找旧版本卡了一个小时……最后发现Chatlog作者在<a href="https://github.com/sjzar/chatlog/issues/197">FAQ</a>里给了地址：<a href="https://github.com/iibob/WechatWindowsVersionHistory/releases/tag/v4.0.3.36">Release WeChatWin 4.0.3.36</a>，点击链接前往下载。</p>
+</li>
+<li><p><strong>重要：重新安装微信注意事项</strong>，卸载时会有个确认弹窗，是否保留数据和聊天记录，<strong>默认是不勾选，一定要勾选！默认是不勾选，一定要勾选！默认是不勾选，一定要勾选！</strong>，卸载后安装4.0.3版本即可。</p>
+</li>
+</ol>
+<p><img src="/pics/WechatArchive.jpg"></p>
+<ol start="4">
+<li><p>运行Chatlog，直接运行第1步解压后路径内的“chatlog.exe”即可。</p>
+</li>
+<li><p>按Github仓库的教程，逐项运行（上下键和回车，命令行内鼠标不可用）：“获取密钥”，等待，直到提示成功，回车；“解密数据 ”，等待，直到提示成功，回车；“启动HTTP服务”，等待，直到提示已启动，回车。</p>
+</li>
+<li><p>打开常用的浏览器，输入“127.0.0.1:5030”，先在“群聊”或“联系人”中，填写昵称、备注名、群名进行检索，能够查到相应的“群聊”或“联系人”的id。</p>
+</li>
+<li><p>获取到id后，在“聊天记录”内填写时间范围和聊天对象的id，点击“执行查询”，即得到聊天记录的全部文本。</p>
+</li>
+</ol>
+<hr>
+<p>CHANGELOG</p>
+<ul>
+<li>20250910 Arlmy 创建、发布</li>
+</ul>
+<!-- flag of hidden posts -->]]></content>
+      <tags>
+        <tag>workflow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/404.html</url>
     <content><![CDATA[<!DOCTYPE html>
