@@ -131,7 +131,6 @@ div {
 }
 #sidebar .widget {
   margin-bottom: 30px;
-  /* tiered display categories */
 }
 #sidebar .widget .widget-title {
   font: "source-han-serif-sc", serif, "Times New Roman", Georgia, Times, sans-serif !important;
@@ -179,6 +178,9 @@ div {
 }
 #sidebar .widget .category-list-count::after {
   content: ")";
+}
+#sidebar .widget {
+  /* tiered display categories */
 }
 #sidebar .widget .category-list-child li {
   margin-left: 0.6em !important;
