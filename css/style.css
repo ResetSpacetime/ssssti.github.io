@@ -272,16 +272,19 @@ div {
   font-family: "FontAwesome";
   content: "\f073";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .post .post-meta .category:before {
   font-family: "FontAwesome";
   content: "\f07c";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .post .post-meta #busuanzi_value_page_pv:before {
   font-family: "FontAwesome";
   content: "\f024";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .post .ds-thread-count {
   padding: 0;
@@ -295,6 +298,7 @@ div {
   font-family: "FontAwesome";
   content: "\f0e5";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .post .ds-thread-count:hover {
   color: #444;
@@ -311,6 +315,7 @@ div {
   font-family: "FontAwesome";
   content: "\f0e5";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .post .disqus-comment-count:hover {
   color: #444;
@@ -473,6 +478,7 @@ div {
   font-family: "FontAwesome";
   content: "\f100";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .page-navigator a.next,
 .page-navigator span.next {
@@ -483,6 +489,7 @@ div {
   font-family: "FontAwesome";
   content: "\f101";
   padding-left: 0.3em;
+  font-display: swap;
 }
 .page-navigator .current {
   background: #F8F8F8;
@@ -983,6 +990,7 @@ pre {
   font-family: "FontAwesome";
   content: "\f101";
   padding-left: 0.3em;
+  font-display: swap;
 }
 .readmore a:hover {
   background: #F8F8F8;
@@ -1543,6 +1551,7 @@ figure.highlight .line,
   font-family: "FontAwesome";
   content: "\f0d9";
   padding-right: 0.3em;
+  font-display: swap;
 }
 .post-nav a.next {
   float: right;
@@ -1551,6 +1560,7 @@ figure.highlight .line,
   font-family: "FontAwesome";
   content: "\f0da";
   padding-left: 0.3em;
+  font-display: swap;
 }
 .post-nav a:hover {
   border-bottom: none;
@@ -1640,6 +1650,7 @@ table tr:nth-child(2n) {
   font-family: "FontAwesome";
   content: "\f064";
   padding-right: 6px;
+  font-display: swap;
 }
 
 .article-share-box {
@@ -1695,6 +1706,7 @@ table tr:nth-child(2n) {
   margin-top: -10px;
   margin-left: -10px;
   text-align: center;
+  font-display: swap;
 }
 .article-share-element:hover, .article-share-qrcode:hover, .article-share-weibo:hover, .article-share-facebook:hover, .article-share-twitter:hover {
   color: #fff;
@@ -2019,6 +2031,7 @@ html[data-dark=true] img {
   content: "\f02b";
   font-family: FontAwesome;
   margin-right: 4px;
+  font-display: swap;
 }
 
 .article-tag-list-item:hover {
