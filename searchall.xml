@@ -85462,7 +85462,7 @@
   <entry>
     <title></title>
     <url>/manifest.json</url>
-    <content><![CDATA[{"name":"素生","short_name":"素生","start_url":".","orientation":"natural","display":"standalone","icons":[{"src":"./pics/icons64.png","sizes":"64x64","type":"image/png"},{"src":"./pics/icons114.png","sizes":"114x114","type":"image/png"},{"src":"./pics/icons192.png","sizes":"192x192","type":"image/png"},{"src":"./pics/icons512.png","sizes":"512x512","type":"image/png"},{"src":"./pics/maskable-icon-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]}]]></content>
+    <content><![CDATA[{"name":"素生","short_name":"素生","description":"误读人生，化人生活","start_url":"/","orientation":"natural","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","icons":[{"src":"/pics/icons64.png","sizes":"64x64","type":"image/png"},{"src":"/pics/icons114.png","sizes":"114x114","type":"image/png"},{"src":"/pics/icons192.png","sizes":"192x192","type":"image/png"},{"src":"/pics/icons512.png","sizes":"512x512","type":"image/png"},{"src":"/pics/maskable-icon-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]}]]></content>
   </entry>
   <entry>
     <title>许愿墙</title>
@@ -85878,6 +85878,7 @@ gantt
 <li>做一个放下权力的平台，如何做到？答案是不必做到，因为压根不需要平台，人是以信任和共识来合作的，不需要平台，非正式经济一直好用，从未失效</li>
 <li>分配可以在很多不同的层面做，一对一的服务、零工、个体户、合伙、项目管理、公司统筹和治理，由于参与方的多少，会导致复杂度不同，可控难度大幅波动</li>
 <li>信任才是基础，一切都按照约好的来，无限游戏唯一不可以打破的规则，是“为了你自己，以及为了尽可能多的其他玩家，让游戏能够无限地持续下去。”</li>
+<li>所以人更需要的是，重新学习（切掉自己的锚定认知和首位概念），或教给初学者</li>
 </ul>
 </li>
 <li>20250908<ul>
