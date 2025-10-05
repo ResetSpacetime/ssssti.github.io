@@ -21,23 +21,41 @@ async: true
 },
 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);   
-</script><script class="js-hypothesis-config" type="application/json">{"showHighlights": false}</script><script defer="" src="https://hypothes.is/embed.js"></script><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+</script></xx3zssssshead><!--  script(type="application/json", class="js-hypothesis-config").--><!--    {"showHighlights": false}--><!--  script(defer, src="https://hypothes.is/embed.js")script(defer='defer' src='https://cloud.umami.is/script.js' data-website-id='a1e09a8a-8e14-4d6e-94f8-6f180b05e31d')
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+if theme.baidu_analytics
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?' + '';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+if theme.microsoft_clarity
+  script.
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "");
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><script>function copyUrlSegment() {
-  const metaUrl = document.querySelector('meta[property="og:url"]').content;
-  const segment = metaUrl.split('/').filter(Boolean).pop();
-  const segmentWithMd = segment + '.md';
-  navigator.clipboard.writeText(segmentWithMd)
-    .then(() => alert('已复制: ' + segmentWithMd))
-    .catch(err => console.error('复制失败:', err));
-}</script></xx3zssssshead><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">小感</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">小感</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>由于没有零钱于是抹去了5角的11.5元的排骨饭：三块排骨，管够的米饭，排骨汤，赠可乐，这是来北京以来吃得最饱的一顿。从前台到厨房到送餐的人都熟识而且默契得很，女老板一直在关切地问吃不吃得饱，还要不要加饭，加多少能吃饱，一男一女两个孩子在旁若无人地用玩具编造着故事，我一边仔细地听一边啃着手里的排骨，一碗饭下肚之后肚子还在兀自咕咕叫着，又一碗半下去才显出满足。擦干净嘴边的油腻走出门，送外卖的师傅笑着对我说了一句”再来啊!”</p>
+if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+  script(type='text/javascript', src='https://unpkg.com/clipboard/dist/clipboard.min.js', defer)
+  script(type='text/javascript', src='https://unpkg.com/toastr/build/toastr.min.js', defer)
+  link(rel='stylesheet', href='https://unpkg.com/toastr/build/toastr.min.css')
+
+if theme.dark == true
+  include darkmode.pug
+  script.
+    function copyUrlSegment() {
+      const metaUrl = document.querySelector('meta[property="og:url"]').content;
+      const segment = metaUrl.split('/').filter(Boolean).pop();
+      const segmentWithMd = segment + '.md';
+      navigator.clipboard.writeText(segmentWithMd)
+        .then(() => alert('已复制: ' + segmentWithMd))
+        .catch(err => console.error('复制失败:', err));
+    }--><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">小感</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">小感</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>由于没有零钱于是抹去了5角的11.5元的排骨饭：三块排骨，管够的米饭，排骨汤，赠可乐，这是来北京以来吃得最饱的一顿。从前台到厨房到送餐的人都熟识而且默契得很，女老板一直在关切地问吃不吃得饱，还要不要加饭，加多少能吃饱，一男一女两个孩子在旁若无人地用玩具编造着故事，我一边仔细地听一边啃着手里的排骨，一碗饭下肚之后肚子还在兀自咕咕叫着，又一碗半下去才显出满足。擦干净嘴边的油腻走出门，送外卖的师傅笑着对我说了一句”再来啊!”</p>
 <p>一边走一边微笑着回想这样一句”再来啊”，这样对生活的感恩我还是做得不够。</p>
 <p>每天早起去吃豆浆油条，炸油条的大叔一丝不苟地做每一根油条，每次下锅都抬起头笑着问：“要几根？”<br>看见每一只猫都将自己的生活暂停，陪它游戏一会儿，即使只是远远对望。<br>被世贸国际公寓腼腆的保安拦下并示意不能从小区穿越进入商务楼，之后每天从门口路过看见他都会相互致以淡淡的微笑。<br>过街天桥下一家拾荒者每天睡在三轮车里，小女孩绕着车笑着来回跑着，小男孩费力地蹬三轮，每次成功都大声欢喜地笑，我总在想发工资的那天请他们进几步之遥的肯德基吃一顿饭。<br>有几天疯狂地想吃羊杂汤，找了几天终于找到一家后，却被告知没有了，老板娘从后厨走出来告诉我，天热，汤不好做，笑着说等天凉来给你打八折。<br>宿舍里每天跟我探讨时事偶尔教些金融常识的大叔走了，开始了租房子的日子。<br>看每一个迎面而来的小孩的眼睛，并对他们微笑。一次在公交上和一个趴在妈妈肩上的孩子“深情”对视，最后他伸出手来想摸我的脸。<br>周末在798看见吴冠中的画展，当进入那家画廊一眼看见那幅水乡的时候，我在门口僵了几秒，然后走过去静静地面对看了好久，UCCA的讲座后跑过来接着看吴先生的画册，直到画廊关门。<br>找哲人巷，一个小时，把蔚秀园转了个遍，问了六个保安，玩了三只猫，搭讪了十多个老人，最后被告知这里不再卖书了，然后把我送到了直走可以到采薇阁的路口。</p>
 <p>物质上让人恨精神上让人爱的城市里，我继续感恩地生活。</p>
@@ -70,4 +88,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
-});</script></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+});</script></div></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><script src="/js/some_other_script.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

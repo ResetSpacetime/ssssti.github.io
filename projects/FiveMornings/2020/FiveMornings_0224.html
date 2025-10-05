@@ -21,23 +21,41 @@ async: true
 },
 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);   
-</script><script class="js-hypothesis-config" type="application/json">{"showHighlights": false}</script><script defer="" src="https://hypothes.is/embed.js"></script><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+</script></xx3zssssshead><!--  script(type="application/json", class="js-hypothesis-config").--><!--    {"showHighlights": false}--><!--  script(defer, src="https://hypothes.is/embed.js")script(defer='defer' src='https://cloud.umami.is/script.js' data-website-id='a1e09a8a-8e14-4d6e-94f8-6f180b05e31d')
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+if theme.baidu_analytics
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?' + '';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+if theme.microsoft_clarity
+  script.
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "");
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><script>function copyUrlSegment() {
-  const metaUrl = document.querySelector('meta[property="og:url"]').content;
-  const segment = metaUrl.split('/').filter(Boolean).pop();
-  const segmentWithMd = segment + '.md';
-  navigator.clipboard.writeText(segmentWithMd)
-    .then(() => alert('已复制: ' + segmentWithMd))
-    .catch(err => console.error('复制失败:', err));
-}</script></xx3zssssshead><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0224</p>
+if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+  script(type='text/javascript', src='https://unpkg.com/clipboard/dist/clipboard.min.js', defer)
+  script(type='text/javascript', src='https://unpkg.com/toastr/build/toastr.min.js', defer)
+  link(rel='stylesheet', href='https://unpkg.com/toastr/build/toastr.min.css')
+
+if theme.dark == true
+  include darkmode.pug
+  script.
+    function copyUrlSegment() {
+      const metaUrl = document.querySelector('meta[property="og:url"]').content;
+      const segment = metaUrl.split('/').filter(Boolean).pop();
+      const segmentWithMd = segment + '.md';
+      navigator.clipboard.writeText(segmentWithMd)
+        .then(() => alert('已复制: ' + segmentWithMd))
+        .catch(err => console.error('复制失败:', err));
+    }--><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>0224</p>
 <p>可以打车去公司咳报销<br>于是就顺路送lili<br>很快叫到车<br>很快出发<br>昨天我笑着说有点激动<br>是很久后的第一次出门放风<br>确实是<br>心情还好<br>但坐上快车<br>一道塑料布屏障放在前后排座中间<br>才终于切实感受到了不同<br>一路没说什么话<br>顺着四环就到了<br>lili下车<br>我的心忽地开始加速，极其快<br>慌张<br>心慌到快要想吐的程度</p>
 </div><script type="text/javascript" src="/js/share.js?v=1.0.0" async=""><a class="article-share-link" data-url="https://z.arlmy.me/projects/FiveMornings/2020/FiveMornings_0224" data-id="cmg9lst8u01sjucvpfc9t1sxp" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACqklEQVR42u3aQW7DQAgF0Nz/0uk2UmTrA0PqxfOqapyx31QaKPB6xdf746p++n1n/vvqPc0LDw8Pb/Dq39cV4P5h9/cnT7znFVbAw8PDW+Mly/W2Y+PVCwEGDw8P7zG8avq7F2bw8PDwns+7Or6TO3tbgIeHh/dMXr7cJEgkafq/1Vrw8PDwOpXSA6/4m59X+nt4eHh44676/YFb/TQv9VZXu1wBDw8Pb4FXTYvzV5kPY1VLvZdPxMPDw/sJ7/74ria+1fDQa5tdvgMeHh7eAm/Szs8Zk7GDKm80fYCHh4dXPC2TYFAdFKge7r0m2WUyjYeHh7fAy9Pis0Na1YZWswGGh4eHd5RXLYnmB3cvpc7LFnmhBA8PD2+DV61eTFpceQqePD1ZHw8PD2+DNynFTramuhEHknU8PDy8MW/S7kq2Jk+U85GFA8k0Hh4e3iFe8uXemFSeEPcKypf34OHh4S3wNkoM1RLGPIkv1KTx8PDwDvHe4+vUNlUxUZUFDw8Pb4GXH/G91v5kyCBPmgt/Qzw8PLwxr7d0r2ibDw2cKgfj4eHhbfDyhn0ePPIyRHUQtjdwgIeHh3eWlz+yWlrNA0w1IDX/V8DDw8Mb83rJbjUk5KNd8wEFPDw8vG3e5FifDBmcaqdF6+Dh4eGt8Xql216RtxokRt/Fw8PDW+PlRdi8QDBvieWpf/R/Ax4eHt4ar1qkmGxEfqo3v4WHh4d3lPcuXhuM3uZGAQwPDw9vgVc9aqspb7XxPw9CvUCCh4eH1+ut58EgCQmThlkyBFYevcLDw8Nb4PUaTvk9yXhrrwxRGLrCw8PDewCvWoQ99awktODh4eE9h5ekztVybe/TaCgBDw8Pb42XFCMmBYK89NAbX8DDw8P7JW+SHPdGXe9fcd69wsPDw1vj/QFXHQ0B6+3viAAAAABJRU5ErkJggg==">分享</a></script></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js" defer=""></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
@@ -63,4 +81,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
-});</script></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+});</script></div></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><script src="/js/some_other_script.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

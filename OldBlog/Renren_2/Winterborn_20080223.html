@@ -21,23 +21,41 @@ async: true
 },
 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);   
-</script><script class="js-hypothesis-config" type="application/json">{"showHighlights": false}</script><script defer="" src="https://hypothes.is/embed.js"></script><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+</script></xx3zssssshead><!--  script(type="application/json", class="js-hypothesis-config").--><!--    {"showHighlights": false}--><!--  script(defer, src="https://hypothes.is/embed.js")script(defer='defer' src='https://cloud.umami.is/script.js' data-website-id='a1e09a8a-8e14-4d6e-94f8-6f180b05e31d')
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+if theme.baidu_analytics
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?' + '';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+if theme.microsoft_clarity
+  script.
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "");
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><script>function copyUrlSegment() {
-  const metaUrl = document.querySelector('meta[property="og:url"]').content;
-  const segment = metaUrl.split('/').filter(Boolean).pop();
-  const segmentWithMd = segment + '.md';
-  navigator.clipboard.writeText(segmentWithMd)
-    .then(() => alert('已复制: ' + segmentWithMd))
-    .catch(err => console.error('复制失败:', err));
-}</script></xx3zssssshead><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">经典 芬兰力量 Winterborn - Cold Reality - 2006</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">经典 芬兰力量 Winterborn - Cold Reality - 2006</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>英文介绍:<br>Winterborn is a melodic heavy metal band from Finland.<br>The debut album “Cold Reality” comes with the tagline: “The Coldest Finnish Heavy Metal Band”. </p>
+if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+  script(type='text/javascript', src='https://unpkg.com/clipboard/dist/clipboard.min.js', defer)
+  script(type='text/javascript', src='https://unpkg.com/toastr/build/toastr.min.js', defer)
+  link(rel='stylesheet', href='https://unpkg.com/toastr/build/toastr.min.css')
+
+if theme.dark == true
+  include darkmode.pug
+  script.
+    function copyUrlSegment() {
+      const metaUrl = document.querySelector('meta[property="og:url"]').content;
+      const segment = metaUrl.split('/').filter(Boolean).pop();
+      const segmentWithMd = segment + '.md';
+      navigator.clipboard.writeText(segmentWithMd)
+        .then(() => alert('已复制: ' + segmentWithMd))
+        .catch(err => console.error('复制失败:', err));
+    }--><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">经典 芬兰力量 Winterborn - Cold Reality - 2006</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">经典 芬兰力量 Winterborn - Cold Reality - 2006</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>英文介绍:<br>Winterborn is a melodic heavy metal band from Finland.<br>The debut album “Cold Reality” comes with the tagline: “The Coldest Finnish Heavy Metal Band”. </p>
 <p>弱弱翻译点介绍[首发啊.哈哈]:<br>Winterborn看上去似乎是一个新团,但这之前他们在”幕后”的不懈努力和锻炼铸就了他们处子专辑的辉煌<br>Winterborn诞生于2004年十二月,而这之前的岁月中这支队伍却极其低调,但成员们都在圈内努力地锻炼自己,极高的追求和苦练使得众多金属死忠们立刻被精湛高速的RIFF和精准优美的旋律所吸引<br>他们的音乐体现了从古典重摇滚到现代元素的众多侧面,可见乐队的多元化的发展方向,深厚的功底和独有的特色.抛开Koskela无可挑剔的嗓音和Winterborn震人的riff和优美旋律不谈,在乐迷口味日益多元,乐队数迅速膨胀,诸多未知变数的今天,我们还可以在他们的音乐中听到另一种东西,那是一种”精神”<br>从2004年夏天开始吉他Vapola,键盘Hänninen和主唱Koskela便开始了首专的准备.在这之后,乐队开始集中排练,并在一月走进了录音室.多人的共同努力下专辑在五月初宣告完成.后期制作在Stockholm的Cutting Room,由Björn Engelmann(Rammstein, In Flames, Within Temptation)亲自操刀.封套则由瑞典的Progart制作.<br>之后乐队开始联系各地的发行公司,最后经过长期的和多个公司的磋商后在2006年九月与德国的Massacre Records签订了合约为其海外发行商.日本的发行商为King Records.芬兰发行商为Supersounds.在这期间乐队成员们为第二张专辑搜寻灵感和素材.<br>The true strength of the band is their live performances. 现场才是硬道理.只有现场才让人热血沸腾感受到音乐的真正魅力,大量的和声编排给了歌迷们良好的最初印象,在各地有了相当大的一批歌迷和簇拥,所以专辑更是让人期待.但这种苦苦的等待将在十一月结束,世界各地的旋律金属的死忠们都将体会到Winterborn带来的这张冷艳之作.<br>2007年的十一月Pasi Kauppinen顶替了Janne Suvanto的BASS的位置,Kauppinen曾在Silent Voices等乐队中效力.</p>
 <p>再来说说这专辑,正如介绍里提到的,优美旋律和精美的RIFF.一听就知道是芬兰货.编排上也是下了大工夫,这个初生牛犊非常NB…集成芬兰式力量的恢宏和行云流水般的流畅的键盘,处理得极为成熟.和声也可以大大的赞一把.<br>last train to hell,the real me,wildheart都是绝对的上佳之作<br>08年乐队也将推出新专,敬请期待~</p>
 <p>成员:<br>Teemu Koskela: vocals<br>Pasi Vapola: guitars &amp; backing vocals<br>Jukka Hänninen: keyboards &amp; backing vocals<br>Rami Heikkilä: drums<br>Pasi Kauppinen: bass<br>下载<br>解压密码 <a target="_blank" rel="noopener" href="http://www.soundfury.net/?utm_source=z.arlmy.me">www.soundfury.net</a></p>
@@ -70,4 +88,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
-});</script></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+});</script></div></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><script src="/js/some_other_script.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

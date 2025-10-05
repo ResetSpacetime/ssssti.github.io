@@ -21,23 +21,41 @@ async: true
 },
 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);   
-</script><script class="js-hypothesis-config" type="application/json">{"showHighlights": false}</script><script defer="" src="https://hypothes.is/embed.js"></script><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+</script></xx3zssssshead><!--  script(type="application/json", class="js-hypothesis-config").--><!--    {"showHighlights": false}--><!--  script(defer, src="https://hypothes.is/embed.js")script(defer='defer' src='https://cloud.umami.is/script.js' data-website-id='a1e09a8a-8e14-4d6e-94f8-6f180b05e31d')
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+if theme.baidu_analytics
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?' + '';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+if theme.microsoft_clarity
+  script.
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "");
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><script>function copyUrlSegment() {
-  const metaUrl = document.querySelector('meta[property="og:url"]').content;
-  const segment = metaUrl.split('/').filter(Boolean).pop();
-  const segmentWithMd = segment + '.md';
-  navigator.clipboard.writeText(segmentWithMd)
-    .then(() => alert('已复制: ' + segmentWithMd))
-    .catch(err => console.error('复制失败:', err));
-}</script></xx3zssssshead><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><ul>
+if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+  script(type='text/javascript', src='https://unpkg.com/clipboard/dist/clipboard.min.js', defer)
+  script(type='text/javascript', src='https://unpkg.com/toastr/build/toastr.min.js', defer)
+  link(rel='stylesheet', href='https://unpkg.com/toastr/build/toastr.min.css')
+
+if theme.dark == true
+  include darkmode.pug
+  script.
+    function copyUrlSegment() {
+      const metaUrl = document.querySelector('meta[property="og:url"]').content;
+      const segment = metaUrl.split('/').filter(Boolean).pop();
+      const segmentWithMd = segment + '.md';
+      navigator.clipboard.writeText(segmentWithMd)
+        .then(() => alert('已复制: ' + segmentWithMd))
+        .catch(err => console.error('复制失败:', err));
+    }--><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">素生</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()"></h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><ul>
 <li><p>0901 九月了，真快啊，2024最后四个月。又睡了回笼觉，又是十点多，睡得太晚了，早上一点状态也没有，等着lili吃饭，她也没声音，说昨晚呆爷吐了，她起来擦沙发的单子了，估计没睡好把。不知不觉吃饭加看片子，我拉伸了会儿，lili也不说今天要干啥，要不要锻炼。我拉伸了下，身体还是没有完全恢复，不过也还好，就是膝盖比较不舒服。不知不觉就三点了，然后一起运动了下，又看了段脱口秀节目，吃了一小口吃的，我一直在闹心，还是一样的问题，就，觉得没有时间梳理自己，但又很知道自己非常需要梳理自己，要不就找一天出去走走，强制断一下好了，在家真的什么也做不了。但又没有很合适自己呆着的地方。需要纸笔，需要断联，需要好好想想，清修一下，闭关一下。我好像从来不向外求助的，很难自己开导自己。lili不太能给帮助。好困惑啊啊。看了两个脱口秀段落，坐下来，开始梳理事情了，lili自己也去搞电脑了。做饭把手烫了，太疼了。。。一直冲水，一直泡在水里，没什么心情，但也只能再继续看了几个小时的脱口秀，不知道怎么撒娇，但真的好想撒娇，史妍讲很像单身，真的是这种感觉。刚好农人和阿鱼约了，见面说到都是传阳优选，然后又翻出了两篇文章来看，我也又看了一遍，心态真的是有变化的，我们需要创造一些新的事情，一起玩，一起走，只是一起运动，但还是没有交流。不知道该怎麽交流，我倒是不在意的，但架不住比较，总会与跟聊得来的人出现有趣的交流，就会介意在家不能有一些相近的体验。表达，不是简单的事情。还是自己想得更多吧。总是有各种各样的收入焦虑，悠闲焦虑。说到底就是对悠闲有些恐惧吧。总想要做点什么，行动起来。泡了一个半小时才出来，再抹药，基本到睡时就不太疼了。</p>
 </li>
 <li><p>0902 甚至上厕所的时候都没想起来手烫伤了。基本已经好了，就是还有水泡，一直胀着难受。带了针去公司。早上坐着用了会儿电脑，脑子又清醒过来一些。还是太需要一些安静的时间和空间了，只有早上可以。烫伤一天都在出水，用针扎自己，好久没这么多个烫伤了吧…最近太不吉利，各种不顺似的，心不在焉。清理todo，小野的演出和在看的终身幼儿园，吸引了最近的注意力。到点下班，回家看片，睡前拉伸了下。还挺舒服。</p>
@@ -109,4 +127,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
-});</script></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+});</script></div></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><script src="/js/some_other_script.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

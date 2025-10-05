@@ -21,23 +21,41 @@ async: true
 },
 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);   
-</script><script class="js-hypothesis-config" type="application/json">{"showHighlights": false}</script><script defer="" src="https://hypothes.is/embed.js"></script><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+</script></xx3zssssshead><!--  script(type="application/json", class="js-hypothesis-config").--><!--    {"showHighlights": false}--><!--  script(defer, src="https://hypothes.is/embed.js")script(defer='defer' src='https://cloud.umami.is/script.js' data-website-id='a1e09a8a-8e14-4d6e-94f8-6f180b05e31d')
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+if theme.baidu_analytics
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?' + '';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+if theme.microsoft_clarity
+  script.
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "");
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><script>function copyUrlSegment() {
-  const metaUrl = document.querySelector('meta[property="og:url"]').content;
-  const segment = metaUrl.split('/').filter(Boolean).pop();
-  const segmentWithMd = segment + '.md';
-  navigator.clipboard.writeText(segmentWithMd)
-    .then(() => alert('已复制: ' + segmentWithMd))
-    .catch(err => console.error('复制失败:', err));
-}</script></xx3zssssshead><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">北京四日，流水</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">北京四日，流水</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><code>后两日</code></p>
+if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+  script(type='text/javascript', src='https://unpkg.com/clipboard/dist/clipboard.min.js', defer)
+  script(type='text/javascript', src='https://unpkg.com/toastr/build/toastr.min.js', defer)
+  link(rel='stylesheet', href='https://unpkg.com/toastr/build/toastr.min.css')
+
+if theme.dark == true
+  include darkmode.pug
+  script.
+    function copyUrlSegment() {
+      const metaUrl = document.querySelector('meta[property="og:url"]').content;
+      const segment = metaUrl.split('/').filter(Boolean).pop();
+      const segmentWithMd = segment + '.md';
+      navigator.clipboard.writeText(segmentWithMd)
+        .then(() => alert('已复制: ' + segmentWithMd))
+        .catch(err => console.error('复制失败:', err));
+    }--><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">北京四日，流水</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">北京四日，流水</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p><code>后两日</code></p>
 <p>有人说前一天的脑浊怎样怎样的high，旅行团几个家伙多么多么的可爱，曹方怎么怎么把王若琳比到裙下，重塑怎样怎样的完美演绎，以及最后大伙一致对瘦人的留恋，但是由于前一天的斩获也不小，所以也渐渐刻意遗忘了。不过现场巨重塑确实是一痛。</p>
 <p>3号没有带包。<br>3号从基诺开始，隐藏在《再见维多利亚》背后的三个成员第一次现身，一激动跟着去搞了张签售，后来被遗失<br>赌鬼没认真看，因为去见大胡子了~好震精好有趣好可爱的“青年视觉”和占山头。然后开溜去看大棒，女主音超喜欢—在台上边跳边唱，很投入的声音和很修长的腿，笑着舞蹈着。演完她在一棵树旁抽烟打电话，我上去拍了一张。<br>怪力和后鲨几乎一样，情绪化的声音和随性的渲染，台下一片尖叫，不知道是被当成了神还是替代品，但尖叫是万分真实的。<br>万晓利，躺在草地上闭上眼睛听，然后看见阳光，热泪盈眶，一个人忙上忙下又喝水又发短信，一个悠然的民谣诗人带着人的思绪四处游走，一点不显得匆忙。<br>之后我走到前排等待声玩，期待可以唱那首我和她的情歌，欧波一如既往不变的表情，李哲的绿色也相当拉风，四位就位的时候我便开始喷薄多余的能量了，我照了很多张，边照边掉眼泪。秘密的爱，前奏响起，浑身都在不自觉地发抖，扯开嗓子跟唱着。<br>爽子拖着沙哑的声音说“爱怎么着怎么着了”。外国妞们跳得分外开心。<br>老狼，侧面远处的舞台我远远看着，唱罢撤场很多人追着拍照，我心情极好地瞅混在其中的黑刀，再转过神的时候欧波便走进了视线，发狂了没整理头发便去要求合影。<br>声碎，deerhoof，小娟。<br>小娟漫长的调音和丢失物件的往复中，耽误了最后乘坐地铁的时间，目送地铁一去不返地走后，便只剩打车一个选择。<br>见到一个一中毕业的学姐，比我大一届，在草莓凑齐四届一中毕业生，这真有趣</p>
 <p>4日见JADY<del>见一个六年未见的小学同学</del>去奥体中心~去清华北大<br>跟JADY在传媒大学和二外转悠，聊一个个学校有关的故事，看两只从容不迫的狗，到她家里看了好几段视频躲开了最热的时段，然后去奥体中心花了半个小时逛完，其实我的兴趣主要就是摸摸那钢筋水泥的感觉，在那还见一水立方的服务员跟游客对骂，犯不着的没劲事儿。<br>我活活在楼下等了20分钟才见到这个没心没肺在上面玩dota的小学同学，横着长了点，出了些胡子，洒脱了很多，却告诉我惧酒….<br>清华北大累断我的腿。</p>
@@ -86,4 +104,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
-});</script></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+});</script></div></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><script src="/js/some_other_script.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>

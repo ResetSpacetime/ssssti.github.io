@@ -21,23 +21,41 @@ async: true
 },
 h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 })(document);   
-</script><script class="js-hypothesis-config" type="application/json">{"showHighlights": false}</script><script defer="" src="https://hypothes.is/embed.js"></script><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+</script></xx3zssssshead><!--  script(type="application/json", class="js-hypothesis-config").--><!--    {"showHighlights": false}--><!--  script(defer, src="https://hypothes.is/embed.js")script(defer='defer' src='https://cloud.umami.is/script.js' data-website-id='a1e09a8a-8e14-4d6e-94f8-6f180b05e31d')
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+if theme.baidu_analytics
+  script.
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?' + '';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      })();
+if theme.microsoft_clarity
+  script.
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "");
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><script>function copyUrlSegment() {
-  const metaUrl = document.querySelector('meta[property="og:url"]').content;
-  const segment = metaUrl.split('/').filter(Boolean).pop();
-  const segmentWithMd = segment + '.md';
-  navigator.clipboard.writeText(segmentWithMd)
-    .then(() => alert('已复制: ' + segmentWithMd))
-    .catch(err => console.error('复制失败:', err));
-}</script></xx3zssssshead><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">来自班长的点名</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">来自班长的点名</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>1 .我的大名：绝缘<br>2 .我的生日：11.7<br>3 .誰傳給你的：大院杂<br>4 .生日想得到什麽禮物：音乐节门票（又几天要几天）<br>5 .近期压力大的事：考试-.-…..<br>6.和谁出去最幸福：小妖精<br>7 .如果你的兩個好友吵架了：接着掐<br>8 .跟情人最想去哪：muse的演唱会….-3-<br>9 .最想跟誰過聖誕節：全家+爱人<br>12 .最近喜歡的一首歌（男歌手）：你笑着流出了泪 - 尹吾<br>13 .最喜歡什麽顔色：蓝色<br>14 .上厠所會不會先沖水：拉完了就冲呗<br>15 .最想大聲說什麽：草泥马什么时候能不考试了<br>16 .現在很迷什麽：dota……ps，班长，浪客行是啥子？<br>17 .睡相：右侧身双手放在枕边右手在下左手在上疯狂淌哈喇子<br>18 .今天天氣:据说有雷阵雨<br>19 .你若中樂透最想做什麽：那是啥?<br>20 .引起失眠的原因：不晓得啥是失眠<br>21 .你睡覺有流口水的情況嗎：经常<br>22 .近期開心的事：看演出看德中同行，哇哈哈<br>23 .你经常通宵不睡觉？：会熄灯啊，唉<br>24.现在心情如何：一般般啦</p>
+if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+  script(type='text/javascript', src='https://unpkg.com/clipboard/dist/clipboard.min.js', defer)
+  script(type='text/javascript', src='https://unpkg.com/toastr/build/toastr.min.js', defer)
+  link(rel='stylesheet', href='https://unpkg.com/toastr/build/toastr.min.css')
+
+if theme.dark == true
+  include darkmode.pug
+  script.
+    function copyUrlSegment() {
+      const metaUrl = document.querySelector('meta[property="og:url"]').content;
+      const segment = metaUrl.split('/').filter(Boolean).pop();
+      const segmentWithMd = segment + '.md';
+      navigator.clipboard.writeText(segmentWithMd)
+        .then(() => alert('已复制: ' + segmentWithMd))
+        .catch(err => console.error('复制失败:', err));
+    }--><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">来自班长的点名</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">来自班长的点名</h1><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><div class="post-content"><p>1 .我的大名：绝缘<br>2 .我的生日：11.7<br>3 .誰傳給你的：大院杂<br>4 .生日想得到什麽禮物：音乐节门票（又几天要几天）<br>5 .近期压力大的事：考试-.-…..<br>6.和谁出去最幸福：小妖精<br>7 .如果你的兩個好友吵架了：接着掐<br>8 .跟情人最想去哪：muse的演唱会….-3-<br>9 .最想跟誰過聖誕節：全家+爱人<br>12 .最近喜歡的一首歌（男歌手）：你笑着流出了泪 - 尹吾<br>13 .最喜歡什麽顔色：蓝色<br>14 .上厠所會不會先沖水：拉完了就冲呗<br>15 .最想大聲說什麽：草泥马什么时候能不考试了<br>16 .現在很迷什麽：dota……ps，班长，浪客行是啥子？<br>17 .睡相：右侧身双手放在枕边右手在下左手在上疯狂淌哈喇子<br>18 .今天天氣:据说有雷阵雨<br>19 .你若中樂透最想做什麽：那是啥?<br>20 .引起失眠的原因：不晓得啥是失眠<br>21 .你睡覺有流口水的情況嗎：经常<br>22 .近期開心的事：看演出看德中同行，哇哈哈<br>23 .你经常通宵不睡觉？：会熄灯啊，唉<br>24.现在心情如何：一般般啦</p>
 <p>中间N题不明白 直接删除了…..</p>
 <p>1 。是誰傳給你這份問卷的：院杂<br>2 。你們認識多久呢：东北班有多久了?…..同问<br>3 。你覺得ta 對你來説重要嗎 ：啊哈哈<del>她博客就俺一开心果</del><br>4 。你與ta 的關係是：东北班儿班长和物代的关系<br>5 。請問ta 的興趣是：画画 PSP??…<br>6 。你覺得ta 的個性：幽默<br>7 。ta 在你心目中是幾分：9分<del>穿高跟鞋来领最后一分</del><br>8 。最想对ta 说的一句话：幸福永远</p>
 <p>睡覺前第一件事：关床头的灯<br>起床前第一件事：把手机和钥匙拿出来放在从床下可以摸到的地方<br>你的偶像：一堆….现在时梁漱溟和老子<br>喜歡的季節：春<br>打工次數：4<br>你想去的國家：冰岛<br>你討厭什麽樣的個性：zhuangbility<br>你常笑嗎：yeah~<br>出去玩時喜歡一個人去嗎：不喜欢，有老婆干吗使得<br>假日時你都睡到幾點：8点到11点不等<br>你很自戀嘛：最近有点…<br>你有穿耳洞吗:想<br>現在幸福嗎：yeah~<br>房間裏最重要的東西是什麽：有我家小雪莲照片的相框~<br>最常夢到什麽：这个不好说，追杀，惊悚，地球毁灭，记忆游走，还扮电锯杀人狂<br>男人精神出軌要不要原諒他：这题没我事儿<br>你認爲人生的意義是什麽：各种爱+一种理想+下一代<br>最近想起我过没：天天见你<br>異地戀的態度是：体验ing…<br>对自己的性格满意？:还成，耐心少了点<br>有机会会去其他国家待一段时间吗？：当然想<br>推荐一部电影吧? ：吃蛋糕的人</p>
@@ -71,4 +89,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
-});</script></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+});</script></div></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><script src="/js/some_other_script.js"></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
