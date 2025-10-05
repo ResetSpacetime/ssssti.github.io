@@ -1,3 +1,4 @@
+https://z.arlmy.me/posts/hexo/Hexo_Hypothesis/
 https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251004/
 https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_01/
 https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_02/
@@ -7,4 +8,3 @@ https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_06/
 https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_05/
 https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_08/
 https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_07/
-https://z.arlmy.me/posts/BBBPandINSW/INSW/INSW_10/
