@@ -23746,6 +23746,24 @@
 <td>《我读荀子》</td>
 <td>多抓鱼</td>
 </tr>
+<tr>
+<td>1005</td>
+<td>赵又春</td>
+<td>《我读孙子》</td>
+<td>多抓鱼</td>
+</tr>
+<tr>
+<td>1005</td>
+<td>赵又春</td>
+<td>《我读庄子》</td>
+<td>多抓鱼</td>
+</tr>
+<tr>
+<td>1005</td>
+<td>苏轼</td>
+<td>《苏轼传》</td>
+<td>多抓鱼</td>
+</tr>
 </tbody></table>
 <hr>
 <p>CHANGELOG</p>
@@ -23756,6 +23774,7 @@
 <li>20250721 Arlmy 更新</li>
 <li>20250805 Arlmy 更新</li>
 <li>20250817 Arlmy 更新</li>
+<li>20251005 Arlmy 更新</li>
 </ul>
 ]]></content>
       <tags>
