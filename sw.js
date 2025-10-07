@@ -1,62 +1,85 @@
 // sw.js
 
-// 1. 定义缓存的名称和需要缓存的文件列表
-const CACHE_NAME = 'arlmy-cache-v1'; // 每次更新 sw.js 时，建议更改版本号来触发更新
-const urlsToCache = [
-  '/', // 必须缓存 start_url，对于您的网站就是根目录
-  '/offline.html', // 建议创建一个专门的离线提示页面
-  // 在下面添加您网站的核心 CSS, JS, 图片等资源
-  // 例如:
-  // '/css/style.css',
-  // '/js/main.js',
-  // '/pics/logo.png'
+// 1. Define Cache Names and Version
+// IMPORTANT: Change this version string every time you update any of the app shell files.
+// A good practice is to use a date-based version like 'v-2025-10-06-01'.
+const VERSION = 'v-2025-10-06-01';
+const STATIC_CACHE_NAME = `arlmy-static-${VERSION}`;
+const DYNAMIC_CACHE_NAME = `arlmy-dynamic-${VERSION}`;
+
+// 2. Define the "App Shell" - the core files your site needs to run.
+// These are cached permanently during installation.
+const APP_SHELL_URLS = [
+  '/', // The root of your site
+  '/css/style.css?v=1.0.0',
+  '/img/avatar.webp',
+  '/favicon.ico',
+  // Add other critical CSS/JS files here. From your report, these are important:
+  'https://unpkg.com/purecss@2.0.6/build/pure-min.css',
+  'https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css',
+  'https://unpkg.com/normalize.css@8.0.1/normalize.css',
+  'https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
 ];
 
-// 2. 安装 Service Worker 并缓存文件
+// 3. Install Service Worker and Cache the App Shell
 self.addEventListener('install', event => {
-  // event.waitUntil() 会等待内部的代码执行完毕
+  console.log('[SW] Install');
   event.waitUntil(
-    caches.open(CACHE_NAME)
+    caches.open(STATIC_CACHE_NAME)
       .then(cache => {
-        console.log('Opened cache and caching app shell');
-        return cache.addAll(urlsToCache);
+        console.log('[SW] Caching App Shell...');
+        // Make sure all URLs are correct, otherwise addAll will fail.
+        return cache.addAll(APP_SHELL_URLS);
+      })
+      .catch(error => {
+        console.error('[SW] Failed to cache App Shell:', error);
       })
   );
 });
 
-// 3. 拦截网络请求并从缓存中返回响应
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    // caches.match() 尝试在缓存中寻找匹配的请求
-    caches.match(event.request)
-      .then(response => {
-        // 如果在缓存中找到了匹配的响应，则直接返回它
-        if (response) {
-          return response;
-        }
-
-        // 如果缓存中没有，则正常发起网络请求
-        return fetch(event.request).catch(() => {
-          // 如果网络请求也失败了（比如真的离线了），
-          // 就返回一个预先缓存好的离线提示页面
-          return caches.match('/offline.html');
-        });
-      })
-  );
-});
-
-// (可选) 4. 清理旧缓存
+// 4. Activate Service Worker and Clean Up Old Caches
 self.addEventListener('activate', event => {
-  const cacheWhitelist = [CACHE_NAME];
+  console.log('[SW] Activate');
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
+    caches.keys().then(keyList => {
+      return Promise.all(keyList.map(key => {
+        // Delete all caches that are not the current static or dynamic cache
+        if (key !== STATIC_CACHE_NAME && key !== DYNAMIC_CACHE_NAME) {
+          console.log('[SW] Deleting old cache:', key);
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+  return self.clients.claim();
+});
+
+// 5. Intercept Network Requests
+self.addEventListener('fetch', event => {
+  // Use a "Cache First" strategy for the app shell files
+  const urlPath = new URL(event.request.url).pathname;
+  if (APP_SHELL_URLS.some(path => urlPath.endsWith(path.split('?')[0]))) {
+      event.respondWith(caches.match(event.request));
+      return;
+  }
+
+  // Use a "Stale-While-Revalidate" strategy for everything else (posts, images, etc.)
+  event.respondWith(
+    caches.open(DYNAMIC_CACHE_NAME).then(cache => {
+      return cache.match(event.request).then(cachedResponse => {
+        // Fetch from network in the background to update the cache for next time
+        const fetchPromise = fetch(event.request).then(networkResponse => {
+          // If we get a valid response, clone it and put it in the dynamic cache
+          if (networkResponse.ok) {
+            cache.put(event.request, networkResponse.clone());
           }
-        })
-      );
+          return networkResponse;
+        });
+
+        // Return the cached response immediately if available, otherwise wait for the network.
+        // If both fail, the fetch will naturally fail and the browser will show its offline page.
+        return cachedResponse || fetchPromise;
+      });
     })
   );
 });
