@@ -3,7 +3,7 @@
 // 1. 定义缓存名称和版本
 // 重要提示：每次更新此文件中的任何核心文件时，请务必更改此版本字符串。
 // 推荐使用日期格式，例如 'v-2025-10-11-01'。
-const VERSION = 'v-2025-10-11-01'; // <-- 部署前请更新此版本号！
+const VERSION = 'v-2025-10-12-01'; // <-- 部署前请更新此版本号！
 const STATIC_CACHE_NAME = `arlmy-static-${VERSION}`;
 const DYNAMIC_CACHE_NAME = `arlmy-dynamic-${VERSION}`;
 
