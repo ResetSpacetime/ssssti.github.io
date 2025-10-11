@@ -53,49 +53,48 @@ self.addEventListener('activate', event => {
   return self.clients.claim();
 });
 
-// 5. 拦截网络请求 (修正整合版)
+// 5. 拦截网络请求 (最终健壮版)
 self.addEventListener('fetch', event => {
   const requestUrl = new URL(event.request.url);
 
-  // 忽略非同源请求 (例如分析脚本) 和非 GET 请求，因为我们无法缓存它们。
   if (event.request.method !== 'GET' || requestUrl.origin !== self.location.origin) {
     return;
   }
   
-  // 策略 1: 对 App Shell 文件采用 "缓存优先，网络备用" 策略
-  // 注意：这里的匹配方式需要 APP_SHELL_URLS 里的路径是精确的相对路径
-  if (APP_SHELL_URLS.includes(requestUrl.pathname)) {
+  if (APP_SHE_URLS.includes(requestUrl.pathname)) {
     event.respondWith(
       caches.match(event.request).then(cachedResponse => {
-        // 如果在缓存中找到，则从缓存返回；否则，从网络获取 (这是关键修复！)
         return cachedResponse || fetch(event.request);
       })
     );
-    return; // 对 App Shell 文件处理到此为止
+    return;
   }
 
-  // 策略 2: 对其他所有资源采用 "边用边更新" (Stale-While-Revalidate) 策略
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
-      // 在后台从网络获取最新版本以更新缓存
       const fetchPromise = fetch(event.request).then(networkResponse => {
-        // 打开动态缓存来存储新的响应
+        // --- 关键修复在这里 ---
+        // 1. 检查网络响应是否有效
+        if (!networkResponse || !networkResponse.ok) {
+          return networkResponse; // 如果无效，直接返回，不进行缓存
+        }
+
+        // 2. 立刻克隆响应体
+        const responseToCache = networkResponse.clone();
+
+        // 3. 将克隆的响应放入缓存
         caches.open(DYNAMIC_CACHE_NAME).then(cache => {
-          // 检查响应是否有效，然后存入缓存
-          if (networkResponse.ok) {
-            cache.put(event.request, networkResponse.clone());
-          }
+          cache.put(event.request, responseToCache);
         });
-        return networkResponse; // 返回网络响应
+
+        // 4. 将原始的响应返回给浏览器
+        return networkResponse;
+        // --- 修复结束 ---
       }).catch(error => {
-        // 添加 .catch 来优雅地处理网络错误
         console.error('[SW] Fetch failed:', error);
-        // 这里可以让浏览器自己处理失败的请求
         throw error;
       });
 
-      // 如果缓存中有内容，立即返回缓存版本，同时让网络请求在后台进行；
-      // 如果缓存中没有，则等待网络请求的结果。
       return cachedResponse || fetchPromise;
     })
   );
