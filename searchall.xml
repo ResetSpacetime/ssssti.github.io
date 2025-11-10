@@ -87174,7 +87174,7 @@
 // 1. 定义缓存名称和版本
 // 重要提示：每次更新此文件中的任何核心文件时，请务必更改此版本字符串。
 // 推荐使用日期格式，例如 'v-2025-10-11-01'。
-const VERSION = 'v-2025-10-12-07'; // <-- 部署前请更新此版本号！
+const VERSION = 'v-2025-11-10-01'; // <-- 部署前请更新此版本号！
 const STATIC_CACHE_NAME = `arlmy-static-${VERSION}`;
 const DYNAMIC_CACHE_NAME = `arlmy-dynamic-${VERSION}`;
 
@@ -87224,52 +87224,91 @@ self.addEventListener('activate', event => {
   return self.clients.claim();
 });
 
-// 5. 拦截网络请求 (最终健壮版)
+// 5. 拦截网络请求 (推荐的策略组合)
 self.addEventListener('fetch', event => {
   const requestUrl = new URL(event.request.url);
 
+  // 忽略非 GET 或跨域请求
   if (event.request.method !== 'GET' || requestUrl.origin !== self.location.origin) {
     return;
   }
-  
+
+  // 策略 1: 导航请求 (HTML 页面) - 使用 "网络优先"
+  // 这将立即解决您首页不更新的问题
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then(networkResponse => {
+          // 拿到新数据，克隆并存入动态缓存
+          const responseToCache = networkResponse.clone();
+          caches.open(DYNAMIC_CACHE_NAME).then(cache => {
+            cache.put(event.request, responseToCache);
+          });
+          // 返回网络响应
+          return networkResponse;
+        })
+        .catch(() => {
+          // 网络失败 (离线), 尝试从缓存中读取
+          // 这保证了离线可用性
+          console.log('[SW] Network failed, matching cache for:', event.request.url);
+          return caches.match(event.request).then(cachedResponse => {
+            // 如果缓存中也没有 (例如离线状态下首次访问一个新页面), 
+            // 您可以在这里返回一个统一的离线页面, 比如 caches.match('/offline.html')
+            return cachedResponse;
+          });
+        })
+    );
+    return;
+  }
+
+  // 策略 2: APP_SHELL 资源 (CSS, 字体等) - "缓存优先"
+  // 这些文件已在 APP_SHELL_URLS 列表中，我们相信它们在版本更新前是不变的
   if (APP_SHELL_URLS.includes(requestUrl.pathname)) {
     event.respondWith(
       caches.match(event.request).then(cachedResponse => {
+        // 缓存有就返回，没有就去网络拿 (理论上 install 阶段都缓存了)
         return cachedResponse || fetch(event.request);
       })
     );
     return;
   }
 
+  // 策略 3: 其他所有请求 (图片, API等) - "过期时重新验证 (Stale-While-Revalidate)"
+  // 速度和更新的完美平衡：立即返回缓存，后台默默更新
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
+      
+      // 1. 定义网络请求
       const fetchPromise = fetch(event.request).then(networkResponse => {
-        // --- 关键修复在这里 ---
-        // 1. 检查网络响应是否有效
+        // 检查响应是否有效
         if (!networkResponse || !networkResponse.ok) {
-          return networkResponse; // 如果无效，直接返回，不进行缓存
+          return networkResponse;
         }
 
-        // 2. 立刻克隆响应体
+        // 克隆响应并存入动态缓存
         const responseToCache = networkResponse.clone();
-
-        // 3. 将克隆的响应放入缓存
         caches.open(DYNAMIC_CACHE_NAME).then(cache => {
           cache.put(event.request, responseToCache);
         });
 
-        // 4. 将原始的响应返回给浏览器
         return networkResponse;
-        // --- 修复结束 ---
       }).catch(error => {
-        console.error('[SW] Fetch failed:', error);
-        throw error;
+        console.error('[SW] SWR Fetch failed:', error);
+        // 网络失败时, 我们不抛出错误, 因为可能已经返回了 cachedResponse
       });
 
-      return cachedResponse || fetchPromise;
+      // 2. 立即返回缓存 (如果存在)
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+      
+      // 3. 如果缓存不存在 (首次加载), 则等待网络响应
+      return fetchPromise;
     })
   );
-});]]></content>
+});
+
+]]></content>
   </entry>
   <entry>
     <title>NOW archive</title>
