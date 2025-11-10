@@ -9,7 +9,7 @@
     <atom:link href="https://z.arlmy.me/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>误读人生，化人生活</description>
-    <pubDate>Mon, 10 Nov 2025 08:08:58 GMT</pubDate>
+    <pubDate>Mon, 10 Nov 2025 08:41:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -29,6 +29,8 @@
       
       
       <category domain="https://z.arlmy.me/tags/til/">til</category>
+      
+      <category domain="https://z.arlmy.me/tags/recently/">recently</category>
       
       
       <comments>https://z.arlmy.me/posts/TILs/thoughts/20251025_Recently/#disqus_thread</comments>
