@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/pretty-feed-v3rss.xsl"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>素生</title>
     <link>https://z.arlmy.me/</link>
@@ -17,6 +19,8 @@
       <link>https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2025/</link>
       <guid>https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2025/</guid>
       <pubDate>Sun, 23 Nov 2025 11:20:55 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「2025 观影短评备份。」</description>
       
@@ -39,6 +43,8 @@
       <guid>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251122/</guid>
       <pubDate>Sun, 23 Nov 2025 11:00:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「喜迎太阳。」</description>
       
       
@@ -59,6 +65,8 @@
       <link>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251115/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251115/</guid>
       <pubDate>Sun, 16 Nov 2025 02:36:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「龙虎衔璧之绶。」</description>
       
@@ -81,6 +89,8 @@
       <guid>https://z.arlmy.me/posts/Note/Note_PasternakAndTsvetayevaAndRilke_JiaoZhiDeHuoYan/</guid>
       <pubDate>Sat, 15 Nov 2025 14:31:46 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「戛然而止。」</description>
       
       
@@ -101,6 +111,8 @@
       <link>https://z.arlmy.me/posts/Note/Note_StephenJayGould_IHaveLanded/</link>
       <guid>https://z.arlmy.me/posts/Note/Note_StephenJayGould_IHaveLanded/</guid>
       <pubDate>Sat, 15 Nov 2025 12:43:46 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「野花芳草自丛丛。」</description>
       
@@ -123,6 +135,8 @@
       <guid>https://z.arlmy.me/posts/Note/Note_StephenJayGould_ThePandasThumb/</guid>
       <pubDate>Sat, 15 Nov 2025 12:13:46 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「演化是个体的选择。」</description>
       
       
@@ -143,6 +157,8 @@
       <link>https://z.arlmy.me/posts/TILs/thoughts/20251025_Recently/</link>
       <guid>https://z.arlmy.me/posts/TILs/thoughts/20251025_Recently/</guid>
       <pubDate>Mon, 10 Nov 2025 08:06:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「被生活震撼。」</description>
       
@@ -169,6 +185,8 @@
       <guid>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251108/</guid>
       <pubDate>Mon, 10 Nov 2025 08:03:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「38。」</description>
       
       
@@ -189,6 +207,8 @@
       <link>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_131/</link>
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_131/</guid>
       <pubDate>Tue, 04 Nov 2025 11:06:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「柳荫记。」</description>
       
@@ -211,6 +231,8 @@
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_130/</guid>
       <pubDate>Mon, 03 Nov 2025 10:24:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「手指、迷路、无限游戏。」</description>
       
       
@@ -231,6 +253,8 @@
       <link>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_129/</link>
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_129/</guid>
       <pubDate>Mon, 03 Nov 2025 10:03:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「代、蠛蚊、模拟、薇依。」</description>
       
@@ -253,6 +277,8 @@
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_128/</guid>
       <pubDate>Mon, 03 Nov 2025 09:23:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「如同少女。」</description>
       
       
@@ -273,6 +299,8 @@
       <link>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_127/</link>
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_127/</guid>
       <pubDate>Sun, 02 Nov 2025 15:21:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「陋习早改。」</description>
       
@@ -295,6 +323,8 @@
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_126/</guid>
       <pubDate>Sun, 02 Nov 2025 14:58:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「习惯的枷锁。」</description>
       
       
@@ -315,6 +345,8 @@
       <link>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_125/</link>
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_125/</guid>
       <pubDate>Sun, 02 Nov 2025 14:34:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「气口。」</description>
       
@@ -337,6 +369,8 @@
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_124/</guid>
       <pubDate>Sun, 02 Nov 2025 14:26:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「别的解法。」</description>
       
       
@@ -357,6 +391,8 @@
       <link>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_123/</link>
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_123/</guid>
       <pubDate>Sun, 02 Nov 2025 14:07:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「人们是用其他方式记住你的。」</description>
       
@@ -379,6 +415,8 @@
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_122/</guid>
       <pubDate>Sun, 02 Nov 2025 11:41:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「里巷。」</description>
       
       
@@ -400,6 +438,8 @@
       <guid>https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_121/</guid>
       <pubDate>Sun, 02 Nov 2025 09:09:27 GMT</pubDate>
       
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
       <description>「鲁豫话文涛。」</description>
       
       
@@ -420,6 +460,8 @@
       <link>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251101/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251101/</guid>
       <pubDate>Sun, 02 Nov 2025 01:25:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
       
       <description>「不要让老登碰自己的作品。」</description>
       
