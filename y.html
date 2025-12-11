@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff">
+    <title>黄页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自用黄页">
+    <link rel="icon" href="/favicon.ico">
+<style>
+
+        /* 全局基础样式 */
+        body {
+            color: #454545;
+            font-size: 16px;
+            margin: 2em auto;
+            max-width: 800px;
+            padding: 1em;
+            line-height: 1.4;
+            hyphens: auto;
+        }
+
+        /* --- 高对比度模式样式 --- */
+        html.contrast body { color: #050505; }
+        html.contrast blockquote { color: #11151a; }
+        html.contrast blockquote:before { color: #262626; }
+        html.contrast a { color: #03f; }
+        html.contrast a:visited { color: #7d013e; }
+        html.contrast span.wr { color: #800; }
+        html.contrast span.mfw { color: #4d0000; }
+
+        /* --- 浅色模式适配 --- */
+        @media screen and (prefers-color-scheme:light) {
+            html.inverted { background-color: #000; }
+            html.inverted body { color: #d9d9d9; }
+            html.inverted #contrast, html.inverted #invmode { color: #fff; background-color: #000; }
+            html.inverted blockquote { color: #d3c9be; }
+            html.inverted blockquote:before { color: #b8b8b8; }
+            html.inverted a { color: #00a2e7; }
+            html.inverted a:visited { color: #ca1a70; }
+            html.inverted span.wr { color: #d24637; }
+            html.inverted span.mfw { color: #b00000; }
+            
+            /* 反转 + 高对比度 */
+            html.inverted.contrast { background-color: #000; }
+            html.inverted.contrast body { color: #fff; }
+            html.inverted.contrast #contrast, html.inverted.contrast #invmode { color: #fff; background-color: #000; }
+            html.inverted.contrast blockquote { color: #f8f6f5; }
+            html.inverted.contrast blockquote:before { color: #e5e5e5; }
+            html.inverted.contrast a { color: #44c7ff; }
+            html.inverted.contrast a:visited { color: #e9579e; }
+            html.inverted.contrast span.wr { color: #db695d; }
+            html.inverted.contrast span.mfw { color: #ff0d0d; }
+        }
+
+        /* --- 深色模式适配 --- */
+        @media (prefers-color-scheme:dark) {
+            html:not(.inverted) { background-color: #000; }
+            html:not(.inverted) body { color: #d9d9d9; }
+            html:not(.inverted) #contrast, html:not(.inverted) #invmode { color: #fff; background-color: #000; }
+            html:not(.inverted) blockquote { color: #d3c9be; }
+            html:not(.inverted) blockquote:before { color: #b8b8b8; }
+            html:not(.inverted) a { color: #00a2e7; }
+            html:not(.inverted) a:visited { color: #ca1a70; }
+            html:not(.inverted) span.wr { color: #d24637; }
+            html:not(.inverted) span.mfw { color: #b00000; }
+            
+            html:not(.inverted).contrast { background-color: #000; }
+            html:not(.inverted).contrast body { color: #fff; }
+            html:not(.inverted).contrast #contrast, html:not(.inverted).contrast #invmode { color: #fff; background-color: #000; }
+            html:not(.inverted).contrast blockquote { color: #f8f6f5; }
+            html:not(.inverted).contrast blockquote:before { color: #e5e5e5; }
+            html:not(.inverted).contrast a { color: #44c7ff; }
+            html:not(.inverted).contrast a:visited { color: #e9579e; }
+            html:not(.inverted).contrast span.wr { color: #db695d; }
+            html:not(.inverted).contrast span.mfw { color: #ff0d0d; }
+            
+            html.inverted html { background-color: #fefefe; }
+        }
+
+        /* 链接与排版细节 */
+        a { color: #07a; }
+        a:visited { color: #941352; }
+        
+        .noselect {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        span.citneed { vertical-align: top; font-size: .7em; padding-left: .3em; }
+        small { font-size: .4em; }
+        p.st { margin-top: -1em; }
+
+        /* 图片浮动布局 */
+        div.fancyPositioning div.picture-left { float: left; width: 40%; overflow: hidden; margin-right: 1em; }
+        div.fancyPositioning div.picture-left img { width: 100%; }
+        div.fancyPositioning div.picture-left figure { margin: 10px; }
+        div.fancyPositioning div.picture-left figure figcaption { font-size: .7em; }
+        div.fancyPositioning div.tleft { float: left; width: 55%; }
+        div.fancyPositioning div.tleft p:first-child { margin-top: 0; }
+        div.fancyPositioning:after { display: block; content: ""; clear: both; }
+
+        ul li img { height: 1em; }
+
+        /* 引用块设计 */
+        blockquote { color: #456; margin-left: 0; margin-top: 2em; margin-bottom: 2em; }
+        blockquote span { float: left; margin-left: 1rem; padding-top: 1rem; }
+        blockquote author { display: block; clear: both; font-size: .6em; margin-left: 2.4rem; font-style: oblique; }
+        blockquote author:before { content: "- "; margin-right: 1em; }
+        blockquote:before { font-family: Times New Roman, Times, Arial; color: #666; content: open-quote; font-size: 2.2em; font-weight: 600; float: left; margin-top: 0; margin-right: .2rem; width: 1.2rem; }
+        blockquote:after { content: ""; display: block; clear: both; }
+
+        /* 移动端排版重置 */
+        @media screen and (max-width:500px) {
+            body { text-align: left; }
+            div.fancyPositioning div.picture-left, div.fancyPositioning div.tleft { float: none; width: inherit; }
+            blockquote span { width: 80%; }
+            blockquote author { padding-top: 1em; width: 80%; margin-left: 15%; }
+            blockquote author:before { content: ""; margin-right: inherit; }
+        }
+
+        /* 装饰性 Span 和 按钮 */
+        span.visited { color: #941352; }
+        span.visited-maroon { color: #85144b; }
+        span.wr { color: #c0392b; font-weight: 600; }
+        
+        /* 动态生成的按钮样式 */
+        button.cont-inv, span.wr { text-decoration: underline; }
+        button.cont-inv {
+            cursor: pointer;
+            border-radius: 2px;
+            position: fixed;
+            right: 10px;
+            font-size: .8em;
+            border: 0;
+            padding: 2px 5px;
+            z-index: 999;
+        }
+        
+        #contrast { color: #000; top: 10px; }
+        
+        #contrast, #invmode {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        #invmode {
+            color: #fff;
+            background-color: #000;
+            position: fixed;
+            top: 34px;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width:1080px) {
+            #contrast, #invmode { position: absolute; }
+        }
+
+        span.sb { color: #00e; }
+        span.sb, span.sv { cursor: not-allowed; }
+        span.sv { color: #551a8b; }
+        
+        /* 颜色块展示 */
+        span.foufoufou { color: #444; font-weight: 700; }
+        span.foufoufou:before { content: ""; display: inline-block; width: 1em; height: 1em; margin-left: .2em; margin-right: .2em; background-color: #444; }
+        
+        span.foufivfoufivfoufiv { color: #454545; font-weight: 700; }
+        span.foufivfoufivfoufiv:before { content: ""; display: inline-block; width: 1em; height: 1em; margin-left: .2em; margin-right: .2em; background-color: #454545; }
+        
+        span.mfw { color: #730000; }
+        
+        /* Kopimi Logo */
+        a.kopimi, a.kopimi img.kopimi { display: block; margin-left: auto; margin-right: auto; }
+        a.kopimi img.kopimi { height: 2em; }
+        p.fakepre { font-family: monospace; font-size: .9em; }
+    </style>
+</head>
+<body>
+
+<h2>黄页</h2>
+<ul>
+    <li><a href="https://app.radiooooo.com/">Radiooooo</a>, <a href="https://www.pandora.com/">pandora</a>
+    </li>
+    <li><a href="https://www.shidianguji.com/zh/book/SK3267/">全蜀艺文志</a>, <a href="http://bashushu.com/">巴蜀书</a></li>
+</ul>
+
+<p>from <a href="https://thebestmotherfucking.website/">The best motherfucking website</a> and <a href="https://github.com/lyoshenka/awesome-motherfucking-website/">awesome-motherfucking-website</a>, more: <a href="https://lmnt.me/blog/how-to-make-a-damn-website.html">1</a>, <a href="https://motherfuckingwebsite.com/">2</a></p>
+<p>20251212</p>
+
+<script>
+        (function() {
+            "use strict";
+
+            // 获取需要变色的元素 (id="rbw" 的 span)
+            var rainbowElement = document.getElementById("rbw");
+            var hue = 0;
+            
+            // 检测是否为触摸设备，决定监听 click 还是 touchend 事件
+            var clickEvent = (document.getElementsByTagName("html")[0], "ontouchstart" in window ? "touchend" : "click");
+            
+            // 操作类型：添加类名 或 移除类名
+            var actionMethods = ["remove", "add"];
+            
+            // 按钮文本配置：[增加对比度, 移除额外对比度, 反色模式, 正常模式]
+            // 已汉化
+            var buttonTexts = ["Add more contrast", "Remove additional contrast", "Inverted mode", "Normal mode"];
+
+            /**
+             * 功能：绑定按钮点击事件，切换 HTML 标签的 class，并更新按钮文字
+             * @param {string} btnId - 按钮的 ID
+             * @param {Array} texts - 切换时的文字数组 [默认文字, 激活后文字]
+             * @param {string} className - 要切换的 CSS 类名 (contrast 或 inverted)
+             */
+            function setupToggleButton(btnId, texts, className) {
+                var htmlTag = document.getElementsByTagName("html")[0];
+                var btn = document.getElementById(btnId);
+                var btnTextNode = btn.firstChild;
+                var isActivated = false; // 状态标记
+
+                btn.addEventListener(clickEvent, function() {
+                    // 切换状态 (0 或 1)
+                    isActivated = !isActivated;
+                    var index = Number(isActivated);
+                    
+                    // 更新按钮文字
+                    btnTextNode.data = texts[index];
+                    
+                    // 切换 html 标签上的 class (add 或 remove)
+                    htmlTag.classList[actionMethods[index]](className);
+                }, false);
+            }
+
+            // --- 1. 初始化按钮 ---
+            (function createButtons() {
+                // 创建 "对比度" 按钮
+                var contrastBtn = document.createElement("button");
+                contrastBtn.id = "contrast";
+                contrastBtn.classList.add("cont-inv");
+                contrastBtn.innerText = buttonTexts[0];
+                contrastBtn.tabIndex = 1;
+
+                // 创建 "反色模式" 按钮
+                var invertBtn = document.createElement("button");
+                invertBtn.id = "invmode";
+                invertBtn.classList.add("cont-inv");
+                invertBtn.innerText = buttonTexts[2];
+                invertBtn.tabIndex = 2;
+
+                // 将按钮添加到页面
+                document.body.appendChild(contrastBtn);
+                document.body.appendChild(invertBtn);
+            })();
+
+            // --- 2. 启动彩虹文字特效 ---
+            (function rainbowLoop() {
+                // 生成 HSL 颜色字符串，每帧改变 Hue (色相)
+                var color = "hsl(" + hue + ", 80%, 60%)";
+                
+                // 增加色相值，超过 360 度归零
+                var nextHue = hue + 5;
+                hue = nextHue > 360 ? 0 : nextHue;
+                
+                // 应用颜色
+                if(rainbowElement) {
+                    rainbowElement.style.color = color;
+                }
+                
+                // 每 40ms 循环一次
+                setTimeout(rainbowLoop, 40);
+            })();
+
+            // --- 3. 绑定按钮功能 ---
+            // 绑定对比度按钮：切换文字 [增加对比度, 移除...], 切换类名 "contrast"
+            setupToggleButton("contrast", [buttonTexts[0], buttonTexts[1]], "contrast");
+            
+            // 绑定反色按钮：切换文字 [反色模式, 正常模式], 切换类名 "inverted"
+            setupToggleButton("invmode", [buttonTexts[2], buttonTexts[3]], "inverted");
+
+        })();
+    </script>
+</body>
+</html>
