@@ -87753,6 +87753,7 @@ self.addEventListener('fetch', event => {
 <li>平静而有力，心有所向</li>
 <li>语言 标准 体系 生态 文化 文明 价值 心动 素生</li>
 <li>好好活着</li>
+<li>好的行动应直面需求、直面问题，行动即表达、即价值，以行动改造世界，释放影响</li>
 </ul>
 <h2 id="Thinking"><a href="#Thinking" class="headerlink" title="Thinking"></a>Thinking</h2><ul>
 <li>20251211<ul>
@@ -87760,6 +87761,10 @@ self.addEventListener('fetch', event => {
 <li>a narrative to life，一种叙事，自己的故事，由自己完成，自己的生活与人生命题，组团队开公司也要实践命题和延续无限游戏（故事），而不是其它</li>
 <li>(Jarvis Cocker) Life is a random process, I think, but you can add a narrative to it. And so by doing that, it just seemed logical that you would do this thing and finish in the place where it all started.</li>
 <li>若是战略和文化出问题，管理是一定救不了的</li>
+<li>好的行动应直面需求、直面问题，行动即表达、即价值，以行动改造世界，释放影响</li>
+<li>支起书架，路过书架，即时开始阅读</li>
+<li>不要斩钉截铁般地描述自己，因为不可能做到，自我并不依靠语言存在</li>
+<li>自我，存在于附近，是一种境</li>
 </ul>
 </li>
 <li>20251125<ul>
@@ -88762,8 +88767,7 @@ gantt
   <entry>
     <title>Wiki</title>
     <url>/Wiki/index.html</url>
-    <content><![CDATA[<p>Chrome 主页快捷键：Alt + Home</p>
-<ul>
+    <content><![CDATA[<ul>
 <li><a href="http://z.arlmy.me/Wiki/links/blog_links.html">友情链接专页</a></li>
 <li><a href="http://z.arlmy.me/Wiki/links/exhibition_links.html">展览链接专页</a></li>
 <li><a href="http://z.arlmy.me/posts/IndexOfWikiLibrary/">Index of Wiki&#x2F;library</a></li>
@@ -88775,8 +88779,10 @@ gantt
 <li><a href="http://z.arlmy.me/Wiki/AboutME.html">About ME</a></li>
 </ul>
 <h2 id="备忘栏"><a href="#备忘栏" class="headerlink" title="备忘栏"></a>备忘栏</h2><ul>
-<li>ed2k 下载<ul>
-<li>verycd 后增加 “.gdajie”，即 <a href="http://www.verycd.gdajie.com/XXXX%EF%BC%8C%E8%B7%B3%E8%BD%AC%E7%BD%91%E7%AB%99%E8%8E%B7%E5%8F%96%E9%93%BE%E6%8E%A5%EF%BC%8C%E9%80%9B%E7%94%B5%E9%A9%B4">www.verycd.gdajie.com/XXXX，跳转网站获取链接，逛电驴</a> verycd.gdajie.com搜索，simplecd.me搜索</li>
+<li>行业观察<ul>
+<li>寻找“游戏化&#x2F;模拟化”的企业：行业 + “Digital Twin” (数字孪生) 或 “Unity3D” 或 “Unreal Engine”</li>
+<li>寻找“金融化&#x2F;SaaS化”的企业：行业 + “as a Service” (即服务) 或 “Subscription Model” (订阅模式)</li>
+<li>寻找“人才入侵”的迹象：（招聘网站上）行业 + “Computer Vision” (计算机视觉) 或 “NLP” (自然语言处理)</li>
 </ul>
 </li>
 <li>bilibili 下载<ul>
@@ -88795,9 +88801,7 @@ gantt
 </ul>
 </li>
 <li>截图<ul>
-<li>Win + W，在弹出的 Screen Sketch 中编辑</li>
 <li>Win + Shift + S，截取屏幕部分内容，储存至剪贴板</li>
-<li>Win + PrtScn，截全屏，自动存至系统默认 Picture - Screenshots</li>
 <li>电源键 + 音量键”+”，自动存至系统默认 Picture - Screenshots</li>
 </ul>
 </li>
@@ -88817,39 +88821,6 @@ gantt
 <li>Ink 快捷菜单：Win + W</li>
 <li>创建新 OneNote 笔记：Win + N</li>
 <li>放大&#x2F;缩小：Win + (+ &#x2F; -)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>第三方邮件客户端绑定<ul>
-<li>腾讯企业邮<ul>
-<li>接收<ul>
-<li>服务器：pop.exmail.qq.com</li>
-<li>端口：995</li>
-<li>安全类型：SSL&#x2F;TLS</li>
-</ul>
-</li>
-<li>发送&#x2F;外发<ul>
-<li>服务器：smtp.exmail.qq.com</li>
-<li>端口：465</li>
-<li>安全类型：SSL&#x2F;TLS</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>网易企业邮<ul>
-<li>接收<ul>
-<li>服务器：pop.ym.163.com</li>
-<li>端口：995</li>
-<li>安全类型：SSL&#x2F;TLS</li>
-</ul>
-</li>
-<li>发送<ul>
-<li>服务器：smtp.ym.163.com</li>
-<li>端口：465</li>
-<li>安全类型：SSL&#x2F;TLS</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -89148,6 +89119,7 @@ gantt
     <url>/index/index.html</url>
     <content><![CDATA[<h2 id="或许你会感兴趣"><a href="#或许你会感兴趣" class="headerlink" title="或许你会感兴趣"></a>或许你会感兴趣</h2><ul>
 <li><a href="https://z.arlmy.me/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">我的历年安利（书影音等）</a></li>
+<li><a href="https://www.douban.com/doulist/11392914/?start=450">那些我曾错过的好电影</a></li>
 <li><a href="https://z.arlmy.me/categories/Hexo/">本博客部署和维护的记录</a></li>
 <li><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/">存档的对我影响很大的文章</a><ul>
 <li>访问量最高的几篇：<a href="http://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html">卡钦斯基：论工业社会及其未来</a>、<a href="http://z.arlmy.me/Wiki/library/Original_QiuZhiJie_HouLaiNiFengShengShuiQi.html">邱志杰：后来你风生水起</a>、<a href="http://z.arlmy.me/Wiki/library/Original_WangYin_grnius.html">王垠：怎样成为一个天才</a></li>
@@ -89180,6 +89152,7 @@ gantt
 <li><a href="https://www.arlmy.me/">另一个主页</a></li>
 <li><a href="https://z.arlmy.me/NOW/">NOW</a></li>
 <li><a href="https://z.arlmy.me/NOW/LatestThinking.html">NOW 归档</a></li>
+<li><a href="https://z.arlmy.me/Wiki/self/ProustQuestionnaire_0.html">给自己的问卷 问题模板</a></li>
 </ul>
 <hr>
 <p>CHANGELOG</p>
