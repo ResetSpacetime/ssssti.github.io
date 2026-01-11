@@ -1,0 +1,19 @@
+# 禁止 OpenAI (ChatGPT) 抓取
+User-agent: GPTBot
+Disallow: /
+
+# 禁止 Google AI (Gemini/Vertex AI) 训练，但允许 Google 搜索
+User-agent: Google-Extended
+Disallow: /
+
+# 禁止 Common Crawl (很多开源模型如Llama都用这个数据集)
+User-agent: CCBot
+Disallow: /
+
+# 禁止 Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+# 禁止 Apple (Apple Intelligence)
+User-agent: Applebot-Extended
+Disallow: /
