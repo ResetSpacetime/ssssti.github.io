@@ -1847,7 +1847,7 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 /* 本地西文：Source Serif 4 (Regular) */
 @font-face {
   font-family: "Source Serif";
-  src: url("../fonts/source-serif-4-v14-latin-regular.woff2") format("woff2");
+  src: url("/fonts/source-serif-4-v14-latin-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1855,7 +1855,7 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 /* 本地西文：Source Serif 4 (Bold) */
 @font-face {
   font-family: "Source Serif";
-  src: url("../fonts/source-serif-4-v14-latin-700.woff2") format("woff2");
+  src: url("/fonts/source-serif-4-v14-latin-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3940,4 +3940,26 @@ html[data-dark=true] img {
   height: 18px;
   /* 关键：让 SVG 的填充色继承父元素的 color 属性 */
   fill: currentColor;
+}
+
+/* ==========================================================================
+   4. 修复图标字体 (FontAwesome Fix)
+   ========================================================================== */
+.fa,
+.fab,
+.far,
+.fas,
+[class^=fa-],
+[class*=" fa-"] {
+  font-family: "FontAwesome" !important;
+  /* 确保图标不会继承正文的斜体或加粗设置 */
+  font-style: normal;
+  font-weight: normal;
+}
+
+.post-meta:before,
+.post-nav a:before,
+.article-tag-list-item a:before,
+.article-share-link:before {
+  font-family: "FontAwesome" !important;
 }
