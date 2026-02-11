@@ -1864,22 +1864,38 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 /* ==========================================================================
    2. 全局样式重置
    ========================================================================== */
-html,
-button,
-input,
-select,
-textarea,
-.MJXc-TeX-unknown-R,
-.pure-g [class*=pure-u] {
-  /* Set your content font stack here: */
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif !important;
-  font-display: swap;
+html:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]),
+button:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]),
+input:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]),
+select:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]),
+textarea:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]),
+.MJXc-TeX-unknown-R:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]),
+.pure-g [class*=pure-u]:not(.fa):not(.fab):not(.far):not(.fas):not([class^=fa-]):not([class*=" fa-"]) {
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif !important;
+}
+
+.fa, .fab, .far, .fas,
+[class^=fa-], [class*=" fa-"] {
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.post-meta:before,
+.post-nav a:before,
+.article-tag-list-item a:before,
+.article-share-link:before,
+.page-navigator .prev:before,
+.page-navigator .next:after {
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
 }
 
 body {
   background-color: #FFF;
   color: #444;
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
@@ -1942,7 +1958,7 @@ div {
   overflow: hidden;
 }
 #header .site-name #logo {
-  font: bold 43px/1.12 "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font: bold 43px/1.12 "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   color: #555;
 }
 #header .site-name #logo span, #header .site-name #logo:hover {
@@ -1976,7 +1992,7 @@ div {
 }
 
 #sidebar {
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif !important;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif !important;
   border-left: 1px solid #ddd;
   padding-left: 35px;
   margin-top: 40px;
@@ -1987,7 +2003,7 @@ div {
   margin-bottom: 30px;
 }
 #sidebar .widget .widget-title {
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif !important;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif !important;
   color: #6E7173;
   line-height: 2.7;
   margin-top: 0;
@@ -2096,7 +2112,7 @@ div {
   margin: 0;
   color: #555;
   text-align: left;
-  font: bold 30px/1.1 "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font: 700 30px/1.1 "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
 }
 .post .post-title a {
   color: #555;
@@ -2176,7 +2192,7 @@ div {
 }
 .post .post-content {
   clear: left;
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   font-size: 17px;
   line-height: 1.77;
   color: #444;
@@ -2200,7 +2216,7 @@ div {
 .post .post-content pre code,
 .post .post-content ul code,
 .post .post-content ol code {
-  font-family: Menlo, Consolas, Monaco, "Courier New", monospace !important;
+  font-family: Menlo, Consolas, Monaco, monospace !important;
   font-size: 0.9em;
 }
 .post .post-content p {
@@ -2380,7 +2396,7 @@ div {
 }
 .post-archive h2 {
   margin: 0;
-  font: bold 27px/1.1 "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font: bold 27px/1.1 "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
 }
 .post-archive .date {
   padding-right: 0.7em;
@@ -2605,7 +2621,7 @@ pre {
 }
 
 #process span.number {
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   font-style: italic;
   font-size: 20px;
   line-height: 0;
@@ -2636,7 +2652,7 @@ pre {
 }
 
 .timeline-label p {
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   margin-bottom: 3px;
 }
 
@@ -2747,7 +2763,7 @@ pre {
 #process .present,
 #process .born {
   font-size: 14px;
-  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "STHeiti", "SimSun", serif;
+  font-family: "Source Serif", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
   font-style: italic;
   color: #333;
   padding: 10px;
@@ -3940,26 +3956,4 @@ html[data-dark=true] img {
   height: 18px;
   /* 关键：让 SVG 的填充色继承父元素的 color 属性 */
   fill: currentColor;
-}
-
-/* ==========================================================================
-   4. 修复图标字体 (FontAwesome Fix)
-   ========================================================================== */
-.fa,
-.fab,
-.far,
-.fas,
-[class^=fa-],
-[class*=" fa-"] {
-  font-family: "FontAwesome" !important;
-  /* 确保图标不会继承正文的斜体或加粗设置 */
-  font-style: normal;
-  font-weight: normal;
-}
-
-.post-meta:before,
-.post-nav a:before,
-.article-tag-list-item a:before,
-.article-share-link:before {
-  font-family: "FontAwesome" !important;
 }
