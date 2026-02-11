@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/pretty-feed-v3atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>素生</title>
   
@@ -442,7 +441,7 @@
     <link href="https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251213/"/>
     <id>https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20251213/</id>
     <published>2025-12-15T03:24:27.000Z</published>
-    <updated>2025-12-15T03:27:26.446Z</updated>
+    <updated>2025-12-17T16:09:34.467Z</updated>
 
     <author>
       <name>素生</name>
