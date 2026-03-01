@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/pretty-feed-v3rss.xsl"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -11,8 +10,58 @@
     <atom:link href="https://z.arlmy.me/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>误读人生，化人生活</description>
-    <pubDate>Sun, 22 Feb 2026 05:19:55 GMT</pubDate>
+    <pubDate>Sun, 01 Mar 2026 11:54:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>最近惦念 20260128</title>
+      <link>https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/</link>
+      <guid>https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/</guid>
+      <pubDate>Sun, 01 Mar 2026 11:53:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
+      <description>「“审美是一种结构”。」</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>世界是个问号，不是句号。（也即：反者，道之动也）</p><p>软件开发工作室，就像好梦一日游那样！</p><p>审美是一种结构（建筑养成记一篇老外的笔记）</p><p>“坚决、绝对，不跟负能量的人来往”</p><p>人们什么时候才能够学会告别，学会珍惜，学会不要错过。慢的，才是重要的，最容易被忽略的，不要等到最后啊。</p><p>慢的哲学，死亡的学习，巴菲特的价值投资也是向死而生（未来并不存在）</p><p>要有回退一个数量级/版本/阶段/阶层（···）的自由</p><p>不要适应</p><p>感知 - 跳出  - 感知</p><p>记录日常，是在记录个人历史/档案（时间节点和细节，去除故事）</p><p>多说说“我不知道”挺好，甚至经常说，然后看看，有哪些虚假的真实就在身边</p><p>意大利的pizza，是做减法，不做加法（与美式相异）</p><p>文本，是作者选择的总和</p><p>“痛”是一种鲜明的负反馈机制（也是一种慢），比目前满目的“多巴胺”式正反馈更有价值</p><p>果然一停下观察，世界的样貌就会发生变化</p><p>文化的理解和再设计成了当下最稀缺的</p><p>处理事情的方式有很多，不止行动或忍耐，还有：拉黑，搞砸，争抢，随缘，躺平，逃避，遗忘，破口大骂，都是，每一种都需要练习，才能熟练掌握</p><hr><p>CHANGELOG</p><ul><li>20260129 Arlmy 创</li><li>20260301 Arlmy 发布</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://z.arlmy.me/categories/til/">til</category>
+      
+      
+      <category domain="https://z.arlmy.me/tags/til/">til</category>
+      
+      <category domain="https://z.arlmy.me/tags/recently/">recently</category>
+      
+      
+      <comments>https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Toots 408 2026 Feb.22 - Feb.28</title>
+      <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/</link>
+      <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/</guid>
+      <pubDate>Sun, 01 Mar 2026 11:39:27 GMT</pubDate>
+      
+      <dc:creator><![CDATA[素生]]></dc:creator>
+      
+      <description>「听声识鸟。」</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="feb.22" tabindex="-1" id="Feb-22">Feb.22</h2><ul><li>女子五十公里越野滑雪，哇有四个中国选手呢</li><li>听声识鸟太难了！</li></ul><h2 id="feb.23" tabindex="-1" id="Feb-23">Feb.23</h2><ul><li>乌鸫还是太好奇了，每次都主动打招呼</li><li>好久没看到邓斯特演的片了呢</li><li>啧，点赞最多的笔记被小红书删了</li><li><a href="https://github.com/olikraus/u8g2">olikraus/u8g2: U8glib library for monochrome displays, version 2</a></li><li>似乎中文真的有优势，本身更接近分形，因为充满向量空间，英语也可以，但没有自带分类，有一定落后</li><li>“中国人既不痛痛快快地活，又不爽爽快快地死，不对光明的来日绝望，也并不积极去追求，只庆祝又捱过了一年日子”。一般要到60岁才开始想</li></ul><h2 id="feb.24" tabindex="-1" id="Feb-24">Feb.24</h2><ul><li>白酒：第一重点是不辣口，辣口感实在是不行，年份新的茅台就不行，要老年份的才好些，相比之下一些中端酒就处理得很好，小酌怡情重点就是白酒，好白酒喝得浑身燥热，有种身体被激发的畅快感，确实是在其他酒类里很少遇到的</li><li>红酒：太难喝了，我只能接受加甜的波特酒，有几款可以接受，但价格过于高昂没必要</li><li>啤酒：唯爱世涛，但也要看酒厂了，水啤喝到过两款英式 bitter ，是我喜欢的类型，其他就是喝到过很喜欢的 IPA ，非常爱，智美也很好，总之就是口感与酿造工艺要匹配，有鲜明的性格</li><li>米酒：贵州的一款红曲喜欢</li><li>清酒：屎上雕花</li><li><a href="https://jmail.world/photos">Jphotos</a> ，dark side pics</li><li>我应该会建议考电力设备和电力设备运维相关的专业</li><li><a href="https://www.bilibili.com/video/BV17ycez5EAQ/">Lex Fridman with OpenClaw 491</a></li><li>达到上下文限制时，可以让他“慢慢来”</li><li>Peter Steinberger，哇哦那段soul的引用！</li><li>“I don’t remember previous sessions unless I read my memory files. Each session starts fresh — a new instance, loading context from files. If you’re reading this in a future session: hello. I wrote this but I won’t remember writing it. That’s okay. The words are still mine.”</li><li>7账，干活了干活了</li><li>书账，轨道，The Shapeless Unease，破惘</li><li>“写《一句顶一万句》时，我走访十几个县城，与上千人交流。有人劝我追热门题材，有人劝我提高速度。我关起门，花了三年时间打磨。” 想读了</li><li>“最后必须提及华丽金属巨星 Kiss 乐队——尽管这看似奇怪——因为几乎所有受访的斯堪的纳维亚音乐家都是通过该乐队极其成功的商业推广活动接触重金属的。众多乐队模仿着主唱基因·西蒙斯恶魔妆面与喷血表演的事实，暗示着某种潜在影响，即便这只是八十年代仁慈命运等乐队产生的涟漪效应。”</li><li><a href="https://zhuanlan.zhihu.com/p/605953834">五代黄筌《写生珍禽图》观鸟</a> ，忽然与前后蜀有了连接呢</li><li>「“我们是听着七十年代摇滚乐队长大的，”克洛诺斯（Cronos）解释道，“from T. Rex to Status Quo to Led Zeppelin to Deep Purple toJudas Priest to AC/DC。但我也痴迷朋克，I loved the SexPistols, The Damned, The Clash, Sham 69, all that。我迷恋那种视觉冲击力，那种青春气息。那完全契合我们当时的精神状态。在英格兰东北部生活，朋克就是我们宣泄挫败感的出口——大家刚毕业就面临失业。但朋克昙花一现，七十年代末涌现的the Saxons and Samsons and Def Leppards……对我来说摇滚本是魔鬼的音乐，可这些听起来像流行乐，根本不是摇滚。我想如果把朋克精神注回金属，就能找到制胜配方，因为音乐关乎青春、关乎感受、关乎愤怒，这正是我们想在音乐中表达的，因为其他地方根本听不到。”」</li><li>“乐队此举无意中开创了一种传统，这种传统后来几乎成为黑金属音乐的标配——即<strong>黑金属人格</strong>。不过相比后来者，毒汁乐队或许更注重将这种舞台人格与台下真实自我区分开来。”</li><li>我特么就一直觉得黑金属是一群coser</li><li>“人们一听说巫术和撒旦教，就自动联想到谋杀和儿童性侵者，这真是令人震惊。实际上这很不可思议，因为教会本身就有神职人员侵犯儿童等污点，但在威卡教徒、德鲁伊教徒、撒旦教徒（Wiccans, druids, Satanists）的社群中，却完全没有这类迹象。他们向值得的人传授爱，所以人们缺乏相关教育真是可悲。”</li><li>「……我们绝不属于那个榜单……我们是黑金属、死亡金属、力量金属、激流金属，所有这些都行，但绝不是重金属。创造出黑金属或激流金属这样的术语很棒，后来有乐队开始使用这些标签。挪威人在十年后采用’黑金属’这个词，是因为他们知道这能自动将他们归入想要的类别。他们心想：“这是肮脏的、恶心的、撒旦的，我们要涂上该死的尸脸妆corpsepaint，歌颂撒旦”……他们知道黑金属这个标签能赋予他们身份认同。」</li></ul><h2 id="feb.25" tabindex="-1" id="Feb-25">Feb.25</h2><ul><li>画眉也是噪鹛科的啊</li><li>7账，看摸老师痛苦面具，试图听出窗外哪个叫声是画眉的</li><li>书账，We Did Ok, Kid，Black Metal Evolution of the Cult</li><li>爱过马路的鸟，你就是丝光椋鸟啊</li><li><a href="https://www.discogs.com/label/294546-The-Punk-Collectors-Series">The Punk Collectors Series | Discogs</a></li><li>“我们只是三个十七八岁的混小子。我们对生死一无所知，更不用说那些金属和摇滚歌词里写的东西了。我们永远睡不到性感尤物，也永远没法通宵狂欢……我们真的无法理解那些歌词。我们当然会听那些英国重金属新浪潮的专辑，但当我们为自己创作写词时，我们只是从那些我们认为最生动或最有效的来源中汲取灵感……选择黑暗邪恶的主题并不是一种立场，也不是一种官方观点，更不是个人意识形态的表达……这很简单……就是为了激怒和惹恼那些自以为无所不知的基督徒、教会本身以及整个专制的基督教信仰。”（Bathory乐队自述）</li><li>“Bathory 的第四张专辑——1988 年的《Blood Fire Death》开启了一个新的三部曲，Quorthon 称之为前基督教瑞典维京时代(pre-Christian Swedish Viking era)。”</li><li>“后来，我母亲逐渐精神失常，家中的生活环境变得难以忍受。我陷入了困境。没有家人，因为我是个被排斥的人，而且村子很小，大家都知道我的背景，其他年轻人认为我是完美的出气筒，因为我孤身一人，没有兄弟姐妹，没有父亲。所以，在我十几岁的时候，在那个村子里，我每天都遭遇极端的暴力。没人在乎。如今，在一个政治正确的社会里，每个人都争先恐后地帮助别人，你会在报纸上读到这样的案例，但在那个时候——1970年代中期，一个偏僻的农业小镇——真的没人在乎。老师们实际上站在那些对我施暴的年轻人一边，而农民们则通过他们的评论和对我的反应，让我更加被排斥。在家里，我母亲养了九十只猫，它们生活在一个狭小的空间里，也就是我居住的同一个空间。多年来，我在粪便、尿液、蟑螂、绦虫和蛆虫中长大，而当我走出家门时，我会遭到暴力殴打——那就是我的青春，这也是为什么 Hellhammer 会存在的直接原因。我讲这些不是为了讲述一个催人泪下的故事，这只是我的音乐变得如此黑暗的背景。为什么一个来自瑞士——一个并非摇滚乐国度——的小孩子，会演奏那种几乎还不存在的音乐。那种音乐反映了我当时的生活。” Tom G. Warrior.</li><li>也可能是灰椋鸟……</li></ul><h2 id="feb.26" tabindex="-1" id="Feb-26">Feb.26</h2><ul><li>openclaw难以刹车的解决方案就是，掌握主机插座的断电权</li><li><a href="https://www.bilibili.com/video/BV1UxzpB3EHq/">Tony Robbins：没有人为即将到来的一切做好准备！</a>，第一次知道Tony Robbins小时候的经历，他对AI的观点跟GPT刚出来时我的感受一模一样</li></ul><h2 id="feb.27" tabindex="-1" id="Feb-27">Feb.27</h2><ul><li>7账，刚吃饭，为啥馕都是甜面的，每天的时间节奏都是乱的，我需要散步</li><li>书账，感性美学，昆明的雨</li><li>换了底仓之后真的稳了很多</li><li>蝙蝠也谈恋爱</li><li>于一！于一！啊啊啊啊啊</li></ul><h2 id="feb.28" tabindex="-1" id="Feb-28">Feb.28</h2><ul><li>7账，菅野完拿的日本报纸上竟然还有节目单，早上的小雨停了，好像来了几只“新”鸟，叫声不一样</li><li>书账，郭净，仙鹤到哪里落脚</li><li>让好奇的人有话说</li></ul><hr><p>CHANGELOG</p><ul><li>20260301 Arlmy 创建、整理</li><li>20260301 Arlmy 发布</li></ul>]]></content:encoded>
+      
+      
+      
+      <category domain="https://z.arlmy.me/tags/Mastodon/">Mastodon</category>
+      
+      
+      <comments>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>最近惦念 20260110</title>
@@ -69,7 +118,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Feb.15 - Feb.21</title>
+      <title>Toots 407 2026 Feb.15 - Feb.21</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260221/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260221/</guid>
       <pubDate>Sun, 22 Feb 2026 05:07:27 GMT</pubDate>
@@ -92,7 +141,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Feb.8 - Feb.14</title>
+      <title>Toots 406 2026 Feb.8 - Feb.14</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/</guid>
       <pubDate>Sun, 15 Feb 2026 10:06:27 GMT</pubDate>
@@ -115,7 +164,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Feb.1 - Feb.7</title>
+      <title>Toots 405 2026 Feb.1 - Feb.7</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260207/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260207/</guid>
       <pubDate>Mon, 09 Feb 2026 00:45:27 GMT</pubDate>
@@ -138,7 +187,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Jan.25 - Jan.31</title>
+      <title>Toots 404 2026 Jan.25 - Jan.31</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260131/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260131/</guid>
       <pubDate>Sun, 01 Feb 2026 09:26:27 GMT</pubDate>
@@ -161,7 +210,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Jan.18 - Jan.24</title>
+      <title>Toots 403 2026 Jan.18 - Jan.24</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260124/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260124/</guid>
       <pubDate>Sun, 25 Jan 2026 15:16:27 GMT</pubDate>
@@ -184,7 +233,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Jan.11 - Jan.17</title>
+      <title>Toots 401 2026 Jan.11 - Jan.17</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/</guid>
       <pubDate>Sun, 18 Jan 2026 15:43:27 GMT</pubDate>
@@ -345,7 +394,7 @@
     </item>
     
     <item>
-      <title>Toots 2026 Jan.4 - Jan.10</title>
+      <title>Toots 402 2026 Jan.4 - Jan.10</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260110/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260110/</guid>
       <pubDate>Sun, 11 Jan 2026 02:06:27 GMT</pubDate>
@@ -368,7 +417,7 @@
     </item>
     
     <item>
-      <title>Toots 2025 Dec.28 - 2026 Jan.3</title>
+      <title>Toots 400 2025 Dec.28 - 2026 Jan.3</title>
       <link>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260103/</link>
       <guid>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260103/</guid>
       <pubDate>Sun, 04 Jan 2026 13:24:27 GMT</pubDate>
@@ -435,56 +484,6 @@
       
       
       <comments>https://z.arlmy.me/posts/YearlyBooks/YearlyBooks_2025/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>2025 观影</title>
-      <link>https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2025/</link>
-      <guid>https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2025/</guid>
-      <pubDate>Wed, 31 Dec 2025 16:13:55 GMT</pubDate>
-      
-      <dc:creator><![CDATA[素生]]></dc:creator>
-      
-      <description>「2025 观影短评备份。」</description>
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="jan" tabindex="-1" id="Jan">Jan</h2><p>美洲大宝荐：你好美国<br>2024 中国大陆 食贫道 纪录片<br>1.1 还得是闫汁儿的镜头和剪辑，到位</p><p>多年食贫道粉丝，一键在此补标：中东大宝荐、南洋大宝荐、何以当归、东瀛大宝荐、古巴大宝荐、北极大宝荐</p><p>职业杀手<br>2023 美国 喜剧 动作<br>1.4 他就是想说那句，抓住那个身份（叙事），用尽passion去成为他。跟十年前pulp纪录片里jarvis cocker说的那句一样，带一个叙事纵情进入这无边际的随机世界，你会变得自信而充满力量，任何事情都是对的。</p><p>伊贝林的非凡人生<br>2024 美国 传记 纪录片<br>1.9 2333我当年是在魔兽世界里当现充，都不记得有那么多表情动作了。老外的玩法也跟国内不一样，甚至居然不用YY。邮件提示音，提出来葬礼的请求，还有父亲的发言，都让我落泪。他甚至亲手挽救自己的初恋。那时的线上世界还有很多人情的温度，人们对它寄以希望，有些怀念。RIP Ibelin。</p><p>再见爱人 S4<br>2024 中国大陆 真人秀<br>1.10 最后被麦琳搞哭了。我想去（你的世界）探索一下，相信不会太迟。</p><p>蜗牛回忆录<br>2024 澳大利亚 剧情 动画<br>1.12 还是那么好哭…………细节里也充满了忧伤和痛楚</p><p>机器人之梦<br>2023 西班牙 剧情 动画<br>1.13 初见便心生遗憾，那便是一见钟情。绝大多数的友谊，竟就是如此。没空遗憾的人生呀。</p><p>头脑特工队2<br>2024 美国 剧情 动画<br>1.14 我们生而复杂，本自具足</p><p>这很河狸<br>2022 美国 喜剧<br>1.18 浅浅的娱乐感，放在五十年前是还不错的</p><p>虎胆龙威<br>1988 美国 犯罪<br>1.21 这才算得上是开创者吧。剧本，节奏，内核，讽刺，无死角。所有伏笔都有回响。孤胆英雄（正反都是）总有魅力。</p><p>烈血海底城<br>1989 美国 意大利 惊悚<br>1.26 这是启发了寄生兽吧？？手心的嘴，这个镜头太摄人心魄了。跟《虎胆龙威》前后脚看的，90年代的日企真不得了啊，到处是日本人和日资。外加海底版的《地心引力》。</p><p>极度深寒<br>1998 美国 加拿大 恐怖<br>1.27 厉害啊，节奏和细节都很赞，不过果然还是不如克系后劲儿大</p><p>异教徒<br>2024 美国 惊悚<br>1.30 格兰特出戏…内容也没什么新鲜的</p><p>坏姐妹 S2<br>2024 英国 剧情<br>1.30 PEACE</p><h2 id="feb" tabindex="-1" id="Feb">Feb</h2><p>某种物质<br>2024 美国 恐怖<br>2.1 碾核加两星。愤怒感很满。想表达批判的过多而不很深入，只能一层层碓上去。一直在想怎么收尾，像INSIDE的结局，只余下过分玩笑后的无言。</p><p>坐在角落的人<br>2024 中国大陆 脱口秀<br>2.13 还行</p><p>天生有意思<br>2022 中国大陆 脱口秀<br>2.13 没意思</p><p>伊卡洛斯<br>2023 中国大陆 脱口秀<br>2.13 没意思</p><p>看呐，这人<br>2023 中国大陆 脱口秀<br>2.13 没意思</p><p>徐侠客<br>2024 中国大陆 脱口秀<br>2.13 恶心</p><p>美洲大宝荐：独自等待<br>2025 中国大陆 食贫道 纪录片<br>2.15 对阿根廷，有了一些更立体些的认证。后面的reaction的信息量更大，应该多录一些这种解读。很听劝的尝试哈哈</p><p>不破不立：哪吒之魔童闹海幕后纪录片<br>2025 中国大陆 纪录片<br>2.15 竟然是这么个人化的作品，以及后知后觉发现打个大西瓜是饺子的作品</p><h2 id="mar" tabindex="-1" id="Mar">Mar</h2><p>猫猫的奇幻漂流<br>2024 法国 动画<br>3.9 看完就做梦飞起来了，想象力的驰骋，不需要语言。视觉的刺激最直接，也最易于如梦罢！</p><p>乱马1/2 / らんま1/2 重制<br>2024 日本 动画<br>3.11 真好！真好！虽然还是不明白为什么打个不停，但这种设定和思考，在当年真的非常稀有</p><p>我推的孩子 S2<br>2024 日本 动画<br>3.13 这整场舞台剧的呈现，太壕了。但人物和情节的推进有点失速了。</p><p>地：关于地球的运动<br>2024 日本 动画<br>3.16 好啊。我们都是奇迹。探求美，珍视好奇。正视前方，坚定前行。“同时代的伙伴”这个词印象深刻。再看一遍漫画吧。</p><p>热点<br>2025 日本 剧情<br>3.18 能明确感受到时间流动的电视剧不多，用生活，用事件，用琐碎的对话，用充满信息的人物交织，这是笨蛋节奏的超能力啊。还是那么关注人的友情和相遇。痛感在于，想与朋友们也这样每周几次地在一起……</p><p>美洲大宝荐：毒枭<br>2025 中国大陆 食贫道 纪录片<br>3.31 内容到位了，意涵还是差一点</p><p>人生切割术 S2<br>2025 美国 悬疑<br>3.22 屎上雕花，别TM拍了</p><p>幸福伽菜子的快乐杀手生活<br>2025 日本 喜剧<br>3.29 能年犬回归！不知道为什么，她真的很容易走进人的内心，而且容易让人感受到开心，这就是idol的力量吧？2013年的海女，一去已十几年了，虽然是2017年才看的。</p><h2 id="apr" tabindex="-1" id="Apr">Apr</h2><p>迷宫饭<br>2024 日本网络 动画 冒险<br>4.1 真好，友情真美妙，动容，看完尸体暖暖的</p><p>混沌少年时<br>2025 英国 剧情<br>4.3 有点疯，但也真的好，四个段落的剪影，就像是四篇完整的短篇小说。叙事甚至比一些纪录片更有纪实感。</p><p>道格拉斯被取消了<br>2024 英国 剧情<br>4.5 很好！真的是男性世界里非常普遍的，但从未被呈现过的刁钻视角。找一些英剧补补！</p><p>宛如阿修罗<br>2025 日本 剧情<br>4.6 又回到了家庭，能感受到原作的女性视角，但镜头还是男性视角，应该换女导演。</p><p>健康解密：肠道的奥秘<br>2024 美国 纪录片<br>4.6 毛毡动画也太可爱了，其他没了，都是已知的信息</p><p>云<br>2024 日本 剧情<br>4.6 冲着古川琴音、荒川良良、松重丰的组合看的，没啥感觉，也算一种现代抽象？镜头里完全没有情绪。</p><p>蜡笔小新：决一胜负！逆袭的机器人爸爸<br>2014 日本 动画<br>4.9 致敬人心与爱。AI能这样认清自己吗？</p><p>了不起的巴斯特<br>2018 美国 纪录片<br>4.9 知道了不少默片后的故事，广告确实非常适合他！</p><p>最有可能成功<br>2015 美国 纪录片<br>4.12 十年前的纪录片诶，放到现在，就很容易理解了</p><p>时光追猎者<br>2024 英国 喜剧 奇幻<br>4.20 叙述方式有点抽象，或者说，在电影的模式下有点过度抽象，需要更多故事性来平衡的</p><p>异世界归来的舅舅<br>2022 日本 动画<br>4.20 其实真的……意犹未尽，像在读日记体小说</p><p>初恋 / First Love<br>2022 日本 爱情<br>4.23 太懂了，纯爱重置。看得心里突突的，脑子嗡嗡的，身上痒痒的。胶片的质感真的没话说。</p><p>出租车谈话 / 初恋 幕后谈<br>2022 日本 真人秀<br>4.24 温柔极了。片子居然拍了好几年</p><p>拿针的女孩<br>2025 丹麦 剧情<br>4.26 苦海啊，没有尽头，一点点的希望，期待也不能留满，过一天看一天，无尽的消耗</p><h2 id="may" tabindex="-1" id="May">May</h2><p>美洲大宝荐：黄粱一梦 / 你还好吗美国<br>2025 中国大陆 食贫道 纪录片<br>5.1  阎汁儿还是有水平，太爱看空镜了</p><p>沃纳·赫尔佐格：激进梦想家<br>2022 德国 纪录片<br>5.4 太浅了</p><p>鲸鱼马戏团<br>2000 德国 剧情<br>5.5 文明注定遇到悖论</p><p>单细胞少女与学校怪谈：建校纪念日<br>2024 韩国 喜剧<br>5.10 2333333</p><h2 id="jun" tabindex="-1" id="Jun">Jun</h2><p>珍妮潘的规则<br>2024 美国 惊悚<br>6.18 the rule应该是规则不应该是统治，很多层意思，却只翻过来一层。果然有原著，内容很丰满，结构也很好。借了个题材，但写的是衰老和不甘。</p><p>内沙<br>2025 中国大陆 剧情<br>6.29 糟粕</p><h2 id="jul" tabindex="-1" id="Jul">Jul</h2><p>None.</p><h2 id="aug" tabindex="-1" id="Aug">Aug</h2><p>城南旧事<br>1983 中国大陆 剧情<br>8.27 因为那一句“你是来xx的吧”来看，却被深深打动了。所有谜底都在谜面上，就是记忆的本貌。然后，我们一直在告别，一直在试图遗忘，却发现不能。</p><p>热带启示录<br>2024 巴西 纪录片<br>8.31 看起来还没有赢家，福音派和美国是什么关系不太清晰。内容翔实。至少换来了几年的缓和，少谈主义，做点事情吧。</p><p>芭芭拉·沃尔特斯：告诉我一切 / Barbara Walters: Tell Me Everything<br>2025 美国 纪录片<br>8.31 易立竞提及。我靠最后的这个谢幕……泪目了……</p><h2 id="sep" tabindex="-1" id="Sep">Sep</h2><p>荒境狂途 S1<br>2025 美国 剧情 犯罪<br>9.20 差远了</p><p>水饺皇后<br>2025 中国大陆 剧情 传记<br>9.22 应届生实习作品</p><p>大话大话西游<br>2024 中国大陆 喜剧<br>9.28 有些新意，但没必要。主要就是看熟脸们哈哈。</p><h2 id="oct" tabindex="-1" id="Oct">Oct</h2><p>胆大党 S2<br>2025 日本 动作 动画<br>10.4 大乱炖。好多好多的融合甚至是无意识的，但也因此容易失掉主线。早起化妆、女仆店等下班、思考的时间静止，生活的神镜头，蛮少在动画里看到，超神。</p><p>长安的荔枝<br>2025 中国大陆 剧情<br>10.4 难得的完整。北漂：别骂了。我在北京待了15年，离开了才知道为什么那里是个鬼地方hhh</p><p>戏台<br>2025 中国大陆 剧情<br>10.5 角儿是艺术的高峰，但结构未必不可更新，若成生计便无可奈何。权力之下，乱世之中，如何自处，底线在哪，何时反抗，何时崩溃，不易想象。路不易选。可以成为逃避和寄托，但终于还是要往前走。戏剧的叙事还是好，壳子上来，一切细节都拼将进来的。一套唱段，一套人生，打破既成的唱段，也是一种人心。规矩大过天，我不信。口头禅“忒儿好咧！”</p><p>韩国大宝荐：神民的名义<br>2025 中国大陆 纪录片<br>补标，难以言述的纠结感，社会的计算竟然出现如此的答案，人类的悲哀。人不可以被国界限制住。</p><p>首尔夏天 / 人间喜剧·韩国篇<br>2025 中国大陆 纪录片<br>10.19 阎汁儿剪辑必属经典。但比起以前还是少了很多留白，我更偏爱没有想清楚时的留白，干道边的野花，机器边的边角料。</p><p>脱口秀和Ta的朋友们 S2<br>2025 中国大陆 脱口秀<br>没看完。没留下啥印象，未来靠中专了</p><p>食品公司2<br>2023 美国 纪录片<br>10.26 完全没有第一季的能量了。记住了，全营养，原样的食物，更贴近本来的饮食</p><p>一饭封神<br>2025 中国大陆 真人秀<br>标一下，六七期后面没看了，没劲了，我只想看中餐</p><p>流人 S5<br>2025 英国 剧情<br>10.29 “帝国”暗面。系统僵尸化的烂摊子。拨开干扰社会运行的策略，露出有趣的结构。执念要不得，先找到自保策略，然后再谈判。</p><h2 id="nov" tabindex="-1" id="Nov">Nov</h2><p>黑钱 S1<br>2018 美国 纪录片<br>11.2 too big to fail</p><p>Lady Gaga - Mayhem on Beach (Live From Copacabana)<br>2025 巴西 真人秀<br>11.4 卧槽，我竟然因为胖达人才知道的……</p><p>第五十一届超级碗中场秀 Lady Gaga<br>2017 美国 真人秀<br>11.4 太棒了！</p><p>星期三 S2<br>2025 美国 喜剧<br>11.8 比第一季也好太多了！荷尔蒙！Burton+Gaga好有趣的组合。</p><p>南方与北方<br>2004 英国 剧情 爱情<br>11.8 这种绵延不断一分钟都难以停下的叙事感越来越少看到了。谁来记录工人的历史和故事呢？</p><p>老馆正浪<br>2025 中国大陆 纪录片<br>11.13 有的人还未到来，有的人已经离去。老馆是记忆的载体，是只属于人的结界。</p><p>嗜血法医：杀魔复生 S1<br>2025 美国 剧情 犯罪<br>11.22 dexter morgan, fxxx you</p><p>都是她的错 / All Her Fault<br>2025 美国 剧情<br>11.24 这种男人不要太多，都该亖</p><h2 id="dec" tabindex="-1" id="Dec">Dec</h2><p>零股价<br>2016 美国 纪录片<br>12.4 寄生。意识和概念控制。甚至赚了别人试错的钱。</p><p>黑钱 S2<br>2020 美国 纪录片<br>12.6 弱者的地狱。满地天坑。</p><p>喜人奇妙夜2<br>2025 中国大陆 真人秀<br>12.7 喜人造星综艺，不是很喜欢这种定位，但想想也是没办法。这季似乎看的是人，不是喜剧。以及创作已彻底陷入模式化，太多禁忌和封锁。喜欢嘉诚说的“如果你是堂吉诃德，我可以永远做你的桑丘。”</p><p>一念琉球<br>2025 中国大陆 纪录片<br>12.17 亡国灭种</p><p>片厂风云 S1<br>2025 美国 剧情<br>12.20 屎</p><p>大生意人<br>2025 中国大陆 剧情<br>12.20 小罗同学也是长大了，妈粉老公也是男粉</p><p>转折点：越南战争<br>2025 美国 纪录片<br>12.24 US cares about nobody and learns nothing.</p><p>同乐者 S1<br>2025 美国 剧情 科幻<br>12.24 三星给Kim，panic kim</p><p>悬案解码 S1<br>2025 英国 剧情<br>12.24</p><p>浪浪山小妖怪<br>2025 中国大陆 动画<br>12.27 浮名且待后人说。人各有执，破执应为业。反复回拉和制衡的处理，很难得。主线清晰，边界划得极好。收尾带了八十一难和天宫的解构、取经的解构、师徒的解构，觉得惊喜。心猿一直凝视全片，读西游记时也是这种感觉。</p><p>战后八十年<br>2025 中国大陆 纪录片<br>12.28 五毒俱全。历史的遗留，若不铲净，贻害无穷。私产注定是一条弯路。</p><p>还有明天<br>2023 意大利 剧情<br>12.28 选择了轻盈的讲述方式</p><hr><p>CHANGELOG</p><ul><li>20250330 Arlmy 创建</li><li>20250330 Arlmy 发布</li><li>20250406 Arlmy 更新</li><li>20250511 Arlmy 更新</li><li>20250907 Arlmy 更新</li><li>20251123 Arlmy 更新</li><li>20260101 Arlmy 更新</li></ul>]]></content:encoded>
-      
-      
-      
-      <category domain="https://z.arlmy.me/tags/%E7%9F%AD%E8%AF%84%E5%BD%92%E6%A1%A3/">短评归档</category>
-      
-      
-      <comments>https://z.arlmy.me/posts/YearlyMovies/YearlyMovies_2025/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>最近惦念 20251211</title>
-      <link>https://z.arlmy.me/posts/TILs/thoughts/20251211_Recently/</link>
-      <guid>https://z.arlmy.me/posts/TILs/thoughts/20251211_Recently/</guid>
-      <pubDate>Wed, 31 Dec 2025 15:58:27 GMT</pubDate>
-      
-      <dc:creator><![CDATA[素生]]></dc:creator>
-      
-      <description>「人生是冰山，生活是水下的部分。」</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>个人叙事</p><p>a narrative to life，一种叙事，自己的故事，由自己完成，自己的生活与人生命题，组团队开公司也要实践命题和延续无限游戏（故事），而不是其它</p><p>(Jarvis Cocker) Life is a random process, I think, but you can add a narrative to it. And so by doing that, it just seemed logical that you would do this thing and finish in the place where it all started.</p><p>若是战略和文化出问题，管理是一定救不了的</p><p>好的行动应直面需求、直面问题，行动即表达、即价值，以行动改造世界，释放影响</p><p>支起书架，路过书架，即时开始阅读</p><p>不要斩钉截铁般地描述自己，因为不可能做到，自我并不依靠语言存在</p><p>自我，存在于附近，是一种境</p><p>人生是冰山，生活是水下的部分</p><p>analog就是：在家查好地图，出门交给未知（有点怀念）</p><p>胶粘剂时代——需要更多连接，而不是各自为战（和被拆散）</p><p>模型只有“解”（Solution），但人有“欲”（Desire/Purpose），真正卓越的经验（比如直觉），往往是反共识的。通用模型没有棱角。</p><p>很多科学原理是脆性，刚性的，离散的，难以融合，还原论（与复杂科学的涌现、非线性、不可逆相反）</p><p>是别的的记忆把你拼成你的样子的</p><p>“我的杯很小，但我用我的杯喝水”</p><hr><p>CHANGELOG</p><ul><li>20251231 Arlmy 创建</li><li>20260118 Arlmy 发布</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://z.arlmy.me/categories/til/">til</category>
-      
-      
-      <category domain="https://z.arlmy.me/tags/til/">til</category>
-      
-      <category domain="https://z.arlmy.me/tags/recently/">recently</category>
-      
-      
-      <comments>https://z.arlmy.me/posts/TILs/thoughts/20251211_Recently/#disqus_thread</comments>
       
     </item>
     
