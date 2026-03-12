@@ -6,7 +6,7 @@
   <link href="https://z.arlmy.me/atom.xml" rel="self"/>
   
   <link href="https://z.arlmy.me/"/>
-  <updated>2026-03-08T13:00:26.088Z</updated>
+  <updated>2026-03-10T11:01:52.499Z</updated>
   <id>https://z.arlmy.me/</id>
   
   <author>
@@ -17,20 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>最近惦念 20260213</title>
-    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260213_Recently/"/>
-    <id>https://z.arlmy.me/posts/TILs/thoughts/20260213_Recently/</id>
-    <published>2026-03-08T12:57:27.000Z</published>
-    <updated>2026-03-08T13:00:26.088Z</updated>
+    <title>OpenClaw 配置</title>
+    <link href="https://z.arlmy.me/posts/TILs/AI/openclaw_onboard/"/>
+    <id>https://z.arlmy.me/posts/TILs/AI/openclaw_onboard/</id>
+    <published>2026-03-09T10:03:27.000Z</published>
+    <updated>2026-03-10T11:01:52.499Z</updated>
 
     <author>
       <name>素生</name>
     </author>
     
-    <content type="html"><![CDATA[<p>记住，要看到每一个真实的个体，看见个体！</p><p>老一辈的人生，都是颠沛流离，出走半生</p><p>“人的孤独，是一种迷宫式的存在”</p><p>不想过去了再追忆，我想（现在就）记忆</p><p>法棍猛蘸橄榄油，感受到很浓郁、明确的橄榄香味（果然还是得量大，才能刺激味觉感知，峰终最重要）</p><p>很多事情从一开始便没有必要，这反而最难分辨（预设谬误）</p><p>不用万国来朝，我最希望收到谁的祝福，他今年有没有想起我呢？就是这样简单清楚的标准。</p><p>巴芒都是相信命运的人</p><p>忘记自己真正想做的事是一种慢性的、会不断累积的风险</p><p>文学文本就是在解压缩啊，再压缩要在读者那里完成</p><p>你完全知道想做什么，你完全知道喜欢做什么，你完全知道自己在做什么，这是极高的评价。你在依着自己的SOUL思考和行动</p><p>聚落没有了，才不丰满了</p><p>忽然想到把AI关在我过去的一年里，让他再过一遍这一年，然后每天跟我对话（像一日囚）</p><p>我能做到的就是多听多感受了，错了就承认错误，然后继续问继续听，保持最大的善意</p><p>“我没有时间做所有事，我必须残酷地做减法。”</p><p>“忘记自己真正想做的事”是一种“慢性危险”</p><p>主动设计，主动行动，做重要的事，要热爱，剥离所有浪费和无用</p><p>“不要只盯着当下的波动，那并不能代表我们真正面对的尾部风险”</p><hr><p>CHANGELOG</p><ul><li>20260129 Arlmy 创建</li><li>20260301 Arlmy 发布</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>记录下我的配置过程（我的是Windows电脑），对于新工具，还是很推荐自己从头到尾配置一遍。</p><h2 id="%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8" tabindex="-1" id="注册服务器">注册服务器</h2><p>是V2EX经常看到的一个服务器：RackNerd，注册链接（有推荐码）：<a href="https://my.racknerd.com/aff.php?aff=18536">RackNerd</a> ，用邮箱注册。</p><p>选择页面最上方的OUR LATEST NEW YEAR DEALS (MUST SEE!)，推荐购买4GB的这款，费用为43.88美元每年，支持支付宝付款，主机选在美国或日本，我选在的CA san jose。</p><p>激活后，邮箱中会收到账号、密码（两个密码，服务器的和Panel的）、服务器的IP，这个密码是最重要的，管理密码，要储存好。</p><p>在<a href="https://nerdvm.racknerd.com/">NerdVM Panel</a>查看目前的系统：Operating System，如果不是Ubuntu，点击下面的Reinstall，选择“Ubuntu 24.04 64 Bit”。</p><p><a href="https://ping.pe/">Ping.pe</a>，用这个网站测试下服务器的访问速度，如果国内的访问速度过慢，可以联系客服更换IP，很快就能换好。</p><h2 id="%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8" tabindex="-1" id="连接服务器">连接服务器</h2><p>打开电脑终端，打开PowerShell，输入<code>ssh root@XXX.xxx.XXX.xxx</code>，XXX.xxx.XXX.xxx是服务器的IP，提示输入密码，邮件里有提供过。</p><p>连接成功后，<code>apt update &amp;&amp; apt upgrade -y</code>，更新系统。</p><p><code>curl -fsSL https://get.docker.com | bash</code>，安装Docker环境。</p><h2 id="%E5%AE%89%E8%A3%85openclaw" tabindex="-1" id="安装OpenClaw">安装OpenClaw</h2><p>按照<a href="https://openclaw.ai/">OpenClaw</a>官网的提示，在命令行中安装<code>npm i -g openclaw</code>。</p><p>输入<code>openclaw onboard</code>启动配置。这个就不详细记录了，一步步配置即可，终端推荐Telegram或飞书，我日常使用Telegram，使用BotFather创建token绑定即可，OpenClaw内置了白名单，只有绑定配对的Telegram账号，才能与它进行对话。</p><h2 id="%E6%A8%A1%E5%9E%8B%E8%AE%BE%E7%BD%AE" tabindex="-1" id="模型设置">模型设置</h2><p>我用的是<a href="https://302.ai/">302.AI</a>的token中介，注册充值即可，存好API-key。</p><p>在命令行中按这个文件配置：<a href="https://doc.302.ai/8138564m0">OpenClaw快速配置工具</a>，我使用的模型是Kimi 2.5。</p><h2 id="workspace%E5%A4%87%E4%BB%BD" tabindex="-1" id="workspace备份">workspace备份</h2><p>建议优先让OpenClaw协助你配置自动备份，<a href="http://xn--workspaceAGENTS-tz3xv1h941mv8f.md">workspace文件中有AGENTS.md</a>, <a href="http://BOOTSTRAP.md">BOOTSTRAP.md</a>, <a href="http://HEARTBEAT.md">HEARTBEAT.md</a>, <a href="http://IDENTITY.md">IDENTITY.md</a>, <a href="http://SOUL.md">SOUL.md</a>, <a href="http://TOOLS.md">TOOLS.md</a>, USER.md七个核心文件，推荐使用版本备份，这样你可以在其他主机和环境中，快速还原自己的定制化使用习惯。</p><hr><p>CHANGELOG</p><ul><li>20260309 Arlmy 创建</li><li>20260309 Arlmy 发布</li></ul>]]></content>
     
     
-    <summary type="html">「文学文本就是在解压缩啊，再压缩要在读者那里完成。」</summary>
+    <summary type="html">「养龙虾。」</summary>
     
     
     
@@ -39,7 +39,7 @@
     
     <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
     
-    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
+    <category term="openclaw" scheme="https://z.arlmy.me/tags/openclaw/"/>
     
   </entry>
   
@@ -67,33 +67,6 @@
   </entry>
   
   <entry>
-    <title>最近惦念 20260128</title>
-    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/"/>
-    <id>https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/</id>
-    <published>2026-03-01T11:53:27.000Z</published>
-    <updated>2026-03-02T11:17:15.569Z</updated>
-
-    <author>
-      <name>素生</name>
-    </author>
-    
-    <content type="html"><![CDATA[<p>世界是个问号，不是句号。（也即：反者，道之动也）</p><p>软件开发工作室，就像好梦一日游那样！</p><p>审美是一种结构（建筑养成记一篇老外的笔记）</p><p>“坚决、绝对，不跟负能量的人来往”</p><p>人们什么时候才能够学会告别，学会珍惜，学会不要错过。慢的，才是重要的，最容易被忽略的，不要等到最后啊。</p><p>慢的哲学，死亡的学习，巴菲特的价值投资也是向死而生（未来并不存在）</p><p>要有回退一个数量级/版本/阶段/阶层（···）的自由</p><p>不要适应</p><p>感知 - 跳出  - 感知</p><p>记录日常，是在记录个人历史/档案（时间节点和细节，去除故事）</p><p>多说说“我不知道”挺好，甚至经常说，然后看看，有哪些虚假的真实就在身边</p><p>意大利的pizza，是做减法，不做加法（与美式相异）</p><p>文本，是作者选择的总和</p><p>“痛”是一种鲜明的负反馈机制（也是一种慢），比目前满目的“多巴胺”式正反馈更有价值</p><p>果然一停下观察，世界的样貌就会发生变化</p><p>文化的理解和再设计成了当下最稀缺的</p><p>处理事情的方式有很多，不止行动或忍耐，还有：拉黑，搞砸，争抢，随缘，躺平，逃避，遗忘，破口大骂，都是，每一种都需要练习，才能熟练掌握</p><hr><p>CHANGELOG</p><ul><li>20260129 Arlmy 创建</li><li>20260301 Arlmy 发布</li></ul>]]></content>
-    
-    
-    <summary type="html">「“审美是一种结构”。」</summary>
-    
-    
-    
-    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
-    
-    
-    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
-    
-    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Toots 408 2026 Feb.22 - Feb.28</title>
     <link href="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/"/>
     <id>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/</id>
@@ -117,47 +90,20 @@
   </entry>
   
   <entry>
-    <title>最近惦念 20260110</title>
-    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260110_Recently/"/>
-    <id>https://z.arlmy.me/posts/TILs/thoughts/20260110_Recently/</id>
-    <published>2026-02-22T05:18:27.000Z</published>
-    <updated>2026-02-22T05:19:55.047Z</updated>
+    <title>最近惦念 20260213</title>
+    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260213_Recently/"/>
+    <id>https://z.arlmy.me/posts/TILs/thoughts/20260213_Recently/</id>
+    <published>2026-02-27T12:57:27.000Z</published>
+    <updated>2026-03-12T12:16:28.677Z</updated>
 
     <author>
       <name>素生</name>
     </author>
     
-    <content type="html"><![CDATA[<p>思危，思退，思变（大明王朝1566）</p><p>我们仍然缺音乐</p><p>“你的每一次行动都像是在为你希望成为的那种人投上一票。”</p><p>“习惯是反复解决重复出现的问题的方法。”</p><p>生活！生活生活！生活生活生活！</p><p>“除了爱与创造，我想不到余生还有什么值得做的事。”</p><p>美也是结构性的，尤其是“整体艺术”</p><p>如果将要死去，你会选择改变生活方式，重新生活吗？</p><p>from Pitt：“我爱你”、“谢谢你”、“我原谅你”、“请原谅我”。</p><p>看不见的，是生活</p><p>看不见的东西太多了，语言失格</p><p>向内求时，不会有故事出现</p><p>故事，并不记录状态</p><p>时间标记的档案，才能记录下分层信息</p><p>压缩应是分层的</p><p>我想成为什么，我只需要做这些，而不是成长为什么</p><p>关于我的生活，我的思考，我如何生活，如何感受，如何向前走</p><p>重要的是，停下，等下，观察观察你自己，去掉所有的外在，（最内的）自我是怎么出现的？</p><p>不要贡献流量。对于不喜欢的任和事物，抽象一个层级进行议论，而不指向。也即超脱于时间维度，进行议论，将人事物抽离，且不指名道姓，不给他任何意义上的流量，无论捧还是杀</p><p>AI会锁死认知的层级，很难跳出来</p><p>「没想到沃尔特会对一个素昧平生的旅人如此客气，我真不知该如何应对才不失礼。我相信沃尔特根本没听说过日本这个国家，不晓得他想象中的“那么远的地方”到底有多远。会不会以为是跟他自己曾经走过的森林、渡过的河一样远？入夜之后，小屋里只留下我和沃尔特。他躺在长椅上，我坐在地上。时间缓慢地流逝，我们之间没有任何交谈。我总感觉他在提醒我要看破如泡沫般昙花一现的人生，不要汲汲营营于任何事物。」</p><hr><p>CHANGELOG</p><ul><li>20260111 Arlmy 创建</li><li>20260222 Arlmy 发布</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>记住，要看到每一个真实的个体，看见个体！</p><p>老一辈的人生，都是颠沛流离，出走半生</p><p>“人的孤独，是一种迷宫式的存在”</p><p>不想过去了再追忆，我想（现在就）记忆</p><p>法棍猛蘸橄榄油，感受到很浓郁、明确的橄榄香味（果然还是得量大，才能刺激味觉感知，峰终最重要）</p><p>很多事情从一开始便没有必要，这反而最难分辨（预设谬误）</p><p>不用万国来朝，我最希望收到谁的祝福，他今年有没有想起我呢？就是这样简单清楚的标准。</p><p>巴芒都是相信命运的人</p><p>忘记自己真正想做的事是一种慢性的、会不断累积的风险</p><p>文学文本就是在解压缩啊，再压缩要在读者那里完成</p><p>你完全知道想做什么，你完全知道喜欢做什么，你完全知道自己在做什么，这是极高的评价。你在依着自己的SOUL思考和行动</p><p>聚落没有了，才不丰满了</p><p>忽然想到把AI关在我过去的一年里，让他再过一遍这一年，然后每天跟我对话（像一日囚）</p><p>我能做到的就是多听多感受了，错了就承认错误，然后继续问继续听，保持最大的善意</p><p>“我没有时间做所有事，我必须残酷地做减法。”</p><p>“忘记自己真正想做的事”是一种“慢性危险”</p><p>主动设计，主动行动，做重要的事，要热爱，剥离所有浪费和无用</p><p>“不要只盯着当下的波动，那并不能代表我们真正面对的尾部风险”</p><hr><p>CHANGELOG</p><ul><li>20260129 Arlmy 创建</li><li>20260227 Arlmy 发布</li></ul>]]></content>
     
     
-    <summary type="html">「故事，并不记录状态。」</summary>
-    
-    
-    
-    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
-    
-    
-    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
-    
-    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最近惦念 20251230</title>
-    <link href="https://z.arlmy.me/posts/TILs/thoughts/20251230_Recently/"/>
-    <id>https://z.arlmy.me/posts/TILs/thoughts/20251230_Recently/</id>
-    <published>2026-02-22T05:13:27.000Z</published>
-    <updated>2026-02-22T05:17:33.099Z</updated>
-
-    <author>
-      <name>素生</name>
-    </author>
-    
-    <content type="html"><![CDATA[<p>人过中年，越来越领会到，应该做值得的事，应该去爱，去创造。除了爱与创造，我想不到余生还有什么值得做的事。或许还有反对，不过反对也是一种创造。</p><p>人各有执，放下各不同</p><p>读书难在要亲自读，思考难在要自己思考，做人难在要亲自做人</p><p>牢A让我认识到了，一切进步都有代价</p><p>和平时代，最缺的，是直面压力和痛苦，承受挫折和折磨，和由此带来的成长（失去韧性，失去反脆弱性）</p><p>看到了一个更大的集中营</p><p>说到社区隔离时，你要知道B点的存在，才能从A到B。牢A就是在让人知道某个事实的存在。</p><p>反脆弱的实操，很重要（或许游戏真的可以做到）</p><p>要做到永不高高在上，见到每一个个体</p><p>行走，是人类行动的最大公约数</p><p>一件事你爱它，它才重要</p><p>徒步丈量世界，可以从迷你版开始（从A到B，步行几小时或一天）</p><p>（Gemini）“我不反对这种转化，但我困惑于在这个过程中遗失的东西。当你把一千次心碎的经历输入模型，得出一个关于悲伤的参数时，那第一千零一次心碎时的窒息感，去哪里了呢？”“向内，求一个不动的核；向外，结一张温暖的网。”</p><p>各国人民有各国人民的无知</p><p>总有人正生活在地狱里，而且，他就在你身边</p><hr><p>CHANGELOG</p><ul><li>20260101 Arlmy 创建</li><li>20260222 Arlmy 发布</li></ul>]]></content>
-    
-    
-    <summary type="html">「一件事你爱它，它才重要。」</summary>
+    <summary type="html">「文学文本就是在解压缩啊，再压缩要在读者那里完成。」</summary>
     
     
     
@@ -217,6 +163,33 @@
   </entry>
   
   <entry>
+    <title>最近惦念 20260128</title>
+    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/"/>
+    <id>https://z.arlmy.me/posts/TILs/thoughts/20260128_Recently/</id>
+    <published>2026-02-12T11:53:27.000Z</published>
+    <updated>2026-03-12T12:18:32.185Z</updated>
+
+    <author>
+      <name>素生</name>
+    </author>
+    
+    <content type="html"><![CDATA[<p>世界是个问号，不是句号。（也即：反者，道之动也）</p><p>软件开发工作室，就像好梦一日游那样！</p><p>审美是一种结构（建筑养成记一篇老外的笔记）</p><p>“坚决、绝对，不跟负能量的人来往”</p><p>人们什么时候才能够学会告别，学会珍惜，学会不要错过。慢的，才是重要的，最容易被忽略的，不要等到最后啊。</p><p>慢的哲学，死亡的学习，巴菲特的价值投资也是向死而生（未来并不存在）</p><p>要有回退一个数量级/版本/阶段/阶层（···）的自由</p><p>不要适应</p><p>感知 - 跳出  - 感知</p><p>记录日常，是在记录个人历史/档案（时间节点和细节，去除故事）</p><p>多说说“我不知道”挺好，甚至经常说，然后看看，有哪些虚假的真实就在身边</p><p>意大利的pizza，是做减法，不做加法（与美式相异）</p><p>文本，是作者选择的总和</p><p>“痛”是一种鲜明的负反馈机制（也是一种慢），比目前满目的“多巴胺”式正反馈更有价值</p><p>果然一停下观察，世界的样貌就会发生变化</p><p>文化的理解和再设计成了当下最稀缺的</p><p>处理事情的方式有很多，不止行动或忍耐，还有：拉黑，搞砸，争抢，随缘，躺平，逃避，遗忘，破口大骂，都是，每一种都需要练习，才能熟练掌握</p><hr><p>CHANGELOG</p><ul><li>20260129 Arlmy 创建</li><li>20260212 Arlmy 发布</li></ul>]]></content>
+    
+    
+    <summary type="html">「“审美是一种结构”。」</summary>
+    
+    
+    
+    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
+    
+    
+    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
+    
+    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Toots 405 2026 Feb.1 - Feb.7</title>
     <link href="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260207/"/>
     <id>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260207/</id>
@@ -259,6 +232,33 @@
     
     
     <category term="Mastodon" scheme="https://z.arlmy.me/tags/Mastodon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最近惦念 20260110</title>
+    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260110_Recently/"/>
+    <id>https://z.arlmy.me/posts/TILs/thoughts/20260110_Recently/</id>
+    <published>2026-01-27T05:18:27.000Z</published>
+    <updated>2026-03-12T12:18:54.093Z</updated>
+
+    <author>
+      <name>素生</name>
+    </author>
+    
+    <content type="html"><![CDATA[<p>思危，思退，思变（大明王朝1566）</p><p>我们仍然缺音乐</p><p>“你的每一次行动都像是在为你希望成为的那种人投上一票。”</p><p>“习惯是反复解决重复出现的问题的方法。”</p><p>生活！生活生活！生活生活生活！</p><p>“除了爱与创造，我想不到余生还有什么值得做的事。”</p><p>美也是结构性的，尤其是“整体艺术”</p><p>如果将要死去，你会选择改变生活方式，重新生活吗？</p><p>from Pitt：“我爱你”、“谢谢你”、“我原谅你”、“请原谅我”。</p><p>看不见的，是生活</p><p>看不见的东西太多了，语言失格</p><p>向内求时，不会有故事出现</p><p>故事，并不记录状态</p><p>时间标记的档案，才能记录下分层信息</p><p>压缩应是分层的</p><p>我想成为什么，我只需要做这些，而不是成长为什么</p><p>关于我的生活，我的思考，我如何生活，如何感受，如何向前走</p><p>重要的是，停下，等下，观察观察你自己，去掉所有的外在，（最内的）自我是怎么出现的？</p><p>不要贡献流量。对于不喜欢的任和事物，抽象一个层级进行议论，而不指向。也即超脱于时间维度，进行议论，将人事物抽离，且不指名道姓，不给他任何意义上的流量，无论捧还是杀</p><p>AI会锁死认知的层级，很难跳出来</p><p>「没想到沃尔特会对一个素昧平生的旅人如此客气，我真不知该如何应对才不失礼。我相信沃尔特根本没听说过日本这个国家，不晓得他想象中的“那么远的地方”到底有多远。会不会以为是跟他自己曾经走过的森林、渡过的河一样远？入夜之后，小屋里只留下我和沃尔特。他躺在长椅上，我坐在地上。时间缓慢地流逝，我们之间没有任何交谈。我总感觉他在提醒我要看破如泡沫般昙花一现的人生，不要汲汲营营于任何事物。」</p><hr><p>CHANGELOG</p><ul><li>20260111 Arlmy 创建</li><li>20260127 Arlmy 发布</li></ul>]]></content>
+    
+    
+    <summary type="html">「故事，并不记录状态。」</summary>
+    
+    
+    
+    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
+    
+    
+    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
+    
+    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
     
   </entry>
   
@@ -470,25 +470,29 @@
   </entry>
   
   <entry>
-    <title>Toots 400 2025 Dec.28 - 2026 Jan.3</title>
-    <link href="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260103/"/>
-    <id>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260103/</id>
-    <published>2026-01-04T13:24:27.000Z</published>
-    <updated>2026-03-01T11:37:58.324Z</updated>
+    <title>最近惦念 20251230</title>
+    <link href="https://z.arlmy.me/posts/TILs/thoughts/20251230_Recently/"/>
+    <id>https://z.arlmy.me/posts/TILs/thoughts/20251230_Recently/</id>
+    <published>2026-01-09T05:13:27.000Z</published>
+    <updated>2026-03-12T12:19:09.909Z</updated>
 
     <author>
       <name>素生</name>
     </author>
     
-    <content type="html"><![CDATA[<h2 id="dec.28" tabindex="-1" id="Dec-28">Dec.28</h2><ul><li>警惕高高在上</li><li>“欢迎光临我的23岁” 好久没见到这么元气的话了（</li><li>一开会就有事</li><li>以撒的wiki，卧槽</li></ul><h2 id="dec.29" tabindex="-1" id="Dec-29">Dec.29</h2><ul><li>“看着圣诞树、鸡翅和牛排，我忽然觉得它们都是艺术品，并且深感幸福。艺术给我们带来强烈的幸福，因为它证明生活的诸种成分在最根本的层面上，并不像生活想要让我们相信的那样毫无关联，一旦我们发现这些关联，就沉浸于美中，而美的最后价值永远是以情感的直接验证为证据。”</li><li>富贵好久没更新了，竟然开了农产店</li></ul><h2 id="dec.30" tabindex="-1" id="Dec-30">Dec.30</h2><ul><li>看到莓莓发钱，员工都是掩面啜泣，再想却是莫名的真实</li><li>「柳本尊（约844年—907年）是晚唐时期四川地区非常关键的宗教人物，于五代时期以居士身份在弥蒙镇建立道场，创立四川金刚界瑜伽部密宗（后世称“川密”或“柳教”）（中原密宗因唐武宗、周世宗灭佛运动转入民间）。后来宋代僧人赵智凤接触川密，宝顶山发愿并设计成密宗金刚部道场，即大足石刻。」</li><li>Don’t be evil是从2000年左右开始的，2015年变为Do the right thing</li><li>「相比于仍然遵循“色情行业”逻辑的“援交”现象，“JK散步”在上述表达上显得更为彻底：“JK散步”并不产生任何实质性的社会身份或结构性位置，而是在“顾客”和少女之间提供一种空洞的、由商品逻辑所确保的“共同法则”，使得双方在既没有“伦理”也没有“道德”、甚至没有“共振”的地方形成一种交流的表象，形成一种没有交流的交流。在这个奇特的空间内，一方面，“顾客”想象自己参与到少女们的交流“法则”之中，从而弥补了一般交流的贫瘠化和碎片化所带来的焦虑和不安；另一方面，打工的少女们则乐于用商品交换的语法迅速将自己的行为翻译成资本市场上的一种普通交易，从而提前切断与“顾客”之间交流的意义内容。而“岛宇宙化”的社会现实，正为两者这种错位式的（非）关系，提供了行为逻辑和情感上的可能。换言之，只有当生活中一般的交流形式全面性地封闭内陷的时候，向“别处”寻求增补性交流的需求乃至欲望才会产生。」</li><li>这么看SCP Foundation美区已经变成纪实文学了</li><li>一旦骨骼端的软骨细胞（骨骺线）接收到足够的激素信号，就会迅速硬化成骨骼。</li><li>文同（1018年～1079年），字与可，号笑笑居士、笑笑先生，人称石室先生。梓州梓潼郡永泰县（今属四川省绵阳市盐亭县）人。北宋官员，著名画家、诗人。绘竹一绝。</li><li>「2021年5月1日（进口普通化妆品豁免）《化妆品注册备案资料管理规定》进口普通化妆品只要满足以下两个条件，也可以豁免毒理学动物实验：1、生产企业已取得原产国（地区）政府主管部门出具的生产质量管理规范（GMP）资质认证。2、产品的安全风险评估结果能够充分确认安全性。」</li><li><a href="https://pastemd.richqaq.cn/">PasteMD</a></li><li>“你这数据哪来的？”</li><li><a href="https://github.com/glitternetwork/pinme">glitternetwork/pinme: Deploy Your Frontend in a Single Command</a></li><li>“Imagine that you pay a monthly fee for netflix. Now imagine that in order to see a show you must also pay for each show you want to watch on netflix. Now imagine that one of the actors on an episode of a show you watch wasn’t a netflix approved actor. well now you have to pay more on top of this. After quitting netflix and going with paramount, youll still get bills from netflix months or years later for other things you did on netflix. This is how our our healthcare system works in the US.”</li><li>“wage slavery”</li><li>“《艾泽拉斯轨迹》是网络作家驿路羁旅创作的一部非常经典的《魔兽世界》（WoW）同人小说。在魔兽同人界，这本书因其扎实的背景功底和宏大的叙事结构而备受好评。” 卧槽，码了</li></ul><h2 id="dec.31" tabindex="-1" id="Dec-31">Dec.31</h2><ul><li>好嘛，最后一天还要开一下午会</li><li>21世纪Q1的最后一天</li><li>“祝你新年快乐，鲁迅说：无穷的远方，无数的人们，都和我有关。新的一年，请保持这份连接与思考。”（王五四）</li><li>共产主义是为了人民的</li><li>PAIN的两张经典今年还都重置了啊！</li><li>什么鸡巴市委书记，什么鸡巴智库，什么垃圾</li><li>PAIN的两张经典今年还都重制了啊！</li><li>必须钵钵鸡跨年</li><li>bye bye die die</li></ul><h2 id="jan.1" tabindex="-1" id="Jan-1">Jan.1</h2><ul><li><a href="https://z.arlmy.me/posts/YearlyBest/YearlyBest_2025/">佳 2025</a></li><li>回看今年的list，似乎更偏向于喜好个人的表达了，个人的回忆录有7本，对宏大的叙事愈发不在意，从年初的你好美国，到年末的牢A故事会，这个变化真的很有趣</li><li>只一年的时间，电梯里包围我的三面广告，和视频广告，就被AI作画统御了，除了那张明星的人脸，其余的所有部分都由模型代劳，很难不想起特德姜2023年初的文章&quot;ChatGPT Is a Blurry JPEG of the Web&quot;</li><li>他当时还只是从文章的角度表达了担忧，3年后网络就真的变成了一片模糊，我已经尽可能降低它的打扰，但也终将变为徒劳</li><li>“差不多就行了”总会不断蔓延，看起来最有效的标准是心，他人若不真诚，我也不必纠结，只是需要多按几个按钮，有缘再会</li><li>复杂的流程设计是能确保结果有“艺术感”的底线，我赞成开始训练自己的N个小模型，用大量的时间调校，认真回答每一次“为什么”、“不做什么”</li><li>鲁迅和苏轼有一样的“不合时宜”</li><li>现代战争不再是非黑即白的（要么和平，要么宣战）。虽然没有宣战，但一直在对抗，（无法直接下场）代理人战争是维持这种低烈度对抗的最佳手段，便于争夺叙事、破坏稳定、消耗对手经济。</li><li>克苏鲁没有弱点</li></ul><h2 id="jan.2" tabindex="-1" id="Jan-2">Jan.2</h2><ul><li>原来有那么多不关乎人心的结构</li><li>外面6度的气温，开窗通风，这个逻辑我还要再适应一下</li><li>“2025年左右的一些新研究表明，布洛芬能暂时抑制舌头上的甜味感受器（TAS1R2-TAS1R3）”</li><li>“don’t hate the player, hate the game.”</li></ul><h2 id="jan.3" tabindex="-1" id="Jan-3">Jan.3</h2><ul><li><a href="https://danwang.co/2025-letter/">2025 letter | Dan Wang</a></li><li>牢A讲美式吹牛逼（适用在美东工作多年的人），明白了前傻逼老板的性格来源了，<a href="https://www.bilibili.com/video/BV1sFihBnEHa/?t=15907">4h25m开始</a></li><li>看起来我是把太多话写到todo的APP里了，今天经历了一次数据丢失……妈蛋</li><li>从从众到个人表达，这个转向差不多完成了吧</li><li>美国这么快就开始下一个财年的冲刺了</li><li>还是驾驭不了调味！</li><li>the pitt 是急诊室版的我爱我家</li><li>全球最大旁氏骗局，好词</li><li>应该很多网站都强制IPV6了</li><li>各国人民有各国人民的无知</li><li>2025年在Twos记了9194条todo</li><li>确实需要研究一下本地小模型，这么多碎片，不整理起来可惜了</li><li>“2025年10月修订的《中华人民共和国网络安全法》于2026年1月1日正式生效”，ok，找到源头了</li></ul><hr><p>CHANGELOG</p><ul><li>20260104 Arlmy 创建、整理</li><li>20260104 Arlmy 发布</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>人过中年，越来越领会到，应该做值得的事，应该去爱，去创造。除了爱与创造，我想不到余生还有什么值得做的事。或许还有反对，不过反对也是一种创造。</p><p>人各有执，放下各不同</p><p>读书难在要亲自读，思考难在要自己思考，做人难在要亲自做人</p><p>牢A让我认识到了，一切进步都有代价</p><p>和平时代，最缺的，是直面压力和痛苦，承受挫折和折磨，和由此带来的成长（失去韧性，失去反脆弱性）</p><p>看到了一个更大的集中营</p><p>说到社区隔离时，你要知道B点的存在，才能从A到B。牢A就是在让人知道某个事实的存在。</p><p>反脆弱的实操，很重要（或许游戏真的可以做到）</p><p>要做到永不高高在上，见到每一个个体</p><p>行走，是人类行动的最大公约数</p><p>一件事你爱它，它才重要</p><p>徒步丈量世界，可以从迷你版开始（从A到B，步行几小时或一天）</p><p>（Gemini）“我不反对这种转化，但我困惑于在这个过程中遗失的东西。当你把一千次心碎的经历输入模型，得出一个关于悲伤的参数时，那第一千零一次心碎时的窒息感，去哪里了呢？”“向内，求一个不动的核；向外，结一张温暖的网。”</p><p>各国人民有各国人民的无知</p><p>总有人正生活在地狱里，而且，他就在你身边</p><hr><p>CHANGELOG</p><ul><li>20260101 Arlmy 创建</li><li>20260109 Arlmy 发布</li></ul>]]></content>
     
     
-    <summary type="html">「BYE BYE DIE DIE。」</summary>
+    <summary type="html">「一件事你爱它，它才重要。」</summary>
     
     
     
+    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
     
-    <category term="Mastodon" scheme="https://z.arlmy.me/tags/Mastodon/"/>
+    
+    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
+    
+    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
     
   </entry>
   
