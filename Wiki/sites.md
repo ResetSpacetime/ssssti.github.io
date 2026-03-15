@@ -93,31 +93,6 @@ title: Wiki
 - 票务：[iMuseum](https://art.icity.ly/)
 - SCHOOL，鼓楼西剧场
 
-## 鸡血视频
-- [伟大的领袖如何激励行动](http://v.youku.com/v_show/id_XMjU2NTM1MTU2.html)，[古典：生若夏花般灿烂](http://v.youku.com/v_show/id_XNjE5ODgzNjMy.html)，[一席：林曦《无用之美》](http://v.youku.com/v_show/id_XNjIyMDM4ODk2.html)，[一席：方励《感谢你给我机会上场》](http://v.youku.com/v_show/id_XNzg2MDQyNzYw.html)，[Alain de Botton：温和的成功哲学](http://v.youku.com/v_show/id_XNDE1OTQ3NDgw.html)，[Tony Robbins: Why we do what we do](http://www.ted.com/talks/tony_robbins_asks_why_we_do_what_we_do)&《I Am Not Your Guru》，[John Waters Commencement RISD 2015](http://v.youku.com/v_show/id_XMTI2NjE0MzY4OA==.html?spm=a2hzp.8253869.0.0&from=y1.7-2)，兰波迪许的最后一课，[沃伦·巴菲特1998年佛罗里达大学演讲](https://www.bilibili.com/video/BV1uv411t7ao/)，[史蒂夫·乔布斯斯坦福大学毕业生演讲](https://www.youtube.com/watch?v=5xM0KfaYV_0)，[我爸有哈雷！for girls，for“懂事”的孩子们](https://www.bilibili.com/video/BV1jN411V7jj/)，[黄永玉：艺术不存在“进步”的概念](https://www.bilibili.com/video/BV1Yo4y1773w/)，[Seth Godin – Leadership vs. Management - What it means to make a difference](https://www.youtube.com/watch?v=qzoIAJYPQwo)，[【60分钟深度】反思世界的谎言， 一个长脑子的视频 by 钞能力毛毛](https://www.bilibili.com/video/BV1sK411e7DB/)，
-
-## 视频
-- [Frank Warren: 弗兰克·沃伦：五十万个秘密](https://www.ted.com/talks/frank_warren_half_a_million_secrets?language=zh-cn#t-664787)，[查理·芒格 USC 毕业演讲](https://v.qq.com/x/page/d0536ndu1n7.html)、[乔治卡林 - 別太在乎](http://www.bilibili.com/video/av8184970/)，EBS纪录片 - 我们为什么要读大学 人才的诞生：[1.1](https://www.bilibili.com/video/av12617251)、[1.2](https://www.bilibili.com/video/av12638591)、[1.3](https://www.bilibili.com/video/av12665640)、[1.4](https://www.bilibili.com/video/av12704617)、[1.5](https://www.bilibili.com/video/av12741858)、[2.1](https://www.bilibili.com/video/av13132735)、[2.2](https://www.bilibili.com/video/av13178912)、[2.3](https://www.bilibili.com/video/av13220302)，[都筑响一：Tokyo Style](https://www.bilibili.com/video/av28755651/)
-
-## 好音频
-- [Naval Ravikant on Reading, Happiness, Systems for Decision Making, Habits, Honesty and More](https://www.farnamstreetblog.com/2017/02/naval-ravikant-reading-decision-making/)
-
-## 本命动画、漫画
-
-- 猎人HunterxHunter，阿兰的战争，万物，棕色的世界，葬送的芙莉莲
-
-## 本命电影、剧集
-
-- 沙漏时镜下的疗养院，真探S1，更美好的事，横道世之介，有熊谷守一在的地方，重启人生
-
-## 本命书籍
-
-- 荒原狼，复杂，鹿之民，火花，鳄鱼街，赫尔佐格论赫尔佐格，活了100万次的猫，坛经
-
-## 本命偶像
-
-- 赫尔佐格，邱志杰，木心，Ted K，福柯，瓦尔达，树木希林
-
 ## 关注中
 
 - 陈哲，陆杨，邵帆，欧宁，三猫堂

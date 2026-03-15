@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/pretty-feed-v3atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>素生</title>
   
@@ -7,7 +6,7 @@
   <link href="https://z.arlmy.me/atom.xml" rel="self"/>
   
   <link href="https://z.arlmy.me/"/>
-  <updated>2026-03-10T11:01:52.499Z</updated>
+  <updated>2026-03-15T02:54:09.937Z</updated>
   <id>https://z.arlmy.me/</id>
   
   <author>
@@ -16,6 +15,79 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最近惦念 20260228</title>
+    <link href="https://z.arlmy.me/posts/TILs/thoughts/20260228_Recently/"/>
+    <id>https://z.arlmy.me/posts/TILs/thoughts/20260228_Recently/</id>
+    <published>2026-03-15T02:52:27.000Z</published>
+    <updated>2026-03-15T02:54:09.937Z</updated>
+
+    <author>
+      <name>素生</name>
+    </author>
+    
+    <content type="html"><![CDATA[<p>be a owner.</p><p>love is bigger than give.</p><p>Connection/Love, Contribution/Give, Uncertainty/Variety, Growth, Certainty, Significance</p><p>有一个朝向就好，其他无所谓</p><p>你厌恶流量，但你仍在聊着它</p><p>欲望够强时，一切都会为你开路（我还是没有做到啊），念力不够强，漏得快</p><p>不在自己行进路线上的所有事情，都可以降权和无视</p><p>真，美，善，爱，禅。same goal, same game.</p><p>复杂系统难以降维，但个体不受限制</p><p>目标不是暴富，而是反脆弱，设计“保险”</p><p>做别人都没做的事情（山有虎）</p><p>“这样就可以了”是稀缺的状态（mindset）</p><p>最好的算命先生，一定都住在城市之外，住在自然里</p><p>“如果休息只是为了更好的工作，那这种休息依然是生产力逻辑的一部分。真正的无所事事，是要承认人作为人的价值，而不是作为生产工具的价值。”</p><p>可以给自己做一个随机触发器</p><p>SM、四爱都是人类丰容，人性的连续光谱，补缺的过程</p><p>选基金经理也是选品味</p><p>“double down on being human.”</p><p>真正重要的事情总是很隐性的，滞后的</p><p>一个错别字都没有的账号会变得无法信任</p><hr><p>CHANGELOG</p><ul><li>20260228 Arlmy 创建</li><li>20260308 Arlmy 发布</li></ul>]]></content>
+    
+    
+    <summary type="html">「真，美，善，爱，禅。same goal, same game.」</summary>
+    
+    
+    
+    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
+    
+    
+    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
+    
+    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Toots 410 2026 Mar.8 - Mar.14</title>
+    <link href="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/"/>
+    <id>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/</id>
+    <published>2026-03-15T02:47:27.000Z</published>
+    <updated>2026-03-15T02:49:52.047Z</updated>
+
+    <author>
+      <name>素生</name>
+    </author>
+    
+    <content type="html"><![CDATA[<h2 id="mar.8" tabindex="-1" id="Mar-8">Mar.8</h2><ul><li>「我注意到与<strong>我们自主安排</strong>这一类别相关的事物类型：休息、思考、鲜花、阳光。这些都是身体性的、人性化的事物，而这种身体性是我将要回头探讨的。当领导组织这次八小时运动具体迭代的劳工团体领袖塞缪尔·戈姆珀斯（Samuel Gompers）发表题为What Does Labor Want？的演讲时，他得出的答案是：“它想要大地及其丰饶。” 在我看来，重要的不是八小时的“休闲”或“教育”，而是“八小时由我们自主安排”。尽管休闲或教育可能包含其中，但描述这段时间最人性化的方式是拒绝定义它。」</li><li>天啊我太喜欢KOReader了</li><li>“a break to do nothing, to just listen, to remember in the deepest sense what, when, and where we are.”</li><li>“晚上没什么事可做，所以我和其中一位艺术家有时会坐在屋顶上看日落。她是天主教徒，来自中西部；我则有点像是典型的加州无神论者。我非常怀念我们在那里进行的关于科学和宗教的慵懒、漫无边际的谈话。令我印象深刻的是，我们谁也没有说服对方——那并不是重点——但我们倾听了彼此，并且我们确实都带着对对方立场更细致的理解，在离开时变得不同了。”</li><li>啊，Ghost Elephants首映了！</li><li>7账，路上，吃芙蓉凰</li><li>饭账，芙蓉凰，雪花鸡淖（好）、芙蓉飘香、椒香肝尖（好）、宫保鸡丁（好）、担担面（好）</li><li>书账，The Day the Country Died，Trapped in a Scene，Choosing Death</li></ul><h2 id="mar.9" tabindex="-1" id="Mar-9">Mar.9</h2><ul><li>上下文运算一次十几万token，便宜的flash模型做个关键词提取，一次才一千多token</li><li>好的，让我研究下云计算ETF……</li><li>“在历史的某个节点，文明走错了方向，绕了一条弯路，最终走进了死胡同。他们觉得，唯一的办法就是退出，一路回到起点，回到意识的原始源头，文化的真正基础：土地（the land）。”</li><li>「这意味着始终与人们的期望背道而驰。如同早前的庄周，第欧根尼认为世上每个&quot;清醒&quot;之人实则都疯了——因为他们竟会遵从那些维护着贪婪、腐败与无知世界的习俗。他践行着一种近乎颠倒的美学：倒着走在街道上，只在人群散场时踏入剧院。当被问及希望如何安葬时，他答道：“头朝下埋。因为很快下就会变成上。” 平日里，他会在盛夏滚过滚烫的沙地，也会拥抱覆满积雪的雕像。 他质疑抽象概念与那种只为病态世界培养职业人才、却不教导年轻人如何过好生活的教育。有人曾见他整个下午都在粘合书页。尽管许多哲学家都奉行苦修，第欧根尼却连这点都要刻意表演。一次，看见孩童用手捧水喝，他扔掉自己的杯子说：&quot;这孩子已在简朴生活上胜过了我。&quot;另一次，他高声赞叹老鼠活得多么俭省。」</li><li>“我们需要第欧根尼，不仅为了消遣，也不仅为了展示 alternatives 的存在，更因为像他这样的故事——即便数百年后——<strong>仍在丰富着我们关于拒绝的语汇</strong>。”</li><li><a href="https://read.dukeupress.edu/environmental-humanities/article/6/1/159/8110/Anthropocene-Capitalocene-Plantationocene">Anthropocene, Capitalocene, Plantationocene, Chthulucene: Making Kin | Environmental Humanities | Duke University Press</a></li><li>“Assessing User’s Prompt, I’ve successfully identified the core intent: a singular, immediate execution from the user.” 他好像很高兴的样子</li><li>向前看，不回头，你做得到吗，你敢吗</li></ul><h2 id="mar.10" tabindex="-1" id="Mar-10">Mar.10</h2><ul><li>安全感，包裹感很好，但也需要一些碰撞，我想看到碰撞时产生的火花，然后所有人都停下来，安静地，看那些火花</li><li>还好我控制住了没去买Mac mini……还好服务器给了续费优惠……还好我按官方配置自己安装了OpenClaw……只用了五天就做了这么多的决定，很久没这么累且高兴着了，我想安个BASIC语言怀旧一下</li><li>「德勒兹认为，巴托比的回应以其独特的语言结构“在语言内部雕琢出一种异质语言，使整体直面沉默，倾覆于沉默之中”。」</li><li>“西塞罗推论：若相信万物皆由命运或天性注定，就无人需为任何事负责，正义便无从谈起。用现代话语说，我们都将沦为算法。更甚者，我们将失去超越天性倾向、完善自我的动力。”</li><li>梦。去看音乐节，骑车去，坏的，滑着去，到了十二点半，外面天黑，里面宛如白昼，有个专场已坐满，各种假人头在舞台周边，往里又很远，两个大舞台，望山跑死我，分舞台土摇，台下安静，主舞台民谣，台下跑火车，居民楼里人头攒动，明明进来时还听到大敌，哪去了，怎么也找不到</li><li>「然而这意味着，即便出狱之后，梭罗的视角仍将他禁锢在永久的拒绝生活中。他“悄然向国家宣战”，不得不作为一个流亡者生活在与自身价值观格格不入的世界里。梭罗的“国度”实际上正是我先前描述的“抽身独立”。从未来审视当下，以正义视角透视不公，梭罗必须栖身于未实现的困顿之境。但希望与自律使他坚守于此，始终朝向“那个更完美辉煌的国度——我虽能想象，却尚未在任何地方得见”。」</li><li><a href="https://zh.wikisource.org/zh-hans/Translation:%E5%85%AC%E6%B0%91%E4%B8%8D%E6%9C%8D%E4%BB%8E_(%E6%A2%AD%E7%BD%97)">翻译:公民不服从 (梭罗) - 维基文库，自由的图书馆</a></li><li>（摘）<ul><li>我们紧张地行至准许的思想的边缘，然后唤醒审查的超我来监督自己。</li><li>在定义不够清晰的边缘跳舞，会不断地被界限捕获。</li><li>伸出手，就把虚无据为己有。</li><li>没有界限，一切都没有严格的边缘。</li><li>最终，当你跨过了认知边缘，你就成为神。</li></ul></li><li>操，真的，我二十年多的数据不是白积累的</li><li>决定了，向世界投放大量草稿</li><li>对系统say no，对欲望say no</li><li>Pera/πήρα 乌托邦，Typhos/τύφος 虚妄、傲慢、错觉，Atyphia/ἀτυφία 心智澄明、旁观、跳出</li><li>「克拉特斯是阿斯孔达斯的儿子，忒拜人。他也是犬儒学派著名弟子当中的一位。但希珀伯托斯说，他不是第欧根尼的学生，而是亚该亚的布律松的学生。这里有一首他写的打油诗：<ul><li>在啤酒色的烟雾中坐落着一座城市叫佩拉，</li><li>美丽而富饶，它随波逐流，不滞某处。</li><li>航行到那里的人既无愚蠢的寄生虫，</li><li>也无搔首弄姿淫荡的妓女，</li><li>那里有的只是百里香、大蒜，以及无花果和面包。</li><li>人们从不为此互相争斗，</li><li>也从不为了金钱和荣誉而准备长矛铠甲。」《名哲言行录》</li></ul></li></ul><h2 id="mar.11" tabindex="-1" id="Mar-11">Mar.11</h2><ul><li>一大早机场人真多</li><li>人脑会飞</li><li>7账，入住全季，聊产业，晒太阳</li><li>「《礼记·王制》：五方之民，言语不通，嗜欲不同。达其志，通其欲，东方曰“寄” ，南方曰“象”，西方曰“狄鞮”，北方曰“译” 。◦“寄”者寓也。以其言之难通，如寄托其意于事物而后能通之。◦“象”，像也。如以意做象其形似而通之。◦“鞮”，戎狄履名，犹履也。远履其事而知其言意之所在而通之。◦“译”，释也。言誊也，谓以彼此言语相誊释而通之也。」</li><li>确实白头鹎有口音！</li></ul><h2 id="mar.12" tabindex="-1" id="Mar-12">Mar.12</h2><ul><li>到安徽自然得吃老乡鸡了</li><li>齐光之耀，齐云之蓝</li><li>“明朝：张居正的堤防工程彻底切断了云梦泽与长江的水系联系，使其最终退化为陆地。”</li><li>「玉米是全球畜牧业的“血液”，是猪、牛、鸡最重要的能量饲料。一旦美国的玉米价格因为乙醇需求被抬高，原本大量进口美国玉米的东亚、东南亚国家就会发现，自己的养殖成本正在失控。这种从“车油箱”到“饭碗肉价”的传导，速度快到只需3-6个月。」</li><li>这世界已经颠到难以理解了</li><li>变奏，创作，发泄，写作，向前看，重新来，把你的愤怒写出来唱出来，就没事了</li><li>老头子怎么也变得娇气起来了</li><li>开关梦</li></ul><h2 id="mar.13" tabindex="-1" id="Mar-13">Mar.13</h2><ul><li>7账，瞿颖来papi节目，提到毛宁的段子好好笑，又一点点过敏反应了</li><li>越来越多人反应过来建设自己的信息库和数据库，还有要记录日常和日记了</li><li>回头看，新型笔记软件的逐渐普及，也是同时期出现的</li><li>“未来的个体价值公式可能是：<ul><li>Value = (Unique_Experience x Emotional_Connection) / Efficiency 越不追求效率，价值越高。越是个人的、偏见的、无法解释的，价值越高。”</li></ul></li><li>「训练“他人的视角”，严肃小说（Fiction）和人物传记是最高效的工具。读“失败者”的传记；学习一门改变“视觉”的技能：绘画或摄影；“低保真”的田野调查：打破社交圈层，和一个你平时绝对不会有交集的人聊天（闲聊调研法）」</li><li>“朱光潜列出他最喜爱的16部中国古典文学作品包括：《诗经·国风》、《古诗源》、《楚辞》、《庄子》、《李太白集》、《陶渊明集》、《花间集》、《词选》、《昭明文选·书笺》、《史记》、《杜工部集》、《宋词三百首》、《水浒传》、《红楼梦》、《论语》、《世说新语》。”</li><li>哇哦，五代词选</li><li>以你对我的了解来描述我。以这些了解，推荐给我小模型的宪法prompt。建议我应该如何选型和积累、整理数据，以及备份我的soul.md和日志。最后，如何简化，且把损失降到最低。</li><li>共有、共担，有效的互动和信任，才是最高效的，而非分离，但从经济模型（创造收益和利润）的角度，不占有优势，世界的异化和下一步演化，或许因为AI的出现，提前和加强了</li><li><strong>做平衡者、连接者，不断积累着信任，很难输</strong>。“所有关系都被契约化、数据化、效率化的世界里，共有、共担、信任这古老的模式，反而会因为稀缺而产生巨大的溢价。”</li><li>共享“平庸”。去奇观化。</li><li>文化就是这样不断试验和演化，最终形成一种沉淀和思潮（一种社会计算的结果），比如嬉皮士的遗产，都是自己玩出来的，开放的，不借住外力，只靠内力生长。</li><li>似乎债务周期或经济低谷期都是这样。中世纪似乎也是，中国的明清也是，留下的是模式、架构和框架，其实就是某种抽象的流程，是空的，但灵活度更高，DNA也是这样，有内置的功能，但需要有相应的环境，才会激发。</li><li>缺陷成为终极奢侈品</li><li>一个错别字都没有的账号会变得无法信任</li></ul><h2 id="mar.14" tabindex="-1" id="Mar-14">Mar.14</h2><ul><li>“In Zen they say: If something is boring after two minutes, try it for four. If still boring, then eight. Then sixteen. Then thirty-two. Eventually one discovers that it is not boring at all.” John Cage</li><li>“从第一天起，我就感到兴奋不已……我意识到这种图片更接近我们实际的观看方式，也就是说，不是一眼看全，而是通过离散、分离的一瞥，然后我们将这些一瞥构建成我们对世界的连续体验……有上百个跨越时间的独立一瞥，我从这些一瞥中综合出对你的生动印象。这真是太棒了。”（霍克尼）是的，这就是出片摄影所失去的东西。</li><li>daily是小周天，yearly是大周天</li><li>「一直珍视这部电影（The Exchange）那具有欺骗性的宁静；它展示了即使是最微小的断裂，也能突然让一切变得鲜明起来。就像那些参观霍克尼作品后报告“看到了东西”的访客——或者像我自己沿着格罗夫街行走时被声音迷住一样——这部电影的转折点完全是感知性的。它与我们“注视”现实而非“透过”现实看时，现实那无穷无尽的奇异本质有关。」</li><li>「与&quot;我-它&quot;相对，“我-你&quot;关系承认他者的不可化约性与绝对平等性。在这种关系中，我通过给予你全然的关注，与完整的&quot;你&quot;相遇；因为我既不投射也不&quot;解读&quot;你，世界便收缩为你我之间充满魔力的专属时刻。在&quot;我-你&quot;关系中，“你&quot;不必是人；布伯著名的例子是以不同方式观看一棵树，其中除一种方式外，其余皆被他归为&quot;我-它”。他可以&quot;将其视为一幅图画”，描述其视觉元素；可以将其看作某个物种的实例、自然法则的表达，或是纯粹的数字关系。&quot;在所有这些过程中，树始终是我的对象，拥有其位置、时间跨度、种类与状态，&quot;他说。但接着存在&quot;我-你&quot;的可能性：&quot;如果意愿与恩典结合，也可能发生这样的事：当我凝视这棵树时，我被带入一种关系，树不再是一个’它’。那种排他性的力量攫住了我。」</li><li>「研究人员提出，注意力是开启无意识感知与意识感知之间闸门的钥匙。没有这把注意力钥匙，刺激物根本无法进入意识层面。作为一位试图通过艺术影响和拓宽注意力的艺术家，我不禁将这个视觉注意力的发现推演到广义的注意力范畴。我们只看见寻找之物已是老生常谈，但这种“信息已进入大脑却未被意识接纳”的概念，似乎解释了为何我们会突然发现始终存在之物的诡异感。比如无数次听完交响乐后走过格罗夫街时，各种声响其实早已进入耳朵并被处理——毕竟我生理上并无听力障碍。<strong>是约翰·凯奇作品的演绎，或者说它对我注意力的调谐，为那些声音提供了通过“闸门”进入意识感知的“钥匙”。当我转移注意力的焦点，那些早已传入大脑的信号终于获得了进入意识感知的许可。</strong>」</li><li>inattentional blindness</li><li>是的，留子看完牢A后觉得灵视提高了，就是案例，有些人一直看得到，有些人一辈子都看不到</li><li>7账，于谦和小兔在拆卡，说到to签球衣给石富宽，网购的凤梨不错</li><li>“提案的终极价值，在于它具象化了一种世界观。当人们消费这些被细化的品味时，他们其实是在租赁一种观看世界的方式。” 匮乏之下，解决方案将当道</li><li>啊？竟然能借20本书吗</li><li>提案有对匮乏的统治权</li><li>今年写了60小时了，去年238小时</li><li>「在科林和迈尔斯互相凝视时那种不适和不自然的时刻，你能感受到注意力中“延伸向”（ad tendere）的张力。他们不仅仅是目光投向对方；他们是在看见彼此。正是这场戏让我清晰地理解了注意力、感知、偏见和意志之间的联系。实际上，种族主义观点的对立面正是布伯的“我-你”感知，它坚决拒绝让他者坍缩为任何工具性范畴。<strong>回想一下，布伯拒绝将树视为图像、物种或数字关系。相反，“你”拥有与我相同的深度。以这种方式看待意味着放弃所有更简单、更习惯性的“观看”方式，因此，这是一种脆弱的状态，需要自律来维持。</strong>」</li></ul><hr><p>CHANGELOG</p><ul><li>20260315 Arlmy 创建、整理</li><li>20260315 Arlmy 发布</li></ul>]]></content>
+    
+    
+    <summary type="html">「向世界投放大量草稿。」</summary>
+    
+    
+    
+    
+    <category term="Mastodon" scheme="https://z.arlmy.me/tags/Mastodon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026 纸书单</title>
+    <link href="https://z.arlmy.me/posts/YearlyBooks/BookList_2026/"/>
+    <id>https://z.arlmy.me/posts/YearlyBooks/BookList_2026/</id>
+    <published>2026-03-14T10:25:00.000Z</published>
+    <updated>2025-12-03T15:00:00.000Z</updated>
+
+    <author>
+      <name>素生</name>
+    </author>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>日期</th><th>缘由</th><th>书名</th><th>备注</th></tr></thead><tbody><tr><td>0107</td><td>大头推荐</td><td>《摄影讲习所》</td><td>孔夫子瓜瓜书店</td></tr><tr><td>0107</td><td>凑单</td><td>《中国神话故事》</td><td>孔夫子瓜瓜书店</td></tr><tr><td>0107</td><td>凑单</td><td>《巴蜀文化》</td><td>孔夫子瓜瓜书店</td></tr><tr><td>0114</td><td>洪堡</td><td>《宇宙（第一卷）》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>波兰</td><td>《波兰诗选（下）》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>医疗伦理</td><td>《永不再来》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>豆瓣标记</td><td>《三升斋续笔》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>观鸟</td><td>《野外观鸟手册（第二版）》</td><td>四川省图书馆</td></tr><tr><td>0128</td><td>歌单</td><td>《通俗歌曲 摇滚》2006.3</td><td>孔夫子兰州文渊书坊</td></tr><tr><td>0128</td><td>凑单</td><td>《我们性格中的悲剧》</td><td>孔夫子兰州文渊书坊</td></tr><tr><td>0128</td><td>老陀</td><td>《被欺凌与被侮辱的人》</td><td>孔夫子兰州文渊书坊</td></tr><tr><td>0209</td><td>星星推荐</td><td>《四川方言词典》</td><td>新华文轩旗舰书店</td></tr><tr><td>0210</td><td>鹏哥推荐</td><td>《民国四川话英语教科书》</td><td>新华文轩网络书店</td></tr><tr><td>0314</td><td>波兰</td><td>《波兰诗选（上）》</td><td>四川省图书馆</td></tr><tr><td>0314</td><td>人类学</td><td>《听客溪的朝圣》</td><td>四川省图书馆</td></tr><tr><td>0314</td><td>西南文化</td><td>《最后的士绅家族（上）》</td><td>四川省图书馆</td></tr><tr><td>0314</td><td>猫文化</td><td>《猫在故纸堆》</td><td>四川省图书馆</td></tr><tr><td>0314</td><td>西班牙文学</td><td>《春之死》</td><td>四川省图书馆</td></tr><tr><td>0314</td><td>葡萄牙文学</td><td>《犬滩歌谣》</td><td>四川省图书馆</td></tr><tr><td>0314</td><td>熊科普</td><td>《生而为熊》</td><td>四川省图书馆</td></tr></tbody></table><hr><p>CHANGELOG</p><ul><li>20260110 Arlmy 创建</li><li>20260110 Arlmy 更新</li><li>20260114 Arlmy 更新</li><li>20260128 Arlmy 更新</li><li>20260314 Arlmy 更新</li></ul>]]></content>
+    
+    
+    <summary type="html">「买的书和借阅的书」</summary>
+    
+    
+    
+    
+    <category term="纸书单" scheme="https://z.arlmy.me/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
   
   <entry>
     <title>OpenClaw 配置</title>
@@ -333,29 +405,6 @@
   </entry>
   
   <entry>
-    <title>2026 纸书单</title>
-    <link href="https://z.arlmy.me/posts/YearlyBooks/BookList_2026/"/>
-    <id>https://z.arlmy.me/posts/YearlyBooks/BookList_2026/</id>
-    <published>2026-01-14T14:31:00.000Z</published>
-    <updated>2025-12-03T15:00:00.000Z</updated>
-
-    <author>
-      <name>素生</name>
-    </author>
-    
-    <content type="html"><![CDATA[<table><thead><tr><th>日期</th><th>缘由</th><th>书名</th><th>备注</th></tr></thead><tbody><tr><td>0107</td><td>大头推荐</td><td>《摄影讲习所》</td><td>孔夫子瓜瓜书店</td></tr><tr><td>0107</td><td>凑单</td><td>《中国神话故事》</td><td>孔夫子瓜瓜书店</td></tr><tr><td>0107</td><td>凑单</td><td>《巴蜀文化》</td><td>孔夫子瓜瓜书店</td></tr><tr><td>0114</td><td>洪堡</td><td>《宇宙（第一卷）》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>波兰</td><td>《波兰诗选（下）》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>医疗伦理</td><td>《永不再来》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>豆瓣标记</td><td>《三升斋续笔》</td><td>四川省图书馆</td></tr><tr><td>0114</td><td>观鸟</td><td>《野外观鸟手册（第二版）》</td><td>四川省图书馆</td></tr><tr><td>0128</td><td>歌单</td><td>《通俗歌曲 摇滚》2006.3</td><td>孔夫子兰州文渊书坊</td></tr><tr><td>0128</td><td>凑单</td><td>《我们性格中的悲剧》</td><td>孔夫子兰州文渊书坊</td></tr><tr><td>0128</td><td>老陀</td><td>《被欺凌与被侮辱的人》</td><td>孔夫子兰州文渊书坊</td></tr></tbody></table><hr><p>CHANGELOG</p><ul><li>20260110 Arlmy 创建</li><li>20260110 Arlmy 更新</li><li>20260114 Arlmy 更新</li><li>20260128 Arlmy 更新</li></ul>]]></content>
-    
-    
-    <summary type="html">「买的书和借阅的书」</summary>
-    
-    
-    
-    
-    <category term="纸书单" scheme="https://z.arlmy.me/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>摘：《永恒的时光之旅》</title>
     <link href="https://z.arlmy.me/posts/Note/Note_HoshinoMichio_TheEternalJourney/"/>
     <id>https://z.arlmy.me/posts/Note/Note_HoshinoMichio_TheEternalJourney/</id>
@@ -444,56 +493,6 @@
     
     <category term="笔记" scheme="https://z.arlmy.me/categories/%E7%AC%94%E8%AE%B0/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Toots 402 2026 Jan.4 - Jan.10</title>
-    <link href="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260110/"/>
-    <id>https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260110/</id>
-    <published>2026-01-11T02:06:27.000Z</published>
-    <updated>2026-03-01T11:38:04.328Z</updated>
-
-    <author>
-      <name>素生</name>
-    </author>
-    
-    <content type="html"><![CDATA[<h2 id="jan.4" tabindex="-1" id="Jan-4">Jan.4</h2><ul><li>呆爷的呼噜声越来越大惹</li><li>私有小模型应该是个矩阵</li><li>基本数据库一致，但调用逻辑不用，应用层级也不同</li><li>赵纯想提出的整体分层和定调（有点像价值观），是不错的方向，之前只想定义oc，现在可以定义行为</li><li>prompt是个系统工程，我也需要自己的oc</li><li><a href="https://www.bilibili.com/video/BV1y8411e7MB/">《建筑养成记》：第1部分-“Flow”（时光流转）——斯图尔特·布兰德（Stewart Brand）</a></li><li>吃得好撑！</li><li>音乐节枪击，这情节太地狱了……</li></ul><h2 id="jan.5" tabindex="-1" id="Jan-5">Jan.5</h2><p>None.</p><h2 id="jan.6" tabindex="-1" id="Jan-6">Jan.6</h2><ul><li>Deal Structuring</li><li>在柔佛(Johor)和巴淡岛(Batam)盖数据中心，就是直接卖给新加坡呗</li><li>柔佛-新加坡经济特区，所以去新加坡和马来西亚的越来越多</li><li>“快乐教育”适合稳定内需市场</li><li>青羊、抚琴、白果林、石人、战旗、黄忠</li><li>“三九四九冻死猪狗 五九六九河边看柳”</li><li>还真看到过美国黑人来中国体检被吓哭的信息</li><li>搜下18洞高尔夫球场就能看到中产聚集区了</li><li>大迁徙还要继续，破茧房，破空间</li></ul><h2 id="jan.7" tabindex="-1" id="Jan-7">Jan.7</h2><ul><li>真实，很难被记述</li><li>但最起码的，记录，还是极度需要的，底层数据的重要性极高极高</li><li>豌豆尖都三块一斤了，猛猛吃</li><li>冒烤鸭和冬天的羊肉汤才是永恒的</li><li>乐至（资阳）红花藕，“七孔藕是红花藕，粉藕较多，口感软糯，适合煲汤”</li></ul><h2 id="jan.8" tabindex="-1" id="Jan-8">Jan.8</h2><ul><li>很多人口中的臣服和原书说的根本不是一回事，这破翻译</li><li>语言不重要</li><li>管理规模大，夏普比率还这么高，值得多搞一点</li></ul><h2 id="jan.9" tabindex="-1" id="Jan-9">Jan.9</h2><ul><li>原来苹果也出了头戴降噪啊</li><li>vpnso还真是跑路了呀，一直是我的垫底方案，刚好在快要续费时结束了，毕竟用了十一年，还是祝他们平安</li><li>难有血性是汉人</li><li>让微信群消息可以看的方法，是，把不想看的都删掉</li><li>观呼吸还是太难了，尤其想让呼比吸长</li><li>呆爷就每次呼气都长于吸气，每次都是在跟他一起的时候想起遗漏了日常练习，让我嫉妒</li></ul><h2 id="jan.10" tabindex="-1" id="Jan-10">Jan.10</h2><ul><li>越来越没什么值得一看的内容作品，都什么垃圾推荐算法</li><li>还是得保持一定频次的交流</li><li>锡伯妈妈风味奶茶馆</li><li>这么多遍加州旅馆都白听了</li><li>喵弥陀佛</li><li>华裔、华人，对一些群体还是理解得不深哈哈</li><li>这个“v是兔子wishtoday”确实可以</li><li>纽约克苏鲁和波士顿克苏鲁呵呵呵</li><li>纽约的暗无天日和昏昏欲睡的感觉，跟印象里是一致的</li></ul><hr><p>CHANGELOG</p><ul><li>20260111 Arlmy 创建、整理</li><li>20260111 Arlmy 发布</li></ul>]]></content>
-    
-    
-    <summary type="html">「克苏鲁。」</summary>
-    
-    
-    
-    
-    <category term="Mastodon" scheme="https://z.arlmy.me/tags/Mastodon/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最近惦念 20251230</title>
-    <link href="https://z.arlmy.me/posts/TILs/thoughts/20251230_Recently/"/>
-    <id>https://z.arlmy.me/posts/TILs/thoughts/20251230_Recently/</id>
-    <published>2026-01-09T05:13:27.000Z</published>
-    <updated>2026-03-12T12:19:09.909Z</updated>
-
-    <author>
-      <name>素生</name>
-    </author>
-    
-    <content type="html"><![CDATA[<p>人过中年，越来越领会到，应该做值得的事，应该去爱，去创造。除了爱与创造，我想不到余生还有什么值得做的事。或许还有反对，不过反对也是一种创造。</p><p>人各有执，放下各不同</p><p>读书难在要亲自读，思考难在要自己思考，做人难在要亲自做人</p><p>牢A让我认识到了，一切进步都有代价</p><p>和平时代，最缺的，是直面压力和痛苦，承受挫折和折磨，和由此带来的成长（失去韧性，失去反脆弱性）</p><p>看到了一个更大的集中营</p><p>说到社区隔离时，你要知道B点的存在，才能从A到B。牢A就是在让人知道某个事实的存在。</p><p>反脆弱的实操，很重要（或许游戏真的可以做到）</p><p>要做到永不高高在上，见到每一个个体</p><p>行走，是人类行动的最大公约数</p><p>一件事你爱它，它才重要</p><p>徒步丈量世界，可以从迷你版开始（从A到B，步行几小时或一天）</p><p>（Gemini）“我不反对这种转化，但我困惑于在这个过程中遗失的东西。当你把一千次心碎的经历输入模型，得出一个关于悲伤的参数时，那第一千零一次心碎时的窒息感，去哪里了呢？”“向内，求一个不动的核；向外，结一张温暖的网。”</p><p>各国人民有各国人民的无知</p><p>总有人正生活在地狱里，而且，他就在你身边</p><hr><p>CHANGELOG</p><ul><li>20260101 Arlmy 创建</li><li>20260109 Arlmy 发布</li></ul>]]></content>
-    
-    
-    <summary type="html">「一件事你爱它，它才重要。」</summary>
-    
-    
-    
-    <category term="til" scheme="https://z.arlmy.me/categories/til/"/>
-    
-    
-    <category term="til" scheme="https://z.arlmy.me/tags/til/"/>
-    
-    <category term="recently" scheme="https://z.arlmy.me/tags/recently/"/>
     
   </entry>
   
