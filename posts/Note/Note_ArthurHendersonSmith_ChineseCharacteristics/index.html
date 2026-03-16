@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="yes" name="mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="误读人生，化人生活"><title>Chinese Characteristics 目录对比 | 素生</title><link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;display=swap"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><link rel="alternate" type="application/atom+xml" href="/atom.xml,rss2.xml"><script src="https://www.googletagmanager.com/gtag/js?id=G-CGJZ3YGXT6" async=""></script><script>window.dataLayer = window.dataLayer || [];
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="yes" name="mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="误读人生，化人生活"><title>Chinese Characteristics 目录对比 | 素生</title><link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;display=swap"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><link rel="alternate" type="application/atom+xml" href="/atom.xml,rss2.xml"><script src="https://www.googletagmanager.com/gtag/js?id=G-CGJZ3YGXT6" async></script><script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-CGJZ3YGXT6');
@@ -13,15 +13,18 @@ gtag('config', 'G-CGJZ3YGXT6');
 <meta property="article:modified_time" content="2025-11-25T15:58:56.343Z">
 <meta property="article:author" content="素生">
 <meta property="article:tag" content="arlmy,素生,生活,摘录,笔记,感悟,误读人生,化人生活">
-<meta name="twitter:card" content="summary"><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="preload" href="https://unpkg.com/toastr/build/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"></noscript></head><body><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+<meta name="twitter:card" content="summary"><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer></script><link rel="preload" href="https://unpkg.com/toastr/build/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"></noscript><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 var toggle = document.querySelector('.darkmode-toggle');
 var html = document.querySelector('html');
 
 html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
 
 toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
+  localStorage.dark = !(html.dataset.dark == 'true');
+  html.dataset.dark = localStorage.dark;
+  
+  // 【新增】告诉全站：主题切换啦！热力图监听到这个事件就会重绘颜色
+  document.body.dispatchEvent(new Event('themechange'));
 });</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
@@ -29,17 +32,17 @@ html.dataset.dark = localStorage.dark;
   navigator.clipboard.writeText(segmentWithMd)
     .then(() => alert('已复制: ' + segmentWithMd))
     .catch(err => console.error('复制失败:', err));
-}</script><meta name="generator" content="Hexo 7.3.0"><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Chinese Characteristics 目录对比</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Chinese Characteristics 目录对比</h1><div class="post-meta">2020-07-04<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.3k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h3 id="%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF" tabindex="-1">版本信息</h3>
-<p><a target="_blank" rel="noopener" href="https://archive.org/details/chinesecharacter00smitiala/page/6/mode/2up?utm_source=z.arlmy.me">英文版</a><br>
-<a target="_blank" rel="noopener" href="https://www.kinokuniya.co.jp/f/dsg-01-9784120047558?utm_source=z.arlmy.me">日文版</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/1879939/?utm_source=z.arlmy.me">中国人的气质 - 佚名译</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/2009605/?utm_source=z.arlmy.me">中国人的脸谱 - 龙婧译</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/2342942/?utm_source=z.arlmy.me">中国人的气质 - 刘文飞/刘晓旸译</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/1067597/?utm_source=z.arlmy.me">文明与陋习：典型的中国人 - 舒扬译</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/2000721/?utm_source=z.arlmy.me">中国人的特性 - 匡雁鹏译</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/6025698/?utm_source=z.arlmy.me">中國人的性格 - 樂愛國/張華玉译</a><br>
-<a target="_blank" rel="noopener" href="https://book.douban.com/subject/30180465/?utm_source=z.arlmy.me">中国人的性格 - 陶林/韩利利译</a></p>
-<h3 id="%E4%B8%80" tabindex="-1">一</h3>
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Chinese Characteristics 目录对比</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Chinese Characteristics 目录对比</h1><div class="post-meta">2020-07-04<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.3k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h3 id="%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF" tabindex="-1" id="版本信息">版本信息</h3>
+<p><a target="_blank" rel="noopener" href="https://archive.org/details/chinesecharacter00smitiala/page/6/mode/2up">英文版</a><br>
+<a target="_blank" rel="noopener" href="https://www.kinokuniya.co.jp/f/dsg-01-9784120047558">日文版</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/1879939/">中国人的气质 - 佚名译</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/2009605/">中国人的脸谱 - 龙婧译</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/2342942/">中国人的气质 - 刘文飞/刘晓旸译</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/1067597/">文明与陋习：典型的中国人 - 舒扬译</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/2000721/">中国人的特性 - 匡雁鹏译</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/6025698/">中國人的性格 - 樂愛國/張華玉译</a><br>
+<a target="_blank" rel="noopener" href="https://book.douban.com/subject/30180465/">中国人的性格 - 陶林/韩利利译</a></p>
+<h3 id="%E4%B8%80" tabindex="-1" id="一">一</h3>
 <p>Face,<br>
 面子,<br>
 体面,<br>
@@ -49,7 +52,7 @@ html.dataset.dark = localStorage.dark;
 面子,<br>
 保全面子,<br>
 “面子”问题</p>
-<h3 id="%E4%BA%8C" tabindex="-1">二</h3>
+<h3 id="%E4%BA%8C" tabindex="-1" id="二">二</h3>
 <p>Economy,<br>
 倹約,<br>
 节俭,<br>
@@ -59,7 +62,7 @@ html.dataset.dark = localStorage.dark;
 节俭,<br>
 節儉持家,<br>
 节俭问题</p>
-<h3 id="%E4%B8%89" tabindex="-1">三</h3>
+<h3 id="%E4%B8%89" tabindex="-1" id="三">三</h3>
 <p>Industry,<br>
 勤勉,<br>
 力行,<br>
@@ -69,7 +72,7 @@ html.dataset.dark = localStorage.dark;
 勤劳,<br>
 勤勞刻苦,<br>
 勤劳刻苦</p>
-<h3 id="%E5%9B%9B" tabindex="-1">四</h3>
+<h3 id="%E5%9B%9B" tabindex="-1" id="四">四</h3>
 <p>Politeness,<br>
 礼儀,<br>
 礼仪,<br>
@@ -79,7 +82,7 @@ html.dataset.dark = localStorage.dark;
 客气,<br>
 講究禮貌,<br>
 讲究礼节</p>
-<h3 id="%E4%BA%94" tabindex="-1">五</h3>
+<h3 id="%E4%BA%94" tabindex="-1" id="五">五</h3>
 <p>Disregard of Time,<br>
 正確な時間の軽視,<br>
 时刻之浪费,<br>
@@ -89,7 +92,7 @@ html.dataset.dark = localStorage.dark;
 缺乏时间观念,<br>
 漠視時間,<br>
 疏于时间</p>
-<h3 id="%E5%85%AD" tabindex="-1">六</h3>
+<h3 id="%E5%85%AD" tabindex="-1" id="六">六</h3>
 <p>Disregard of Accuracy,<br>
 正確さの軽視,<br>
 不精确,<br>
@@ -99,7 +102,7 @@ html.dataset.dark = localStorage.dark;
 缺乏精确习惯,<br>
 漠視精確,<br>
 疏于精确</p>
-<h3 id="%E4%B8%83" tabindex="-1">七</h3>
+<h3 id="%E4%B8%83" tabindex="-1" id="七">七</h3>
 <p>The Talent for Misunderstanding,<br>
 誤解の才能,<br>
 误解之才,<br>
@@ -109,7 +112,7 @@ html.dataset.dark = localStorage.dark;
 好误解人意,<br>
 易於誤解,<br>
 误解的才能</p>
-<h3 id="%E5%85%AB" tabindex="-1">八</h3>
+<h3 id="%E5%85%AB" tabindex="-1" id="八">八</h3>
 <p>The Talent for Indirection,<br>
 婉曲表現の才能,<br>
 暗示之才,<br>
@@ -119,7 +122,7 @@ html.dataset.dark = localStorage.dark;
 好兜圈子,<br>
 拐彎抹角,<br>
 油滑的才能</p>
-<h3 id="%E4%B9%9D" tabindex="-1">九</h3>
+<h3 id="%E4%B9%9D" tabindex="-1" id="九">九</h3>
 <p>Flexible Inflexibility,<br>
 従順にして頑固,<br>
 柔软的强硬,<br>
@@ -129,7 +132,7 @@ html.dataset.dark = localStorage.dark;
 温顺面又固执,<br>
 順而不從,<br>
 灵活的顽固</p>
-<h3 id="%E5%8D%81" tabindex="-1">十</h3>
+<h3 id="%E5%8D%81" tabindex="-1" id="十">十</h3>
 <p>Intellectual Turbidity,<br>
 知的混沌,<br>
 蒙昧,<br>
@@ -139,7 +142,7 @@ html.dataset.dark = localStorage.dark;
 思维紊乱,<br>
 思緒含混,<br>
 理性混沌</p>
-<h3 id="%E5%8D%81%E4%B8%80" tabindex="-1">十一</h3>
+<h3 id="%E5%8D%81%E4%B8%80" tabindex="-1" id="十一">十一</h3>
 <p>The Absence of Nerves,<br>
 無神経,<br>
 无神经,<br>
@@ -149,7 +152,7 @@ html.dataset.dark = localStorage.dark;
 麻木不仁,<br>
 不緊不慢,<br>
 神经麻木</p>
-<h3 id="%E5%8D%81%E4%BA%8C" tabindex="-1">十二</h3>
+<h3 id="%E5%8D%81%E4%BA%8C" tabindex="-1" id="十二">十二</h3>
 <p>Contempt for Foreigners,<br>
 外国人別紙,<br>
 轻蔑外人,<br>
@@ -159,7 +162,7 @@ html.dataset.dark = localStorage.dark;
 蔑视外国人,<br>
 輕視外族,<br>
 鄙夷外人</p>
-<h3 id="%E5%8D%81%E4%B8%89" tabindex="-1">十三</h3>
+<h3 id="%E5%8D%81%E4%B8%89" tabindex="-1" id="十三">十三</h3>
 <p>The Absence of Public Spirit,<br>
 公共精神の欠如,<br>
 公共心之缺乏,<br>
@@ -169,7 +172,7 @@ html.dataset.dark = localStorage.dark;
 有私无公,<br>
 缺乏公心,<br>
 公共匮乏</p>
-<h3 id="%E5%8D%81%E5%9B%9B" tabindex="-1">十四</h3>
+<h3 id="%E5%8D%81%E5%9B%9B" tabindex="-1" id="十四">十四</h3>
 <p>Conservatism,<br>
 保守主義,<br>
 保守主义,<br>
@@ -179,7 +182,7 @@ html.dataset.dark = localStorage.dark;
 因循保守,<br>
 因循守舊,<br>
 保守自大</p>
-<h3 id="%E5%8D%81%E4%BA%94" tabindex="-1">十五</h3>
+<h3 id="%E5%8D%81%E4%BA%94" tabindex="-1" id="十五">十五</h3>
 <p>Indifference to Comfort and Convenience,<br>
 快適さと便利さに対する無関心,<br>
 安乐便利置之于度外,<br>
@@ -189,7 +192,7 @@ html.dataset.dark = localStorage.dark;
 不求舒适与方便,<br>
 隨遇而安,<br>
 疏于舒适与便捷</p>
-<h3 id="%E5%8D%81%E5%85%AD" tabindex="-1">十六</h3>
+<h3 id="%E5%8D%81%E5%85%AD" tabindex="-1" id="十六">十六</h3>
 <p>Physical Vitality,<br>
 肉体の強靱さ,<br>
 活力之强壮,<br>
@@ -199,7 +202,7 @@ html.dataset.dark = localStorage.dark;
 生命力顽强,<br>
 頑強生存,<br>
 生命力顽强</p>
-<h3 id="%E5%8D%81%E4%B8%83" tabindex="-1">十七</h3>
+<h3 id="%E5%8D%81%E4%B8%83" tabindex="-1" id="十七">十七</h3>
 <p>Patience and Perseverance,<br>
 忍耐力と根気強さ,<br>
 坚忍不拔,<br>
@@ -209,7 +212,7 @@ html.dataset.dark = localStorage.dark;
 富有耐性与毅力,<br>
 能忍且韌,<br>
 忍耐有韧性</p>
-<h3 id="%E5%8D%81%E5%85%AB" tabindex="-1">十八</h3>
+<h3 id="%E5%8D%81%E5%85%AB" tabindex="-1" id="十八">十八</h3>
 <p>Content and Cheerfulness,<br>
 現状に満足し、楽天的に過ごす,<br>
 澹然自逸,<br>
@@ -219,7 +222,7 @@ html.dataset.dark = localStorage.dark;
 知足常乐,<br>
 知足常樂,<br>
 知足常乐</p>
-<h3 id="%E5%8D%81%E4%B9%9D" tabindex="-1">十九</h3>
+<h3 id="%E5%8D%81%E4%B9%9D" tabindex="-1" id="十九">十九</h3>
 <p>Filial Piety,<br>
 孝行,<br>
 孝心,<br>
@@ -229,7 +232,7 @@ html.dataset.dark = localStorage.dark;
 孝顺,<br>
 孝悌為先,<br>
 孝道为先</p>
-<h3 id="%E4%BA%8C%E5%8D%81" tabindex="-1">二十</h3>
+<h3 id="%E4%BA%8C%E5%8D%81" tabindex="-1" id="二十">二十</h3>
 <p>Benevolence,<br>
 慈善としての尽,<br>
 仁惠,<br>
@@ -239,7 +242,7 @@ html.dataset.dark = localStorage.dark;
 仁爱,<br>
 仁愛之心,<br>
 仁义为纲</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E4%B8%80" tabindex="-1">二十一</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E4%B8%80" tabindex="-1" id="二十一">二十一</h3>
 <p>The Absence of Sympathy,<br>
 思いやりの欠如,<br>
 同情之欠乏,<br>
@@ -249,7 +252,7 @@ html.dataset.dark = localStorage.dark;
 缺乏同情心,<br>
 缺乏同情,<br>
 同情匮乏</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E4%BA%8C" tabindex="-1">二十二</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E4%BA%8C" tabindex="-1" id="二十二">二十二</h3>
 <p>Social Typhoons,<br>
 中国社会における「台風」,<br>
 社会之飓风,<br>
@@ -259,7 +262,7 @@ html.dataset.dark = localStorage.dark;
 舒争斗,<br>
 社會風波,<br>
 社会飓风</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E4%B8%89" tabindex="-1">二十三</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E4%B8%89" tabindex="-1" id="二十三">二十三</h3>
 <p>Mutual Responsibility and Respect for Law,<br>
 連帯責任と法に対する畏敬の念,<br>
 互相之责任及遵奉法律,<br>
@@ -269,7 +272,7 @@ html.dataset.dark = localStorage.dark;
 重责守法,<br>
 株連守法,<br>
 负责与遵法</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E5%9B%9B" tabindex="-1">二十四</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E5%9B%9B" tabindex="-1" id="二十四">二十四</h3>
 <p>Mutual Suspicion,<br>
 相互不信,<br>
 相互之猜疑,<br>
@@ -279,7 +282,7 @@ html.dataset.dark = localStorage.dark;
 相互猜疑,<br>
 互相猜忌,<br>
 猜忌成风</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E4%BA%94" tabindex="-1">二十五</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E4%BA%94" tabindex="-1" id="二十五">二十五</h3>
 <p>The Absence of Sincerity,<br>
 誠実さ「信」の欠如,<br>
 信实之欠乏,<br>
@@ -289,7 +292,7 @@ html.dataset.dark = localStorage.dark;
 缺少信用,<br>
 缺乏誠信,<br>
 诚信匮乏</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E5%85%AD" tabindex="-1">二十六</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E5%85%AD" tabindex="-1" id="二十六">二十六</h3>
 <p>Polytheism, Pantheism, Atheism,<br>
 多神論、汎神論、無神論,<br>
 多神教、万有教、无神论,<br>
@@ -299,7 +302,7 @@ html.dataset.dark = localStorage.dark;
 多神论、泛神论和无神论,<br>
 多元信仰,<br>
 宗教信仰</p>
-<h3 id="%E4%BA%8C%E5%8D%81%E4%B8%83" tabindex="-1">二十七</h3>
+<h3 id="%E4%BA%8C%E5%8D%81%E4%B8%83" tabindex="-1" id="二十七">二十七</h3>
 <p>The Real Conditon of China and Her Present Needs,<br>
 中国の実情と中国に今必要なもの,<br>
 支那之实状及现时之必要,<br>
@@ -314,12 +317,12 @@ html.dataset.dark = localStorage.dark;
 <ul>
 <li>20200704 Arlmy 创建</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page?utm_source=z.arlmy.me" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Chinese Characteristics 目录对比</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2020-07-04</p><p><span>最后更新：</span>2025-11-25</p><p><span>原始链接：</span><a href="/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/">https://z.arlmy.me/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans?utm_source=z.arlmy.me" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p></div><br><a class="article-share-link" data-url="https://z.arlmy.me/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/" data-id="cmm496tmr004mu0vpgohw4i3x" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aQW4jMQwEwPz/01lgTwsYtrtJKc4CNSdjrCgqHSSa5NdX/Hz/fR4/J98+jvz3mb0//ODh4eGNlv7seRzz+k2y3NdrmG3H0y3Aw8PDu8Y7dRkksyWwdj1P3+Ph4eF9lBcdxPHWvL5mkvF4eHh4/wuvDceTtEJyzeDh4eH9Nl6SjEjGn/qrzWx4eHh4t3mbAtinPv9QfQ8PDw+vrKqfOnzz5baFrjcrxMPDw7vAy0v+mxaoZLbXmFn7Ah4eHt49Xl7ab5O57bXx+n2e/MXDw8O7x2uP7HxMWzxrUxJJIQ0PDw/vBm/fQJAzNkWsNrw+1h+Bh4eH9zKNO5uuTT0kzQGba2l17+Hh4eEFvLNN+Xn6NW/ub5MReHh4eLd5eTqgbSRNlpVfLW3wjYeHh3ePl7dJnUr1zpIUbaEODw8P7x7vbCJ1c8Rvrp+nc+Lh4eFd4LWTtkmBTRtWu5KopwwPDw/vEK8tQW0KV1EXw6hg9qZpFQ8PD+8ob9bon29BG6DnJbFiy/Dw8PCO8togeJbCSL69UZDDw8PDO8vb/OBvU7qzKHeV8sDDw8O7xhv2F5RtB7MGgvaXAR4eHt5tXv7DfhYutxfArPx2oNaHh4eHN+LlJa7hni02rh1Zd+Di4eHhxbPlgFOJgzZ8b4teeHh4eLd5py6GTVjcJi/aFeLh4eGd5SVl+/zgPtW21W7WmwQEHh4e3lHeLIRti14zTF6KGwbWeHh4eCPed/m0gW8buM8C7qinDA8PD+8Qb7asTZkqB+QtWXh4eHg/z5uFv7MZ2gA9afOKqnx4eHh4F3htiiFPQ+Sphzx9nF88eHh4eL+B1xbyTyUdhv8LDw8P76O8UwnZdkze+PU0GYGHh4d3gbdvh9q0c20uhlWVDw8PD29xfm4KYKdGtgvdpDDw8PDwRrw/cZV+413uJycAAAAASUVORK5CYII=">分享</a><div class="tags"></div><div class="post-nav"><a class="pre" href="/posts/ZArlmyMe/COVID-19/COVID-19_20200627/">北京疫情之七</a><a class="next" href="/posts/BigIssues/BigIssues_2020_2/">大事记 2020 Apr to Jun</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Chinese Characteristics 目录对比</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2020-07-04</p><p><span>最后更新：</span>2025-11-25</p><p><span>原始链接：</span><a href="/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/">https://z.arlmy.me/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p></div><br><a class="article-share-link" data-url="https://z.arlmy.me/posts/Note/Note_ArthurHendersonSmith_ChineseCharacteristics/" data-id="cmmtdlzdc0053rwvpdnmx9u6a" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aQW4jMQwEwPz/01lgTwsYtrtJKc4CNSdjrCgqHSSa5NdX/Hz/fR4/J98+jvz3mb0//ODh4eGNlv7seRzz+k2y3NdrmG3H0y3Aw8PDu8Y7dRkksyWwdj1P3+Ph4eF9lBcdxPHWvL5mkvF4eHh4/wuvDceTtEJyzeDh4eH9Nl6SjEjGn/qrzWx4eHh4t3mbAtinPv9QfQ8PDw+vrKqfOnzz5baFrjcrxMPDw7vAy0v+mxaoZLbXmFn7Ah4eHt49Xl7ab5O57bXx+n2e/MXDw8O7x2uP7HxMWzxrUxJJIQ0PDw/vBm/fQJAzNkWsNrw+1h+Bh4eH9zKNO5uuTT0kzQGba2l17+Hh4eEFvLNN+Xn6NW/ub5MReHh4eLd5eTqgbSRNlpVfLW3wjYeHh3ePl7dJnUr1zpIUbaEODw8P7x7vbCJ1c8Rvrp+nc+Lh4eFd4LWTtkmBTRtWu5KopwwPDw/vEK8tQW0KV1EXw6hg9qZpFQ8PD+8ob9bon29BG6DnJbFiy/Dw8PCO8togeJbCSL69UZDDw8PDO8vb/OBvU7qzKHeV8sDDw8O7xhv2F5RtB7MGgvaXAR4eHt5tXv7DfhYutxfArPx2oNaHh4eHN+LlJa7hni02rh1Zd+Di4eHhxbPlgFOJgzZ8b4teeHh4eLd5py6GTVjcJi/aFeLh4eGd5SVl+/zgPtW21W7WmwQEHh4e3lHeLIRti14zTF6KGwbWeHh4eCPed/m0gW8buM8C7qinDA8PD+8Qb7asTZkqB+QtWXh4eHg/z5uFv7MZ2gA9afOKqnx4eHh4F3htiiFPQ+Sphzx9nF88eHh4eL+B1xbyTyUdhv8LDw8P76O8UwnZdkze+PU0GYGHh4d3gbdvh9q0c20uhlWVDw8PD29xfm4KYKdGtgvdpDDw8PDwRrw/cZV+413uJycAAAAASUVORK5CYII=">分享</a><div class="tags"></div><div class="post-nav"><a class="pre" href="/posts/ZArlmyMe/COVID-19/COVID-19_20200627/">北京疫情之七</a><a class="next" href="/posts/BigIssues/BigIssues_2020_2/">大事记 2020 Apr to Jun</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',
   path: ''
-})</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="widget-title"></div><ul></ul><a href="https://z.arlmy.me/categories/til/" title="TILs" target="_blank">TILs</a><ul></ul><a href="https://z.arlmy.me/Wiki/" title="WIKI" target="_blank">WIKI</a><ul></ul><a href="https://z.arlmy.me/2025/" title="WISH" target="_blank">WISH</a><ul></ul><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/" title="Library" target="_blank">Library</a><ul></ul><a href="https://z.arlmy.me/projects/" title="Projects" target="_blank">Projects</a></div><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://z.arlmy.me"></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="ABOUT" aria-label="ABOUT"><img class="nofancybox" src="/img/avatar.webp" alt="素生's avatar" loading="lazy"></a><p></p></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/COVID-19/">COVID-19</a><span class="category-list-count">34</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Complicated/">Complicated</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SOLARIS/">SOLARIS</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Technological-Slavery/">Technological Slavery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/til/">til</a><span class="category-list-count">25</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA/">写作方法论</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">年度精选</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/">渴望生活</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9B%96%E6%B4%9B%E6%99%AE%E4%BC%98%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/">盖洛普优势识别器</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">84</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%82%E5%90%8E/">观后</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E5%90%8E/">读后</a><span class="category-list-count">9</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E5%B9%B4%E5%BA%A6%E6%9C%80%E4%BD%B3/" style="font-size: 15px;">年度最佳</a> <a href="/tags/%E6%B3%A2%E5%85%B0/" style="font-size: 15px;">波兰</a> <a href="/tags/Links/" style="font-size: 15px;">Links</a> <a href="/tags/BBBP/" style="font-size: 15px;">BBBP</a> <a href="/tags/%E5%A4%A7%E4%BA%8B%E8%AE%B0/" style="font-size: 15px;">大事记</a> <a href="/tags/Complicated/" style="font-size: 15px;">Complicated</a> <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B9%A6/" style="font-size: 15px;">每日书</a> <a href="/tags/%E4%B8%80%E5%88%87%E5%AE%89%E5%A5%BD/" style="font-size: 15px;">一切安好</a> <a href="/tags/NONAME/" style="font-size: 15px;">NONAME</a> <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/" style="font-size: 15px;">读后感</a> <a href="/tags/%E6%91%98%E5%BD%95/" style="font-size: 15px;">摘录</a> <a href="/tags/%E7%A6%8F%E6%9F%AF/" style="font-size: 15px;">福柯</a> <a href="/tags/Proust/" style="font-size: 15px;">Proust</a> <a href="/tags/%E8%A7%82%E5%90%8E/" style="font-size: 15px;">观后</a> <a href="/tags/%E8%AE%A4%E7%9F%A5%E5%86%99%E4%BD%9C%E5%AD%A6/" style="font-size: 15px;">认知写作学</a> <a href="/tags/Italia/" style="font-size: 15px;">Italia</a> <a href="/tags/workflow/" style="font-size: 15px;">workflow</a> <a href="/tags/Roma/" style="font-size: 15px;">Roma</a> <a href="/tags/Sicilia/" style="font-size: 15px;">Sicilia</a> <a href="/tags/Japan/" style="font-size: 15px;">Japan</a> <a href="/tags/Tokyo/" style="font-size: 15px;">Tokyo</a> <a href="/tags/Echigo-Yuzawa/" style="font-size: 15px;">Echigo-Yuzawa</a> <a href="/tags/Travel/" style="font-size: 15px;">Travel</a> <a href="/tags/Portugal/" style="font-size: 15px;">Portugal</a> <a href="/tags/Lisboa/" style="font-size: 15px;">Lisboa</a> <a href="/tags/Coimbra/" style="font-size: 15px;">Coimbra</a> <a href="/tags/Porto/" style="font-size: 15px;">Porto</a> <a href="/tags/til/" style="font-size: 15px;">til</a> <a href="/tags/Web3/" style="font-size: 15px;">Web3</a> <a href="/tags/%E7%9F%AD%E8%AF%84%E5%BD%92%E6%A1%A3/" style="font-size: 15px;">短评归档</a> <a href="/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">纸书单</a> <a href="/tags/Anti-work/" style="font-size: 15px;">Anti-work</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E8%B0%88/" style="font-size: 15px;">工作谈</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 15px;">安利</a> <a href="/tags/%E5%A4%87%E5%BF%98/" style="font-size: 15px;">备忘</a> <a href="/tags/%E8%8F%9C%E8%B0%B1/" style="font-size: 15px;">菜谱</a> <a href="/tags/RecordingShare/" style="font-size: 15px;">RecordingShare</a> <a href="/tags/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/" style="font-size: 15px;">渴望生活</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Mastodon/" style="font-size: 15px;">Mastodon</a> <a href="/tags/INSW/" style="font-size: 15px;">INSW</a> <a href="/tags/recently/" style="font-size: 15px;">recently</a> <a href="/tags/%E5%81%B6%E7%84%B6%E7%9A%84%E5%88%9B%E9%80%A0/" style="font-size: 15px;">偶然的创造</a> <a href="/tags/Fitness/" style="font-size: 15px;">Fitness</a> <a href="/tags/CrossFit/" style="font-size: 15px;">CrossFit</a> <a href="/tags/openclaw/" style="font-size: 15px;">openclaw</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260228_Recently/">最近惦念 20260228</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/">Toots 410 2026 Mar.8 - Mar.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/YearlyBooks/BookList_2026/">2026 纸书单</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/AI/openclaw_onboard/">OpenClaw 配置</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260307/">Toots 409 2026 Mar.1 - Mar.7</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/">Toots 408 2026 Feb.22 - Feb.28</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260213_Recently/">最近惦念 20260213</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260221/">Toots 407 2026 Feb.15 - Feb.21</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/">Toots 406 2026 Feb.8 - Feb.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260128_Recently/">最近惦念 20260128</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://feedburner.google.com/fb/a/mailverify?uri=arlmy&amp;utm_source=z.arlmy.me" title="订阅 / Subscribe" target="_blank">订阅 / Subscribe</a><ul></ul><a href="https://cse.google.com/cse?cx=52907d001c32e452e&amp;utm_source=z.arlmy.me" title="Google 站内搜索" target="_blank">Google 站内搜索</a><ul></ul><a href="http://writer.arlmy.me/?utm_source=z.arlmy.me" title="写作集印" target="_blank">写作集印</a><ul></ul><a href="https://www.douban.com/group/352294/?utm_source=z.arlmy.me" title="好奇心小报" target="_blank">好奇心小报</a><ul></ul><a href="https://mirror.xyz/arlmy.eth?utm_source=z.arlmy.me" title="Mirror.xyz" target="_blank">Mirror.xyz</a><ul></ul><a href="http://cogwriters.github.io/?utm_source=z.arlmy.me" title="认知写作学学员黄页" target="_blank">认知写作学学员黄页</a><ul></ul><a href="https://clustrmaps.com/site/1b50l?utm_source=z.arlmy.me" title="访客统计" target="_blank">访客统计</a><ul></ul><a href="https://www.patreon.com/arlmy?utm_source=z.arlmy.me" title="PATREON" target="_blank">PATREON</a><ul></ul><a href="https://e.arlmy.me/?utm_source=z.arlmy.me" title="本站Web3镜像" target="_blank">本站Web3镜像</a><ul></ul><a href="https://travellings.cn/go.html?utm_source=z.arlmy.me" title="独立博客传送-1" target="_blank">独立博客传送-1</a><ul></ul><a href="https://www.foreverblog.cn/go.html?utm_source=z.arlmy.me" title="独立博客传送-2" target="_blank">独立博客传送-2</a></div><div class="widget"><div class="widget-title">访客统计</div><div id="clustrmaps-sidebar-container" style="width: 100%; max-width: 222px; height: 109px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.02); border-radius: 4px; margin: 0 auto;"><span style="color: #ddd; font-size: 10px;">Loading Map...</span></div><script>(function() {
+})</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="widget-title"></div><ul></ul><a href="https://z.arlmy.me/categories/til/" title="TILs" target="_blank">TILs</a><ul></ul><a href="https://z.arlmy.me/Wiki/" title="WIKI" target="_blank">WIKI</a><ul></ul><a href="https://z.arlmy.me/2026/" title="WISH" target="_blank">WISH</a><ul></ul><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/" title="Library" target="_blank">Library</a><ul></ul><a href="https://z.arlmy.me/projects/" title="Projects" target="_blank">Projects</a></div><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://z.arlmy.me"/></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="ABOUT" aria-label="ABOUT"><img class="nofancybox" src="/img/avatar.webp" alt="素生's avatar" loading="lazy"/></a><p></p></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/COVID-19/">COVID-19</a><span class="category-list-count">34</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Complicated/">Complicated</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SOLARIS/">SOLARIS</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Technological-Slavery/">Technological Slavery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/til/">til</a><span class="category-list-count">25</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA/">写作方法论</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">年度精选</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/">渴望生活</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9B%96%E6%B4%9B%E6%99%AE%E4%BC%98%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/">盖洛普优势识别器</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">84</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%82%E5%90%8E/">观后</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E5%90%8E/">读后</a><span class="category-list-count">9</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E5%B9%B4%E5%BA%A6%E6%9C%80%E4%BD%B3/" style="font-size: 15px;">年度最佳</a> <a href="/tags/Links/" style="font-size: 15px;">Links</a> <a href="/tags/%E6%B3%A2%E5%85%B0/" style="font-size: 15px;">波兰</a> <a href="/tags/BBBP/" style="font-size: 15px;">BBBP</a> <a href="/tags/%E5%A4%A7%E4%BA%8B%E8%AE%B0/" style="font-size: 15px;">大事记</a> <a href="/tags/Complicated/" style="font-size: 15px;">Complicated</a> <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B9%A6/" style="font-size: 15px;">每日书</a> <a href="/tags/%E4%B8%80%E5%88%87%E5%AE%89%E5%A5%BD/" style="font-size: 15px;">一切安好</a> <a href="/tags/NONAME/" style="font-size: 15px;">NONAME</a> <a href="/tags/%E7%A6%8F%E6%9F%AF/" style="font-size: 15px;">福柯</a> <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/" style="font-size: 15px;">读后感</a> <a href="/tags/%E6%91%98%E5%BD%95/" style="font-size: 15px;">摘录</a> <a href="/tags/%E8%AE%A4%E7%9F%A5%E5%86%99%E4%BD%9C%E5%AD%A6/" style="font-size: 15px;">认知写作学</a> <a href="/tags/Proust/" style="font-size: 15px;">Proust</a> <a href="/tags/workflow/" style="font-size: 15px;">workflow</a> <a href="/tags/%E8%A7%82%E5%90%8E/" style="font-size: 15px;">观后</a> <a href="/tags/til/" style="font-size: 15px;">til</a> <a href="/tags/Web3/" style="font-size: 15px;">Web3</a> <a href="/tags/Italia/" style="font-size: 15px;">Italia</a> <a href="/tags/Roma/" style="font-size: 15px;">Roma</a> <a href="/tags/Sicilia/" style="font-size: 15px;">Sicilia</a> <a href="/tags/Travel/" style="font-size: 15px;">Travel</a> <a href="/tags/Japan/" style="font-size: 15px;">Japan</a> <a href="/tags/Tokyo/" style="font-size: 15px;">Tokyo</a> <a href="/tags/Echigo-Yuzawa/" style="font-size: 15px;">Echigo-Yuzawa</a> <a href="/tags/Portugal/" style="font-size: 15px;">Portugal</a> <a href="/tags/Lisboa/" style="font-size: 15px;">Lisboa</a> <a href="/tags/Coimbra/" style="font-size: 15px;">Coimbra</a> <a href="/tags/Porto/" style="font-size: 15px;">Porto</a> <a href="/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">纸书单</a> <a href="/tags/Anti-work/" style="font-size: 15px;">Anti-work</a> <a href="/tags/%E7%9F%AD%E8%AF%84%E5%BD%92%E6%A1%A3/" style="font-size: 15px;">短评归档</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E8%B0%88/" style="font-size: 15px;">工作谈</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 15px;">安利</a> <a href="/tags/%E5%A4%87%E5%BF%98/" style="font-size: 15px;">备忘</a> <a href="/tags/%E8%8F%9C%E8%B0%B1/" style="font-size: 15px;">菜谱</a> <a href="/tags/RecordingShare/" style="font-size: 15px;">RecordingShare</a> <a href="/tags/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/" style="font-size: 15px;">渴望生活</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/INSW/" style="font-size: 15px;">INSW</a> <a href="/tags/Mastodon/" style="font-size: 15px;">Mastodon</a> <a href="/tags/openclaw/" style="font-size: 15px;">openclaw</a> <a href="/tags/recently/" style="font-size: 15px;">recently</a> <a href="/tags/%E5%81%B6%E7%84%B6%E7%9A%84%E5%88%9B%E9%80%A0/" style="font-size: 15px;">偶然的创造</a> <a href="/tags/CrossFit/" style="font-size: 15px;">CrossFit</a> <a href="/tags/Fitness/" style="font-size: 15px;">Fitness</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260228_Recently/">最近惦念 20260228</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/">Toots 410 2026 Mar.8 - Mar.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/YearlyBooks/BookList_2026/">2026 纸书单</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/AI/openclaw_onboard/">OpenClaw 配置</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260307/">Toots 409 2026 Mar.1 - Mar.7</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/">Toots 408 2026 Feb.22 - Feb.28</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260213_Recently/">最近惦念 20260213</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260221/">Toots 407 2026 Feb.15 - Feb.21</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/">Toots 406 2026 Feb.8 - Feb.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260128_Recently/">最近惦念 20260128</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://feedburner.google.com/fb/a/mailverify?uri=arlmy" title="订阅 / Subscribe" target="_blank">订阅 / Subscribe</a><ul></ul><a href="https://cse.google.com/cse?cx=52907d001c32e452e" title="Google 站内搜索" target="_blank">Google 站内搜索</a><ul></ul><a href="http://writer.arlmy.me/" title="写作集印" target="_blank">写作集印</a><ul></ul><a href="https://www.douban.com/group/352294/" title="好奇心小报" target="_blank">好奇心小报</a><ul></ul><a href="https://mirror.xyz/arlmy.eth" title="Mirror.xyz" target="_blank">Mirror.xyz</a><ul></ul><a href="http://cogwriters.github.io/" title="认知写作学学员黄页" target="_blank">认知写作学学员黄页</a><ul></ul><a href="https://clustrmaps.com/site/1b50l" title="访客统计" target="_blank">访客统计</a><ul></ul><a href="https://www.patreon.com/arlmy" title="PATREON" target="_blank">PATREON</a><ul></ul><a href="https://e.arlmy.me/" title="本站Web3镜像" target="_blank">本站Web3镜像</a><ul></ul><a href="https://travellings.cn/go.html" title="独立博客传送-1" target="_blank">独立博客传送-1</a><ul></ul><a href="https://www.foreverblog.cn/go.html" title="独立博客传送-2" target="_blank">独立博客传送-2</a></div><div class="widget"><div class="widget-title">访客统计</div><div id="clustrmaps-sidebar-container" style="width: 100%; max-width: 222px; height: 109px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.02); border-radius: 4px; margin: 0 auto;"><span style="color: #ddd; font-size: 10px;">Loading Map...</span></div><script>(function() {
   var target = document.getElementById('clustrmaps-sidebar-container');
   if (!target) return;
 
@@ -346,14 +349,14 @@ html.dataset.dark = localStorage.dark;
   });
 
   observer.observe(target);
-})();</script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">素生.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io/?utm_source=z.arlmy.me"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo?utm_source=z.arlmy.me"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho?utm_source=z.arlmy.me"> Cho.</a></div></div><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js" defer=""></script><script type="text/javascript" src="/js/share.js?v=1.0.0" defer=""></script><script type="text/javascript" src="/js/donate.js?v=1.0.0" successtext="复制成功！" defer=""></script><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！" defer=""></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0" defer=""></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0" defer=""></script></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+})();</script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">素生.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js" defer></script><script type="text/javascript" src="/js/share.js?v=1.0.0" defer></script><script type="text/javascript" src="/js/donate.js?v=1.0.0" successtext="复制成功！" defer></script><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！" defer></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0" defer></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0" defer></script></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>xl - black</title>
   <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
     <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
     <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
   </g>
-</svg></a><link rel="preload" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"></noscript><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" defer=""></script><script src="/js/lazy-hypothesis.js"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！" defer=""></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><!--添加 PWA 脚本 (注意：script 与上面的 #footer 对齐)--><script>// 注册 Service Worker
+</svg></a><link rel="preload" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"></noscript><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" defer></script><script src="/js/lazy-hypothesis.js"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！" defer></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><!--添加 PWA 脚本 (注意：script 与上面的 #footer 对齐)--><script>// 注册 Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
@@ -373,4 +376,4 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
 });
-</script><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" defer=""></script></div></body></html>
+</script><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" defer></script></div></body></html>

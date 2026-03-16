@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="yes" name="mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="误读人生，化人生活"><title>Let Books Go 3 | 素生</title><link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;display=swap"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><link rel="alternate" type="application/atom+xml" href="/atom.xml,rss2.xml"><script src="https://www.googletagmanager.com/gtag/js?id=G-CGJZ3YGXT6" async=""></script><script>window.dataLayer = window.dataLayer || [];
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="yes" name="mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="误读人生，化人生活"><title>Let Books Go 3 | 素生</title><link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;display=swap"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><link rel="alternate" type="application/atom+xml" href="/atom.xml,rss2.xml"><script src="https://www.googletagmanager.com/gtag/js?id=G-CGJZ3YGXT6" async></script><script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-CGJZ3YGXT6');
@@ -13,15 +13,18 @@ gtag('config', 'G-CGJZ3YGXT6');
 <meta property="article:modified_time" content="2025-11-25T15:55:09.743Z">
 <meta property="article:author" content="素生">
 <meta property="article:tag" content="BBBP">
-<meta name="twitter:card" content="summary"><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer=""></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer=""></script><link rel="preload" href="https://unpkg.com/toastr/build/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"></noscript></head><body><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+<meta name="twitter:card" content="summary"><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer></script><link rel="preload" href="https://unpkg.com/toastr/build/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"></noscript><div class="darkmode-toggle">◐</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 var toggle = document.querySelector('.darkmode-toggle');
 var html = document.querySelector('html');
 
 html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
 
 toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
+  localStorage.dark = !(html.dataset.dark == 'true');
+  html.dataset.dark = localStorage.dark;
+  
+  // 【新增】告诉全站：主题切换啦！热力图监听到这个事件就会重绘颜色
+  document.body.dispatchEvent(new Event('themechange'));
 });</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
@@ -29,7 +32,7 @@ html.dataset.dark = localStorage.dark;
   navigator.clipboard.writeText(segmentWithMd)
     .then(() => alert('已复制: ' + segmentWithMd))
     .catch(err => console.error('复制失败:', err));
-}</script><meta name="generator" content="Hexo 7.3.0"><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Let Books Go 3</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Let Books Go 3</h1><div class="post-meta">2020-08-01<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async=""></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.8k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 6</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="%E8%80%81%E5%BA%84" tabindex="-1">老庄</h2>
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Let Books Go 3</h1><a id="logo" href="/.">素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/index/"><i class="fa fa-map"> INDEX</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a><a href="/guestbook/"><i class="fa fa-commenting"> GUESTBOOK</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">Let Books Go 3</h1><div class="post-meta">2020-08-01<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.8k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 6</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><h2 id="%E8%80%81%E5%BA%84" tabindex="-1" id="老庄">老庄</h2>
 <table>
 <thead>
 <tr>
@@ -44,34 +47,34 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10539399/?utm_source=z.arlmy.me">庄子集释（上中下）</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10539399/">庄子集释（上中下）</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3368865/?utm_source=z.arlmy.me">老子道德经注校释</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3368865/">老子道德经注校释</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5403730/?utm_source=z.arlmy.me">老子道德经注</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5403730/">老子道德经注</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27023552/?utm_source=z.arlmy.me">庄子浅说</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27023552/">庄子浅说</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E8%AF%97%E9%9B%86" tabindex="-1">诗集</h2>
+<h2 id="%E8%AF%97%E9%9B%86" tabindex="-1" id="诗集">诗集</h2>
 <table>
 <thead>
 <tr>
@@ -86,104 +89,104 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3597825/?utm_source=z.arlmy.me">我的孤独是一座花园</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3597825/">我的孤独是一座花园</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4139701/?utm_source=z.arlmy.me">杜伊诺哀歌</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4139701/">杜伊诺哀歌</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1662834/?utm_source=z.arlmy.me">聂绀弩旧体诗全编</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1662834/">聂绀弩旧体诗全编</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26933916/?utm_source=z.arlmy.me">几个好朋友</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26933916/">几个好朋友</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6794356/?utm_source=z.arlmy.me">英国诗选</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6794356/">英国诗选</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26309691/?utm_source=z.arlmy.me">月光落在左手上</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26309691/">月光落在左手上</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10561252/?utm_source=z.arlmy.me">彭斯诗选</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10561252/">彭斯诗选</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25986497/?utm_source=z.arlmy.me">疑问集</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25986497/">疑问集</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3134824/?utm_source=z.arlmy.me">奥德修纪</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3134824/">奥德修纪</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26925396/?utm_source=z.arlmy.me">不要输给风雨</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26925396/">不要输给风雨</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/11516338/?utm_source=z.arlmy.me">我是你流浪过的一个地方</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/11516338/">我是你流浪过的一个地方</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3610681/?utm_source=z.arlmy.me">海子诗全集</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3610681/">海子诗全集</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>13</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10485026/?utm_source=z.arlmy.me">特朗斯特罗姆诗歌全集</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10485026/">特朗斯特罗姆诗歌全集</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26980490/?utm_source=z.arlmy.me">恶之花</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26980490/">恶之花</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%BB%BA%E7%AD%91" tabindex="-1">建筑</h2>
+<h2 id="%E5%BB%BA%E7%AD%91" tabindex="-1" id="建筑">建筑</h2>
 <table>
 <thead>
 <tr>
@@ -198,27 +201,27 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1048014/?utm_source=z.arlmy.me">外国古建筑二十讲</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1048014/">外国古建筑二十讲</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1169605/?utm_source=z.arlmy.me">外国建筑史</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1169605/">外国建筑史</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1052178/?utm_source=z.arlmy.me">走向新建筑</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1052178/">走向新建筑</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E7%9F%AD%E7%BB%8F%E5%85%B8" tabindex="-1">短经典</h2>
+<h2 id="%E7%9F%AD%E7%BB%8F%E5%85%B8" tabindex="-1" id="短经典">短经典</h2>
 <table>
 <thead>
 <tr>
@@ -233,83 +236,83 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25722953/?utm_source=z.arlmy.me">吃鸟的女孩</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25722953/">吃鸟的女孩</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25724491/?utm_source=z.arlmy.me">突然，响起一阵敲门声</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25724491/">突然，响起一阵敲门声</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26374682/?utm_source=z.arlmy.me">诗人的生活</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26374682/">诗人的生活</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26357614/?utm_source=z.arlmy.me">海风中失落的血色馈赠</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26357614/">海风中失落的血色馈赠</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6712406/?utm_source=z.arlmy.me">一切破碎，一切成灰</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6712406/">一切破碎，一切成灰</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25862570/?utm_source=z.arlmy.me">当“9”翻转归零</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25862570/">当“9”翻转归零</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6010156/?utm_source=z.arlmy.me">狂野之夜！</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6010156/">狂野之夜！</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10522844/?utm_source=z.arlmy.me">游戏的终结</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10522844/">游戏的终结</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27154803/?utm_source=z.arlmy.me">大象</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27154803/">大象</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6791412/?utm_source=z.arlmy.me">炽焰燃烧</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6791412/">炽焰燃烧</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26747346/?utm_source=z.arlmy.me">四先生</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26747346/">四先生</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%90%89%E7%94%B0%E4%BF%AE%E4%B8%80" tabindex="-1">吉田修一</h2>
+<h2 id="%E5%90%89%E7%94%B0%E4%BF%AE%E4%B8%80" tabindex="-1" id="吉田修一">吉田修一</h2>
 <table>
 <thead>
 <tr>
@@ -324,27 +327,27 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25698257/?utm_source=z.arlmy.me">路</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25698257/">路</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27113212/?utm_source=z.arlmy.me">平成猿蟹合战图</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27113212/">平成猿蟹合战图</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25837368/?utm_source=z.arlmy.me">初戀溫泉</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25837368/">初戀溫泉</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E7%BA%A6%E7%BF%B0%C2%B7%E4%BC%AF%E6%A0%BC" tabindex="-1">约翰·伯格</h2>
+<h2 id="%E7%BA%A6%E7%BF%B0%C2%B7%E4%BC%AF%E6%A0%BC" tabindex="-1" id="约翰·伯格">约翰·伯格</h2>
 <table>
 <thead>
 <tr>
@@ -359,55 +362,55 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34779922/?utm_source=z.arlmy.me">到婚礼去</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34779922/">到婚礼去</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34779924/?utm_source=z.arlmy.me">猪的土地</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34779924/">猪的土地</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30271798/?utm_source=z.arlmy.me">抵抗的群体</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30271798/">抵抗的群体</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34781353/?utm_source=z.arlmy.me">第七人</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34781353/">第七人</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27102174/?utm_source=z.arlmy.me">本托的素描簿</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27102174/">本托的素描簿</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30271495/?utm_source=z.arlmy.me">另一种讲述的方式</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30271495/">另一种讲述的方式</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34781354/?utm_source=z.arlmy.me">幸运者</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34781354/">幸运者</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E6%97%85%E8%A1%8C" tabindex="-1">旅行</h2>
+<h2 id="%E6%97%85%E8%A1%8C" tabindex="-1" id="旅行">旅行</h2>
 <table>
 <thead>
 <tr>
@@ -422,41 +425,41 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1929765/?utm_source=z.arlmy.me">独步中国·成都川西</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1929765/">独步中国·成都川西</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1147795/?utm_source=z.arlmy.me">独步中国-安徽</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1147795/">独步中国-安徽</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3099599/?utm_source=z.arlmy.me">独步中国-重庆三峡神农架</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3099599/">独步中国-重庆三峡神农架</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30203789/?utm_source=z.arlmy.me">中国地图</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30203789/">中国地图</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1204319/?utm_source=z.arlmy.me">中国地图册</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1204319/">中国地图册</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E6%95%99%E7%A8%8B%2F%E8%89%B2%E9%93%85%E7%AC%94%2F%E8%8F%9C%E8%B0%B1%2F%E7%BA%B8%E5%93%81%2F%E8%89%BA%E6%9C%AF%E5%AD%97%2F%E6%97%A5%E8%AF%AD%2F%E7%B4%A0%E6%8F%8F" tabindex="-1">教程/色铅笔/菜谱/纸品/艺术字/日语/素描</h2>
+<h2 id="%E6%95%99%E7%A8%8B%2F%E8%89%B2%E9%93%85%E7%AC%94%2F%E8%8F%9C%E8%B0%B1%2F%E7%BA%B8%E5%93%81%2F%E8%89%BA%E6%9C%AF%E5%AD%97%2F%E6%97%A5%E8%AF%AD%2F%E7%B4%A0%E6%8F%8F" tabindex="-1" id="教程-色铅笔-菜谱-纸品-艺术字-日语-素描">教程/色铅笔/菜谱/纸品/艺术字/日语/素描</h2>
 <table>
 <thead>
 <tr>
@@ -471,104 +474,104 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1501873/?utm_source=z.arlmy.me">中日交流标准日本语（新版初级上下册）</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1501873/">中日交流标准日本语（新版初级上下册）</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26220254/?utm_source=z.arlmy.me">纸艺</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26220254/">纸艺</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6785821/?utm_source=z.arlmy.me">学做牛羊肉6000例</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6785821/">学做牛羊肉6000例</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10436093/?utm_source=z.arlmy.me">小平面</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10436093/">小平面</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26809778/?utm_source=z.arlmy.me">中国居民膳食指南（2016）（科普版）</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26809778/">中国居民膳食指南（2016）（科普版）</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27118123/?utm_source=z.arlmy.me">美国英文书法教程</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27118123/">美国英文书法教程</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26757192/?utm_source=z.arlmy.me">简简单单做面包</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26757192/">简简单单做面包</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5027557/?utm_source=z.arlmy.me">色鉛筆教科書</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5027557/">色鉛筆教科書</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/20389355/?utm_source=z.arlmy.me">水彩色铅笔之旅</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/20389355/">水彩色铅笔之旅</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/24714821/?utm_source=z.arlmy.me">最详尽的刺绣教科书</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/24714821/">最详尽的刺绣教科书</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2571086/?utm_source=z.arlmy.me">Mastering Copperplate Calligraphy</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2571086/">Mastering Copperplate Calligraphy</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30212907/?utm_source=z.arlmy.me">创意纸品1000例</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30212907/">创意纸品1000例</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>13</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26686958/?utm_source=z.arlmy.me">温馨水溶性色铅笔.1 从零开始＆随心绘</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26686958/">温馨水溶性色铅笔.1 从零开始＆随心绘</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6266302/?utm_source=z.arlmy.me">素描的诀窍</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6266302/">素描的诀窍</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E6%B3%95%E5%9B%BD%E5%93%B2%E5%AD%A6" tabindex="-1">法国哲学</h2>
+<h2 id="%E6%B3%95%E5%9B%BD%E5%93%B2%E5%AD%A6" tabindex="-1" id="法国哲学">法国哲学</h2>
 <table>
 <thead>
 <tr>
@@ -583,118 +586,118 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26421331/?utm_source=z.arlmy.me">导读巴特</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26421331/">导读巴特</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26808917/?utm_source=z.arlmy.me">导读阿多诺</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26808917/">导读阿多诺</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1000213/?utm_source=z.arlmy.me">迎向灵光消逝的年代</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1000213/">迎向灵光消逝的年代</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1442407/?utm_source=z.arlmy.me">福柯的迷宫</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1442407/">福柯的迷宫</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25906248/?utm_source=z.arlmy.me">导读德勒兹</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25906248/">导读德勒兹</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10875961/?utm_source=z.arlmy.me">实践感</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10875961/">实践感</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1023293/?utm_source=z.arlmy.me">权力的眼睛</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1023293/">权力的眼睛</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/20258505/?utm_source=z.arlmy.me">规训与惩罚(修订译本)(第4版)</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/20258505/">规训与惩罚(修订译本)(第4版)</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1437687/?utm_source=z.arlmy.me">性经验史</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1437687/">性经验史</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26899445/?utm_source=z.arlmy.me">导读德勒兹与加塔利《千高原》</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26899445/">导读德勒兹与加塔利《千高原》</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26726213/?utm_source=z.arlmy.me">说真话的勇气</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26726213/">说真话的勇气</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26808914/?utm_source=z.arlmy.me">文字即垃圾：危机之后的文学</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26808914/">文字即垃圾：危机之后的文学</a></td>
 <td>成都</td>
 <td>？</td>
 </tr>
 <tr>
 <td>13</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26907986/?utm_source=z.arlmy.me">西西弗神话</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26907986/">西西弗神话</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26820599/?utm_source=z.arlmy.me">流行体系</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26820599/">流行体系</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>15</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26284886/?utm_source=z.arlmy.me">艺术家的责任</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26284886/">艺术家的责任</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>16</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1729284/?utm_source=z.arlmy.me">单行道</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1729284/">单行道</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%BE%B7%E5%A5%A5%E5%93%B2%E5%AD%A6" tabindex="-1">德奥哲学</h2>
+<h2 id="%E5%BE%B7%E5%A5%A5%E5%93%B2%E5%AD%A6" tabindex="-1" id="德奥哲学">德奥哲学</h2>
 <table>
 <thead>
 <tr>
@@ -709,34 +712,34 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26879371/?utm_source=z.arlmy.me">论道德的谱系</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26879371/">论道德的谱系</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2969539/?utm_source=z.arlmy.me">黑格尔通信百封</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2969539/">黑格尔通信百封</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1315184/?utm_source=z.arlmy.me">哲学研究</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1315184/">哲学研究</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6152040/?utm_source=z.arlmy.me">维特根斯坦传</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6152040/">维特根斯坦传</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%93%B2%E5%AD%A6%2F%E7%A7%91%E5%AD%A6%E5%8E%9F%E7%90%86%2F%E5%95%86%E5%8A%A1%E6%B1%89%E8%AF%91%E5%90%8D%E8%91%97" tabindex="-1">哲学/科学原理/商务汉译名著</h2>
+<h2 id="%E5%93%B2%E5%AD%A6%2F%E7%A7%91%E5%AD%A6%E5%8E%9F%E7%90%86%2F%E5%95%86%E5%8A%A1%E6%B1%89%E8%AF%91%E5%90%8D%E8%91%97" tabindex="-1" id="哲学-科学原理-商务汉译名著">哲学/科学原理/商务汉译名著</h2>
 <table>
 <thead>
 <tr>
@@ -751,104 +754,104 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1400195/?utm_source=z.arlmy.me">论自由</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1400195/">论自由</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1060774/?utm_source=z.arlmy.me">君主论</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1060774/">君主论</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1138451/?utm_source=z.arlmy.me">最后的沉思</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1138451/">最后的沉思</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841525/?utm_source=z.arlmy.me">阅读的时光</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841525/">阅读的时光</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/7916079/?utm_source=z.arlmy.me">人间食粮</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/7916079/">人间食粮</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1074458/?utm_source=z.arlmy.me">论人类语言结构的差异及其对人类精神发展的影响</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1074458/">论人类语言结构的差异及其对人类精神发展的影响</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26280706/?utm_source=z.arlmy.me">哲学问题</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26280706/">哲学问题</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841508/?utm_source=z.arlmy.me">论友谊</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841508/">论友谊</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25918409/?utm_source=z.arlmy.me">论语言的起源</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25918409/">论语言的起源</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1171881/?utm_source=z.arlmy.me">有闲阶级论</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1171881/">有闲阶级论</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1011561/?utm_source=z.arlmy.me">人类的由来（全两册）</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1011561/">人类的由来（全两册）</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841528/?utm_source=z.arlmy.me">论自然选择</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841528/">论自然选择</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>13</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841505/?utm_source=z.arlmy.me">人类幸福</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4841505/">人类幸福</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4729501/?utm_source=z.arlmy.me">抗争政治</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4729501/">抗争政治</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E5%86%99%E4%BD%9C%2F%E6%96%87%E8%AE%BA%2F%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90" tabindex="-1">写作/文论/文本分析</h2>
+<h2 id="%E5%86%99%E4%BD%9C%2F%E6%96%87%E8%AE%BA%2F%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90" tabindex="-1" id="写作-文论-文本分析">写作/文论/文本分析</h2>
 <table>
 <thead>
 <tr>
@@ -863,83 +866,83 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25819935/?utm_source=z.arlmy.me">中国古典文心</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25819935/">中国古典文心</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26564263/?utm_source=z.arlmy.me">论契合</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26564263/">论契合</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1070655/?utm_source=z.arlmy.me">张爱玲文集·补遗</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1070655/">张爱玲文集·补遗</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26893046/?utm_source=z.arlmy.me">诗的八堂课</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26893046/">诗的八堂课</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6781745/?utm_source=z.arlmy.me">民国语文</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6781745/">民国语文</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25774962/?utm_source=z.arlmy.me">盛唐诗</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25774962/">盛唐诗</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26286330/?utm_source=z.arlmy.me">俄罗斯文学讲稿</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26286330/">俄罗斯文学讲稿</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25902464/?utm_source=z.arlmy.me">《玩具屋》九讲</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25902464/">《玩具屋》九讲</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1988066/?utm_source=z.arlmy.me">词之美感特质的形成与演进</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1988066/">词之美感特质的形成与演进</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26938822/?utm_source=z.arlmy.me">文学理论</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26938822/">文学理论</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10732588/?utm_source=z.arlmy.me">绘画与文学-民国文学文化名著</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10732588/">绘画与文学-民国文学文化名著</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="%E6%9D%82%E9%A1%B9%2F%E6%9C%AA%E5%88%86%E7%B1%BB" tabindex="-1">杂项/未分类</h2>
+<h2 id="%E6%9D%82%E9%A1%B9%2F%E6%9C%AA%E5%88%86%E7%B1%BB" tabindex="-1" id="杂项-未分类">杂项/未分类</h2>
 <table>
 <thead>
 <tr>
@@ -954,336 +957,336 @@ html.dataset.dark = localStorage.dark;
 <tr>
 <td>1</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5272998/?utm_source=z.arlmy.me">希腊罗马神话与传说中的恋爱故事</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5272998/">希腊罗马神话与传说中的恋爱故事</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26627837/?utm_source=z.arlmy.me">罗生门</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26627837/">罗生门</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26451439/?utm_source=z.arlmy.me">木心谈木心</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26451439/">木心谈木心</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34456872/?utm_source=z.arlmy.me">張岪與木心</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34456872/">張岪與木心</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2003226/?utm_source=z.arlmy.me">城堡</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2003226/">城堡</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30237204/?utm_source=z.arlmy.me">圈外編輯</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30237204/">圈外編輯</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1049235/?utm_source=z.arlmy.me">最后的罂粟</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1049235/">最后的罂粟</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25760217/?utm_source=z.arlmy.me">乌托有个帮</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25760217/">乌托有个帮</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26791995/?utm_source=z.arlmy.me">刺槐树</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26791995/">刺槐树</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3003466/?utm_source=z.arlmy.me">恶棍列传</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3003466/">恶棍列传</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10601137/?utm_source=z.arlmy.me">你永远都无法叫醒一个装睡的人</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/10601137/">你永远都无法叫醒一个装睡的人</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1081485/?utm_source=z.arlmy.me">记忆碎片</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1081485/">记忆碎片</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>13</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26610864/?utm_source=z.arlmy.me">浮生六记</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26610864/">浮生六记</a></td>
 <td>大庆</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1026183/?utm_source=z.arlmy.me">纪德</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1026183/">纪德</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>15</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26319982/?utm_source=z.arlmy.me">商业百科</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26319982/">商业百科</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>16</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26386366/?utm_source=z.arlmy.me">政治学百科</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26386366/">政治学百科</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>17</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25815267/?utm_source=z.arlmy.me">经济学百科</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25815267/">经济学百科</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>18</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26374572/?utm_source=z.arlmy.me">查理·芒格的智慧</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26374572/">查理·芒格的智慧</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>19</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/22806583/?utm_source=z.arlmy.me">国家的常识</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/22806583/">国家的常识</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>20</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30331839/?utm_source=z.arlmy.me">T. S. 艾略特传</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30331839/">T. S. 艾略特传</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>21</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5993314/?utm_source=z.arlmy.me">安吉拉·卡特的精怪故事集</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/5993314/">安吉拉·卡特的精怪故事集</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>22</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27135184/?utm_source=z.arlmy.me">猫客</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27135184/">猫客</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>23</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1050467/?utm_source=z.arlmy.me">呻吟语·菜根谈</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1050467/">呻吟语·菜根谈</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>24</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26972834/?utm_source=z.arlmy.me">知中·竹林七贤</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26972834/">知中·竹林七贤</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>25</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34809774/?utm_source=z.arlmy.me">爱情故事</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34809774/">爱情故事</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>26</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27102949/?utm_source=z.arlmy.me">御伽草纸</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27102949/">御伽草纸</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>27</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2005481/?utm_source=z.arlmy.me">法律之门</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2005481/">法律之门</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>28</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3931762/?utm_source=z.arlmy.me">卡夫卡书信日记选</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3931762/">卡夫卡书信日记选</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>29</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30384152/?utm_source=z.arlmy.me">夜里老鼠们要睡觉</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30384152/">夜里老鼠们要睡觉</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>30</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/33436921/?utm_source=z.arlmy.me">战国歧途</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/33436921/">战国歧途</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>31</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6759922/?utm_source=z.arlmy.me">艺术引导人生</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6759922/">艺术引导人生</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>32</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1156371/?utm_source=z.arlmy.me">黄帝内经灵枢白话解</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1156371/">黄帝内经灵枢白话解</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>33</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27138973/?utm_source=z.arlmy.me">克苏鲁神话合集</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/27138973/">克苏鲁神话合集</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>34</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26580084/?utm_source=z.arlmy.me">烛烬</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26580084/">烛烬</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>35</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30310659/?utm_source=z.arlmy.me">幸福的陷阱</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30310659/">幸福的陷阱</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>36</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26721301/?utm_source=z.arlmy.me">反思史学与史学反思</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26721301/">反思史学与史学反思</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>37</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1291204/?utm_source=z.arlmy.me">哥德尔、艾舍尔、巴赫</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1291204/">哥德尔、艾舍尔、巴赫</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>38</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26303058/?utm_source=z.arlmy.me">我是怎样拍电影的</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26303058/">我是怎样拍电影的</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>39</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30345416/?utm_source=z.arlmy.me">铁浆</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30345416/">铁浆</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>40</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3324036/?utm_source=z.arlmy.me">茫茫黑夜漫游</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3324036/">茫茫黑夜漫游</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>41</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30334621/?utm_source=z.arlmy.me">斯飞日历2019识古寻踪</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/30334621/">斯飞日历2019识古寻踪</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>42</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26926193/?utm_source=z.arlmy.me">斯飞日历2017</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26926193/">斯飞日历2017</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>43</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2249999/?utm_source=z.arlmy.me">我与我的世界</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/2249999/">我与我的世界</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>44</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3008963/?utm_source=z.arlmy.me">古希腊星象说</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/3008963/">古希腊星象说</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>45</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34779312/?utm_source=z.arlmy.me">思考中医（珍藏版）</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/34779312/">思考中医（珍藏版）</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>46</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6539859/?utm_source=z.arlmy.me">甲骨文</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/6539859/">甲骨文</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>47</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4282061/?utm_source=z.arlmy.me">科幻小说史</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/4282061/">科幻小说史</a></td>
 <td>成都</td>
 <td></td>
 </tr>
 <tr>
 <td>48</td>
 <td>20200726</td>
-<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26721362/?utm_source=z.arlmy.me">大象</a></td>
+<td><a target="_blank" rel="noopener" href="https://book.douban.com/subject/26721362/">大象</a></td>
 <td>成都</td>
 <td></td>
 </tr>
@@ -1295,12 +1298,12 @@ html.dataset.dark = localStorage.dark;
 <li>20200719 Arlmy 创建</li>
 <li>20200801 Arlmy 整理、发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page?utm_source=z.arlmy.me" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Let Books Go 3</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2020-08-01</p><p><span>最后更新：</span>2025-11-25</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/LetBooksGo_List_3/">https://z.arlmy.me/posts/BBBPandINSW/LetBooksGo_List_3/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/LetBooksGo_List_3/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans?utm_source=z.arlmy.me" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p></div><br><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/LetBooksGo_List_3/" data-id="cmm496tlu001su0vp90rn9n0b" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aQVLDMAwFUO5/6bJlQdL/5cBM7ecVQ03i14WQZH19xev1Y/38zdWeq0+vnnz1locXBgbGxzJet2u2Jzni/XPy92JgYJzDSELh/V+1ITjZmZwNAwMDIzlinj6uJ6AYGBgYs4B7H1LbVBIDAwNjpYhNGEnTLU8i/6QWx8DA+EBGnrT9/89/cr+BgYHxUYxXuVZ4eaCsT4WBgbE1Iw9wLTJJ/ooCNWjMYWBg7MrIC85Z2G2HvWZfCgYGxt6MvEG/ciUwG6poW34YGBi7MtpLx2d7X7Pgi4GBcRpjJXVLErhZey4Zs3hzE4uBgbEdoy1K26Gu9gntHgwMjL0Z+YtXAmXb1MsD/S9dQwwMjK0Z7UGfbfQvJYgYGBgHMNrHzdr9eSqZZLLRtAgGBsYWjDyoPZXezersYtgCAwNjO8b9Ee/H5WelbxuOo38DGBgYBzBWGmoz9sqo2ZsiFgMDY1PGrKH21J71LwsDA2NvRv6IdXBbmuZpKwYGxpmMJIDORurzVLK+osDAwDiY0V5nzlp17VVBEdcxMDC2YxSpWHAZmQ/Zz9ZlwMXAwNiIMUvy8nDZppjtkNkwY8XAwPgoRhva1gdSZ2llPn6BgYGxK2MWZGcXBrNwHBXeGBgYBzDWA19Ssq7w3uzEwMDAKANl26TLL0FrHwYGxsGMthGWJ3zDMTUMDIwDGHmzfqXF36aPxSUEBgbG1oyVmasWmRe9+XMwMDC2ZnwDR8ZLqQO9BjAAAAAASUVORK5CYII=">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BBBP/" rel="tag">BBBP</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/MastodonArchives/2020/MastodonTootsArchives_20200801/">Toots 118 2020 Jul.26 - Aug.1</a><a class="next" href="/posts/ZArlmyMe/RecordingShare_1/">2010.11.13 五条人@麻雀瓦舍</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Let Books Go 3</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2020-08-01</p><p><span>最后更新：</span>2025-11-25</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/LetBooksGo_List_3/">https://z.arlmy.me/posts/BBBPandINSW/LetBooksGo_List_3/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/LetBooksGo_List_3/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p></div><br><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/LetBooksGo_List_3/" data-id="cmmtdlzbs001yrwvpgw92ged7" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aQVLDMAwFUO5/6bJlQdL/5cBM7ecVQ03i14WQZH19xev1Y/38zdWeq0+vnnz1locXBgbGxzJet2u2Jzni/XPy92JgYJzDSELh/V+1ITjZmZwNAwMDIzlinj6uJ6AYGBgYs4B7H1LbVBIDAwNjpYhNGEnTLU8i/6QWx8DA+EBGnrT9/89/cr+BgYHxUYxXuVZ4eaCsT4WBgbE1Iw9wLTJJ/ooCNWjMYWBg7MrIC85Z2G2HvWZfCgYGxt6MvEG/ciUwG6poW34YGBi7MtpLx2d7X7Pgi4GBcRpjJXVLErhZey4Zs3hzE4uBgbEdoy1K26Gu9gntHgwMjL0Z+YtXAmXb1MsD/S9dQwwMjK0Z7UGfbfQvJYgYGBgHMNrHzdr9eSqZZLLRtAgGBsYWjDyoPZXezersYtgCAwNjO8b9Ee/H5WelbxuOo38DGBgYBzBWGmoz9sqo2ZsiFgMDY1PGrKH21J71LwsDA2NvRv6IdXBbmuZpKwYGxpmMJIDORurzVLK+osDAwDiY0V5nzlp17VVBEdcxMDC2YxSpWHAZmQ/Zz9ZlwMXAwNiIMUvy8nDZppjtkNkwY8XAwPgoRhva1gdSZ2llPn6BgYGxK2MWZGcXBrNwHBXeGBgYBzDWA19Ssq7w3uzEwMDAKANl26TLL0FrHwYGxsGMthGWJ3zDMTUMDIwDGHmzfqXF36aPxSUEBgbG1oyVmasWmRe9+XMwMDC2ZnwDR8ZLqQO9BjAAAAAASUVORK5CYII=">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BBBP/" rel="tag">BBBP</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/MastodonArchives/2020/MastodonTootsArchives_20200801/">Toots 118 2020 Jul.26 - Aug.1</a><a class="next" href="/posts/ZArlmyMe/RecordingShare_1/">2010.11.13 五条人@麻雀瓦舍</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',
   path: ''
-})</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="widget-title"></div><ul></ul><a href="https://z.arlmy.me/categories/til/" title="TILs" target="_blank">TILs</a><ul></ul><a href="https://z.arlmy.me/Wiki/" title="WIKI" target="_blank">WIKI</a><ul></ul><a href="https://z.arlmy.me/2025/" title="WISH" target="_blank">WISH</a><ul></ul><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/" title="Library" target="_blank">Library</a><ul></ul><a href="https://z.arlmy.me/projects/" title="Projects" target="_blank">Projects</a></div><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://z.arlmy.me"></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="ABOUT" aria-label="ABOUT"><img class="nofancybox" src="/img/avatar.webp" alt="素生's avatar" loading="lazy"></a><p></p></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/COVID-19/">COVID-19</a><span class="category-list-count">34</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Complicated/">Complicated</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SOLARIS/">SOLARIS</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Technological-Slavery/">Technological Slavery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/til/">til</a><span class="category-list-count">25</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA/">写作方法论</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">年度精选</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/">渴望生活</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9B%96%E6%B4%9B%E6%99%AE%E4%BC%98%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/">盖洛普优势识别器</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">84</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%82%E5%90%8E/">观后</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E5%90%8E/">读后</a><span class="category-list-count">9</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E5%B9%B4%E5%BA%A6%E6%9C%80%E4%BD%B3/" style="font-size: 15px;">年度最佳</a> <a href="/tags/%E6%B3%A2%E5%85%B0/" style="font-size: 15px;">波兰</a> <a href="/tags/Links/" style="font-size: 15px;">Links</a> <a href="/tags/BBBP/" style="font-size: 15px;">BBBP</a> <a href="/tags/%E5%A4%A7%E4%BA%8B%E8%AE%B0/" style="font-size: 15px;">大事记</a> <a href="/tags/Complicated/" style="font-size: 15px;">Complicated</a> <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B9%A6/" style="font-size: 15px;">每日书</a> <a href="/tags/%E4%B8%80%E5%88%87%E5%AE%89%E5%A5%BD/" style="font-size: 15px;">一切安好</a> <a href="/tags/NONAME/" style="font-size: 15px;">NONAME</a> <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/" style="font-size: 15px;">读后感</a> <a href="/tags/%E6%91%98%E5%BD%95/" style="font-size: 15px;">摘录</a> <a href="/tags/%E7%A6%8F%E6%9F%AF/" style="font-size: 15px;">福柯</a> <a href="/tags/Proust/" style="font-size: 15px;">Proust</a> <a href="/tags/%E8%A7%82%E5%90%8E/" style="font-size: 15px;">观后</a> <a href="/tags/%E8%AE%A4%E7%9F%A5%E5%86%99%E4%BD%9C%E5%AD%A6/" style="font-size: 15px;">认知写作学</a> <a href="/tags/Italia/" style="font-size: 15px;">Italia</a> <a href="/tags/workflow/" style="font-size: 15px;">workflow</a> <a href="/tags/Roma/" style="font-size: 15px;">Roma</a> <a href="/tags/Sicilia/" style="font-size: 15px;">Sicilia</a> <a href="/tags/Japan/" style="font-size: 15px;">Japan</a> <a href="/tags/Tokyo/" style="font-size: 15px;">Tokyo</a> <a href="/tags/Echigo-Yuzawa/" style="font-size: 15px;">Echigo-Yuzawa</a> <a href="/tags/Travel/" style="font-size: 15px;">Travel</a> <a href="/tags/Portugal/" style="font-size: 15px;">Portugal</a> <a href="/tags/Lisboa/" style="font-size: 15px;">Lisboa</a> <a href="/tags/Coimbra/" style="font-size: 15px;">Coimbra</a> <a href="/tags/Porto/" style="font-size: 15px;">Porto</a> <a href="/tags/til/" style="font-size: 15px;">til</a> <a href="/tags/Web3/" style="font-size: 15px;">Web3</a> <a href="/tags/%E7%9F%AD%E8%AF%84%E5%BD%92%E6%A1%A3/" style="font-size: 15px;">短评归档</a> <a href="/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">纸书单</a> <a href="/tags/Anti-work/" style="font-size: 15px;">Anti-work</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E8%B0%88/" style="font-size: 15px;">工作谈</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 15px;">安利</a> <a href="/tags/%E5%A4%87%E5%BF%98/" style="font-size: 15px;">备忘</a> <a href="/tags/%E8%8F%9C%E8%B0%B1/" style="font-size: 15px;">菜谱</a> <a href="/tags/RecordingShare/" style="font-size: 15px;">RecordingShare</a> <a href="/tags/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/" style="font-size: 15px;">渴望生活</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Mastodon/" style="font-size: 15px;">Mastodon</a> <a href="/tags/INSW/" style="font-size: 15px;">INSW</a> <a href="/tags/recently/" style="font-size: 15px;">recently</a> <a href="/tags/%E5%81%B6%E7%84%B6%E7%9A%84%E5%88%9B%E9%80%A0/" style="font-size: 15px;">偶然的创造</a> <a href="/tags/Fitness/" style="font-size: 15px;">Fitness</a> <a href="/tags/CrossFit/" style="font-size: 15px;">CrossFit</a> <a href="/tags/openclaw/" style="font-size: 15px;">openclaw</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260228_Recently/">最近惦念 20260228</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/">Toots 410 2026 Mar.8 - Mar.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/YearlyBooks/BookList_2026/">2026 纸书单</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/AI/openclaw_onboard/">OpenClaw 配置</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260307/">Toots 409 2026 Mar.1 - Mar.7</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/">Toots 408 2026 Feb.22 - Feb.28</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260213_Recently/">最近惦念 20260213</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260221/">Toots 407 2026 Feb.15 - Feb.21</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/">Toots 406 2026 Feb.8 - Feb.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260128_Recently/">最近惦念 20260128</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://feedburner.google.com/fb/a/mailverify?uri=arlmy&amp;utm_source=z.arlmy.me" title="订阅 / Subscribe" target="_blank">订阅 / Subscribe</a><ul></ul><a href="https://cse.google.com/cse?cx=52907d001c32e452e&amp;utm_source=z.arlmy.me" title="Google 站内搜索" target="_blank">Google 站内搜索</a><ul></ul><a href="http://writer.arlmy.me/?utm_source=z.arlmy.me" title="写作集印" target="_blank">写作集印</a><ul></ul><a href="https://www.douban.com/group/352294/?utm_source=z.arlmy.me" title="好奇心小报" target="_blank">好奇心小报</a><ul></ul><a href="https://mirror.xyz/arlmy.eth?utm_source=z.arlmy.me" title="Mirror.xyz" target="_blank">Mirror.xyz</a><ul></ul><a href="http://cogwriters.github.io/?utm_source=z.arlmy.me" title="认知写作学学员黄页" target="_blank">认知写作学学员黄页</a><ul></ul><a href="https://clustrmaps.com/site/1b50l?utm_source=z.arlmy.me" title="访客统计" target="_blank">访客统计</a><ul></ul><a href="https://www.patreon.com/arlmy?utm_source=z.arlmy.me" title="PATREON" target="_blank">PATREON</a><ul></ul><a href="https://e.arlmy.me/?utm_source=z.arlmy.me" title="本站Web3镜像" target="_blank">本站Web3镜像</a><ul></ul><a href="https://travellings.cn/go.html?utm_source=z.arlmy.me" title="独立博客传送-1" target="_blank">独立博客传送-1</a><ul></ul><a href="https://www.foreverblog.cn/go.html?utm_source=z.arlmy.me" title="独立博客传送-2" target="_blank">独立博客传送-2</a></div><div class="widget"><div class="widget-title">访客统计</div><div id="clustrmaps-sidebar-container" style="width: 100%; max-width: 222px; height: 109px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.02); border-radius: 4px; margin: 0 auto;"><span style="color: #ddd; font-size: 10px;">Loading Map...</span></div><script>(function() {
+})</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="widget-title"></div><ul></ul><a href="https://z.arlmy.me/categories/til/" title="TILs" target="_blank">TILs</a><ul></ul><a href="https://z.arlmy.me/Wiki/" title="WIKI" target="_blank">WIKI</a><ul></ul><a href="https://z.arlmy.me/2026/" title="WISH" target="_blank">WISH</a><ul></ul><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/" title="Library" target="_blank">Library</a><ul></ul><a href="https://z.arlmy.me/projects/" title="Projects" target="_blank">Projects</a></div><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://z.arlmy.me"/></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="ABOUT" aria-label="ABOUT"><img class="nofancybox" src="/img/avatar.webp" alt="素生's avatar" loading="lazy"/></a><p></p></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/COVID-19/">COVID-19</a><span class="category-list-count">34</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Complicated/">Complicated</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SOLARIS/">SOLARIS</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Technological-Slavery/">Technological Slavery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/til/">til</a><span class="category-list-count">25</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA/">写作方法论</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">年度精选</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/">渴望生活</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9B%96%E6%B4%9B%E6%99%AE%E4%BC%98%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/">盖洛普优势识别器</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">84</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%82%E5%90%8E/">观后</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E5%90%8E/">读后</a><span class="category-list-count">9</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E5%B9%B4%E5%BA%A6%E6%9C%80%E4%BD%B3/" style="font-size: 15px;">年度最佳</a> <a href="/tags/Links/" style="font-size: 15px;">Links</a> <a href="/tags/%E6%B3%A2%E5%85%B0/" style="font-size: 15px;">波兰</a> <a href="/tags/BBBP/" style="font-size: 15px;">BBBP</a> <a href="/tags/%E5%A4%A7%E4%BA%8B%E8%AE%B0/" style="font-size: 15px;">大事记</a> <a href="/tags/Complicated/" style="font-size: 15px;">Complicated</a> <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B9%A6/" style="font-size: 15px;">每日书</a> <a href="/tags/%E4%B8%80%E5%88%87%E5%AE%89%E5%A5%BD/" style="font-size: 15px;">一切安好</a> <a href="/tags/NONAME/" style="font-size: 15px;">NONAME</a> <a href="/tags/%E7%A6%8F%E6%9F%AF/" style="font-size: 15px;">福柯</a> <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/" style="font-size: 15px;">读后感</a> <a href="/tags/%E6%91%98%E5%BD%95/" style="font-size: 15px;">摘录</a> <a href="/tags/%E8%AE%A4%E7%9F%A5%E5%86%99%E4%BD%9C%E5%AD%A6/" style="font-size: 15px;">认知写作学</a> <a href="/tags/Proust/" style="font-size: 15px;">Proust</a> <a href="/tags/workflow/" style="font-size: 15px;">workflow</a> <a href="/tags/%E8%A7%82%E5%90%8E/" style="font-size: 15px;">观后</a> <a href="/tags/til/" style="font-size: 15px;">til</a> <a href="/tags/Web3/" style="font-size: 15px;">Web3</a> <a href="/tags/Italia/" style="font-size: 15px;">Italia</a> <a href="/tags/Roma/" style="font-size: 15px;">Roma</a> <a href="/tags/Sicilia/" style="font-size: 15px;">Sicilia</a> <a href="/tags/Travel/" style="font-size: 15px;">Travel</a> <a href="/tags/Japan/" style="font-size: 15px;">Japan</a> <a href="/tags/Tokyo/" style="font-size: 15px;">Tokyo</a> <a href="/tags/Echigo-Yuzawa/" style="font-size: 15px;">Echigo-Yuzawa</a> <a href="/tags/Portugal/" style="font-size: 15px;">Portugal</a> <a href="/tags/Lisboa/" style="font-size: 15px;">Lisboa</a> <a href="/tags/Coimbra/" style="font-size: 15px;">Coimbra</a> <a href="/tags/Porto/" style="font-size: 15px;">Porto</a> <a href="/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">纸书单</a> <a href="/tags/Anti-work/" style="font-size: 15px;">Anti-work</a> <a href="/tags/%E7%9F%AD%E8%AF%84%E5%BD%92%E6%A1%A3/" style="font-size: 15px;">短评归档</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E8%B0%88/" style="font-size: 15px;">工作谈</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 15px;">安利</a> <a href="/tags/%E5%A4%87%E5%BF%98/" style="font-size: 15px;">备忘</a> <a href="/tags/%E8%8F%9C%E8%B0%B1/" style="font-size: 15px;">菜谱</a> <a href="/tags/RecordingShare/" style="font-size: 15px;">RecordingShare</a> <a href="/tags/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/" style="font-size: 15px;">渴望生活</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/INSW/" style="font-size: 15px;">INSW</a> <a href="/tags/Mastodon/" style="font-size: 15px;">Mastodon</a> <a href="/tags/openclaw/" style="font-size: 15px;">openclaw</a> <a href="/tags/recently/" style="font-size: 15px;">recently</a> <a href="/tags/%E5%81%B6%E7%84%B6%E7%9A%84%E5%88%9B%E9%80%A0/" style="font-size: 15px;">偶然的创造</a> <a href="/tags/CrossFit/" style="font-size: 15px;">CrossFit</a> <a href="/tags/Fitness/" style="font-size: 15px;">Fitness</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260228_Recently/">最近惦念 20260228</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/">Toots 410 2026 Mar.8 - Mar.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/YearlyBooks/BookList_2026/">2026 纸书单</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/AI/openclaw_onboard/">OpenClaw 配置</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260307/">Toots 409 2026 Mar.1 - Mar.7</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260228/">Toots 408 2026 Feb.22 - Feb.28</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260213_Recently/">最近惦念 20260213</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260221/">Toots 407 2026 Feb.15 - Feb.21</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/">Toots 406 2026 Feb.8 - Feb.14</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20260128_Recently/">最近惦念 20260128</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://feedburner.google.com/fb/a/mailverify?uri=arlmy" title="订阅 / Subscribe" target="_blank">订阅 / Subscribe</a><ul></ul><a href="https://cse.google.com/cse?cx=52907d001c32e452e" title="Google 站内搜索" target="_blank">Google 站内搜索</a><ul></ul><a href="http://writer.arlmy.me/" title="写作集印" target="_blank">写作集印</a><ul></ul><a href="https://www.douban.com/group/352294/" title="好奇心小报" target="_blank">好奇心小报</a><ul></ul><a href="https://mirror.xyz/arlmy.eth" title="Mirror.xyz" target="_blank">Mirror.xyz</a><ul></ul><a href="http://cogwriters.github.io/" title="认知写作学学员黄页" target="_blank">认知写作学学员黄页</a><ul></ul><a href="https://clustrmaps.com/site/1b50l" title="访客统计" target="_blank">访客统计</a><ul></ul><a href="https://www.patreon.com/arlmy" title="PATREON" target="_blank">PATREON</a><ul></ul><a href="https://e.arlmy.me/" title="本站Web3镜像" target="_blank">本站Web3镜像</a><ul></ul><a href="https://travellings.cn/go.html" title="独立博客传送-1" target="_blank">独立博客传送-1</a><ul></ul><a href="https://www.foreverblog.cn/go.html" title="独立博客传送-2" target="_blank">独立博客传送-2</a></div><div class="widget"><div class="widget-title">访客统计</div><div id="clustrmaps-sidebar-container" style="width: 100%; max-width: 222px; height: 109px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.02); border-radius: 4px; margin: 0 auto;"><span style="color: #ddd; font-size: 10px;">Loading Map...</span></div><script>(function() {
   var target = document.getElementById('clustrmaps-sidebar-container');
   if (!target) return;
 
@@ -1327,14 +1330,14 @@ html.dataset.dark = localStorage.dark;
   });
 
   observer.observe(target);
-})();</script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">素生.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io/?utm_source=z.arlmy.me"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo?utm_source=z.arlmy.me"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho?utm_source=z.arlmy.me"> Cho.</a></div></div><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js" defer=""></script><script type="text/javascript" src="/js/share.js?v=1.0.0" defer=""></script><script type="text/javascript" src="/js/donate.js?v=1.0.0" successtext="复制成功！" defer=""></script><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！" defer=""></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0" defer=""></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0" defer=""></script></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+})();</script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">素生.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js" defer></script><script type="text/javascript" src="/js/share.js?v=1.0.0" defer></script><script type="text/javascript" src="/js/donate.js?v=1.0.0" successtext="复制成功！" defer></script><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！" defer></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0" defer></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0" defer></script></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>xl - black</title>
   <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
     <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
     <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
   </g>
-</svg></a><link rel="preload" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"></noscript><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer=""></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" defer=""></script><script src="/js/lazy-hypothesis.js"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！" defer=""></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><!--添加 PWA 脚本 (注意：script 与上面的 #footer 对齐)--><script>// 注册 Service Worker
+</svg></a><link rel="preload" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"></noscript><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" defer></script><script src="/js/lazy-hypothesis.js"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！" defer></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><!--添加 PWA 脚本 (注意：script 与上面的 #footer 对齐)--><script>// 注册 Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
@@ -1354,4 +1357,4 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   console.log('Installation prompt was prevented.');
 });
-</script><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" defer=""></script></div></body></html>
+</script><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" defer></script></div></body></html>
