@@ -103088,43 +103088,6 @@ from “Gimme Shelter”</li>
       </tags>
   </entry>
   <entry>
-    <title>OpenClaw 配置</title>
-    <url>/posts/TILs/AI/openclaw_onboard/</url>
-    <content><![CDATA[<p>记录下我的配置过程（我的是Windows电脑），对于新工具，还是很推荐自己从头到尾配置一遍。</p>
-<h2 id="%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8" tabindex="-1" id="注册服务器">注册服务器</h2>
-<p>是V2EX经常看到的一个服务器：RackNerd，注册链接（有推荐码）：<a href="https://my.racknerd.com/aff.php?aff=18536">RackNerd</a> ，用邮箱注册。</p>
-<p>选择页面最上方的OUR LATEST NEW YEAR DEALS (MUST SEE!)，推荐购买4GB的这款，费用为43.88美元每年，支持支付宝付款，主机选在美国或日本，我选在的CA san jose。</p>
-<p>激活后，邮箱中会收到账号、密码（两个密码，服务器的和Panel的）、服务器的IP，这个密码是最重要的，管理密码，要储存好。</p>
-<p>在<a href="https://nerdvm.racknerd.com/">NerdVM Panel</a>查看目前的系统：Operating System，如果不是Ubuntu，点击下面的Reinstall，选择“Ubuntu 24.04 64 Bit”。</p>
-<p><a href="https://ping.pe/">Ping.pe</a>，用这个网站测试下服务器的访问速度，如果国内的访问速度过慢，可以联系客服更换IP，很快就能换好。</p>
-<h2 id="%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8" tabindex="-1" id="连接服务器">连接服务器</h2>
-<p>打开电脑终端，打开PowerShell，输入<code>ssh root@XXX.xxx.XXX.xxx</code>，XXX.xxx.XXX.xxx是服务器的IP，提示输入密码，邮件里有提供过。</p>
-<p>连接成功后，<code>apt update &amp;&amp; apt upgrade -y</code>，更新系统。</p>
-<p><code>curl -fsSL https://get.docker.com | bash</code>，安装Docker环境。</p>
-<h2 id="%E5%AE%89%E8%A3%85openclaw" tabindex="-1" id="安装OpenClaw">安装OpenClaw</h2>
-<p>按照<a href="https://openclaw.ai/">OpenClaw</a>官网的提示，在命令行中安装<code>npm i -g openclaw</code>。</p>
-<p>输入<code>openclaw onboard</code>启动配置。这个就不详细记录了，一步步配置即可，终端推荐Telegram或飞书，我日常使用Telegram，使用BotFather创建token绑定即可，OpenClaw内置了白名单，只有绑定配对的Telegram账号，才能与它进行对话。</p>
-<h2 id="%E6%A8%A1%E5%9E%8B%E8%AE%BE%E7%BD%AE" tabindex="-1" id="模型设置">模型设置</h2>
-<p>我用的是<a href="https://302.ai/">302.AI</a>的token中介，注册充值即可，存好API-key。</p>
-<p>在命令行中按这个文件配置：<a href="https://doc.302.ai/8138564m0">OpenClaw快速配置工具</a>，我使用的模型是Kimi 2.5。</p>
-<h2 id="workspace%E5%A4%87%E4%BB%BD" tabindex="-1" id="workspace备份">workspace备份</h2>
-<p>建议优先让OpenClaw协助你配置自动备份，<a href="http://xn--workspaceAGENTS-tz3xv1h941mv8f.md">workspace文件中有AGENTS.md</a>, <a href="http://BOOTSTRAP.md">BOOTSTRAP.md</a>, <a href="http://HEARTBEAT.md">HEARTBEAT.md</a>, <a href="http://IDENTITY.md">IDENTITY.md</a>, <a href="http://SOUL.md">SOUL.md</a>, <a href="http://TOOLS.md">TOOLS.md</a>, USER.md七个核心文件，推荐使用版本备份，这样你可以在其他主机和环境中，快速还原自己的定制化使用习惯。</p>
-<hr>
-<p>CHANGELOG</p>
-<ul>
-<li>20260309 Arlmy 创建</li>
-<li>20260309 Arlmy 发布</li>
-</ul>
-]]></content>
-      <categories>
-        <category>til</category>
-      </categories>
-      <tags>
-        <tag>til</tag>
-        <tag>openclaw</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>最近惦念 20250530</title>
     <url>/posts/TILs/thoughts/20250530_Recently/</url>
     <content><![CDATA[<p>离开也是一种成长。开始远观北京的记忆。</p>
@@ -109279,6 +109242,253 @@ RMB 10元<br>
       </categories>
   </entry>
   <entry>
+    <title>觉得会离不开的供应商盘点（2026年3月）</title>
+    <url>/posts/HomeSupplier/HomeSupplier_20260321/</url>
+    <content><![CDATA[<p>目前觉得会离不开的供应商们盘点，感觉每年都在变化，整理下打个时间戳，尽量以有品牌、有IP的为主，无依赖的品牌不计入。</p>
+<h2 id="%E7%B2%AE%E6%B2%B9%E5%89%AF%E9%A3%9F" tabindex="-1" id="粮油副食">粮油副食</h2>
+<ul>
+<li>胚芽米（吉林）</li>
+<li>长粒香（新疆察布查尔）</li>
+<li>葱香锅饼（江苏徐州）</li>
+<li>吾双面包（河南）、谷悟面包&amp;麦的多（成都）</li>
+<li>桃李全麦切片、红豆（辽宁）</li>
+<li>沁州黄小米（山西）</li>
+<li>德富祥五仁咸油茶（陕西）</li>
+<li>扁形意大利面（Molisana、百味来）</li>
+<li>蝴蝶意大利面（百味来）</li>
+<li>麦片、玉米片：世壮</li>
+</ul>
+<h2 id="%E8%82%89%E8%9B%8B%E5%A5%B6" tabindex="-1" id="肉蛋奶">肉蛋奶</h2>
+<ul>
+<li>猪肉：安庆、运城、雅安、四川藏香猪</li>
+<li>牛肉：内蒙古南屯牛肉/牛排</li>
+<li>羊肉：内蒙古草原宏宝、简阳羊肉</li>
+<li>鱼：国联三去黄花鱼</li>
+<li>牛奶：悦鲜活、菊乐、天润、淳轩、葛兰纳诺、兰雀</li>
+<li>燕麦乳：大咖国际</li>
+<li>酸奶：蒙域、真零</li>
+</ul>
+<h2 id="%E8%B0%83%E5%91%B3%E5%93%81" tabindex="-1" id="调味品">调味品</h2>
+<ul>
+<li>菜籽油：贵州农家菜籽油（二级以下、压榨法）</li>
+<li>豆油：中安</li>
+<li>香油：河南农家小磨香油（二级以下、水代法）</li>
+<li>橄榄油：山姆的特级初榨</li>
+<li>生抽：鹃城牌犀浦酱油</li>
+<li>老抽：中坝</li>
+<li>料酒：护国岩</li>
+<li>醋：保宁醋、宁化府陈醋（5年）</li>
+<li>香糟卤：鼎丰</li>
+<li>酸菜：二丫</li>
+<li>辣白菜：崔奶奶</li>
+<li>豆豉：浏阳鲜豆豉</li>
+<li>沙茶酱：迎春楼</li>
+<li>番茄酱：半球红（新疆）</li>
+<li>其他：刨灰婆烧辣椒、Kara佳乐椰浆、S&amp;B咖哩块（中辛）、新疆焉耆辣皮子</li>
+</ul>
+<h2 id="%E5%86%9C%E4%BA%A7%E5%93%81%2F%E6%B0%B4%E6%9E%9C" tabindex="-1" id="农产品-水果">农产品/水果</h2>
+<ul>
+<li>黄金百香果/钦蜜9号（广西）</li>
+<li>隰县玉露香梨（山西）</li>
+<li>青州蜜桃（山东）</li>
+<li>瑞雪青苹果（咸阳）</li>
+<li>宁夏骏枣</li>
+<li>济薯26号</li>
+<li>宁夏枸杞</li>
+<li>花香蓝莓（云南）</li>
+<li>三代金桔（广西）</li>
+<li>丰滋壶瓶枣（山西）</li>
+<li>香叭香原味瓜子（新疆）</li>
+<li>洪湖九孔藕（湖北）</li>
+<li>枇杷（龙泉、汶川）</li>
+<li>白玉枇杷（江苏苏州）</li>
+<li>五月脆/青脆李/蜂糖李（四川）</li>
+<li>红啤梨（三门峡陕州区）</li>
+<li>鸡心果（锦州）</li>
+<li>大枣（辽宁朝阳孙家湾）</li>
+<li>去皮核桃仁（新疆、云南）</li>
+<li>耙耙柑、血橙（四川）</li>
+<li>赣南脐橙（江西）</li>
+<li>猕猴桃（河南西峡红心猕猴桃、贵州修文猕猴桃）</li>
+<li>小台芒、凯特芒</li>
+<li>栗子：紫玉</li>
+</ul>
+<h2 id="%E9%9B%B6%E9%A3%9F" tabindex="-1" id="零食">零食</h2>
+<ul>
+<li>洪湖香莲泡藕带</li>
+<li>斯娃泡泡干</li>
+<li>洽洽葵珍瓜子</li>
+<li>西尔丹雪莲辣椒丝</li>
+<li>杜毛女棒棒馍花椒味、杜毛女石子馍杂粮味（陕西蒲城）</li>
+<li>北堤麻辣肉（湖南常德）</li>
+<li>唯怡花生露</li>
+<li>荔浦芋头条</li>
+<li>喜达捞面</li>
+<li>天津欣乐月饼</li>
+<li>奇多</li>
+</ul>
+<h2 id="%E5%AE%B6%E5%B1%85%E6%97%A5%E5%8C%96" tabindex="-1" id="家居日化">家居日化</h2>
+<ul>
+<li>洗洁精：家安米精华餐具净</li>
+<li>洗护：大宝、vellie山羊奶洗发露</li>
+<li>纸巾：Tempo</li>
+<li>插排：公牛、AOC</li>
+<li>厨房纸：五月花</li>
+<li>中性笔：斑马ZEBRA黑色&amp;复古色</li>
+<li>软头笔：蜻蜓TOMBOW笔之助</li>
+<li>记号笔：sharpie</li>
+<li>笔记本：Luv Letter（FC）、whatever、NOTE FOR、良山、morning glory</li>
+<li>收纳盒：优得比、齐心</li>
+<li>杯子：16开</li>
+<li>牙膏：贝利达</li>
+<li>常用药：北京同仁堂牛黄解毒片、贵州百灵双羊喉痹通颗粒、羚锐通络祛痛膏、泰诺</li>
+<li>猫用：领先罐头、Nikoro猫砂、法米娜猫粮、蓝氏猫条</li>
+</ul>
+<h2 id="%E8%BD%AF%E4%BB%B6%26%E7%A1%AC%E4%BB%B6" tabindex="-1" id="软件-硬件">软件&amp;硬件</h2>
+<ul>
+<li>音乐：Spotify、Radiooooo、Pandora</li>
+<li>笔记本：ROG</li>
+<li>手机：OPPO、一加</li>
+<li>耳机：声阔Q30降噪耳机</li>
+<li>配件：倍思</li>
+<li>电视：坚果投影 N1、百度网盘TV版、网易爆米花</li>
+<li>漫画：漫画人</li>
+<li>RSS：Tiny Tiny RSS、Folo</li>
+<li>阅读：Librera、KOReader、BOOX Leaf2</li>
+<li>时间统计：时间日志</li>
+<li>笔记：Logseq</li>
+<li>Launcher：Niagara</li>
+<li>待办：Twos</li>
+<li>AI：Gemini</li>
+</ul>
+<h2 id="%E7%83%9F%E9%85%92%E8%8C%B6%E5%92%96" tabindex="-1" id="烟酒茶咖">烟酒茶咖</h2>
+<ul>
+<li>咖啡豆：LAVAZZA、KREMOSO、Kimbo、大咖国际、喜神（KFC同款）</li>
+<li>六堡茶：梧州三鹤六堡茶</li>
+<li>普洱茶：澜沧古茶0081</li>
+<li>滇红：凤牌经典58</li>
+<li>苏打水：Chang象牌</li>
+<li>白酒：汾酒青花25</li>
+<li>STOUT：SUPER BOCK、帝磨栏、迷失海岸、左手</li>
+<li>IPA：美西</li>
+<li>其他：Boddington宝汀顿、CHIMAY红帽、KASTEEL、Leffe黑啤、CROFT波特（Tawny）</li>
+</ul>
+<h2 id="%E6%92%AD%E5%AE%A2" tabindex="-1" id="播客">播客</h2>
+<ul>
+<li>翻转电台&amp;世界苦茶</li>
+<li>西海之声（主版节目）</li>
+<li>东京脱线时间</li>
+<li>不可理论</li>
+<li>鼓腹而游</li>
+<li>这是干啥的</li>
+<li>游荡集</li>
+</ul>
+<h2 id="up" tabindex="-1" id="UP">UP</h2>
+<ul>
+<li>食贫道</li>
+<li>大瑶同学remix</li>
+<li>中气爱</li>
+<li>摸鱼事务所</li>
+<li>傲慢的小肉包</li>
+<li>papi酱</li>
+</ul>
+<h2 id="%E5%85%B6%E4%BB%96%E7%9B%98%E7%82%B9" tabindex="-1" id="其他盘点">其他盘点</h2>
+<ul>
+<li>公众号关注数：196</li>
+<li>服务号关注数：198</li>
+<li>小红书关注数：67</li>
+<li>豆瓣友邻数: 1570</li>
+<li>微信好友数：2966</li>
+</ul>
+<hr>
+<p>CHANGELOG</p>
+<ul>
+<li>20260321 Arlmy 创建、发布</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>HomeSupplier</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OpenClaw 配置</title>
+    <url>/posts/IT/openclaw_onboard/</url>
+    <content><![CDATA[<p>记录下我的配置过程（我的是Windows电脑），对于新工具，还是很推荐自己从头到尾配置一遍。</p>
+<h2 id="%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E5%99%A8" tabindex="-1" id="注册服务器">注册服务器</h2>
+<p>是V2EX经常看到的一个服务器：RackNerd，注册链接（有推荐码）：<a href="https://my.racknerd.com/aff.php?aff=18536">RackNerd</a> ，用邮箱注册。</p>
+<p>选择页面最上方的OUR LATEST NEW YEAR DEALS (MUST SEE!)，推荐购买4GB的这款，费用为43.88美元每年，支持支付宝付款，主机选在美国或日本，我选在的CA san jose。</p>
+<p>激活后，邮箱中会收到账号、密码（两个密码，服务器的和Panel的）、服务器的IP，这个密码是最重要的，管理密码，要储存好。</p>
+<p>在<a href="https://nerdvm.racknerd.com/">NerdVM Panel</a>查看目前的系统：Operating System，如果不是Ubuntu，点击下面的Reinstall，选择“Ubuntu 24.04 64 Bit”。</p>
+<p><a href="https://ping.pe/">Ping.pe</a>，用这个网站测试下服务器的访问速度，如果国内的访问速度过慢，可以联系客服更换IP，很快就能换好。</p>
+<h2 id="%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8" tabindex="-1" id="连接服务器">连接服务器</h2>
+<p>打开电脑终端，打开PowerShell，输入<code>ssh root@XXX.xxx.XXX.xxx</code>，XXX.xxx.XXX.xxx是服务器的IP，提示输入密码，邮件里有提供过。</p>
+<p>连接成功后，<code>apt update &amp;&amp; apt upgrade -y</code>，更新系统。</p>
+<p><code>curl -fsSL https://get.docker.com | bash</code>，安装Docker环境。</p>
+<h2 id="%E5%AE%89%E8%A3%85openclaw" tabindex="-1" id="安装OpenClaw">安装OpenClaw</h2>
+<p>按照<a href="https://openclaw.ai/">OpenClaw</a>官网的提示，在命令行中安装<code>npm i -g openclaw</code>。</p>
+<p>输入<code>openclaw onboard</code>启动配置。这个就不详细记录了，一步步配置即可，终端推荐Telegram或飞书，我日常使用Telegram，使用BotFather创建token绑定即可，OpenClaw内置了白名单，只有绑定配对的Telegram账号，才能与它进行对话。</p>
+<h2 id="%E6%A8%A1%E5%9E%8B%E8%AE%BE%E7%BD%AE" tabindex="-1" id="模型设置">模型设置</h2>
+<p>我用的是<a href="https://302.ai/">302.AI</a>的token中介，注册充值即可，存好API-key。</p>
+<p>在命令行中按这个文件配置：<a href="https://doc.302.ai/8138564m0">OpenClaw快速配置工具</a>，我使用的模型是Kimi 2.5。</p>
+<h2 id="workspace%E5%A4%87%E4%BB%BD" tabindex="-1" id="workspace备份">workspace备份</h2>
+<p>建议优先让OpenClaw协助你配置自动备份，<a href="http://xn--workspaceAGENTS-tz3xv1h941mv8f.md">workspace文件中有AGENTS.md</a>, <a href="http://BOOTSTRAP.md">BOOTSTRAP.md</a>, <a href="http://HEARTBEAT.md">HEARTBEAT.md</a>, <a href="http://IDENTITY.md">IDENTITY.md</a>, <a href="http://SOUL.md">SOUL.md</a>, <a href="http://TOOLS.md">TOOLS.md</a>, USER.md七个核心文件，推荐使用版本备份，这样你可以在其他主机和环境中，快速还原自己的定制化使用习惯。</p>
+<hr>
+<p>CHANGELOG</p>
+<ul>
+<li>20260309 Arlmy 创建</li>
+<li>20260309 Arlmy 发布</li>
+</ul>
+]]></content>
+      <categories>
+        <category>til</category>
+      </categories>
+      <tags>
+        <tag>til</tag>
+        <tag>openclaw</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 增加热力图</title>
+    <url>/posts/hexo/Hexo_Heatmap/</url>
+    <content><![CDATA[<p>已经布署在了<a href="https://z.arlmy.me/index/">INDEX</a>页面，12年的时间一下就非常具象化了。</p>
+<h2 id="%E9%B8%A3%E8%B0%A2" tabindex="-1" id="鸣谢">鸣谢</h2>
+<p>借鉴了<a href="https://rexarski.com/now/">howaboutqiu</a>、<a href="https://blog.douchi.space/hugo-blog-heatmap/">如何给Hugo博客添加热力图-椒盐豆豉</a>、<a href="https://greendolphindance.com/2024/01/22/%E5%88%B6%E4%BD%9Chexo%E7%83%AD%E5%8A%9B%E5%9B%BE/">制作hexo热力图-Green Dolphin Dance</a></p>
+<h2 id="hexo%E9%85%8D%E7%BD%AE" tabindex="-1" id="Hexo配置">Hexo配置</h2>
+<ol>
+<li>
+<p>在主题文件夹<code>layout\_partial</code>内，创建heatmap.pug文件，代码后附，如果主题模板是ejs格式的，让AI帮你转换下就行。</p>
+</li>
+<li>
+<p>在主题文件夹<code>layout</code>内，在page.pug、post.pug文件内，增加代码</p>
+</li>
+</ol>
+<p>page.pug内，将<code>if page.heatmap</code>两行代码（缩进关系不要变），放在页面标题后、正文前。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">block content</span><br><span class="line">  .post</span><br><span class="line">    h1.post-title(onclick=&quot;copyUrlSegment()&quot;)= page.title</span><br><span class="line"></span><br><span class="line">    //- 放在正文内容之前（推荐，一打开页面就能看到热力图）</span><br><span class="line">    if page.heatmap</span><br><span class="line">      include _partial/heatmap.pug</span><br><span class="line"></span><br><span class="line">    .post-content</span><br><span class="line">      != page.content</span><br></pre></td></tr></table></figure>
+<p>post.pug内，将<code>if page.heatmap</code>两行代码（缩进关系不要变），放在页面标题后、正文前。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">block content</span><br><span class="line">  .post</span><br><span class="line">    h1.post-title(onclick=&quot;copyUrlSegment()&quot;)= page.title</span><br><span class="line">    .post-meta= page.date.format(config.date_format)</span><br><span class="line"></span><br><span class="line">    //- 放在.post-meta之后.post-content之前，与它们平级</span><br><span class="line">    if page.heatmap</span><br><span class="line">      div(style=&quot;margin: 2rem 0;&quot;) </span><br><span class="line">        include _partial/heatmap.pug</span><br><span class="line"></span><br><span class="line">  .post-content</span><br><span class="line">    != page.content</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>在想要显示热力图的页面，增加一行<code>heatmap: true</code>，比如我放在Index页面，在页面文件头部增加既可。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: INDEX</span><br><span class="line">date: 2025-09-30 09:08:27</span><br><span class="line">heatmap: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>布署上线，<code>hexo clean</code> &amp; <code>hexo g -d</code></li>
+</ol>
+<p>heatmap.pug文件代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//- 1. 数据预处理</span><br><span class="line">-</span><br><span class="line">  var yearWeekData = &#123;&#125;;</span><br><span class="line">  var yearsSet = new Set();</span><br><span class="line">  </span><br><span class="line">  site.posts.forEach(function(post) &#123;</span><br><span class="line">    var y = post.date.isoWeekYear();</span><br><span class="line">    var w = post.date.isoWeek();</span><br><span class="line">    yearsSet.add(y);</span><br><span class="line">    </span><br><span class="line">    var key = y + &#x27;-&#x27; + w;</span><br><span class="line">    if (!yearWeekData[key]) &#123;</span><br><span class="line">      yearWeekData[key] = &#123; count: 0, posts: [] &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    yearWeekData[key].count += 1;</span><br><span class="line">    yearWeekData[key].posts.push(&#123;</span><br><span class="line">      title: post.title,</span><br><span class="line">      link: url_for(post.path)</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">  </span><br><span class="line">  var allYears = Array.from(yearsSet).sort(function(a, b)&#123; return b - a &#125;);</span><br><span class="line">  if(allYears.length === 0) allYears = [new Date().getFullYear()];</span><br><span class="line">  var maxYear = allYears[0];</span><br><span class="line">  var minYear = allYears[allYears.length - 1];</span><br><span class="line">  </span><br><span class="line">  var displayYears = [];</span><br><span class="line">  for(var i = maxYear; i &gt;= minYear; i--) &#123;</span><br><span class="line">    displayYears.push(i);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">//- 2. DOM 结构</span><br><span class="line">#heatmap-container</span><br><span class="line">  #tooltip</span><br><span class="line"></span><br><span class="line">//- 3. 样式表</span><br><span class="line">style.</span><br><span class="line">  #heatmap-container &#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    overflow: visible;</span><br><span class="line">    margin-top: 40px;</span><br><span class="line">    margin-bottom: 30px;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .heatmap-cell &#123;</span><br><span class="line">    rx: 1.5px;</span><br><span class="line">    ry: 1.5px;</span><br><span class="line">    transition: opacity 0.2s ease;</span><br><span class="line">    stroke: none !important;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .heatmap-cell.has-post &#123;</span><br><span class="line">    cursor: default; /* 改为默认箭头，因为现在不直接点击色块了 */</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .heatmap-cell:hover &#123;</span><br><span class="line">    opacity: 0.5;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .year-text, .legend-text, .legend-number, #tooltip &#123;</span><br><span class="line">    font-family: &#x27;Source Han Serif SC&#x27;, &#x27;Source Han Serif&#x27;, &#x27;Noto Serif CJK SC&#x27;, serif;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .year-text &#123;</span><br><span class="line">    font-size: 14px;</span><br><span class="line">    font-weight: bold;</span><br><span class="line">    fill: #888888;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .legend-text &#123;</span><br><span class="line">    font-size: 14px;</span><br><span class="line">    fill: #333333;</span><br><span class="line">    font-weight: bold;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  .legend-number &#123;</span><br><span class="line">    font-size: 13px;</span><br><span class="line">    fill: #888888;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  html[data-dark=&quot;true&quot;] .legend-text &#123; fill: #dddddd; &#125;</span><br><span class="line">  html[data-dark=&quot;true&quot;] .year-text,</span><br><span class="line">  html[data-dark=&quot;true&quot;] .legend-number &#123; fill: #777777; &#125;</span><br><span class="line">  </span><br><span class="line">  /* Tooltip 样式：删除了 pointer-events: none，加入隐藏机制 */</span><br><span class="line">  #tooltip &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    background-color: rgba(255, 255, 255, 0.98);</span><br><span class="line">    color: #222222;</span><br><span class="line">    border: 1px solid #e0e0e0;</span><br><span class="line">    border-radius: 2px;</span><br><span class="line">    padding: 10px 14px;</span><br><span class="line">    opacity: 0;</span><br><span class="line">    visibility: hidden; /* 默认隐藏，防止阻挡正常页面点击 */</span><br><span class="line">    font-size: 13px;</span><br><span class="line">    transform: translate(-50%, -100%);</span><br><span class="line">    line-height: 1.6;</span><br><span class="line">    z-index: 1000;</span><br><span class="line">    white-space: nowrap;</span><br><span class="line">    box-shadow: 0 4px 12px rgba(0,0,0,0.08);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  /* 优雅的链接样式 */</span><br><span class="line">  #tooltip a &#123;</span><br><span class="line">    color: inherit;</span><br><span class="line">    text-decoration: none;</span><br><span class="line">    display: block;</span><br><span class="line">    border-bottom: 1px dashed rgba(136, 136, 136, 0.3);</span><br><span class="line">    padding: 2px 0;</span><br><span class="line">    transition: all 0.2s ease;</span><br><span class="line">  &#125;</span><br><span class="line">  #tooltip a:last-child &#123;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">  &#125;</span><br><span class="line">  #tooltip a:hover &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    border-bottom: 1px solid #000;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  html[data-dark=&quot;true&quot;] #tooltip &#123;</span><br><span class="line">    background-color: rgba(30, 30, 30, 0.98);</span><br><span class="line">    color: #dddddd;</span><br><span class="line">    border: 1px solid #444444;</span><br><span class="line">    box-shadow: 0 4px 12px rgba(0,0,0,0.6);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  html[data-dark=&quot;true&quot;] #tooltip a:hover &#123;</span><br><span class="line">    color: #fff;</span><br><span class="line">    border-bottom: 1px solid #fff;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">//- 4. 脚本逻辑</span><br><span class="line">script(src=&quot;https://d3js.org/d3.v5.min.js&quot;)</span><br><span class="line">script.</span><br><span class="line">  document.addEventListener(&quot;DOMContentLoaded&quot;, function () &#123;</span><br><span class="line">    var data = !&#123;JSON.stringify(yearWeekData)&#125;;</span><br><span class="line">    var displayYears = !&#123;JSON.stringify(displayYears)&#125;;</span><br><span class="line">    </span><br><span class="line">    var fullGrid = [];</span><br><span class="line">    displayYears.forEach(function(y, rowIdx) &#123;</span><br><span class="line">      for(var w = 1; w &lt;= 53; w++) &#123;</span><br><span class="line">        var key = y + &#x27;-&#x27; + w;</span><br><span class="line">        var cellData = data[key] || &#123; count: 0, posts: [] &#125;;</span><br><span class="line">        fullGrid.push(&#123;</span><br><span class="line">          year: y,</span><br><span class="line">          week: w,</span><br><span class="line">          row: rowIdx,</span><br><span class="line">          col: w - 1,</span><br><span class="line">          count: cellData.count,</span><br><span class="line">          posts: cellData.posts</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    var cellWidth = 10;</span><br><span class="line">    var cellHeight = 16.18; </span><br><span class="line">    var cellPaddingX = 3; </span><br><span class="line">    var cellPaddingY = 8; </span><br><span class="line">    var labelWidth = 50; </span><br><span class="line">    var topMargin = 45;  </span><br><span class="line">    </span><br><span class="line">    var width = labelWidth + (53 * (cellWidth + cellPaddingX));</span><br><span class="line">    var height = topMargin + (displayYears.length * (cellHeight + cellPaddingY));</span><br><span class="line"></span><br><span class="line">    var svg = d3.select(&quot;#heatmap-container&quot;).append(&quot;svg&quot;)</span><br><span class="line">      .attr(&quot;viewBox&quot;, &quot;0 0 &quot; + width + &quot; &quot; + height)</span><br><span class="line">      .attr(&quot;preserveAspectRatio&quot;, &quot;xMidYMid meet&quot;);</span><br><span class="line"></span><br><span class="line">    function getFillColor(count, isDark) &#123;</span><br><span class="line">      if (isDark) &#123;</span><br><span class="line">        if (count === 0) return &quot;#1e1e1e&quot;; </span><br><span class="line">        if (count === 1) return &quot;#3a3a3a&quot;;</span><br><span class="line">        if (count === 2) return &quot;#5c5c5c&quot;;</span><br><span class="line">        if (count === 3) return &quot;#858585&quot;;</span><br><span class="line">        return &quot;#b3b3b3&quot;; </span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        if (count === 0) return &quot;#ebebeb&quot;; </span><br><span class="line">        if (count === 1) return &quot;#c2c2c2&quot;;</span><br><span class="line">        if (count === 2) return &quot;#949494&quot;;</span><br><span class="line">        if (count === 3) return &quot;#666666&quot;;</span><br><span class="line">        return &quot;#333333&quot;; </span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    svg.append(&quot;text&quot;)</span><br><span class="line">      .attr(&quot;class&quot;, &quot;legend-text&quot;)</span><br><span class="line">      .attr(&quot;x&quot;, 0)</span><br><span class="line">      .attr(&quot;y&quot;, 16)</span><br><span class="line">      .text(&quot;Posts by week&quot;);</span><br><span class="line">      </span><br><span class="line">    var legendCounts = [0, 1, 2, 3, 4];</span><br><span class="line">    var legendGroup = svg.append(&quot;g&quot;).attr(&quot;transform&quot;, &quot;translate(125, 4)&quot;); </span><br><span class="line">    var legendSpacing = 42; </span><br><span class="line"></span><br><span class="line">    legendGroup.selectAll(&quot;rect&quot;)</span><br><span class="line">      .data(legendCounts)</span><br><span class="line">      .enter().append(&quot;rect&quot;)</span><br><span class="line">      .attr(&quot;class&quot;, &quot;heatmap-cell&quot;)</span><br><span class="line">      .attr(&quot;width&quot;, cellWidth)</span><br><span class="line">      .attr(&quot;height&quot;, cellHeight)</span><br><span class="line">      .attr(&quot;x&quot;, function(d, i) &#123; return i * legendSpacing; &#125;)</span><br><span class="line">      .attr(&quot;y&quot;, 0);</span><br><span class="line">      </span><br><span class="line">    legendGroup.selectAll(&quot;text&quot;)</span><br><span class="line">      .data([&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4+&quot;])</span><br><span class="line">      .enter().append(&quot;text&quot;)</span><br><span class="line">      .attr(&quot;class&quot;, &quot;legend-number&quot;)</span><br><span class="line">      .attr(&quot;x&quot;, function(d, i) &#123; return i * legendSpacing + cellWidth + 6; &#125;) </span><br><span class="line">      .attr(&quot;y&quot;, 13)</span><br><span class="line">      .text(function(d) &#123; return d; &#125;);</span><br><span class="line"></span><br><span class="line">    svg.selectAll(&quot;.year-text.axis&quot;)</span><br><span class="line">      .data(displayYears)</span><br><span class="line">      .enter().append(&quot;text&quot;)</span><br><span class="line">      .attr(&quot;class&quot;, &quot;year-text axis&quot;)</span><br><span class="line">      .attr(&quot;x&quot;, 0)</span><br><span class="line">      .attr(&quot;y&quot;, function(d, i) &#123; </span><br><span class="line">        return topMargin + i * (cellHeight + cellPaddingY) + cellHeight - 3; </span><br><span class="line">      &#125;)</span><br><span class="line">      .text(function(d) &#123; return d; &#125;);</span><br><span class="line"></span><br><span class="line">    var gridGroup = svg.append(&quot;g&quot;)</span><br><span class="line">      .attr(&quot;transform&quot;, &quot;translate(&quot; + labelWidth + &quot;,&quot; + topMargin + &quot;)&quot;);</span><br><span class="line"></span><br><span class="line">    var cells = gridGroup.selectAll(&quot;.heatmap-cell.grid-cell&quot;)</span><br><span class="line">      .data(fullGrid)</span><br><span class="line">      .enter().append(&quot;rect&quot;)</span><br><span class="line">      .attr(&quot;class&quot;, function(d) &#123; return &quot;heatmap-cell grid-cell&quot; + (d.count &gt; 0 ? &quot; has-post&quot; : &quot;&quot;); &#125;)</span><br><span class="line">      .attr(&quot;width&quot;, cellWidth)</span><br><span class="line">      .attr(&quot;height&quot;, cellHeight)</span><br><span class="line">      .attr(&quot;x&quot;, function(d) &#123; return d.col * (cellWidth + cellPaddingX); &#125;)</span><br><span class="line">      .attr(&quot;y&quot;, function(d) &#123; return d.row * (cellHeight + cellPaddingY); &#125;);</span><br><span class="line"></span><br><span class="line">    // 【核心改进】：增加缓冲计时器，解决鼠标移动时的断层消失问题</span><br><span class="line">    var hideTimeout;</span><br><span class="line">    var tooltip = d3.select(&quot;#tooltip&quot;);</span><br><span class="line"></span><br><span class="line">    cells.on(&quot;mouseover&quot;, function(d) &#123;</span><br><span class="line">      if (d.count &gt; 0) &#123;</span><br><span class="line">        clearTimeout(hideTimeout);</span><br><span class="line">        tooltip.style(&quot;visibility&quot;, &quot;visible&quot;).transition().duration(200).style(&quot;opacity&quot;, 1);</span><br><span class="line">        </span><br><span class="line">        // 渲染顶部周次说明，以及下方的文章可点击链接</span><br><span class="line">        var text = &quot;&lt;div style=&#x27;margin-bottom: 8px; font-weight: bold; color: #888; font-size: 11px; border-bottom: 1px solid #eee; padding-bottom: 4px;&#x27;&gt;&quot; + d.year + &quot;年 第&quot; + d.week + &quot;周 (&quot; + d.count + &quot;篇)&lt;/div&gt;&quot;;</span><br><span class="line">        d.posts.forEach(function(p) &#123;</span><br><span class="line">          text += &quot;&lt;a href=&#x27;&quot; + p.link + &quot;&#x27;&gt;&quot; + p.title + &quot;&lt;/a&gt;&quot;;</span><br><span class="line">        &#125;);</span><br><span class="line">        tooltip.html(text);</span><br><span class="line">        </span><br><span class="line">        var cellBox = this.getBoundingClientRect();</span><br><span class="line">        tooltip.style(&quot;left&quot;, (cellBox.left + cellBox.width / 2) + &quot;px&quot;)</span><br><span class="line">               .style(&quot;top&quot;, (cellBox.top - 8 + window.scrollY) + &quot;px&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    .on(&quot;mouseout&quot;, function() &#123;</span><br><span class="line">      // 离开色块时，给用户留出 250 毫秒的移动缓冲时间</span><br><span class="line">      hideTimeout = setTimeout(function() &#123;</span><br><span class="line">        tooltip.transition().duration(200).style(&quot;opacity&quot;, 0).on(&quot;end&quot;, function() &#123;</span><br><span class="line">          d3.select(this).style(&quot;visibility&quot;, &quot;hidden&quot;);</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;, 250);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    // 为 Tooltip 本身增加事件，确保鼠标悬停在框内时不消失</span><br><span class="line">    tooltip.on(&quot;mouseover&quot;, function() &#123;</span><br><span class="line">      clearTimeout(hideTimeout);</span><br><span class="line">      d3.select(this).style(&quot;opacity&quot;, 1).style(&quot;visibility&quot;, &quot;visible&quot;);</span><br><span class="line">    &#125;)</span><br><span class="line">    .on(&quot;mouseout&quot;, function() &#123;</span><br><span class="line">      // 鼠标离开悬浮框，彻底隐藏</span><br><span class="line">      hideTimeout = setTimeout(function() &#123;</span><br><span class="line">        tooltip.transition().duration(200).style(&quot;opacity&quot;, 0).on(&quot;end&quot;, function() &#123;</span><br><span class="line">          d3.select(this).style(&quot;visibility&quot;, &quot;hidden&quot;);</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;, 250);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    function updateCellStyles() &#123;</span><br><span class="line">      var isDarkTheme = document.querySelector(&#x27;html&#x27;).dataset.dark === &#x27;true&#x27;;</span><br><span class="line">      legendGroup.selectAll(&quot;rect&quot;).style(&quot;fill&quot;, function(d, i) &#123;</span><br><span class="line">        return getFillColor(i, isDarkTheme);</span><br><span class="line">      &#125;);</span><br><span class="line">      cells.style(&quot;fill&quot;, function(d) &#123;</span><br><span class="line">        return getFillColor(d.count, isDarkTheme);</span><br><span class="line">      &#125;);</span><br><span class="line">      </span><br><span class="line">      // 暗黑模式下，Tooltip 内的分割线也要适应变暗</span><br><span class="line">      if(isDarkTheme) &#123;</span><br><span class="line">        document.querySelectorAll(&#x27;#tooltip div&#x27;).forEach(el =&gt; el.style.borderBottom = &#x27;1px solid #444&#x27;);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        document.querySelectorAll(&#x27;#tooltip div&#x27;).forEach(el =&gt; el.style.borderBottom = &#x27;1px solid #eee&#x27;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    updateCellStyles();</span><br><span class="line"></span><br><span class="line">    document.body.addEventListener(&quot;themechange&quot;, function () &#123;</span><br><span class="line">      updateCellStyles();</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<hr>
+<p>CHANGELOG</p>
+<ul>
+<li>20260319 Arlmy 创建、发布</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/404.html</url>
     <content><![CDATA[<!DOCTYPE html>
@@ -109351,9 +109561,11 @@ RMB 10元<br>
 <li>果然一停下观察，世界的样貌就会发生变化</li>
 <li>Connection/Love, Contribution/Give, Uncertainty/Variety, Growth, Certainty, Significance</li>
 <li>真，美，善，爱，禅。same goal, same game.</li>
+<li>以创作为主线，注意力在终点，其他都可以忽略！（极致的降维）</li>
 <li>欲望够强时，一切都会为你开路（我还是没有做到啊），念力不够强，漏得快</li>
 <li>不在自己行进路线上的所有事情，都可以降权和无视</li>
 <li>复杂系统难以降维，但个体不受限制</li>
+<li>杠铃在剧烈地向慢、停、降、弃一侧倾斜</li>
 </ul>
 <h2 id="thinking" tabindex="-1" id="Thinking">Thinking</h2>
 <ul>
@@ -109362,6 +109574,16 @@ RMB 10元<br>
 <li>提案是对匮乏的统治</li>
 <li>多为普通人和真实需求赋能，而不是为大平台和洗脑买单</li>
 <li>抱歉，你关心的事情我好像都不关心</li>
+<li>当你的情绪可以被预判。每个人都要开始面壁</li>
+<li>非人性的傲慢必然反噬，工程师必须开始具备人性关怀</li>
+<li>人生的定义权，一定要把握在自己手里，即便随波逐流，即便堕落纵欲，也须是个人选择</li>
+<li>生命就是自然的语言呀。诗词歌赋（词语，句法，隐喻，修辞，如何映射出自然之美，那就只有歌与诗才能做到了）</li>
+<li>“走在江边，江水，草地，人群，变得比往日更加鲜活，动人。他们是唯一不可以生成的东西了。”</li>
+<li>Agent仍在加速，只有真人手搓可以与之抗衡（降速）</li>
+<li>快速融入AI浪潮的人都开始不阅读了（或只阅读被AI处理过的文本），亲自阅读将成为收益很高的杠杆</li>
+<li>杠铃在剧烈地向慢、停、降、弃一侧倾斜</li>
+<li>工具直觉要靠亲自与工具的长期磨合，语言也不例外</li>
+<li>对亲历者本人来说，一切都是真的</li>
 </ul>
 </li>
 <li>20260309
@@ -109436,18 +109658,27 @@ RMB 10元<br>
     <content><![CDATA[<h2 id="2026" tabindex="-1" id="2026">2026</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> n8n自动化</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 博客热力图</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 博客热力图</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 随机摘取历史文章（主域名上）和历史话题/关键词</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 向量RAG小模型（或结合BERT/RoBERTa中文预训练模型）</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 自己调教的输入法模型</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 自己调教的TTS语音模型</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 博客首页改版</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 投资理财，持仓思路记录</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 补养气血</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 主题阅读：analog、东北和西南人类学</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 写诗、写歌、写词等创作</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> DO，艺术实践，艺术的尝试和表达</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 创作诗、词、歌、赋</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 一个个人的API接口</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 分享草稿，分享平庸</li>
-</ul>
-<h2 id="my-support" tabindex="-1" id="My-Support">My Support</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox"> 食贫道充电</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 博客文件整理，自动加tag</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 其他历史文件整理归档</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Blog Eng ver</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 随机摘取历史句子，组合成文，或进行即兴协作（回旋镖）</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 想学口琴</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 拓扑学</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> searchall底层文件分离和加密</li>
 </ul>
 <h2 id="2025" tabindex="-1" id="2025">2025</h2>
 <ul class="contains-task-list">
