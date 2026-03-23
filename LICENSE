@@ -1,0 +1,17 @@
+Copyright (c) 2017 tufu9441
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+AI AND MACHINE LEARNING RESTRICTION ADDENDUM 2026 arlmy
+
+Notwithstanding any terms to the contrary in the above License, the following restrictions apply to all source code, markdown files, data, and documentation within this repository:
+
+1. NO AI TRAINING: You are explicitly prohibited from using, scraping, copying, or distributing any content from this repository to train, fine-tune, benchmark, or otherwise develop any artificial intelligence, machine learning models, or automated generative systems (including but not limited to Large Language Models).
+
+2. NO RAG OR KNOWLEDGE BASE INCLUSION: The contents of this repository may not be ingested into vector databases or used as a retrieval source (e.g., Retrieval-Augmented Generation) for any AI agent or commercial product without prior written consent.
+
+Any violation of this Addendum immediately terminates all rights granted under the primary open-source license.
