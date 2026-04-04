@@ -110073,7 +110073,7 @@ self.addEventListener('fetch', event => {
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> Blog Eng ver</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 随机摘取历史句子，组合成文，或进行即兴协作（回旋镖）</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 想学口琴</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 拓扑学</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 拓扑学（复杂的系统里，拓扑结构真的很重要。软件重构最痛苦的也从来不是改功能，而是改模块间的依赖关系——即拓扑。好的复杂系统，核心处最开放，边界处最清晰，通路决定一切。）</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> search底层文件分离和加密</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 试试《DO/做》那样无条件执行，试试别的摄影方法，试试遇到一些事情时，停下两分钟、认真呼吸两分钟（这也是随机）</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 随机抓取过去的想法，用随机数，改变Gemini的预设（可以每次都重置我的思考），用随机性打破我对过去记忆的唯一解释权，<a href="https://gemini.google.com/app/a607b7f545731e6f">Gemini</a></li>
@@ -111125,6 +111125,16 @@ gantt
 </ul>
 <h2 id="thinking" tabindex="-1" id="Thinking">Thinking</h2>
 <ul>
+<li>20260403
+<ul>
+<li>“赤脚的态度”</li>
+<li>必须知道镜头前要有什么，才能开始拍摄</li>
+<li>看到人的特质，看到人的独一无二，并称赞其存在</li>
+<li>you have only one shot.</li>
+<li>我把看到的一切都手写下来，用手写的时候，我可以记住</li>
+<li>讲故事的乐趣</li>
+</ul>
+</li>
 <li>20260323
 <ul>
 <li>人如何重获灵魂自由</li>
@@ -111132,8 +111142,21 @@ gantt
 <li>记住，你是碳基</li>
 <li>真，美，善，爱，禅，这才是碳基的游戏</li>
 <li>“亲自做”是必要的磨擦</li>
+<li>认知，要在体验和看见、试错和验证之后很久才会有</li>
 <li>AI第一次让很多数字化了的手搓工作有了“他者”和对照，有机会反观自身</li>
 <li>我开始对仍在认真敲字的人改观了，要珍惜</li>
+<li>呼吸本身就是按摩</li>
+<li>跨越鸿沟，讲的是十倍级改进出现之前的试错</li>
+<li>再无穷尽的可能性，也要降维至现实</li>
+<li>演化需要浪费，而更需要泡沫破裂</li>
+<li>磨擦、阻力、疼痛，会成为重要的being“指示牌”</li>
+<li>广义地看，似乎人便是一种极致软件（高内聚、低耦合）</li>
+<li>每次的清零思考都很重要</li>
+<li>叙事，及与其相配的语言，是活着这件事的最大收益</li>
+<li>内在评价体系（自我叙事）的确立，是最高级别的“减熵”</li>
+<li>“少得静已，则行立坐卧之时，涉事喧阗之处，皆须作意安之。有事无事，常若无心；处静处喧，其志唯一。”</li>
+<li>看世界的美，享受自然的高光，感叹自然的魔法</li>
+<li>现代的合作方式，终于变成了：两个极致、突出的人之间的协作，相互吸引地双向奔赴（兴奋和开心），不再互相折磨，而是合作、互补、互利、生态、共赢。（“集体是没有良心的；但是，由良心之辈组成的集体是具有良心的集体。”梭罗）。健康、品质、轻松、自由、幸福的企业状态与生命状态；公平、民主、信任、友善、和谐的人文环境（胖东来《幸福生命手册》）</li>
 </ul>
 </li>
 <li>20260315
