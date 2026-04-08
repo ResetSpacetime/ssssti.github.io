@@ -4160,6 +4160,18 @@ html[data-dark=true] img {
   filter: hue-rotate(180deg) contrast(100%) invert(100%);
   -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
 }
+html[data-dark=true] {
+  /* === 新增部分开始：给头像添加反转豁免权 === */
+}
+html[data-dark=true] .info-avatar img {
+  filter: none !important;
+  -webkit-filter: none !important;
+  /* 稍微调低一点透明度，让白色线稿在深夜不至于太刺眼，显得更柔和 */
+  opacity: 0.85;
+}
+html[data-dark=true] {
+  /* === 新增部分结束 === */
+}
 
 .darkmode-toggle {
   background: #a2a2a2;
