@@ -113510,9 +113510,12 @@ gantt
   <entry>
     <title>Piece-s</title>
     <url>/Piece-s/index.html</url>
-    <content><![CDATA[
+    <content><![CDATA[<p>更多：<a href="https://c.arlmy.me/">Piece-s</a><br>
+本页RSS：<a href="https://c.arlmy.me/rss.xml">Piece-s RSS</a><br>
+群组：<a href="https://t.me/piece_s">@Piece-s</a></p>
+
 <div id="pieces-container" class="post-content">
-  <span style="color: #888;">...</span>
+  <span style="color: #888;">正在抓取...</span>
 </div>
 
 <script>
