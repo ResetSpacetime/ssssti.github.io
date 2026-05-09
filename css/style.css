@@ -2683,50 +2683,6 @@ div {
   font-size: 16px;
   font-weight: bold;
 }
-.post .post-content {
-  /* ================= 在这里插入诗歌标签页样式 ================= */
-}
-.post .post-content .poem-tabs-nav {
-  display: flex;
-  margin: 2em 0 1em;
-  padding: 0;
-  list-style: none;
-  border-bottom: 1px solid #eee;
-  overflow-x: auto;
-}
-.post .post-content .poem-tabs-nav .poem-tab-btn {
-  padding: 8px 20px;
-  cursor: pointer;
-  color: #999;
-  font-size: 15px;
-  border: 1px solid transparent;
-  border-bottom: none;
-  margin-bottom: -1px;
-  background: transparent;
-  white-space: nowrap;
-  transition: color 0.2s ease-in;
-}
-.post .post-content .poem-tabs-nav .poem-tab-btn:hover {
-  color: #555;
-}
-.post .post-content .poem-tabs-nav .poem-tab-btn.active {
-  color: #444;
-  background: #fff;
-  border-color: #eee;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.post .post-content .poem-tab-content {
-  display: none;
-  padding: 1em 0;
-  animation: poemFadeIn 0.4s ease;
-}
-.post .post-content .poem-tab-content.active {
-  display: block;
-}
-.post .post-content {
-  /* ================= 插入结束 ================= */
-}
 .post .tags a {
   margin-right: 0.5em;
 }

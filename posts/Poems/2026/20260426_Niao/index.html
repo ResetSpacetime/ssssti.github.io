@@ -58,7 +58,50 @@ toggle.addEventListener('click', () => {
   el: '#tcomment',
   region: '',
   path: ''
-})</script><script>document.addEventListener("DOMContentLoaded", function() {
+})</script><style>/* 独立隔绝的诗歌样式，无惧浏览器缓存 */
+.poem-tabs-nav {
+  display: flex;
+  margin: 2em 0 1em;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  overflow-x: auto;
+}
+.poem-tabs-nav .poem-tab-btn {
+  padding: 8px 20px;
+  cursor: pointer;
+  color: #999;
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  margin-bottom: -1px; 
+  background: transparent;
+  white-space: nowrap;
+  transition: color 0.2s ease-in;
+}
+.poem-tabs-nav .poem-tab-btn:hover {
+  color: #555;
+}
+.poem-tabs-nav .poem-tab-btn.active {
+  color: #444; 
+  background: #fff; 
+  border-color: #eee;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.poem-tab-content {
+  display: none; /* 关键：默认隐藏所有内容 */
+  padding: 1em 0;
+  animation: poemFadeIn 0.4s ease;
+}
+.poem-tab-content.active {
+  display: block; /* 被点击激活时才显示 */
+}
+@keyframes poemFadeIn {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style><script>document.addEventListener("DOMContentLoaded", function() {
   var container = document.querySelector('.post-content');
   if (!container) return;
 
@@ -72,7 +115,7 @@ toggle.addEventListener('click', () => {
   contentWrapper.className = 'poem-tabs-wrapper';
 
   h2s.forEach(function(h2, index) {
-    // 默认激活索引为 0 的版本（即最上面的第一稿）
+    // 默认激活第一稿
     var isActive = index === 0;
 
     var li = document.createElement('li');
@@ -86,7 +129,7 @@ toggle.addEventListener('click', () => {
     tabPane.dataset.index = index;
 
     var sibling = h2.nextElementSibling;
-    // 增加边界：遇到下一个 h2 停止，或者遇到 hr (即 Markdown 的 ---) 停止
+    // 遇到下一个 h2 或 hr 时停止收集
     while (sibling && sibling.tagName.toLowerCase() !== 'h2' && sibling.tagName.toLowerCase() !== 'hr') {
       var next = sibling.nextElementSibling;
       tabPane.appendChild(sibling);
@@ -94,14 +137,13 @@ toggle.addEventListener('click', () => {
     }
 
     contentWrapper.appendChild(tabPane);
-    h2.style.display = 'none'; // 隐藏原有的 h2
+    h2.style.display = 'none'; // 隐藏原标题
   });
 
-  // 将生成的标签页结构挂载到第一个 h2 所在的位置
   container.insertBefore(contentWrapper, h2s[0]);
   container.insertBefore(navUl, contentWrapper);
 
-  // 事件代理绑定点击事件
+  // 切换事件
   navUl.addEventListener('click', function(e) {
     if (e.target.tagName.toLowerCase() === 'li') {
       navUl.querySelectorAll('li').forEach(function(el) { el.classList.remove('active'); });
