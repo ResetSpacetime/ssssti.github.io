@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/pretty-feed-v3rss.xsl"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -11,7 +10,7 @@
     <atom:link href="https://z.arlmy.me/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>误读人生，化人生活</description>
-    <pubDate>Sat, 09 May 2026 01:11:11 GMT</pubDate>
+    <pubDate>Sat, 09 May 2026 02:54:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -26,7 +25,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="%E4%B8%80%E7%A8%BF" tabindex="-1" id="一稿">一稿</h2><p>鸟来自上古<br>它们认得出远方的岛屿<br>曾是自己的家</p><p>洋流不会表达<br>天空不会讲话<br>只是展示  只是显现<br>没有言语  没有故事<br>坐下看<br>就能懂</p><p>我们是幸运的<br>感受只来自感受<br>不来自文字或思考</p><p>我将不再想<br>而只是去挖</p><p>2026.4.26</p><hr><p>CHANGELOG</p><ul><li>20260426 Arlmy 一稿</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="%E4%B8%80%E7%A8%BF" tabindex="-1" id="一稿">一稿</h2><p>鸟来自上古<br>它们认得出远方的岛屿<br>曾是自己的家</p><p>洋流不会表达<br>天空不会讲话<br>只是展示  只是显现<br>没有言语  没有故事<br>坐下看<br>就能懂</p><p>我们是幸运的<br>感受只来自感受<br>不来自文字或思考</p><p>我将不再想<br>而只是去挖</p><p>2026年4月26日</p><hr><p>CHANGELOG</p><ul><li>20260426 Arlmy 一稿</li></ul>]]></content:encoded>
       
       
       <category domain="https://z.arlmy.me/categories/%E8%AF%97/">诗</category>
