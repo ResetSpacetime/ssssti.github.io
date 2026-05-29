@@ -114205,6 +114205,41 @@ RMB 10元<br>
       </tags>
   </entry>
   <entry>
+    <title>最近惦念 20260507</title>
+    <url>/posts/TILs/thoughts/20260507_Recently/</url>
+    <content><![CDATA[<p>时代有自己的语言，会不断重新出现语言（语言也一样有周期）</p>
+<p>Agent研发需要小说家，进而需要艺术家，未来需要哲学家，最后需要诗人</p>
+<p>自然是野蛮的，不要忘记，我们也是自然的一部分</p>
+<p>语言 标准 体系 生态 文化 文明 价值 心动 素生，还有悟空、坐忘与无言</p>
+<p>万物曾流经我</p>
+<p>生命力没有意识，无法规划，天然去中心，真刀真枪，拳拳到肉</p>
+<p>脑中不可有禁锢。</p>
+<p>行动就是唯一的回报。</p>
+<p>先想有什么，再想要什么</p>
+<p>“幸福连一个小时，也不会停留”</p>
+<p>趋势：非单一材料化，复合材料化；去中心化，去唯一真理，去人类中心；兼容不同目标和不同需求，公司生态化的未来明确；公司内协作生态化（最早2019年就已开始，如陈嘉映的书、女性表达成熟化和区块链的生态化）</p>
+<p>生态化，应和而不同，尊重个体权利</p>
+<p>松弛、自足、去中心、非线性、有边界、信息共享、不占有、不焦虑、无压力、自然发生、任意而行、开放组织</p>
+<p>关注微小的瑕疵，关注纹身，关注伤疤，关注隐痛，关注无力，关注噪声，关注凌乱的词句和不完美的表达</p>
+<p>思考底稿的价值恰恰在于它不成型，有矛盾的、模糊的中间态、拓扑结构、网络结构，当然，也可能无法描述出任何结构</p>
+<p>你只需要认识现在的我</p>
+<p>能量流、信息流、资金流</p>
+<hr>
+<p>CHANGELOG</p>
+<ul>
+<li>20260521 Arlmy 创建</li>
+<li>20260529 Arlmy 发布</li>
+</ul>
+]]></content>
+      <categories>
+        <category>til</category>
+      </categories>
+      <tags>
+        <tag>til</tag>
+        <tag>recently</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>INDEX</title>
     <url>/index.html</url>
     <content><![CDATA[<h2 id="%E6%88%96%E8%AE%B8%E4%BD%A0%E4%BC%9A%E6%84%9F%E5%85%B4%E8%B6%A3" tabindex="-1" id="或许你会感兴趣">或许你会感兴趣</h2>
@@ -114473,6 +114508,7 @@ self.addEventListener('fetch', event => {
 <h2 id="2026" tabindex="-1" id="2026">2026</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> stop doing list 0517</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 微观互助网络</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 梦想是，能和我爱的人们生活在很近的地方</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 0515 以热爱为名的todolist，最大自己是自己的热爱，不断在下面子集合里完成事项，它就会越来越大！统计时间，统计任务，形成自己的信息流和思考流（一种当下的状态记录和来时路），这符合非线性时间观吗？我需要一些自洽的逻辑（当然也可以是数字那样的没屁所谓，经历就是人生）</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 随机抓取过去的想法，用随机数，改变Gemini的预设（可以每次都重置我的思考），用随机性打破我对过去记忆的唯一解释权，<a href="https://gemini.google.com/app/a607b7f545731e6f">Gemini</a></li>
@@ -114927,7 +114963,27 @@ self.addEventListener('fetch', event => {
   <entry>
     <title>NOW archive</title>
     <url>/NOW/LatestThinking.html</url>
-    <content><![CDATA[<h2 id="20250521-life-(archive-capture)" tabindex="-1" id="20250521-LIFE-archive-capture">20250521 LIFE (archive capture)</h2>
+    <content><![CDATA[<h2 id="20260507" tabindex="-1" id="20260507">20260507</h2>
+<ul>
+<li>时代有自己的语言，会不断重新出现语言（语言也一样有周期）</li>
+<li>Agent研发需要小说家，进而需要艺术家，未来需要哲学家，最后需要诗人</li>
+<li>自然是野蛮的，不要忘记，我们也是自然的一部分</li>
+<li>语言 标准 体系 生态 文化 文明 价值 心动 素生，还有悟空、坐忘与无言</li>
+<li>万物曾流经我</li>
+<li>生命力没有意识，无法规划，天然去中心，真刀真枪，拳拳到肉</li>
+<li>脑中不可有禁锢。</li>
+<li>行动就是唯一的回报。</li>
+<li>先想有什么，再想要什么</li>
+<li>“幸福连一个小时，也不会停留”</li>
+<li>趋势：非单一材料化，复合材料化；去中心化，去唯一真理，去人类中心；兼容不同目标和不同需求，公司生态化的未来明确；公司内协作生态化（最早2019年就已开始，如陈嘉映的书、女性表达成熟化和区块链的生态化）</li>
+<li>生态化，应和而不同，尊重个体权利</li>
+<li>松弛、自足、去中心、非线性、有边界、信息共享、不占有、不焦虑、无压力、自然发生、任意而行、开放组织</li>
+<li>关注微小的瑕疵，关注纹身，关注伤疤，关注隐痛，关注无力，关注噪声，关注凌乱的词句和不完美的表达</li>
+<li>思考底稿的价值恰恰在于它不成型，有矛盾的、模糊的中间态、拓扑结构、网络结构，当然，也可能无法描述出任何结构</li>
+<li>你只需要认识现在的我</li>
+<li>能量流、信息流、资金流</li>
+</ul>
+<h2 id="20250521-life-(archive-capture)" tabindex="-1" id="20250521-LIFE-archive-capture">20250521 LIFE (archive capture)</h2>
 <ul>
 <li>2025年5月搬家至成都，开启新的人生篇章：好好生活，见<a href="https://z.arlmy.me/tags/INSW/">INSW</a></li>
 <li>目前从事私募股权投资，主要投资早中期的科技型企业</li>
@@ -115824,27 +115880,17 @@ gantt
 <ul>
 <li>自反性（self-reflexivity），以我知道我在XXX地思考了XXX，并且知道了别人也在XXX地思考过XXX</li>
 <li>与大模型交流得越多，我越相信人</li>
+<li>不学习，我只创造</li>
+<li>“创作主打以量取胜”</li>
+<li>动手、DIY；共益；重建意识；把被工作夺走的东西，都拿回来</li>
+<li>越来越多看到对“热爱”和“理想”的发声，热爱不会累</li>
+<li>前深线，带来了对体内的另一套平衡系统的觉察！
+<ul>
+<li>阴阳、DNA双螺旋，生命至少也是双备份，保持弹性</li>
 </ul>
 </li>
-<li>20260507
-<ul>
-<li>时代有自己的语言，会不断重新出现语言（语言也一样有周期）</li>
-<li>Agent研发需要小说家，进而需要艺术家，未来需要哲学家，最后需要诗人</li>
-<li>自然是野蛮的，不要忘记，我们也是自然的一部分</li>
-<li>语言 标准 体系 生态 文化 文明 价值 心动 素生，还有悟空、坐忘与无言</li>
-<li>万物曾流经我</li>
-<li>生命力没有意识，无法规划，天然去中心，真刀真枪，拳拳到肉</li>
-<li>脑中不可有禁锢。</li>
-<li>行动就是唯一的回报。</li>
-<li>先想有什么，再想要什么</li>
-<li>“幸福连一个小时，也不会停留”</li>
-<li>趋势：非单一材料化，复合材料化；去中心化，去唯一真理，去人类中心；兼容不同目标和不同需求，公司生态化的未来明确；公司内协作生态化（最早2019年就已开始，如陈嘉映的书、女性表达成熟化和区块链的生态化）</li>
-<li>生态化，应和而不同，尊重个体权利</li>
-<li>松弛、自足、去中心、非线性、有边界、信息共享、不占有、不焦虑、无压力、自然发生、任意而行、开放组织</li>
-<li>关注微小的瑕疵，关注纹身，关注伤疤，关注隐痛，关注无力，关注噪声，关注凌乱的词句和不完美的表达</li>
-<li>思考底稿的价值恰恰在于它不成型，有矛盾的、模糊的中间态、拓扑结构、网络结构，当然，也可能无法描述出任何结构</li>
-<li>你只需要认识现在的我</li>
-<li>能量流、信息流、资金流</li>
+<li>熵增熵减也只是阴阳平衡制衡，不是此消彼长不是周期循环，偶尔有失恒，也是失去意识所以才陷入了歧途（新的平衡要重新建立，无法恢复为过去一模一样的状态，人生也是这样过来的，不断重建）</li>
+<li>平等质疑怀疑所有人（作为风险溢价）</li>
 </ul>
 </li>
 </ul>
