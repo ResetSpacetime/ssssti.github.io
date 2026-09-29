@@ -4224,10 +4224,14 @@ html[data-dark=true] {
   transform: scale(0.94);
 }
 
-.translate-button .material-symbols-outlined {
-  font-size: 22px;
-  line-height: 1;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+.translate-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLjg3IDE1LjA3bC0yLjU0LTIuNTEuMDMtLjAzYzEuNzQtMS45NCAyLjk4LTQuMTcgMy43MS02LjUzSDE3VjRoLTdWMkg4djJIMXYxLjk5aDExLjE3QzExLjUgNy45MiAxMC41IDkuNzUgOSAxMS4zNSA4LjAzIDEwLjI4IDcuMjMgOS4wOCA2LjYxIDcuOTlINC42Yy43IDEuNTcgMS42NSAzLjA1IDIuODUgNC4zOGwtNC44NiA0LjhMNCAxOC41OGw0LjgtNC44IDIuOTkgMi45OWMuNDEuNDEuOTUuNjQgMS41Mi42NC41NyAwIDEuMTEtLjIyIDEuNTEtLjYzTDE1LjUgMTYuMWwtMi42My0xLjAzek0xOS41IDEwaC0yTDEzIDIyaDJsMS4xMi0zaDQuNzZMMjIgMjJoMmwtNC41LTEyem0tMi42MiA3TDE4LjUgMTIuNjcgMjAuMTIgMTdoLTMuMjR6Ii8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .translate-menu {
