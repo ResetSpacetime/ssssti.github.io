@@ -111,7 +111,7 @@ gtag('config', 'G-CGJZ3YGXT6');
       var select = wrapper.querySelector('select');
 
       if (select) {
-        select.value = lang;
+        select.value = 'zh-CN|' + lang;
 
         select.dispatchEvent(
           new Event('change', {
