@@ -40,9 +40,9 @@ gtag('config', 'G-CGJZ3YGXT6');
   } else {
     initDarkMode();
   }
-})();</script><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><div class="gtranslate_wrapper"></div></div><script>window.gtranslateSettings = {
-  "default_language": "zh-CN",
-  "languages": [
+})();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
+  default_language: "zh-CN",
+  languages: [
     "zh-CN",
     "en",
     "ja",
@@ -59,37 +59,31 @@ gtag('config', 'G-CGJZ3YGXT6');
     "vi",
     "uk"
   ],
-  "wrapper_selector": ".gtranslate_wrapper"
+  wrapper_selector: ".gtranslate_wrapper"
 };
-</script><script>function loadGTranslate() {
-  if (window.gtranslateLoaded) {
-    return;
-  }
-
-  window.gtranslateLoaded = true;
-
-  var script = document.createElement('script');
-  script.src = 'https://cdn.gtranslate.net/widgets/latest/dropdown.js';
-  script.async = true;
-
-  document.head.appendChild(script);
-}
-</script><script>(function () {
+</script><!-- Load GTranslate--><script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script><!-- Custom translation button--><script>(function () {
   function initTranslate() {
     var button = document.querySelector('.translate-button');
     var menu = document.querySelector('.translate-menu');
     var wrapper = document.querySelector('.gtranslate_wrapper');
 
     if (!button || !menu || !wrapper) {
-      return;
+      return false;
+    }
+
+    var select = wrapper.querySelector('select');
+
+    if (!select) {
+      return false;
     }
 
     if (button.dataset.initialized === 'true') {
-      return;
+      return true;
     }
 
     button.dataset.initialized = 'true';
 
+    // Open / close menu
     button.addEventListener('click', function (event) {
       event.stopPropagation();
 
@@ -101,6 +95,7 @@ gtag('config', 'G-CGJZ3YGXT6');
       );
     });
 
+    // Select language
     menu.addEventListener('click', function (event) {
       var target = event.target.closest('[data-lang]');
 
@@ -122,36 +117,29 @@ gtag('config', 'G-CGJZ3YGXT6');
       }
 
       menu.classList.remove('is-open');
-
-      button.setAttribute(
-        'aria-expanded',
-        'false'
-      );
+      button.setAttribute('aria-expanded', 'false');
     });
 
+    // Close when clicking outside
     document.addEventListener('click', function () {
       menu.classList.remove('is-open');
-
-      button.setAttribute(
-        'aria-expanded',
-        'false'
-      );
+      button.setAttribute('aria-expanded', 'false');
     });
+
+    return true;
   }
 
-  var timer = setInterval(function () {
-    var wrapper = document.querySelector('.gtranslate_wrapper');
+  // GTranslate is loaded with defer, so wait for its select.
+  var attempts = 0;
+  var maxAttempts = 100;
 
-    if (wrapper && wrapper.querySelector('select')) {
+  var timer = setInterval(function () {
+    attempts++;
+
+    if (initTranslate() || attempts >= maxAttempts) {
       clearInterval(timer);
-      initTranslate();
     }
   }, 100);
-
-  setTimeout(function () {
-    clearInterval(timer);
-    initTranslate();
-  }, 10000);
 })();</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
@@ -192,7 +180,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <ul>
 <li>20260801 Arlmy 创建、发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day424 大拇脚趾点地？</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-07-22</p><p><span>最后更新：</span>2026-08-01</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-ko/INSW_424/">https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_424/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_424/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_388/" title="入蜀记 day388 夜访浣花溪">入蜀记 day388 夜访浣花溪</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_297/" title="入蜀记 day297 听到红耳鹎">入蜀记 day297 听到红耳鹎</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_252/" title="入蜀记 day252 暴力拆锁">入蜀记 day252 暴力拆锁</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_233/" title="入蜀记 day233 腊肠、档案、个人艺术">入蜀记 day233 腊肠、档案、个人艺术</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_223/" title="入蜀记 day223 通风">入蜀记 day223 通风</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_74/" title="入蜀记 day74 内在价值">入蜀记 day74 内在价值</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_463/" title="入蜀记 day463 BIGGER Art Fair">入蜀记 day463 BIGGER Art Fair</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_424/" data-id="cmumu6jxf01ycc4vp1vycc1w0" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMUlEQVR42u3aQXLDMAhAUd//0u5MtqnkDyiTCH2tPGmr6HlBQXBdeN2vxZ/f//Z9jXYY7bNgyZAhY1vGPV2jL5h/wo9OXs18NxkyZJzDIEF29PU87JLPk7vJkCFDxjRdI8h64ihDhgwZFQY5HAmvXw64MmTI+HlGJfCRw/HU8+O1uAwZMjZkfKIxsOr5y/0NGTJk/ADjDi6e0uVCbfJUMmTIaM2IFpxzQJRdCf0ow5UhQ0YLBi8jCSBKzZW1pWpYhgwZ2zL41Vh0dIwPbfDX9M+zDBkyWjN4SOXFZ7SRwF/NQ/IqQ4aMYxi5hiUftoi+gmTAlSFDRmsGLz75lX00oPPfkSFDxgmM6FGigbISskk7QYYMGecwVhWZfJ9cw+BhZkSGDBlNGXzMizPqzyRwD38qQ4aMwxj8oJXAygvjq5JLypAhY1sGT+ySs7HB8JoM4jJkyDiAwdPBXLEabXwuq8VlyJDRiLG27MwlfKXUU4YMGa0ZfAu+eMlar0bRzIgMGTI2ZyBlaiC+3v7kg7AyZMg4hxG9yo8GU77CrQIZMmS0ZvBLfH5BhkLkUqoMGTJ6M1YVqJVBsUpAH6aGMmTIaMRYla7xkYtKEyL3L0GGDBk9GNEgS671yYgYaVLyqzcZMmScwIgWtLmrOhJ8+bDssBMrQ4aMgxnRUjb3UqIYGTJkyFh76ErwfUhVZciQcQAjN/hFwnGupxo+iQwZMlozcjMaZFSLfyUfBUsCZMiQsSvjD0KvW9E/98ymAAAAAElFTkSuQmCC">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-ko/INSW_425/">入蜀记 day425 乡里别</a><a class="next" href="/posts/BBBPandINSW/INSW-ko/INSW_423/">入蜀记 day423 巴菲特的访谈</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day424 大拇脚趾点地？</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-07-22</p><p><span>最后更新：</span>2026-08-01</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-ko/INSW_424/">https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_424/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_424/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_172/" title="入蜀记 day172 墨西哥辣椒炒肉">入蜀记 day172 墨西哥辣椒炒肉</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_13/" title="入蜀记 day13 短差">入蜀记 day13 短差</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_447/" title="入蜀记 day447 辽宁大厦">入蜀记 day447 辽宁大厦</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_483/" title="入蜀记 day483 真的能复现吗？">入蜀记 day483 真的能复现吗？</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_129/" title="入蜀记 day129 代、蠛蚊、模拟、薇依">入蜀记 day129 代、蠛蚊、模拟、薇依</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_238/" title="入蜀记 day238 鹏哥导赏">入蜀记 day238 鹏哥导赏</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_395/" title="入蜀记 day395 蚊帐挂坠">入蜀记 day395 蚊帐挂坠</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_424/" data-id="cmumu6jxf01ycc4vp1vycc1w0" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMUlEQVR42u3aQXLDMAhAUd//0u5MtqnkDyiTCH2tPGmr6HlBQXBdeN2vxZ/f//Z9jXYY7bNgyZAhY1vGPV2jL5h/wo9OXs18NxkyZJzDIEF29PU87JLPk7vJkCFDxjRdI8h64ihDhgwZFQY5HAmvXw64MmTI+HlGJfCRw/HU8+O1uAwZMjZkfKIxsOr5y/0NGTJk/ADjDi6e0uVCbfJUMmTIaM2IFpxzQJRdCf0ow5UhQ0YLBi8jCSBKzZW1pWpYhgwZ2zL41Vh0dIwPbfDX9M+zDBkyWjN4SOXFZ7SRwF/NQ/IqQ4aMYxi5hiUftoi+gmTAlSFDRmsGLz75lX00oPPfkSFDxgmM6FGigbISskk7QYYMGecwVhWZfJ9cw+BhZkSGDBlNGXzMizPqzyRwD38qQ4aMwxj8oJXAygvjq5JLypAhY1sGT+ySs7HB8JoM4jJkyDiAwdPBXLEabXwuq8VlyJDRiLG27MwlfKXUU4YMGa0ZfAu+eMlar0bRzIgMGTI2ZyBlaiC+3v7kg7AyZMg4hxG9yo8GU77CrQIZMmS0ZvBLfH5BhkLkUqoMGTJ6M1YVqJVBsUpAH6aGMmTIaMRYla7xkYtKEyL3L0GGDBk9GNEgS671yYgYaVLyqzcZMmScwIgWtLmrOhJ8+bDssBMrQ4aMgxnRUjb3UqIYGTJkyFh76ErwfUhVZciQcQAjN/hFwnGupxo+iQwZMlozcjMaZFSLfyUfBUsCZMiQsSvjD0KvW9E/98ymAAAAAElFTkSuQmCC">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-ko/INSW_425/">入蜀记 day425 乡里别</a><a class="next" href="/posts/BBBPandINSW/INSW-ko/INSW_423/">入蜀记 day423 巴菲特的访谈</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',

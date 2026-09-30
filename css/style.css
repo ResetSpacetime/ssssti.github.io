@@ -4195,8 +4195,10 @@ html[data-dark=true] {
  * ======================================== */
 .translate-toggle {
   position: fixed;
-  left: 84px;
+  left: calc(32px + 3rem + 8px);
   bottom: 32px;
+  width: 3rem;
+  height: 3rem;
   z-index: 9999;
   font-size: 16px;
 }
@@ -4213,7 +4215,7 @@ html[data-dark=true] {
   background: #a2a2a2;
   color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, transform 0.15s ease;
 }
 
 .translate-button:hover {
@@ -4226,8 +4228,10 @@ html[data-dark=true] {
 
 .translate-icon {
   display: block;
+  flex: 0 0 22px;
   width: 22px;
   height: 22px;
+  pointer-events: none;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLjg3IDE1LjA3bC0yLjU0LTIuNTEuMDMtLjAzYzEuNzQtMS45NCAyLjk4LTQuMTcgMy43MS02LjUzSDE3VjRoLTdWMkg4djJIMXYxLjk5aDExLjE3QzExLjUgNy45MiAxMC41IDkuNzUgOSAxMS4zNSA4LjAzIDEwLjI4IDcuMjMgOS4wOCA2LjYxIDcuOTlINC42Yy43IDEuNTcgMS42NSAzLjA1IDIuODUgNC4zOGwtNC44NiA0LjhMNCAxOC41OGw0LjgtNC44IDIuOTkgMi45OWMuNDEuNDEuOTUuNjQgMS41Mi42NC41NyAwIDEuMTEtLjIyIDEuNTEtLjYzTDE1LjUgMTYuMWwtMi42My0xLjAzek0xOS41IDEwaC0yTDEzIDIyaDJsMS4xMi0zaDQuNzZMMjIgMjJoMmwtNC41LTEyem0tMi42MiA3TDE4LjUgMTIuNjcgMjAuMTIgMTdoLTMuMjR6Ii8+PC9zdmc+");
   background-repeat: no-repeat;
   background-position: center;
@@ -4237,7 +4241,7 @@ html[data-dark=true] {
 .translate-menu {
   position: absolute;
   left: 0;
-  bottom: 3.5rem;
+  bottom: calc(100% + 8px);
   min-width: 150px;
   max-height: 70vh;
   overflow-y: auto;
@@ -4279,24 +4283,39 @@ html[data-dark=true] {
   background: #f2f2f2;
 }
 
+/* Hide GTranslate's native UI */
 .gtranslate_wrapper {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
 }
 
 .gtranslate_wrapper select {
-  width: 1px;
-  height: 1px;
-  border: 0;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 @media (max-width: 600px) {
+  .darkmode-toggle {
+    left: 24px;
+    bottom: 24px;
+  }
   .translate-toggle {
-    left: 76px;
+    left: calc(24px + 3rem + 8px);
     bottom: 24px;
   }
   .translate-menu {

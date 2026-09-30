@@ -48,9 +48,9 @@ gtag('config', 'G-CGJZ3YGXT6');
   } else {
     initDarkMode();
   }
-})();</script><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><div class="gtranslate_wrapper"></div></div><script>window.gtranslateSettings = {
-  "default_language": "zh-CN",
-  "languages": [
+})();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
+  default_language: "zh-CN",
+  languages: [
     "zh-CN",
     "en",
     "ja",
@@ -67,37 +67,31 @@ gtag('config', 'G-CGJZ3YGXT6');
     "vi",
     "uk"
   ],
-  "wrapper_selector": ".gtranslate_wrapper"
+  wrapper_selector: ".gtranslate_wrapper"
 };
-</script><script>function loadGTranslate() {
-  if (window.gtranslateLoaded) {
-    return;
-  }
-
-  window.gtranslateLoaded = true;
-
-  var script = document.createElement('script');
-  script.src = 'https://cdn.gtranslate.net/widgets/latest/dropdown.js';
-  script.async = true;
-
-  document.head.appendChild(script);
-}
-</script><script>(function () {
+</script><!-- Load GTranslate--><script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script><!-- Custom translation button--><script>(function () {
   function initTranslate() {
     var button = document.querySelector('.translate-button');
     var menu = document.querySelector('.translate-menu');
     var wrapper = document.querySelector('.gtranslate_wrapper');
 
     if (!button || !menu || !wrapper) {
-      return;
+      return false;
+    }
+
+    var select = wrapper.querySelector('select');
+
+    if (!select) {
+      return false;
     }
 
     if (button.dataset.initialized === 'true') {
-      return;
+      return true;
     }
 
     button.dataset.initialized = 'true';
 
+    // Open / close menu
     button.addEventListener('click', function (event) {
       event.stopPropagation();
 
@@ -109,6 +103,7 @@ gtag('config', 'G-CGJZ3YGXT6');
       );
     });
 
+    // Select language
     menu.addEventListener('click', function (event) {
       var target = event.target.closest('[data-lang]');
 
@@ -130,36 +125,29 @@ gtag('config', 'G-CGJZ3YGXT6');
       }
 
       menu.classList.remove('is-open');
-
-      button.setAttribute(
-        'aria-expanded',
-        'false'
-      );
+      button.setAttribute('aria-expanded', 'false');
     });
 
+    // Close when clicking outside
     document.addEventListener('click', function () {
       menu.classList.remove('is-open');
-
-      button.setAttribute(
-        'aria-expanded',
-        'false'
-      );
+      button.setAttribute('aria-expanded', 'false');
     });
+
+    return true;
   }
 
-  var timer = setInterval(function () {
-    var wrapper = document.querySelector('.gtranslate_wrapper');
+  // GTranslate is loaded with defer, so wait for its select.
+  var attempts = 0;
+  var maxAttempts = 100;
 
-    if (wrapper && wrapper.querySelector('select')) {
+  var timer = setInterval(function () {
+    attempts++;
+
+    if (initTranslate() || attempts >= maxAttempts) {
       clearInterval(timer);
-      initTranslate();
     }
   }, 100);
-
-  setTimeout(function () {
-    clearInterval(timer);
-    initTranslate();
-  }, 10000);
 })();</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();

@@ -40,9 +40,9 @@ gtag('config', 'G-CGJZ3YGXT6');
   } else {
     initDarkMode();
   }
-})();</script><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><div class="gtranslate_wrapper"></div></div><script>window.gtranslateSettings = {
-  "default_language": "zh-CN",
-  "languages": [
+})();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
+  default_language: "zh-CN",
+  languages: [
     "zh-CN",
     "en",
     "ja",
@@ -59,37 +59,31 @@ gtag('config', 'G-CGJZ3YGXT6');
     "vi",
     "uk"
   ],
-  "wrapper_selector": ".gtranslate_wrapper"
+  wrapper_selector: ".gtranslate_wrapper"
 };
-</script><script>function loadGTranslate() {
-  if (window.gtranslateLoaded) {
-    return;
-  }
-
-  window.gtranslateLoaded = true;
-
-  var script = document.createElement('script');
-  script.src = 'https://cdn.gtranslate.net/widgets/latest/dropdown.js';
-  script.async = true;
-
-  document.head.appendChild(script);
-}
-</script><script>(function () {
+</script><!-- Load GTranslate--><script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script><!-- Custom translation button--><script>(function () {
   function initTranslate() {
     var button = document.querySelector('.translate-button');
     var menu = document.querySelector('.translate-menu');
     var wrapper = document.querySelector('.gtranslate_wrapper');
 
     if (!button || !menu || !wrapper) {
-      return;
+      return false;
+    }
+
+    var select = wrapper.querySelector('select');
+
+    if (!select) {
+      return false;
     }
 
     if (button.dataset.initialized === 'true') {
-      return;
+      return true;
     }
 
     button.dataset.initialized = 'true';
 
+    // Open / close menu
     button.addEventListener('click', function (event) {
       event.stopPropagation();
 
@@ -101,6 +95,7 @@ gtag('config', 'G-CGJZ3YGXT6');
       );
     });
 
+    // Select language
     menu.addEventListener('click', function (event) {
       var target = event.target.closest('[data-lang]');
 
@@ -122,36 +117,29 @@ gtag('config', 'G-CGJZ3YGXT6');
       }
 
       menu.classList.remove('is-open');
-
-      button.setAttribute(
-        'aria-expanded',
-        'false'
-      );
+      button.setAttribute('aria-expanded', 'false');
     });
 
+    // Close when clicking outside
     document.addEventListener('click', function () {
       menu.classList.remove('is-open');
-
-      button.setAttribute(
-        'aria-expanded',
-        'false'
-      );
+      button.setAttribute('aria-expanded', 'false');
     });
+
+    return true;
   }
 
-  var timer = setInterval(function () {
-    var wrapper = document.querySelector('.gtranslate_wrapper');
+  // GTranslate is loaded with defer, so wait for its select.
+  var attempts = 0;
+  var maxAttempts = 100;
 
-    if (wrapper && wrapper.querySelector('select')) {
+  var timer = setInterval(function () {
+    attempts++;
+
+    if (initTranslate() || attempts >= maxAttempts) {
       clearInterval(timer);
-      initTranslate();
     }
   }, 100);
-
-  setTimeout(function () {
-    clearInterval(timer);
-    initTranslate();
-  }, 10000);
 })();</script><script>function copyUrlSegment() {
   const metaUrl = document.querySelector('meta[property="og:url"]').content;
   const segment = metaUrl.split('/').filter(Boolean).pop();
@@ -208,7 +196,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <ul>
 <li>20260830 Arlmy 创建、发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day461 以人类为载体</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-08-28</p><p><span>最后更新：</span>2026-09-01</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-ko/INSW_461/">https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_461/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_461/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_115/" title="入蜀记 day115 时间">入蜀记 day115 时间</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_228/" title="入蜀记 day228 剥离和外移">入蜀记 day228 剥离和外移</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_16/" title="入蜀记 day16 路上">入蜀记 day16 路上</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_403/" title="入蜀记 day403 the pitt">入蜀记 day403 the pitt</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_52/" title="入蜀记 day52 没有心">入蜀记 day52 没有心</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_53/" title="入蜀记 day53 种了罗勒">入蜀记 day53 种了罗勒</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_104/" title="入蜀记 day104 慢行散步，方有诗意生">入蜀记 day104 慢行散步，方有诗意生</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_461/" data-id="cmumu6jye020yc4vpdskd7a8q" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKUlEQVR42u3aO27DQAwFQN//0kqTIoAh5ZG7LswdVYYsCzsuCP5er/i63q6/9++evLtTfXLbhYGB8bWM6/FKjpK8+f35/PPz2TAwMM5h3B3i+dXJr5Iwmgf02/sYGBgYj4nd3swUAwMDY1fAzRPB5C/AwMDASBhJEVtl5M8kxfO2WhwDA+MLGSvp2qc/f2S+gYGB8VWMq3jtCqO7zvP7TgwMjNGMPMDlw4DqEdffhoGBcSajOrDsHS5ZFCs8iYGBMZTR+1m1WZY31HpjVAwMjNmM6qO9pfleSZykiRgYGOcwqoAepro80VufxcDAmMqoNv2r48ZPpJJZ9MXAwDiFUV3eqqaG1fL4loSBgTGasbL6sLJGtr6mhoGBcQ5jJZz1QvB60nlbxGJgYIxjJEdPvq2G4F3NuNtJLAYGxmhGr6zNA2jeXMtXQDAwMGYz8mFhofYt1srVN/9TxGJgYIxm5Otf1dRwJXEsNO8wMDBGM9bbYVVA8jc1h5cYGBhDGUmT6xNNt94SWHlnBAMDYxAjX9uqBtA8cVwZFWBgYJzA6A0dC4375RZbtHKBgYExjnEVr+cQ2ePly/flpBADA2MEozcy7KWGCaBXPGNgYJzAyIPsStHbW7/YUItjYGAMYuRN/OrIs9k+i9cyMDAwMPJxYx5G8yBeyGExMDAwiq2ufCl2fV0MAwPjHMaulYu8rdZLNG/fiYGBMZpRzbtWkrzq+lc+1MTAwBjK+AGqhiy6Xr49SgAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-ko/INSW_462/">入蜀记 day462 猎人与ADHD</a><a class="next" href="/posts/TILs/money/20260828_InvestmentNote/">理财笔记 20260828</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day461 以人类为载体</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-08-28</p><p><span>最后更新：</span>2026-09-01</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-ko/INSW_461/">https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_461/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_461/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW-init/INSW_228/" title="入蜀记 day228 剥离和外移">入蜀记 day228 剥离和外移</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_122/" title="入蜀记 day122 里巷">入蜀记 day122 里巷</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_329/" title="入蜀记 day329 水经注">入蜀记 day329 水经注</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_94/" title="入蜀记 day94 鲁豫慢谈">入蜀记 day94 鲁豫慢谈</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_381/" title="入蜀记 day381 微笑曲线的倒转">入蜀记 day381 微笑曲线的倒转</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_153/" title="入蜀记 day153 防潮">入蜀记 day153 防潮</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_46/" title="入蜀记 day46 藿香正气水">入蜀记 day46 藿香正气水</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-ko/INSW_461/" data-id="cmumu6jye020yc4vpdskd7a8q" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKUlEQVR42u3aO27DQAwFQN//0kqTIoAh5ZG7LswdVYYsCzsuCP5er/i63q6/9++evLtTfXLbhYGB8bWM6/FKjpK8+f35/PPz2TAwMM5h3B3i+dXJr5Iwmgf02/sYGBgYj4nd3swUAwMDY1fAzRPB5C/AwMDASBhJEVtl5M8kxfO2WhwDA+MLGSvp2qc/f2S+gYGB8VWMq3jtCqO7zvP7TgwMjNGMPMDlw4DqEdffhoGBcSajOrDsHS5ZFCs8iYGBMZTR+1m1WZY31HpjVAwMjNmM6qO9pfleSZykiRgYGOcwqoAepro80VufxcDAmMqoNv2r48ZPpJJZ9MXAwDiFUV3eqqaG1fL4loSBgTGasbL6sLJGtr6mhoGBcQ5jJZz1QvB60nlbxGJgYIxjJEdPvq2G4F3NuNtJLAYGxmhGr6zNA2jeXMtXQDAwMGYz8mFhofYt1srVN/9TxGJgYIxm5Otf1dRwJXEsNO8wMDBGM9bbYVVA8jc1h5cYGBhDGUmT6xNNt94SWHlnBAMDYxAjX9uqBtA8cVwZFWBgYJzA6A0dC4375RZbtHKBgYExjnEVr+cQ2ePly/flpBADA2MEozcy7KWGCaBXPGNgYJzAyIPsStHbW7/YUItjYGAMYuRN/OrIs9k+i9cyMDAwMPJxYx5G8yBeyGExMDAwiq2ufCl2fV0MAwPjHMaulYu8rdZLNG/fiYGBMZpRzbtWkrzq+lc+1MTAwBjK+AGqhiy6Xr49SgAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-ko/INSW_462/">入蜀记 day462 猎人与ADHD</a><a class="next" href="/posts/TILs/money/20260828_InvestmentNote/">理财笔记 20260828</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',
