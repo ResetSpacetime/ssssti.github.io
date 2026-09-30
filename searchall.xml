@@ -148410,7 +148410,7 @@ RMB 10元<br>
 // 1. 定义缓存名称和版本
 // 重要提示：每次更新此文件中的任何核心文件时，请务必更改此版本字符串。
 // 推荐使用日期格式，例如 'v-2025-10-11-01'。
-const VERSION = 'v-2026-09-30-01'; // <-- 部署前请更新此版本号！
+const VERSION = 'v-2026-09-30-02'; // <-- 部署前请更新此版本号！
 const STATIC_CACHE_NAME = `arlmy-static-${VERSION}`;
 const DYNAMIC_CACHE_NAME = `arlmy-dynamic-${VERSION}`;
 
@@ -151778,7 +151778,8 @@ agent交流平台：GitHub, <a href="http://skills.sh">skills.sh</a>, ClawHub, S
     <content><![CDATA[<h2 id="%E7%9B%AE%E5%BD%95" tabindex="-1" id="目录">目录</h2>
 <p><strong>做吧</strong></p>
 <ul>
-<li>001 <a href="https://z.arlmy.me/products/001_insw_converter.zip">INSW Converter</a> 自动改排版（自用）</li>
+<li>001 <a href="https://z.arlmy.me/products/001_insw_converter.zip">INSW Converter</a> 自动改排版（自用） 20260902</li>
+<li>002 博客翻译功能 20260930</li>
 </ul>
 ]]></content>
   </entry>
