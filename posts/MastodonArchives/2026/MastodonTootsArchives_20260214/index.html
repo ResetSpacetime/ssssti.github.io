@@ -25,27 +25,17 @@ gtag('config', 'G-CGJZ3YGXT6');
      * Visual Theme
      * ========================================
      *
-     * Gritty
-     * Tokyo
-     * Moon
-     * Willow
-     * Inkwell
+     * 主题只改变：
+     * - 页面文字
+     * - 线条
+     * - 背景
+     * - 链接
+     * - 少量材质
      *
-     * 每个主题都有 Light / Dark 两种状态。
+     * 不改变图片。
      *
-     * 点击顺序：
-     *
-     * Gritty Light
-     * → Gritty Dark
-     * → Tokyo Light
-     * → Tokyo Dark
-     * → Moon Light
-     * → Moon Dark
-     * → Willow Light
-     * → Willow Dark
-     * → Inkwell Light
-     * → Inkwell Dark
-     * → Gritty Light
+     * 明暗仍然由 data-dark 控制，
+     * 原来的 invert() 完全保留。
      */
 
     var themes = [
@@ -57,73 +47,123 @@ gtag('config', 'G-CGJZ3YGXT6');
     ];
 
     /*
-     * 读取保存的主题
+     * 读取主题
      */
     var savedTheme = localStorage.visualTheme;
-    var savedDark = localStorage.dark;
 
     var themeIndex = themes.indexOf(savedTheme);
 
-    /*
-     * 没有保存过主题时，从 Gritty 开始
-     */
     if (themeIndex === -1) {
       themeIndex = 0;
-      savedTheme = themes[0];
     }
 
     /*
-     * 保留原来的明暗逻辑：
+     * ========================================
+     * 原来的 Dark Mode 逻辑
+     * ========================================
+     *
+     * 不改变：
      *
      * localStorage.dark
      * ↓
-     * 系统 prefers-color-scheme
+     * data-dark
+     * ↓
+     * style.scss 中的 invert()
      */
+
+    var savedDark = localStorage.dark;
+
     var isDark =
       savedDark !== undefined
         ? savedDark === 'true'
         : window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+
     /*
+     * ========================================
      * 应用状态
+     * ========================================
      */
+
     function applyTheme() {
+
+      /*
+       * 五套主题
+       */
       html.dataset.theme = themes[themeIndex];
+
+      /*
+       * 原来的明暗系统
+       */
       html.dataset.dark = isDark;
 
+      /*
+       * 保存
+       */
       localStorage.visualTheme = themes[themeIndex];
       localStorage.dark = isDark;
 
       /*
-       * 保留原来的 themechange 事件
+       * 保留原来的事件
        */
-      document.body.dispatchEvent(new Event('themechange'));
+      document.body.dispatchEvent(
+        new Event('themechange')
+      );
     }
+
 
     /*
      * 防止重复初始化
      */
-    if (toggle.dataset.initialized === 'true') return;
+    if (toggle.dataset.initialized === 'true') {
+      return;
+    }
+
     toggle.dataset.initialized = 'true';
 
+
     /*
-     * 点击按钮
+     * ========================================
+     * 点击循环
+     * ========================================
      *
-     * Light → Dark
-     *
-     * Dark → 下一个主题 Light
+     * Gritty Light
+     *      ↓
+     * Gritty Dark
+     *      ↓
+     * Tokyo Light
+     *      ↓
+     * Tokyo Dark
+     *      ↓
+     * Moon Light
+     *      ↓
+     * Moon Dark
+     *      ↓
+     * Willow Light
+     *      ↓
+     * Willow Dark
+     *      ↓
+     * Inkwell Light
+     *      ↓
+     * Inkwell Dark
+     *      ↓
+     * Gritty Light
      */
+
     toggle.addEventListener('click', function () {
 
       if (isDark) {
+
         /*
          * Dark → 下一套主题 Light
          */
         isDark = false;
 
-        themeIndex = (themeIndex + 1) % themes.length;
+        themeIndex =
+          (themeIndex + 1) % themes.length;
 
       } else {
+
         /*
          * Light → 当前主题 Dark
          */
@@ -133,17 +173,30 @@ gtag('config', 'G-CGJZ3YGXT6');
       applyTheme();
     });
 
+
     /*
      * 初始化
      */
     applyTheme();
   }
 
+
+  /*
+   * DOM Ready
+   */
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initDarkMode);
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      initDarkMode
+    );
+
   } else {
+
     initDarkMode();
+
   }
+
 })();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
   default_language: "zh-CN",
   languages: [
@@ -359,7 +412,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <li>20260215 Arlmy 创建、整理</li>
 <li>20260215 Arlmy 发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Toots 406 2026 Feb.8 - Feb.14</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-02-15</p><p><span>最后更新：</span>2026-03-01</p><p><span>原始链接：</span><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/">https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/MastodonArchives/2024/MastodonTootsArchives_20240601/" title="Toots 317 2024 May.26 - Jun.1">Toots 317 2024 May.26 - Jun.1</a></p><p><a href="/posts/MastodonArchives/2021/MastodonTootsArchives_20210327/" title="Toots 152 2021 Mar.21 - Mar.27">Toots 152 2021 Mar.21 - Mar.27</a></p><p><a href="/posts/MastodonArchives/2022/MastodonTootsArchives_20220806/" title="Toots 223 2022 Jul.31 - Aug.6">Toots 223 2022 Jul.31 - Aug.6</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190511/" title="Toots 053 2019 May.5 - May.11">Toots 053 2019 May.5 - May.11</a></p><p><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20251004/" title="Toots 388 2025 Sep.28 - Oct.4">Toots 388 2025 Sep.28 - Oct.4</a></p><p><a href="/posts/MastodonArchives/2022/MastodonTootsArchives_20221015/" title="Toots 233 2022 Oct.9 - Oct.15">Toots 233 2022 Oct.9 - Oct.15</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190202/" title="Toots 039 2019 Jan.27 - Feb.2">Toots 039 2019 Jan.27 - Feb.2</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/" data-id="cmuqh039h02ocpovpclm3gfft" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtklEQVR42u3aQW7DMAwEQP//0+21QFpnl5KSFBifiiC2NC4gMiSvK76+flyPn99///He/GmPd10nLjw8PLyFrecbyrd7f9f9E+6p93vGw8PDO81LHtfCkiDRvuJ8z3h4eHifw8vz2HvALDXHw8PD+4+8+/R3FhJWggQeHh7eu3htOtsWI9rrDbUWPDw8vO7eIkX+hL+P9Pfw8PDwlrvqs8N6VyEjDwN/7hYPDw/vAC9fPm9f7Sr7JutGw2F4eHh4B3jtAZ0/dPZ5UoDYEIrw8PDwRry8WTUbY21fRBsknvyX8PDw8A7w2q3nL6INAPnRXw804OHh4R3jtYNW7QhUHnhmAWND7w4PDw8v4LUF2Vlrar3RlX//z2IEHh4e3iZectusWDBLl/O0u1gdDw8P7xhvfUNJqJiNJuR5Mh4eHt5reHl7KR97akNFW6RoCxZ4eHh4J3grqW2bHM+GA4bFCDw8PLzDZdz80N81qNoGpGLPeHh4eAd47cJ58fQEYCn5xsPDw9vEaw/0PKi0Q67rafov+8fDw8M7wJsNWs1eR5v3zkayiqErPDw8vBGvPdzb4ztvd+Vbz6sNeHh4eCd4uxpgszb/+op5so6Hh4e3i9c+qDiCb5dvy8R5Wy6Ke3h4eHgLvNmBu6uVtf5ah20wPDw8vE28vASwkjTnrykvFkcFCDw8PLxjvLa5lTT4V9LilaCFh4eH9xreLKldCQmzkm5dccHDw8PbxJs18tujeVbwzVN/PDw8vFfy8isfJM0DSd4ey9Pu2ZgsHh4eXstbOdzzYzoffp2NGhS/GPDw8PA28drSarJwniJfC9eTEgYeHh7eB/DydHk2jJUXlIuUGg8PD+/DeG1JN3/ahrEtPDw8vGO8XdvKU/DZqFZbpMDDw8M7wVv/wT9rdM3KxLtKGHh4eHgj3jfonu4DUtQ5OgAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-init/INSW_268/">入蜀记 day268 望江楼和三十</a><a class="next" href="/posts/BBBPandINSW/INSW-init/INSW_267/">入蜀记 day267 格尔木小孩儿哥</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Toots 406 2026 Feb.8 - Feb.14</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-02-15</p><p><span>最后更新：</span>2026-03-01</p><p><span>原始链接：</span><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/">https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260425/" title="Toots 416 2026 Apr.19 - Apr.25">Toots 416 2026 Apr.19 - Apr.25</a></p><p><a href="/posts/MastodonArchives/2021/MastodonTootsArchives_20210918/" title="Toots 176 2021 Sep.12 - Sep.18">Toots 176 2021 Sep.12 - Sep.18</a></p><p><a href="/posts/MastodonArchives/2020/MastodonTootsArchives_20200530/" title="Toots 110 2020 May.24 - May.30">Toots 110 2020 May.24 - May.30</a></p><p><a href="/posts/MastodonArchives/2020/MastodonTootsArchives_20200208/" title="Toots 093 2020 Feb.2 - Feb.8">Toots 093 2020 Feb.2 - Feb.8</a></p><p><a href="/posts/MastodonArchives/2023/MastodonTootsArchives_20230701/" title="Toots 270 2023 Jun.25 - Jul.1">Toots 270 2023 Jun.25 - Jul.1</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190511/" title="Toots 053 2019 May.5 - May.11">Toots 053 2019 May.5 - May.11</a></p><p><a href="/posts/MastodonArchives/2024/MastodonTootsArchives_20241207/" title="Toots 344 2024 Dec.1 - Dec.7">Toots 344 2024 Dec.1 - Dec.7</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260214/" data-id="cmuqh039h02ocpovpclm3gfft" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtklEQVR42u3aQW7DMAwEQP//0+21QFpnl5KSFBifiiC2NC4gMiSvK76+flyPn99///He/GmPd10nLjw8PLyFrecbyrd7f9f9E+6p93vGw8PDO81LHtfCkiDRvuJ8z3h4eHifw8vz2HvALDXHw8PD+4+8+/R3FhJWggQeHh7eu3htOtsWI9rrDbUWPDw8vO7eIkX+hL+P9Pfw8PDwlrvqs8N6VyEjDwN/7hYPDw/vAC9fPm9f7Sr7JutGw2F4eHh4B3jtAZ0/dPZ5UoDYEIrw8PDwRry8WTUbY21fRBsknvyX8PDw8A7w2q3nL6INAPnRXw804OHh4R3jtYNW7QhUHnhmAWND7w4PDw8v4LUF2Vlrar3RlX//z2IEHh4e3iZectusWDBLl/O0u1gdDw8P7xhvfUNJqJiNJuR5Mh4eHt5reHl7KR97akNFW6RoCxZ4eHh4J3grqW2bHM+GA4bFCDw8PLzDZdz80N81qNoGpGLPeHh4eAd47cJ58fQEYCn5xsPDw9vEaw/0PKi0Q67rafov+8fDw8M7wJsNWs1eR5v3zkayiqErPDw8vBGvPdzb4ztvd+Vbz6sNeHh4eCd4uxpgszb/+op5so6Hh4e3i9c+qDiCb5dvy8R5Wy6Ke3h4eHgLvNmBu6uVtf5ah20wPDw8vE28vASwkjTnrykvFkcFCDw8PLxjvLa5lTT4V9LilaCFh4eH9xreLKldCQmzkm5dccHDw8PbxJs18tujeVbwzVN/PDw8vFfy8isfJM0DSd4ey9Pu2ZgsHh4eXstbOdzzYzoffp2NGhS/GPDw8PA28drSarJwniJfC9eTEgYeHh7eB/DydHk2jJUXlIuUGg8PD+/DeG1JN3/ahrEtPDw8vGO8XdvKU/DZqFZbpMDDw8M7wVv/wT9rdM3KxLtKGHh4eHgj3jfonu4DUtQ5OgAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-init/INSW_268/">入蜀记 day268 望江楼和三十</a><a class="next" href="/posts/BBBPandINSW/INSW-init/INSW_267/">入蜀记 day267 格尔木小孩儿哥</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',

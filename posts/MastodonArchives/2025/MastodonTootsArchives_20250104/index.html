@@ -25,27 +25,17 @@ gtag('config', 'G-CGJZ3YGXT6');
      * Visual Theme
      * ========================================
      *
-     * Gritty
-     * Tokyo
-     * Moon
-     * Willow
-     * Inkwell
+     * 主题只改变：
+     * - 页面文字
+     * - 线条
+     * - 背景
+     * - 链接
+     * - 少量材质
      *
-     * 每个主题都有 Light / Dark 两种状态。
+     * 不改变图片。
      *
-     * 点击顺序：
-     *
-     * Gritty Light
-     * → Gritty Dark
-     * → Tokyo Light
-     * → Tokyo Dark
-     * → Moon Light
-     * → Moon Dark
-     * → Willow Light
-     * → Willow Dark
-     * → Inkwell Light
-     * → Inkwell Dark
-     * → Gritty Light
+     * 明暗仍然由 data-dark 控制，
+     * 原来的 invert() 完全保留。
      */
 
     var themes = [
@@ -57,73 +47,123 @@ gtag('config', 'G-CGJZ3YGXT6');
     ];
 
     /*
-     * 读取保存的主题
+     * 读取主题
      */
     var savedTheme = localStorage.visualTheme;
-    var savedDark = localStorage.dark;
 
     var themeIndex = themes.indexOf(savedTheme);
 
-    /*
-     * 没有保存过主题时，从 Gritty 开始
-     */
     if (themeIndex === -1) {
       themeIndex = 0;
-      savedTheme = themes[0];
     }
 
     /*
-     * 保留原来的明暗逻辑：
+     * ========================================
+     * 原来的 Dark Mode 逻辑
+     * ========================================
+     *
+     * 不改变：
      *
      * localStorage.dark
      * ↓
-     * 系统 prefers-color-scheme
+     * data-dark
+     * ↓
+     * style.scss 中的 invert()
      */
+
+    var savedDark = localStorage.dark;
+
     var isDark =
       savedDark !== undefined
         ? savedDark === 'true'
         : window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+
     /*
+     * ========================================
      * 应用状态
+     * ========================================
      */
+
     function applyTheme() {
+
+      /*
+       * 五套主题
+       */
       html.dataset.theme = themes[themeIndex];
+
+      /*
+       * 原来的明暗系统
+       */
       html.dataset.dark = isDark;
 
+      /*
+       * 保存
+       */
       localStorage.visualTheme = themes[themeIndex];
       localStorage.dark = isDark;
 
       /*
-       * 保留原来的 themechange 事件
+       * 保留原来的事件
        */
-      document.body.dispatchEvent(new Event('themechange'));
+      document.body.dispatchEvent(
+        new Event('themechange')
+      );
     }
+
 
     /*
      * 防止重复初始化
      */
-    if (toggle.dataset.initialized === 'true') return;
+    if (toggle.dataset.initialized === 'true') {
+      return;
+    }
+
     toggle.dataset.initialized = 'true';
 
+
     /*
-     * 点击按钮
+     * ========================================
+     * 点击循环
+     * ========================================
      *
-     * Light → Dark
-     *
-     * Dark → 下一个主题 Light
+     * Gritty Light
+     *      ↓
+     * Gritty Dark
+     *      ↓
+     * Tokyo Light
+     *      ↓
+     * Tokyo Dark
+     *      ↓
+     * Moon Light
+     *      ↓
+     * Moon Dark
+     *      ↓
+     * Willow Light
+     *      ↓
+     * Willow Dark
+     *      ↓
+     * Inkwell Light
+     *      ↓
+     * Inkwell Dark
+     *      ↓
+     * Gritty Light
      */
+
     toggle.addEventListener('click', function () {
 
       if (isDark) {
+
         /*
          * Dark → 下一套主题 Light
          */
         isDark = false;
 
-        themeIndex = (themeIndex + 1) % themes.length;
+        themeIndex =
+          (themeIndex + 1) % themes.length;
 
       } else {
+
         /*
          * Light → 当前主题 Dark
          */
@@ -133,17 +173,30 @@ gtag('config', 'G-CGJZ3YGXT6');
       applyTheme();
     });
 
+
     /*
      * 初始化
      */
     applyTheme();
   }
 
+
+  /*
+   * DOM Ready
+   */
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initDarkMode);
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      initDarkMode
+    );
+
   } else {
+
     initDarkMode();
+
   }
+
 })();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
   default_language: "zh-CN",
   languages: [
@@ -353,7 +406,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <li>20250105 Arlmy 创建、整理</li>
 <li>20250105 Arlmy 发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Toots 348 2024 Dec.29 - 2025 Jan.4</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2025-01-05</p><p><span>最后更新：</span>2026-03-01</p><p><span>原始链接：</span><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/">https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260926/" title="Toots 438 2026 Sep.20 - Sep.26">Toots 438 2026 Sep.20 - Sep.26</a></p><p><a href="/posts/MastodonArchives/2023/MastodonTootsArchives_20230715/" title="Toots 272 2023 Jul.9 - Jul.15">Toots 272 2023 Jul.9 - Jul.15</a></p><p><a href="/posts/MastodonArchives/2018/MastodonTootsArchives_20180519/" title="Toots 004 2018 May.13 - May.19">Toots 004 2018 May.13 - May.19</a></p><p><a href="/posts/MastodonArchives/2020/MastodonTootsArchives_20200201/" title="Toots 091 2020 Jan.26 - Feb.1">Toots 091 2020 Jan.26 - Feb.1</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190817/" title="Toots 067 2019 Aug.11 - Aug.17">Toots 067 2019 Aug.11 - Aug.17</a></p><p><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20251122/" title="Toots 393 2025 Nov.16 - Nov.22">Toots 393 2025 Nov.16 - Nov.22</a></p><p><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250830/" title="Toots 382 2025 Aug.24 - Aug.30">Toots 382 2025 Aug.24 - Aug.30</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/" data-id="cmuqh03jh02ycpovpg1fy7v7l" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3awY7iMBAEUP7/pxlprzMhVW4bWOnltMpCkhcku6e6H4/4eP47ks9cffL3/z6XjseJAw8PD2/p0V9fLrnZ1Zm17/4+n78aPDw8vPfwdl16F+DqXvnV8PDw8L6B93rDyK+ZX+d1OY6Hh4f3v/DakCLfANrNCQ8PD++zvCSMmEcP+ZkPZC14eHh4B7pI3/Pvg/09PDw8vEFXPQ9n2yhhbWupnxMPDw/vAC+Pa9eC3baAbqPeKN7Fw8PD28prbzYfKZjU/vW2hIeHh/cWXh5G5O2xZIPZ1fq62Rjw8PDwDvDa1lReUufNqvx8kbXg4eHhbeLl5WmyHK9tD2sDAfXoAB4eHt4B3nzMNI8t8uU++eRobgIPDw+v5O1ayietrPlIQTR0hYeHh/eWCnMtgMg7UHlTbW02FQ8PD+8Erw0d8tGBtXc8CZFvpsnw8PDwtvLaB8q/1Y4avCmMwMPDw9vKywdMTwynTu74x7fw8PDwjvHa8jcvxCejWnn5fjNThoeHh3eANwka6lsOivW8pMbDw8M7x0si0bUmVvtwbRgxmsPFw8PDG/DWoocWsBbLttHwhr8J8PDw8OJ5zvax2jZ/3gbLxwXy7QQPDw9vL29+6clAavKgeex787vh4eHhbeUt7ifx1jIpiNvG202Ai4eHhzfmtavoZJy03U7m4wh4eHh4J3i7lu92jGDxF4jHtvDw8PDO8dZaYmujUe3QVftyIyQeHh7emPcsj0lh3Rbc+eZRxLh4eHh4Y1674BbNp3IOKi/x56U/Hh4e3pw3adW3Tay21N4QQ+Dh4eEd4+WbQbKIn8tR858HDw8P73t4eSC7liWvhSA3XT48PDy8D/EmA1h5zDEZ9rrMqvHw8PAO8Nowon0FbawwGVC4nCzDw8PD28SbtKzy9tiJuHZblw8PDw8v5f0A6ociFvmmr/gAAAAASUVORK5CYII=">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250111/">Toots 349 2025 Jan.5 - Jan.11</a><a class="next" href="/posts/YearlyBest/YearlyBest_2024/">佳 2024</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Toots 348 2024 Dec.29 - 2025 Jan.4</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2025-01-05</p><p><span>最后更新：</span>2026-03-01</p><p><span>原始链接：</span><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/">https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/MastodonArchives/2021/MastodonTootsArchives_20210417/" title="Toots 155 2021 Apr.11 - Apr.17">Toots 155 2021 Apr.11 - Apr.17</a></p><p><a href="/posts/MastodonArchives/2022/MastodonTootsArchives_20220820/" title="Toots 225 2022 Aug.14 - Aug.20">Toots 225 2022 Aug.14 - Aug.20</a></p><p><a href="/posts/MastodonArchives/2018/MastodonTootsArchives_20181027/" title="Toots 025 2018 Oct.21 - Oct.27">Toots 025 2018 Oct.21 - Oct.27</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190309/" title="Toots 046 2019 Mar.3 - Mar.9">Toots 046 2019 Mar.3 - Mar.9</a></p><p><a href="/posts/MastodonArchives/2021/MastodonTootsArchives_20210710/" title="Toots 166 2021 Jul.4 - Jul.10">Toots 166 2021 Jul.4 - Jul.10</a></p><p><a href="/posts/MastodonArchives/2023/MastodonTootsArchives_20230128/" title="Toots 248 2023 Jan.22 - Jan.28">Toots 248 2023 Jan.22 - Jan.28</a></p><p><a href="/posts/MastodonArchives/2020/MastodonTootsArchives_20201114/" title="Toots 133 2020 Nov.8 - Nov.14">Toots 133 2020 Nov.8 - Nov.14</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/MastodonArchives/2025/MastodonTootsArchives_20250104/" data-id="cmuqh03jh02ycpovpg1fy7v7l" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3awY7iMBAEUP7/pxlprzMhVW4bWOnltMpCkhcku6e6H4/4eP47ks9cffL3/z6XjseJAw8PD2/p0V9fLrnZ1Zm17/4+n78aPDw8vPfwdl16F+DqXvnV8PDw8L6B93rDyK+ZX+d1OY6Hh4f3v/DakCLfANrNCQ8PD++zvCSMmEcP+ZkPZC14eHh4B7pI3/Pvg/09PDw8vEFXPQ9n2yhhbWupnxMPDw/vAC+Pa9eC3baAbqPeKN7Fw8PD28prbzYfKZjU/vW2hIeHh/cWXh5G5O2xZIPZ1fq62Rjw8PDwDvDa1lReUufNqvx8kbXg4eHhbeLl5WmyHK9tD2sDAfXoAB4eHt4B3nzMNI8t8uU++eRobgIPDw+v5O1ayietrPlIQTR0hYeHh/eWCnMtgMg7UHlTbW02FQ8PD+8Erw0d8tGBtXc8CZFvpsnw8PDwtvLaB8q/1Y4avCmMwMPDw9vKywdMTwynTu74x7fw8PDwjvHa8jcvxCejWnn5fjNThoeHh3eANwka6lsOivW8pMbDw8M7x0si0bUmVvtwbRgxmsPFw8PDG/DWoocWsBbLttHwhr8J8PDw8OJ5zvax2jZ/3gbLxwXy7QQPDw9vL29+6clAavKgeex787vh4eHhbeUt7ifx1jIpiNvG202Ai4eHhzfmtavoZJy03U7m4wh4eHh4J3i7lu92jGDxF4jHtvDw8PDO8dZaYmujUe3QVftyIyQeHh7emPcsj0lh3Rbc+eZRxLh4eHh4Y1674BbNp3IOKi/x56U/Hh4e3pw3adW3Tay21N4QQ+Dh4eEd4+WbQbKIn8tR858HDw8P73t4eSC7liWvhSA3XT48PDy8D/EmA1h5zDEZ9rrMqvHw8PAO8Nowon0FbawwGVC4nCzDw8PD28SbtKzy9tiJuHZblw8PDw8v5f0A6ociFvmmr/gAAAAASUVORK5CYII=">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250111/">Toots 349 2025 Jan.5 - Jan.11</a><a class="next" href="/posts/YearlyBest/YearlyBest_2024/">佳 2024</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',

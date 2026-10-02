@@ -25,27 +25,17 @@ gtag('config', 'G-CGJZ3YGXT6');
      * Visual Theme
      * ========================================
      *
-     * Gritty
-     * Tokyo
-     * Moon
-     * Willow
-     * Inkwell
+     * 主题只改变：
+     * - 页面文字
+     * - 线条
+     * - 背景
+     * - 链接
+     * - 少量材质
      *
-     * 每个主题都有 Light / Dark 两种状态。
+     * 不改变图片。
      *
-     * 点击顺序：
-     *
-     * Gritty Light
-     * → Gritty Dark
-     * → Tokyo Light
-     * → Tokyo Dark
-     * → Moon Light
-     * → Moon Dark
-     * → Willow Light
-     * → Willow Dark
-     * → Inkwell Light
-     * → Inkwell Dark
-     * → Gritty Light
+     * 明暗仍然由 data-dark 控制，
+     * 原来的 invert() 完全保留。
      */
 
     var themes = [
@@ -57,73 +47,123 @@ gtag('config', 'G-CGJZ3YGXT6');
     ];
 
     /*
-     * 读取保存的主题
+     * 读取主题
      */
     var savedTheme = localStorage.visualTheme;
-    var savedDark = localStorage.dark;
 
     var themeIndex = themes.indexOf(savedTheme);
 
-    /*
-     * 没有保存过主题时，从 Gritty 开始
-     */
     if (themeIndex === -1) {
       themeIndex = 0;
-      savedTheme = themes[0];
     }
 
     /*
-     * 保留原来的明暗逻辑：
+     * ========================================
+     * 原来的 Dark Mode 逻辑
+     * ========================================
+     *
+     * 不改变：
      *
      * localStorage.dark
      * ↓
-     * 系统 prefers-color-scheme
+     * data-dark
+     * ↓
+     * style.scss 中的 invert()
      */
+
+    var savedDark = localStorage.dark;
+
     var isDark =
       savedDark !== undefined
         ? savedDark === 'true'
         : window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+
     /*
+     * ========================================
      * 应用状态
+     * ========================================
      */
+
     function applyTheme() {
+
+      /*
+       * 五套主题
+       */
       html.dataset.theme = themes[themeIndex];
+
+      /*
+       * 原来的明暗系统
+       */
       html.dataset.dark = isDark;
 
+      /*
+       * 保存
+       */
       localStorage.visualTheme = themes[themeIndex];
       localStorage.dark = isDark;
 
       /*
-       * 保留原来的 themechange 事件
+       * 保留原来的事件
        */
-      document.body.dispatchEvent(new Event('themechange'));
+      document.body.dispatchEvent(
+        new Event('themechange')
+      );
     }
+
 
     /*
      * 防止重复初始化
      */
-    if (toggle.dataset.initialized === 'true') return;
+    if (toggle.dataset.initialized === 'true') {
+      return;
+    }
+
     toggle.dataset.initialized = 'true';
 
+
     /*
-     * 点击按钮
+     * ========================================
+     * 点击循环
+     * ========================================
      *
-     * Light → Dark
-     *
-     * Dark → 下一个主题 Light
+     * Gritty Light
+     *      ↓
+     * Gritty Dark
+     *      ↓
+     * Tokyo Light
+     *      ↓
+     * Tokyo Dark
+     *      ↓
+     * Moon Light
+     *      ↓
+     * Moon Dark
+     *      ↓
+     * Willow Light
+     *      ↓
+     * Willow Dark
+     *      ↓
+     * Inkwell Light
+     *      ↓
+     * Inkwell Dark
+     *      ↓
+     * Gritty Light
      */
+
     toggle.addEventListener('click', function () {
 
       if (isDark) {
+
         /*
          * Dark → 下一套主题 Light
          */
         isDark = false;
 
-        themeIndex = (themeIndex + 1) % themes.length;
+        themeIndex =
+          (themeIndex + 1) % themes.length;
 
       } else {
+
         /*
          * Light → 当前主题 Dark
          */
@@ -133,17 +173,30 @@ gtag('config', 'G-CGJZ3YGXT6');
       applyTheme();
     });
 
+
     /*
      * 初始化
      */
     applyTheme();
   }
 
+
+  /*
+   * DOM Ready
+   */
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initDarkMode);
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      initDarkMode
+    );
+
   } else {
+
     initDarkMode();
+
   }
+
 })();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
   default_language: "zh-CN",
   languages: [
@@ -286,7 +339,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <ul>
 <li>20251205 Arlmy 创建、发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day141 返蓉</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2025-10-12</p><p><span>最后更新：</span>2026-04-04</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-relax/INSW_141/">https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_141/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_141/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW/INSW_53/" title="入蜀记 day53 种了罗勒">入蜀记 day53 种了罗勒</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_333/" title="入蜀记 day333 一直在浪费却不自觉">入蜀记 day333 一直在浪费却不自觉</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_276/" title="入蜀记 day276 写生珍禽图">入蜀记 day276 写生珍禽图</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_04/" title="入蜀记 day04 行李来了">入蜀记 day04 行李来了</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_33/" title="入蜀记 day33 月曜">入蜀记 day33 月曜</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_269/" title="入蜀记 day269 闲初一">入蜀记 day269 闲初一</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_99/" title="入蜀记 day99 钧哥你大舅">入蜀记 day99 钧哥你大舅</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_141/" data-id="cmuqh02od01pnpovphe021qrj" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3aS24CMRAFQO5/aSJlmwy814Yo2DUrxDDg8qJxf263+Lp/Xz9fP/58cl19/vaOCwMD42MZ+c88furq7tVGPL6brw0DA+McRh5k24CYBNN8+y7fx8DAwAgCa05NQjkGBgbGSsBtqW1ai4GBgbGSxLapaZ6gJu+8LBfHwMD4QMZKY+Ddr/+ov4GBgfGPGffR9fiIliS6bWB98g0YGBhbM5Lkc1bEz+/OmqBPloWBgbERo00p8y1YSYnzlicGBsYJjFnAbcNue5QcrgoDA2NTRt50bNPRWU0sSYN/2QIMDIytGbOktB35yofJ2hCMgYFxGiNPPle6irPjYLShGBgYBzDaMv3sKLk+zIGBgXEyo00718e88hQ6Oj5iYGBsysiDY1saa4e9kqPnZXqMgYFxGCMZa8gX1C4x2RQMDIwzGW2qGX11nKbmh9SieYmBgbERY+WBfMx0Nq4xG1bDwMDYlZE/0AbotgHQbs3lvwcGBsamjLYNOWsn5MfHeuAMAwPjAEabKM5CZ9JUyEt4dcUOAwNjI8asoD9bdL6hRe0QAwNjO8ZsqKINwe0E11J7AAMDYyPGvbzyxsDsODgcQcPAwNiasVLQXy+irWzBsE+LgYHxsYx8AGIW5l4byjEwME5mzJLStnw2nFZLvg0DAwMjOMCtB+th8xIDAwNj4QdyWF5ce9LTwMDA2JqRj2S1xbW8rLYy3oqBgbE3o20MvOrg2A525FuJgYGxEeMLSHGodgZ7otoAAAAASUVORK5CYII=">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/MastodonArchives/2025/MastodonTootsArchives_20251011/">Toots 387 2025 Oct.5 - Oct.11</a><a class="next" href="/posts/BBBPandINSW/INSW-relax/INSW_140/">入蜀记 day140 角色扮演</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day141 返蓉</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2025-10-12</p><p><span>最后更新：</span>2026-04-04</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-relax/INSW_141/">https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_141/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_141/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW-init/INSW_235/" title="入蜀记 day235 蝙蝠、花椒、还书">入蜀记 day235 蝙蝠、花椒、还书</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_159/" title="入蜀记 day159 托假于物">入蜀记 day159 托假于物</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_108/" title="入蜀记 day108 写写写写写写写">入蜀记 day108 写写写写写写写</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_395/" title="入蜀记 day395 蚊帐挂坠">入蜀记 day395 蚊帐挂坠</a></p><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_161/" title="入蜀记 day161 化学反应">入蜀记 day161 化学反应</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_425/" title="入蜀记 day425 乡里别">入蜀记 day425 乡里别</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_09/" title="入蜀记 day09 大小碎片">入蜀记 day09 大小碎片</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-relax/INSW_141/" data-id="cmuqh02od01pnpovphe021qrj" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3aS24CMRAFQO5/aSJlmwy814Yo2DUrxDDg8qJxf263+Lp/Xz9fP/58cl19/vaOCwMD42MZ+c88furq7tVGPL6brw0DA+McRh5k24CYBNN8+y7fx8DAwAgCa05NQjkGBgbGSsBtqW1ai4GBgbGSxLapaZ6gJu+8LBfHwMD4QMZKY+Ddr/+ov4GBgfGPGffR9fiIliS6bWB98g0YGBhbM5Lkc1bEz+/OmqBPloWBgbERo00p8y1YSYnzlicGBsYJjFnAbcNue5QcrgoDA2NTRt50bNPRWU0sSYN/2QIMDIytGbOktB35yofJ2hCMgYFxGiNPPle6irPjYLShGBgYBzDaMv3sKLk+zIGBgXEyo00718e88hQ6Oj5iYGBsysiDY1saa4e9kqPnZXqMgYFxGCMZa8gX1C4x2RQMDIwzGW2qGX11nKbmh9SieYmBgbERY+WBfMx0Nq4xG1bDwMDYlZE/0AbotgHQbs3lvwcGBsamjLYNOWsn5MfHeuAMAwPjAEabKM5CZ9JUyEt4dcUOAwNjI8asoD9bdL6hRe0QAwNjO8ZsqKINwe0E11J7AAMDYyPGvbzyxsDsODgcQcPAwNiasVLQXy+irWzBsE+LgYHxsYx8AGIW5l4byjEwME5mzJLStnw2nFZLvg0DAwMjOMCtB+th8xIDAwNj4QdyWF5ce9LTwMDA2JqRj2S1xbW8rLYy3oqBgbE3o20MvOrg2A525FuJgYGxEeMLSHGodgZ7otoAAAAASUVORK5CYII=">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/MastodonArchives/2025/MastodonTootsArchives_20251011/">Toots 387 2025 Oct.5 - Oct.11</a><a class="next" href="/posts/BBBPandINSW/INSW-relax/INSW_140/">入蜀记 day140 角色扮演</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',
