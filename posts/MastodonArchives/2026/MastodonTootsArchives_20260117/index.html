@@ -20,19 +20,123 @@ gtag('config', 'G-CGJZ3YGXT6');
 
     if (!toggle) return;
 
-    html.dataset.dark =
-      localStorage.dark ||
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    /*
+     * ========================================
+     * Visual Theme
+     * ========================================
+     *
+     * Gritty
+     * Tokyo
+     * Moon
+     * Willow
+     * Inkwell
+     *
+     * 每个主题都有 Light / Dark 两种状态。
+     *
+     * 点击顺序：
+     *
+     * Gritty Light
+     * → Gritty Dark
+     * → Tokyo Light
+     * → Tokyo Dark
+     * → Moon Light
+     * → Moon Dark
+     * → Willow Light
+     * → Willow Dark
+     * → Inkwell Light
+     * → Inkwell Dark
+     * → Gritty Light
+     */
 
+    var themes = [
+      'gritty',
+      'tokyo',
+      'moon',
+      'willow',
+      'inkwell'
+    ];
+
+    /*
+     * 读取保存的主题
+     */
+    var savedTheme = localStorage.visualTheme;
+    var savedDark = localStorage.dark;
+
+    var themeIndex = themes.indexOf(savedTheme);
+
+    /*
+     * 没有保存过主题时，从 Gritty 开始
+     */
+    if (themeIndex === -1) {
+      themeIndex = 0;
+      savedTheme = themes[0];
+    }
+
+    /*
+     * 保留原来的明暗逻辑：
+     *
+     * localStorage.dark
+     * ↓
+     * 系统 prefers-color-scheme
+     */
+    var isDark =
+      savedDark !== undefined
+        ? savedDark === 'true'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    /*
+     * 应用状态
+     */
+    function applyTheme() {
+      html.dataset.theme = themes[themeIndex];
+      html.dataset.dark = isDark;
+
+      localStorage.visualTheme = themes[themeIndex];
+      localStorage.dark = isDark;
+
+      /*
+       * 保留原来的 themechange 事件
+       */
+      document.body.dispatchEvent(new Event('themechange'));
+    }
+
+    /*
+     * 防止重复初始化
+     */
     if (toggle.dataset.initialized === 'true') return;
     toggle.dataset.initialized = 'true';
 
+    /*
+     * 点击按钮
+     *
+     * Light → Dark
+     *
+     * Dark → 下一个主题 Light
+     */
     toggle.addEventListener('click', function () {
-      localStorage.dark = !(html.dataset.dark === 'true');
-      html.dataset.dark = localStorage.dark;
 
-      document.body.dispatchEvent(new Event('themechange'));
+      if (isDark) {
+        /*
+         * Dark → 下一套主题 Light
+         */
+        isDark = false;
+
+        themeIndex = (themeIndex + 1) % themes.length;
+
+      } else {
+        /*
+         * Light → 当前主题 Dark
+         */
+        isDark = true;
+      }
+
+      applyTheme();
     });
+
+    /*
+     * 初始化
+     */
+    applyTheme();
   }
 
   if (document.readyState === 'loading') {
@@ -223,7 +327,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <li>20260118 Arlmy 创建、整理</li>
 <li>20260118 Arlmy 发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Toots 401 2026 Jan.11 - Jan.17</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-01-18</p><p><span>最后更新：</span>2026-03-01</p><p><span>原始链接：</span><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/">https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/MastodonArchives/2022/MastodonTootsArchives_20220305/" title="Toots 202 2022 Feb.27 - Mar.5">Toots 202 2022 Feb.27 - Mar.5</a></p><p><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250927/" title="Toots 385 2025 Sep.21 - Sep.27">Toots 385 2025 Sep.21 - Sep.27</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190824/" title="Toots 069 2019 Aug.18 - Aug.24">Toots 069 2019 Aug.18 - Aug.24</a></p><p><a href="/posts/MastodonArchives/2022/MastodonTootsArchives_20221119/" title="Toots 237 2022 Nov.13 - Nov.19">Toots 237 2022 Nov.13 - Nov.19</a></p><p><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/" title="Toots 401 2026 Jan.11 - Jan.17">Toots 401 2026 Jan.11 - Jan.17</a></p><p><a href="/posts/MastodonArchives/2021/MastodonTootsArchives_20210515/" title="Toots 159 2021 May.9 - May.15">Toots 159 2021 May.9 - May.15</a></p><p><a href="/posts/MastodonArchives/2024/MastodonTootsArchives_20241130/" title="Toots 343 2024 Nov.24 - Nov.30">Toots 343 2024 Nov.24 - Nov.30</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/" data-id="cmuqh039902o2povpcacwfanw" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsElEQVR42u3aMXICQQwEQP7/aTt1lQuYkXZtgr7IheFQX7ASkh6P+Pr6cf18JX/n61ee3TP5xgMXHh4e3iL031cS4rNwX4eYgF/fJ4oBDw8P7xpvFtbrV/Ig8kecx4yHh4f3Obz2s88A+X3agh4PDw/vM3mvAXnZvU8SeHh4eP/Fa2/XtmW/yusfei14eHh43WejKdLn/H1lvoeHh4e3nqrnjdd2dWC2plBHi4eHh3eBlx+4bVuhPcTbNm7+aPDw8PDu8TZjsLyxmzcvkpZHVHzj4eHhHeXNlkfzr5ytGuRJ4k2qwMPDw7vAy5H5QkCCTwCzxPBmMwIPDw/vKG+zLrAZ9rfLB3mywcPDw7vBy8dX+UGfl7yzlJOnLjw8PLx7vPxGs6Zt24SdpYE3oy88PDy8Q7y8dM4Dyte2ZisCyffi4eHh/Q3vbCncporZHaKGBR4eHt4F3qxRu1/GapcD6mYEHh4e3uU2brTAdGFRNUlLwzjx8PDwLvA2iaEd+e8B++IbDw8Pb8+bFdCbMnqGnBXleHh4eDd4m0WrYbcjqHiTo79YRMDDw8M7ykvK5XzM3y4H5KsGycOKUgIeHh7eBd5mLXWzMpU/1iKd4OHh4V3jtSHuFwLaNvFwjIeHh4d3gZc3cA/0PBZHfxJJVFjj4eHhHeXlY6e8yZuvEbSw1TYEHh4e3iFeMuyf7TJtyuK2AVH0qvHw8PAO8WYH9CYlbFa7io4LHh4e3iHeZpCf/HcWYtsOxsPDw/tLXn7lKWHWqmgfU1uC4+Hh4Z3ltQujbXHcPprZqkHxiwEPDw/vEG9z3G9gw0yVtzDw8PDwPoDXMjZjrQMDMzw8PLwP47ULVfmaQlvQP30ceHh4eNd4m7A2zdx2VattUuDh4eHd4G1+8CdH+ez9CeZx6sLDw8NLed+x1Jxx3TnaBAAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-init/INSW_240/">入蜀记 day240 贝利撒留</a><a class="next" href="/posts/BBBPandINSW/INSW-init/INSW_239/">入蜀记 day239 现炸甜皮鸭</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>Toots 401 2026 Jan.11 - Jan.17</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-01-18</p><p><span>最后更新：</span>2026-03-01</p><p><span>原始链接：</span><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/">https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/MastodonArchives/2022/MastodonTootsArchives_20221231/" title="Toots 243 2022 Dec.25 - Dec.31">Toots 243 2022 Dec.25 - Dec.31</a></p><p><a href="/posts/MastodonArchives/2026/MastodonTootsArchives_20260314/" title="Toots 410 2026 Mar.8 - Mar.14">Toots 410 2026 Mar.8 - Mar.14</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20190413/" title="Toots 049 2019 Apr.7 - Apr.13">Toots 049 2019 Apr.7 - Apr.13</a></p><p><a href="/posts/MastodonArchives/2023/MastodonTootsArchives_20230916/" title="Toots 282 2023 Sep.10 - Sep.16">Toots 282 2023 Sep.10 - Sep.16</a></p><p><a href="/posts/MastodonArchives/2019/MastodonTootsArchives_20191005/" title="Toots 075 2019 Sep.29 - Oct.5">Toots 075 2019 Sep.29 - Oct.5</a></p><p><a href="/posts/MastodonArchives/2021/MastodonTootsArchives_20210724/" title="Toots 168 2021 Jul.18 - Jul.24">Toots 168 2021 Jul.18 - Jul.24</a></p><p><a href="/posts/MastodonArchives/2025/MastodonTootsArchives_20250111/" title="Toots 349 2025 Jan.5 - Jan.11">Toots 349 2025 Jan.5 - Jan.11</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/MastodonArchives/2026/MastodonTootsArchives_20260117/" data-id="cmuqh039902o2povpcacwfanw" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsElEQVR42u3aMXICQQwEQP7/aTt1lQuYkXZtgr7IheFQX7ASkh6P+Pr6cf18JX/n61ee3TP5xgMXHh4e3iL031cS4rNwX4eYgF/fJ4oBDw8P7xpvFtbrV/Ig8kecx4yHh4f3Obz2s88A+X3agh4PDw/vM3mvAXnZvU8SeHh4eP/Fa2/XtmW/yusfei14eHh43WejKdLn/H1lvoeHh4e3nqrnjdd2dWC2plBHi4eHh3eBlx+4bVuhPcTbNm7+aPDw8PDu8TZjsLyxmzcvkpZHVHzj4eHhHeXNlkfzr5ytGuRJ4k2qwMPDw7vAy5H5QkCCTwCzxPBmMwIPDw/vKG+zLrAZ9rfLB3mywcPDw7vBy8dX+UGfl7yzlJOnLjw8PLx7vPxGs6Zt24SdpYE3oy88PDy8Q7y8dM4Dyte2ZisCyffi4eHh/Q3vbCncporZHaKGBR4eHt4F3qxRu1/GapcD6mYEHh4e3uU2brTAdGFRNUlLwzjx8PDwLvA2iaEd+e8B++IbDw8Pb8+bFdCbMnqGnBXleHh4eDd4m0WrYbcjqHiTo79YRMDDw8M7ykvK5XzM3y4H5KsGycOKUgIeHh7eBd5mLXWzMpU/1iKd4OHh4V3jtSHuFwLaNvFwjIeHh4d3gZc3cA/0PBZHfxJJVFjj4eHhHeXlY6e8yZuvEbSw1TYEHh4e3iFeMuyf7TJtyuK2AVH0qvHw8PAO8WYH9CYlbFa7io4LHh4e3iHeZpCf/HcWYtsOxsPDw/tLXn7lKWHWqmgfU1uC4+Hh4Z3ltQujbXHcPprZqkHxiwEPDw/vEG9z3G9gw0yVtzDw8PDwPoDXMjZjrQMDMzw8PLwP47ULVfmaQlvQP30ceHh4eNd4m7A2zdx2VattUuDh4eHd4G1+8CdH+ez9CeZx6sLDw8NLed+x1Jxx3TnaBAAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-init/INSW_240/">入蜀记 day240 贝利撒留</a><a class="next" href="/posts/BBBPandINSW/INSW-init/INSW_239/">入蜀记 day239 现炸甜皮鸭</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',

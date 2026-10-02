@@ -4191,6 +4191,487 @@ html[data-dark=true] {
 }
 
 /* ========================================
+ * Visual Theme
+ *
+ * Instagram-inspired monochrome themes
+ *
+ * IMPORTANT:
+ * - 不改变图片
+ * - 不增加图片 filter
+ * - 只改变文字、线条、背景、链接和 UI 材质
+ * - Dark Mode 仍然由原来的 data-dark 控制
+ * ======================================== */
+/* ========================================
+ * 1. Base Theme Variables
+ * ======================================== */
+:root {
+  /*
+   * 默认从 Gritty 开始
+   */
+  --visual-bg: #efeee9;
+  --visual-surface: #e7e5df;
+  --visual-text: #181818;
+  --visual-muted: #77756f;
+  --visual-line: #a6a49d;
+  --visual-accent: #111111;
+  /*
+   * 材质参数
+   */
+  --visual-line-opacity: 1;
+  --visual-text-opacity: 1;
+  --visual-shadow-opacity: 0.08;
+  --visual-grain-opacity: 0;
+}
+
+/* ========================================
+ * 2. GRITTY
+ *
+ * 高反差
+ * 粗颗粒
+ * 印刷感
+ * 线条明显
+ * ======================================== */
+html[data-theme=gritty][data-dark=false] {
+  --visual-bg: #efeee9;
+  --visual-surface: #e5e3dd;
+  --visual-text: #181818;
+  --visual-muted: #77756f;
+  --visual-line: #a6a49d;
+  --visual-accent: #111111;
+  --visual-line-opacity: 1;
+  --visual-text-opacity: 1;
+  --visual-shadow-opacity: 0.08;
+  --visual-grain-opacity: 0.025;
+}
+
+html[data-theme=gritty][data-dark=true] {
+  --visual-bg: #121212;
+  --visual-surface: #1c1c1b;
+  --visual-text: #eeeeea;
+  --visual-muted: #92928d;
+  --visual-line: #454541;
+  --visual-accent: #f4f3ed;
+  --visual-line-opacity: 1;
+  --visual-text-opacity: 0.96;
+  --visual-shadow-opacity: 0.18;
+  --visual-grain-opacity: 0.035;
+}
+
+/* ========================================
+ * 3. TOKYO
+ *
+ * 最纯粹
+ * 最硬
+ * 极端黑白
+ * ======================================== */
+html[data-theme=tokyo][data-dark=false] {
+  --visual-bg: #ffffff;
+  --visual-surface: #f3f3f3;
+  --visual-text: #050505;
+  --visual-muted: #666666;
+  --visual-line: #111111;
+  --visual-accent: #000000;
+  --visual-line-opacity: 1;
+  --visual-text-opacity: 1;
+  --visual-shadow-opacity: 0.12;
+  --visual-grain-opacity: 0;
+}
+
+html[data-theme=tokyo][data-dark=true] {
+  --visual-bg: #000000;
+  --visual-surface: #0b0b0b;
+  --visual-text: #ffffff;
+  --visual-muted: #8a8a8a;
+  --visual-line: #333333;
+  --visual-accent: #ffffff;
+  --visual-line-opacity: 1;
+  --visual-text-opacity: 1;
+  --visual-shadow-opacity: 0.2;
+  --visual-grain-opacity: 0;
+}
+
+/* ========================================
+ * 4. MOON
+ *
+ * 银灰
+ * 雾面
+ * 低反差
+ * 阅读感
+ * ======================================== */
+html[data-theme=moon][data-dark=false] {
+  --visual-bg: #f4f3ef;
+  --visual-surface: #ebe9e3;
+  --visual-text: #30302e;
+  --visual-muted: #85837c;
+  --visual-line: #d1cec6;
+  --visual-accent: #363532;
+  --visual-line-opacity: 0.9;
+  --visual-text-opacity: 0.94;
+  --visual-shadow-opacity: 0.045;
+  --visual-grain-opacity: 0;
+}
+
+html[data-theme=moon][data-dark=true] {
+  --visual-bg: #20201f;
+  --visual-surface: #292927;
+  --visual-text: #deddd7;
+  --visual-muted: #92918b;
+  --visual-line: #46453f;
+  --visual-accent: #e5e3dc;
+  --visual-line-opacity: 0.85;
+  --visual-text-opacity: 0.92;
+  --visual-shadow-opacity: 0.12;
+  --visual-grain-opacity: 0;
+}
+
+/* ========================================
+ * 5. WILLOW
+ *
+ * 旧纸
+ * 柔和
+ * 微暖
+ * 低刺激
+ * ======================================== */
+html[data-theme=willow][data-dark=false] {
+  --visual-bg: #f3f1ea;
+  --visual-surface: #e8e5dc;
+  --visual-text: #38372f;
+  --visual-muted: #817e74;
+  --visual-line: #d1cdc1;
+  --visual-accent: #4b4942;
+  --visual-line-opacity: 0.72;
+  --visual-text-opacity: 0.94;
+  --visual-shadow-opacity: 0.045;
+  --visual-grain-opacity: 0;
+}
+
+html[data-theme=willow][data-dark=true] {
+  --visual-bg: #24231f;
+  --visual-surface: #2e2d28;
+  --visual-text: #ddd9ce;
+  --visual-muted: #99948a;
+  --visual-line: #4a4840;
+  --visual-accent: #e4e0d5;
+  --visual-line-opacity: 0.68;
+  --visual-text-opacity: 0.91;
+  --visual-shadow-opacity: 0.1;
+  --visual-grain-opacity: 0;
+}
+
+/* ========================================
+ * 6. INKWELL
+ *
+ * 最传统的黑白
+ * 纸与墨
+ * 没有额外色彩
+ * ======================================== */
+html[data-theme=inkwell][data-dark=false] {
+  --visual-bg: #fafafa;
+  --visual-surface: #f0f0f0;
+  --visual-text: #111111;
+  --visual-muted: #666666;
+  --visual-line: #c7c7c7;
+  --visual-accent: #000000;
+  --visual-line-opacity: 0.95;
+  --visual-text-opacity: 1;
+  --visual-shadow-opacity: 0.07;
+  --visual-grain-opacity: 0;
+}
+
+html[data-theme=inkwell][data-dark=true] {
+  --visual-bg: #0d0d0d;
+  --visual-surface: #171717;
+  --visual-text: #f2f2f2;
+  --visual-muted: #898989;
+  --visual-line: #3d3d3d;
+  --visual-accent: #ffffff;
+  --visual-line-opacity: 0.95;
+  --visual-text-opacity: 1;
+  --visual-shadow-opacity: 0.15;
+  --visual-grain-opacity: 0;
+}
+
+/* ========================================
+ * 7. 页面基础材质
+ * ======================================== */
+html[data-theme] body {
+  /*
+   * 这里不使用 filter。
+   *
+   * Dark Mode 的 invert 仍然由你原来的
+   * html[data-dark='true'] 控制。
+   */
+  background-color: var(--visual-bg);
+  color: var(--visual-text);
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* ========================================
+ * 8. 文字
+ * ======================================== */
+html[data-theme] body,
+html[data-theme] p,
+html[data-theme] li,
+html[data-theme] blockquote {
+  color: var(--visual-text);
+}
+
+/* 标题 */
+html[data-theme] h1,
+html[data-theme] h2,
+html[data-theme] h3,
+html[data-theme] h4,
+html[data-theme] h5,
+html[data-theme] h6 {
+  color: var(--visual-text);
+  transition: color 0.35s ease;
+}
+
+/* 次级文字 */
+html[data-theme] .post-meta,
+html[data-theme] .post-date,
+html[data-theme] .archive,
+html[data-theme] .tag,
+html[data-theme] .category {
+  color: var(--visual-muted);
+}
+
+/* ========================================
+ * 9. Links
+ * ======================================== */
+html[data-theme] a {
+  color: var(--visual-accent);
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+html[data-theme] a:hover {
+  color: var(--visual-accent);
+  opacity: 0.65;
+}
+
+/* ========================================
+ * 10. 分割线
+ * ======================================== */
+html[data-theme] hr {
+  border-color: var(--visual-line);
+  opacity: var(--visual-line-opacity);
+  transition: border-color 0.35s ease, opacity 0.35s ease;
+}
+
+/* ========================================
+ * 11. 常见 border
+ * ======================================== */
+html[data-theme] .post,
+html[data-theme] .archive-item,
+html[data-theme] .comment,
+html[data-theme] .pagination,
+html[data-theme] table,
+html[data-theme] th,
+html[data-theme] td {
+  border-color: var(--visual-line);
+  transition: border-color 0.35s ease;
+}
+
+/* ========================================
+ * 12. Blockquote
+ *
+ * 不改变内容，只改变“墨线”
+ * ======================================== */
+html[data-theme] blockquote {
+  border-left-color: var(--visual-line);
+  color: var(--visual-muted);
+  transition: border-color 0.35s ease, color 0.35s ease;
+}
+
+/* ========================================
+ * 13. Code
+ * ======================================== */
+html[data-theme] code,
+html[data-theme] pre {
+  background-color: var(--visual-surface);
+  color: var(--visual-text);
+}
+
+/* ========================================
+ * 14. 输入框
+ * ======================================== */
+html[data-theme] input,
+html[data-theme] textarea,
+html[data-theme] select {
+  background-color: var(--visual-surface);
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+}
+
+/* ========================================
+ * 15. 图片
+ *
+ * 非常重要：
+ *
+ * 新主题绝对不处理图片。
+ * 不写 grayscale()
+ * 不写 sepia()
+ * 不写 contrast()
+ * 不写 invert()
+ *
+ * 原有 Dark Mode 对图片的行为保持不动。
+ * ======================================== */
+html[data-theme] img {
+  /*
+   * 不覆盖原来的 darkmode img filter。
+   *
+   * 所以这里故意不写 filter。
+   */
+}
+
+/* ========================================
+ * 16. Gritty 特殊效果
+ *
+ * 只给页面增加非常轻的纸张颗粒。
+ *
+ * 不覆盖图片。
+ * ======================================== */
+html[data-theme=gritty] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: var(--visual-grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.8'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
+}
+
+/*
+ * Dark Gritty 使用较轻的 overlay，
+ * 避免整个页面发灰。
+ */
+html[data-theme=gritty][data-dark=true] body::before {
+  mix-blend-mode: overlay;
+}
+
+/* ========================================
+ * 17. Tokyo
+ *
+ * 不使用 grain。
+ * 用硬朗的线条表达。
+ * ======================================== */
+html[data-theme=tokyo] .post-title,
+html[data-theme=tokyo] h1,
+html[data-theme=tokyo] h2 {
+  letter-spacing: -0.015em;
+}
+
+/* Tokyo 的 hover 更直接 */
+html[data-theme=tokyo] a:hover {
+  opacity: 1;
+  text-decoration-thickness: 2px;
+}
+
+/* ========================================
+ * 18. Moon
+ *
+ * 轻微柔化文字边缘，
+ * 但不使用 blur。
+ * ======================================== */
+html[data-theme=moon] body {
+  text-rendering: optimizeLegibility;
+}
+
+html[data-theme=moon] .post-title,
+html[data-theme=moon] h1,
+html[data-theme=moon] h2 {
+  opacity: 0.94;
+}
+
+/* ========================================
+ * 19. Willow
+ *
+ * 旧纸感来自背景，
+ * 而不是 sepia filter。
+ * ======================================== */
+html[data-theme=willow] body {
+  background-color: var(--visual-bg);
+}
+
+html[data-theme=willow] hr {
+  border-style: solid;
+  opacity: 0.65;
+}
+
+/* ========================================
+ * 20. Inkwell
+ *
+ * 最干净。
+ * 不增加额外材质。
+ * ======================================== */
+html[data-theme=inkwell] body {
+  text-rendering: geometricPrecision;
+}
+
+/* ========================================
+ * 21. Toggle 本身
+ *
+ * 保持你现在的尺寸、位置。
+ * 只让按钮跟随主题。
+ * ======================================== */
+html[data-theme] .darkmode-toggle {
+  background: var(--visual-text);
+  color: var(--visual-bg);
+  transition: background-color 0.35s ease, color 0.35s ease, transform 0.15s ease;
+}
+
+html[data-theme] .darkmode-toggle:hover {
+  transform: scale(1.04);
+}
+
+/* ========================================
+ * 22. Translation button
+ *
+ * 不改变结构，只让它跟随主题。
+ * ======================================== */
+html[data-theme] .translate-button {
+  background: var(--visual-text);
+  color: var(--visual-bg);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
+}
+
+html[data-theme] .translate-button:hover {
+  background: var(--visual-muted);
+}
+
+/* ========================================
+ * 23. Translation menu
+ * ======================================== */
+html[data-theme] .translate-menu {
+  background: var(--visual-surface);
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, var(--visual-shadow-opacity));
+}
+
+html[data-theme] .translate-menu button {
+  color: var(--visual-text);
+}
+
+html[data-theme] .translate-menu button:hover {
+  background: var(--visual-bg);
+}
+
+/* ========================================
+ * 24. Reduced Motion
+ * ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme] *,
+  html[data-theme] *::before,
+  html[data-theme] *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+/* ========================================
  * Translation
  * ======================================== */
 .translate-toggle {

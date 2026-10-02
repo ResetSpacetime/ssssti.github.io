@@ -20,19 +20,123 @@ gtag('config', 'G-CGJZ3YGXT6');
 
     if (!toggle) return;
 
-    html.dataset.dark =
-      localStorage.dark ||
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    /*
+     * ========================================
+     * Visual Theme
+     * ========================================
+     *
+     * Gritty
+     * Tokyo
+     * Moon
+     * Willow
+     * Inkwell
+     *
+     * 每个主题都有 Light / Dark 两种状态。
+     *
+     * 点击顺序：
+     *
+     * Gritty Light
+     * → Gritty Dark
+     * → Tokyo Light
+     * → Tokyo Dark
+     * → Moon Light
+     * → Moon Dark
+     * → Willow Light
+     * → Willow Dark
+     * → Inkwell Light
+     * → Inkwell Dark
+     * → Gritty Light
+     */
 
+    var themes = [
+      'gritty',
+      'tokyo',
+      'moon',
+      'willow',
+      'inkwell'
+    ];
+
+    /*
+     * 读取保存的主题
+     */
+    var savedTheme = localStorage.visualTheme;
+    var savedDark = localStorage.dark;
+
+    var themeIndex = themes.indexOf(savedTheme);
+
+    /*
+     * 没有保存过主题时，从 Gritty 开始
+     */
+    if (themeIndex === -1) {
+      themeIndex = 0;
+      savedTheme = themes[0];
+    }
+
+    /*
+     * 保留原来的明暗逻辑：
+     *
+     * localStorage.dark
+     * ↓
+     * 系统 prefers-color-scheme
+     */
+    var isDark =
+      savedDark !== undefined
+        ? savedDark === 'true'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    /*
+     * 应用状态
+     */
+    function applyTheme() {
+      html.dataset.theme = themes[themeIndex];
+      html.dataset.dark = isDark;
+
+      localStorage.visualTheme = themes[themeIndex];
+      localStorage.dark = isDark;
+
+      /*
+       * 保留原来的 themechange 事件
+       */
+      document.body.dispatchEvent(new Event('themechange'));
+    }
+
+    /*
+     * 防止重复初始化
+     */
     if (toggle.dataset.initialized === 'true') return;
     toggle.dataset.initialized = 'true';
 
+    /*
+     * 点击按钮
+     *
+     * Light → Dark
+     *
+     * Dark → 下一个主题 Light
+     */
     toggle.addEventListener('click', function () {
-      localStorage.dark = !(html.dataset.dark === 'true');
-      html.dataset.dark = localStorage.dark;
 
-      document.body.dispatchEvent(new Event('themechange'));
+      if (isDark) {
+        /*
+         * Dark → 下一套主题 Light
+         */
+        isDark = false;
+
+        themeIndex = (themeIndex + 1) % themes.length;
+
+      } else {
+        /*
+         * Light → 当前主题 Dark
+         */
+        isDark = true;
+      }
+
+      applyTheme();
     });
+
+    /*
+     * 初始化
+     */
+    applyTheme();
   }
 
   if (document.readyState === 'loading') {
@@ -203,7 +307,7 @@ gtag('config', 'G-CGJZ3YGXT6');
 <ul>
 <li>20260801 Arlmy 创建、发布</li>
 </ul>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day292 反复多次地书写</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-03-12</p><p><span>最后更新：</span>2026-08-01</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-init/INSW_292/">https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_292/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_292/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW-relax/INSW_148/" title="入蜀记 day148 半日忙">入蜀记 day148 半日忙</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_445/" title="入蜀记 day445 幺妹峰">入蜀记 day445 幺妹峰</a></p><p><a href="/posts/BBBPandINSW/INSW/INSW_51/" title="入蜀记 day51 西扎">入蜀记 day51 西扎</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_418/" title="入蜀记 day418 落雨咯">入蜀记 day418 落雨咯</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_450/" title="入蜀记 day450 正行亡私">入蜀记 day450 正行亡私</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_207/" title="入蜀记 day207 田大哥">入蜀记 day207 田大哥</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_215/" title="入蜀记 day215 麦霸和粤语歌">入蜀记 day215 麦霸和粤语歌</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_292/" data-id="cmuqh02u10218povpfpwt2y02" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACOElEQVR42u3aMXLDMAwFUd//0kqTLiNmP8DYIbSsNB5b4lMBgwBeL7yuH4t88+6T9JvblgwZMo5lXMu1ZqwffLd1guF7kyFDxnMY603cXZNfkQC6fk3kBcmQIUPGOlDWUrrac2XIkCGjFnB3JZQf/t+QIUPGv2eQQyy55okjf2Wbz+IyZMg4kJGmce+8/pP+hgwZMo5iXOHalTLu2s/3PWXIkDGawQMcP172Gwa1/ciQIWM2Iy5sgaPm3s2RwpwMGTKmMnjhjLcwyX3IRnnqKUOGjOcw+uMOvKCPNgfCtAwZMp7M4MfOWpgmCWXQKJUhQ8ZoBi9+9cMiTxzJr5IKnAwZMs5mdEpsaQGODK2mA/1BhitDhoxBDN5JSAfreYMznQSTIUPGbAZJDdPHd5oEcaGNZ7gyZMg4lsHHUnc1O2ujZq1hCxkyZBzOqLUtyWE1bU/y4y7695AhQ8YgRrqtNMnjSeeGs7gMGTIexuApYFpWSw/D6FqGDBmjGf2SWVq+7wxbxCMXMmTIGMp4T+uxMwSGAq4MGTJGM3iwSxPKbYF1PWwhQ4aM0Yza6HwastMyXGtmRIYMGSMYV7j6qWEa0INCmwwZMoYyii1DPKpFSnW1lkARI0OGjGMZJMimbyIN3Gn6+EuGK0OGjKEMXsTnD+4M08etCBkyZMjoZ5e4JVAsycmQIUNGqVWQDt+Tg+7tfWTIkPEARqdYnw5ndF4EGraQIUPGOEbr6BgmfP3xjlYjU4YMGecxvgDZ7cYEcKt63QAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-init/INSW_293/">入蜀记 day293 能力的卡点</a><a class="next" href="/posts/BBBPandINSW/INSW-init/INSW_291/">入蜀记 day291 mister rogers</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>入蜀记 day292 反复多次地书写</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-03-12</p><p><span>最后更新：</span>2026-08-01</p><p><span>原始链接：</span><a href="/posts/BBBPandINSW/INSW-init/INSW_292/">https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_292/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_292/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><div class="post-copyright random-posts" style="border-left-color: #808080;"><!-- themes/maupassant/layout/_partial/random-posts-list.pug--><p><a href="/posts/BBBPandINSW/INSW/INSW_89/" title="入蜀记 day89 对数坐标">入蜀记 day89 对数坐标</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_482/" title="入蜀记 day482 听友聚会">入蜀记 day482 听友聚会</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_319/" title="入蜀记 day319 一期一会，来去自由">入蜀记 day319 一期一会，来去自由</a></p><p><a href="/posts/BBBPandINSW/INSW-ko/INSW_427/" title="入蜀记 day427 依子阿依莫">入蜀记 day427 依子阿依莫</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_272/" title="入蜀记 day272 骑行">入蜀记 day272 骑行</a></p><p><a href="/posts/BBBPandINSW/INSW-jet/INSW_344/" title="入蜀记 day344 枇杷季正式开始">入蜀记 day344 枇杷季正式开始</a></p><p><a href="/posts/BBBPandINSW/INSW-init/INSW_207/" title="入蜀记 day207 田大哥">入蜀记 day207 田大哥</a></p></div><a class="article-share-link" data-url="https://z.arlmy.me/posts/BBBPandINSW/INSW-init/INSW_292/" data-id="cmuqh02u10218povpfpwt2y02" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACOElEQVR42u3aMXLDMAwFUd//0kqTLiNmP8DYIbSsNB5b4lMBgwBeL7yuH4t88+6T9JvblgwZMo5lXMu1ZqwffLd1guF7kyFDxnMY603cXZNfkQC6fk3kBcmQIUPGOlDWUrrac2XIkCGjFnB3JZQf/t+QIUPGv2eQQyy55okjf2Wbz+IyZMg4kJGmce+8/pP+hgwZMo5iXOHalTLu2s/3PWXIkDGawQMcP172Gwa1/ciQIWM2Iy5sgaPm3s2RwpwMGTKmMnjhjLcwyX3IRnnqKUOGjOcw+uMOvKCPNgfCtAwZMp7M4MfOWpgmCWXQKJUhQ8ZoBi9+9cMiTxzJr5IKnAwZMs5mdEpsaQGODK2mA/1BhitDhoxBDN5JSAfreYMznQSTIUPGbAZJDdPHd5oEcaGNZ7gyZMg4lsHHUnc1O2ujZq1hCxkyZBzOqLUtyWE1bU/y4y7695AhQ8YgRrqtNMnjSeeGs7gMGTIexuApYFpWSw/D6FqGDBmjGf2SWVq+7wxbxCMXMmTIGMp4T+uxMwSGAq4MGTJGM3iwSxPKbYF1PWwhQ4aM0Yza6HwastMyXGtmRIYMGSMYV7j6qWEa0INCmwwZMoYyii1DPKpFSnW1lkARI0OGjGMZJMimbyIN3Gn6+EuGK0OGjKEMXsTnD+4M08etCBkyZMjoZ5e4JVAsycmQIUNGqVWQDt+Tg+7tfWTIkPEARqdYnw5ndF4EGraQIUPGOEbr6BgmfP3xjlYjU4YMGecxvgDZ7cYEcKt63QAAAABJRU5ErkJggg==">分享</a><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/INSW/" rel="tag">INSW</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/BBBPandINSW/INSW-init/INSW_293/">入蜀记 day293 能力的卡点</a><a class="next" href="/posts/BBBPandINSW/INSW-init/INSW_291/">入蜀记 day291 mister rogers</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
   envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
   el: '#tcomment',
   region: '',
