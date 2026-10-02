@@ -4195,21 +4195,27 @@ html[data-dark=true] {
  *
  * 五套视觉主题
  *
- * 注意：
- * data-dark 不参与主题配色。
+ * IMPORTANT:
  *
- * data-dark 仍然完全由原来的 Dark Mode
- * invert() 负责。
+ * data-theme
+ *   ↓
+ * gritty
+ * tokyo
+ * moon
+ * willow
+ * inkwell
  *
- * 因此这里所有颜色都是：
+ * data-dark
+ *   ↓
+ * 继续完全交给原来的 Dark Mode
  *
- * "Light / 原始状态"
+ * Visual Theme = 视觉人格
+ * Dark Mode    = 明暗物理层
  *
- * Dark Mode 开启后，
- * 整个页面按照原来的机制反转。
+ * 新主题绝对不处理图片。
  * ======================================== */
 /* ========================================
- * Base
+ * 1. Base
  * ======================================== */
 :root {
   --visual-bg: #efeee9;
@@ -4224,11 +4230,12 @@ html[data-dark=true] {
 }
 
 /* ========================================
- * GRITTY
+ * 2. Gritty
  *
- * 粗颗粒
- * 高反差
- * 印刷感
+ * 粗粝
+ * 印刷
+ * 颗粒
+ * 稍高反差
  * ======================================== */
 html[data-theme=gritty] {
   --visual-bg: #efeee9;
@@ -4243,11 +4250,11 @@ html[data-theme=gritty] {
 }
 
 /* ========================================
- * TOKYO
+ * 3. Tokyo
  *
- * 极端黑白
- * 硬线
- * 高反差
+ * 极简
+ * 硬朗
+ * 黑白
  * ======================================== */
 html[data-theme=tokyo] {
   --visual-bg: #ffffff;
@@ -4262,10 +4269,10 @@ html[data-theme=tokyo] {
 }
 
 /* ========================================
- * MOON
+ * 4. Moon
  *
- * 银灰
- * 雾面
+ * 柔和
+ * 灰白
  * 低刺激
  * ======================================== */
 html[data-theme=moon] {
@@ -4281,11 +4288,11 @@ html[data-theme=moon] {
 }
 
 /* ========================================
- * WILLOW
+ * 5. Willow
  *
  * 旧纸
- * 柔和
  * 微暖
+ * 柔和
  * ======================================== */
 html[data-theme=willow] {
   --visual-bg: #f3f1ea;
@@ -4300,10 +4307,11 @@ html[data-theme=willow] {
 }
 
 /* ========================================
- * INKWELL
+ * 6. Inkwell
  *
- * 纯黑白
+ * 最干净
  * 纸与墨
+ * 黑白
  * ======================================== */
 html[data-theme=inkwell] {
   --visual-bg: #fafafa;
@@ -4318,7 +4326,7 @@ html[data-theme=inkwell] {
 }
 
 /* ========================================
- * 页面
+ * 7. Page
  * ======================================== */
 html[data-theme] body {
   background-color: var(--visual-bg);
@@ -4327,7 +4335,7 @@ html[data-theme] body {
 }
 
 /* ========================================
- * 文字
+ * 8. Text
  * ======================================== */
 html[data-theme] body,
 html[data-theme] p,
@@ -4335,6 +4343,9 @@ html[data-theme] li {
   color: var(--visual-text);
 }
 
+/* ========================================
+ * 9. Headings
+ * ======================================== */
 html[data-theme] h1,
 html[data-theme] h2,
 html[data-theme] h3,
@@ -4346,7 +4357,7 @@ html[data-theme] h6 {
 }
 
 /* ========================================
- * 次级文字
+ * 10. Secondary Text
  * ======================================== */
 html[data-theme] .post-meta,
 html[data-theme] .post-date,
@@ -4357,7 +4368,7 @@ html[data-theme] .category {
 }
 
 /* ========================================
- * Links
+ * 11. Links
  * ======================================== */
 html[data-theme] a {
   color: var(--visual-accent);
@@ -4370,7 +4381,7 @@ html[data-theme] a:hover {
 }
 
 /* ========================================
- * Lines
+ * 12. Horizontal Rules
  * ======================================== */
 html[data-theme] hr {
   border-color: var(--visual-line);
@@ -4379,7 +4390,7 @@ html[data-theme] hr {
 }
 
 /* ========================================
- * Borders
+ * 13. Borders
  * ======================================== */
 html[data-theme] .post,
 html[data-theme] .archive-item,
@@ -4389,18 +4400,20 @@ html[data-theme] table,
 html[data-theme] th,
 html[data-theme] td {
   border-color: var(--visual-line);
+  transition: border-color 0.35s ease;
 }
 
 /* ========================================
- * Blockquote
+ * 14. Blockquote
  * ======================================== */
 html[data-theme] blockquote {
   border-left-color: var(--visual-line);
   color: var(--visual-muted);
+  transition: border-color 0.35s ease, color 0.35s ease;
 }
 
 /* ========================================
- * Code
+ * 15. Code
  * ======================================== */
 html[data-theme] code,
 html[data-theme] pre {
@@ -4409,7 +4422,7 @@ html[data-theme] pre {
 }
 
 /* ========================================
- * Input
+ * 16. Form Elements
  * ======================================== */
 html[data-theme] input,
 html[data-theme] textarea,
@@ -4420,18 +4433,39 @@ html[data-theme] select {
 }
 
 /* ========================================
- * 图片
+ * 17. Images
  *
- * 不碰图片。
+ * VERY IMPORTANT
  *
- * 特别注意：
- * 这里不要写 filter。
+ * 这里绝对不要写 filter。
+ *
+ * 图片的 Dark Mode 行为继续由：
+ *
+ * html[data-dark='true'] img
+ *
+ * 控制。
  * ======================================== */
+html[data-theme] img {
+  /*
+   * intentionally empty
+   *
+   * 不要添加：
+   *
+   * filter:
+   * grayscale()
+   * sepia()
+   * contrast()
+   * brightness()
+   * invert()
+   */
+}
+
 /* ========================================
- * GRITTY
+ * 18. Gritty Texture
  *
- * 页面颗粒只覆盖页面，
- * 不改变 img 本身。
+ * 只给页面增加非常轻的纸张颗粒。
+ *
+ * 不处理图片。
  * ======================================== */
 html[data-theme=gritty] body::before {
   content: "";
@@ -4446,7 +4480,9 @@ html[data-theme=gritty] body::before {
 }
 
 /* ========================================
- * TOKYO
+ * 19. Tokyo
+ *
+ * 更紧凑、更硬朗的标题。
  * ======================================== */
 html[data-theme=tokyo] .post-title,
 html[data-theme=tokyo] h1,
@@ -4460,7 +4496,9 @@ html[data-theme=tokyo] a:hover {
 }
 
 /* ========================================
- * MOON
+ * 20. Moon
+ *
+ * 轻微柔化文字。
  * ======================================== */
 html[data-theme=moon] body {
   text-rendering: optimizeLegibility;
@@ -4473,7 +4511,9 @@ html[data-theme=moon] h2 {
 }
 
 /* ========================================
- * WILLOW
+ * 21. Willow
+ *
+ * 更轻的分割线。
  * ======================================== */
 html[data-theme=willow] hr {
   border-style: solid;
@@ -4481,16 +4521,23 @@ html[data-theme=willow] hr {
 }
 
 /* ========================================
- * INKWELL
+ * 22. Inkwell
+ *
+ * 极干净的黑白排版。
  * ======================================== */
 html[data-theme=inkwell] body {
   text-rendering: geometricPrecision;
 }
 
 /* ========================================
- * Toggle
+ * 23. Dark Mode Toggle
  *
- * 保留原来的位置和尺寸
+ * 按钮跟随视觉主题。
+ *
+ * 但是：
+ *
+ * data-dark 的实际反转行为
+ * 仍然完全由原来的 Dark Mode CSS 控制。
  * ======================================== */
 html[data-theme] .darkmode-toggle {
   background: var(--visual-text);
@@ -4503,18 +4550,48 @@ html[data-theme] .darkmode-toggle:hover {
 }
 
 /* ========================================
- * Translation
+ * 24. Translation Button
  * ======================================== */
 html[data-theme] .translate-button {
   background: var(--visual-text);
   color: var(--visual-bg);
-  transition: background-color 0.3s ease, transform 0.15s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
 }
 
 html[data-theme] .translate-button:hover {
   background: var(--visual-muted);
 }
 
+/* ========================================
+ * 25. Translation Menu
+ * ======================================== */
+html[data-theme] .translate-menu {
+  background: var(--visual-surface);
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, var(--visual-shadow-opacity));
+}
+
+html[data-theme] .translate-menu button {
+  color: var(--visual-text);
+}
+
+html[data-theme] .translate-menu button:hover {
+  background: var(--visual-bg);
+}
+
+/* ========================================
+ * 26. Reduced Motion
+ * ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme] *,
+  html[data-theme] *::before,
+  html[data-theme] *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
 /* ========================================
  * Translation
  * ======================================== */
