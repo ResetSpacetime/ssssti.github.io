@@ -4593,6 +4593,299 @@ html[data-theme] .translate-menu button:hover {
   }
 }
 /* ========================================
+ * Visual Theme
+ * Maupassant component overrides
+ *
+ * 这里开始接管真正可见的组件。
+ *
+ * 不修改图片。
+ * 不修改原有 Dark Mode。
+ * 只让主题变量进入页面真实组件。
+ * ======================================== */
+/* ========================================
+ * Post Title
+ * ======================================== */
+html[data-theme] .post-title {
+  color: var(--visual-text);
+  transition: color 0.35s ease;
+}
+
+/* ========================================
+ * Post Content
+ * ======================================== */
+html[data-theme] .post .post-content {
+  color: var(--visual-text);
+}
+
+html[data-theme] .post .post-content p,
+html[data-theme] .post .post-content li {
+  color: var(--visual-text);
+}
+
+/* ========================================
+ * Post Content Headings
+ * ======================================== */
+html[data-theme] .post .post-content h1,
+html[data-theme] .post .post-content h2,
+html[data-theme] .post .post-content h3,
+html[data-theme] .post .post-content h4,
+html[data-theme] .post .post-content h5,
+html[data-theme] .post .post-content h6 {
+  color: var(--visual-text);
+}
+
+/* ========================================
+ * Post Content HR
+ * ======================================== */
+html[data-theme] .post .post-content hr {
+  border-color: var(--visual-line);
+  opacity: var(--visual-line-opacity);
+  transition: border-color 0.35s ease, opacity 0.35s ease;
+}
+
+/* ========================================
+ * Post Content Links
+ * ======================================== */
+html[data-theme] .post .post-content a {
+  color: var(--visual-accent);
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+html[data-theme] .post .post-content a:hover {
+  color: var(--visual-accent);
+  opacity: 0.65;
+}
+
+/* ========================================
+ * Blockquote
+ * ======================================== */
+html[data-theme] .post .post-content blockquote {
+  color: var(--visual-muted);
+  border-left-color: var(--visual-line);
+}
+
+/* ========================================
+ * Code
+ * ======================================== */
+html[data-theme] .post .post-content code {
+  color: var(--visual-text);
+  background-color: var(--visual-surface);
+}
+
+html[data-theme] .post .post-content pre {
+  color: var(--visual-text);
+  background-color: var(--visual-surface);
+}
+
+/* ========================================
+ * Tables
+ * ======================================== */
+html[data-theme] .post .post-content table {
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+}
+
+html[data-theme] .post .post-content th,
+html[data-theme] .post .post-content td {
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+}
+
+/* ========================================
+ * Meta
+ * ======================================== */
+html[data-theme] .post-meta {
+  color: var(--visual-muted);
+}
+
+html[data-theme] .post-date {
+  color: var(--visual-muted);
+}
+
+/* ========================================
+ * Archive
+ * ======================================== */
+html[data-theme] .archive {
+  color: var(--visual-text);
+}
+
+html[data-theme] .archive a {
+  color: var(--visual-accent);
+}
+
+/* ========================================
+ * Tags
+ * ======================================== */
+html[data-theme] .tag,
+html[data-theme] .tags {
+  color: var(--visual-muted);
+}
+
+html[data-theme] .tag a,
+html[data-theme] .tags a {
+  color: var(--visual-accent);
+}
+
+/* ========================================
+ * Sidebar
+ * ======================================== */
+html[data-theme] .sidebar {
+  color: var(--visual-text);
+}
+
+html[data-theme] .sidebar a {
+  color: var(--visual-accent);
+}
+
+/* ========================================
+ * Pagination
+ * ======================================== */
+html[data-theme] .pagination {
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+}
+
+html[data-theme] .pagination a,
+html[data-theme] .pagination span {
+  color: var(--visual-accent);
+  border-color: var(--visual-line);
+}
+
+/* ========================================
+ * Footer
+ * ======================================== */
+html[data-theme] footer {
+  color: var(--visual-muted);
+}
+
+html[data-theme] footer a {
+  color: var(--visual-accent);
+}
+
+/* ========================================
+ * Generic borders
+ * ======================================== */
+html[data-theme] .post,
+html[data-theme] .archive-item,
+html[data-theme] .comment,
+html[data-theme] .pagination {
+  border-color: var(--visual-line);
+}
+
+/* ========================================
+ * Selection
+ *
+ * 这里可以让不同 Theme 更有自己的性格。
+ * ======================================== */
+html[data-theme=gritty] ::selection {
+  background: var(--visual-text);
+  color: var(--visual-bg);
+}
+
+html[data-theme=tokyo] ::selection {
+  background: #000;
+  color: #fff;
+}
+
+html[data-theme=moon] ::selection {
+  background: #777;
+  color: #f4f3ef;
+}
+
+html[data-theme=willow] ::selection {
+  background: #706b60;
+  color: #f3f1ea;
+}
+
+html[data-theme=inkwell] ::selection {
+  background: #111;
+  color: #fff;
+}
+
+/* ========================================
+ * Gritty
+ * ======================================== */
+html[data-theme=gritty] .post-title {
+  font-weight: 700;
+}
+
+html[data-theme=gritty] .post .post-content hr {
+  border-top-width: 2px;
+}
+
+html[data-theme=gritty] .post .post-content blockquote {
+  border-left-width: 4px;
+}
+
+/* ========================================
+ * Tokyo
+ * ======================================== */
+html[data-theme=tokyo] .post-title {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+html[data-theme=tokyo] .post .post-content hr {
+  opacity: 1;
+  border-top-width: 1px;
+}
+
+html[data-theme=tokyo] a:hover {
+  opacity: 1;
+  text-decoration-thickness: 2px;
+}
+
+/* ========================================
+ * Moon
+ * ======================================== */
+html[data-theme=moon] .post-title {
+  font-weight: 500;
+  opacity: 0.88;
+}
+
+html[data-theme=moon] .post .post-content hr {
+  opacity: 0.45;
+}
+
+html[data-theme=moon] .post .post-content blockquote {
+  opacity: 0.85;
+  border-left-width: 2px;
+}
+
+/* ========================================
+ * Willow
+ * ======================================== */
+html[data-theme=willow] .post-title {
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+html[data-theme=willow] .post .post-content hr {
+  opacity: 0.5;
+  border-top-width: 1px;
+}
+
+html[data-theme=willow] .post .post-content blockquote {
+  border-left-width: 2px;
+}
+
+/* ========================================
+ * Inkwell
+ * ======================================== */
+html[data-theme=inkwell] .post-title {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+html[data-theme=inkwell] .post .post-content hr {
+  opacity: 0.95;
+}
+
+html[data-theme=inkwell] .post .post-content blockquote {
+  border-left-width: 3px;
+}
+
+/* ========================================
  * Translation
  * ======================================== */
 .translate-toggle {
