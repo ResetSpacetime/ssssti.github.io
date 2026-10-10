@@ -4593,173 +4593,248 @@ html[data-theme] .translate-menu button:hover {
   }
 }
 /* ========================================
- * Visual Theme
- * Maupassant component overrides
- *
- * 这里开始接管真正可见的组件。
- *
- * 不修改图片。
- * 不修改原有 Dark Mode。
- * 只让主题变量进入页面真实组件。
- * ======================================== */
-/* ========================================
- * Post Title
- * ======================================== */
-html[data-theme] .post-title {
-  color: var(--visual-text);
-  transition: color 0.35s ease;
+   Visual theme variables
+   主题只控制色调与层次，不修改图片
+======================================== */
+/* Gritty：暖水泥灰 */
+html[data-theme=gritty] {
+  --visual-bg: #e9e8e2;
+  --visual-surface: #dfded7;
+  --visual-surface-soft: #e5e4dd;
+  --visual-text: #252521;
+  --visual-muted: #68675f;
+  --visual-line: #b4b2a8;
+  --visual-line-strong: #89877d;
+  --visual-accent: #292923;
+  --visual-code-bg: #dddbd2;
+  --visual-quote-bg: #e2e1d9;
+}
+
+/* Tokyo：冷白与硬朗分隔 */
+html[data-theme=tokyo] {
+  --visual-bg: #f7f7f6;
+  --visual-surface: #eeeeec;
+  --visual-surface-soft: #f2f2f0;
+  --visual-text: #202020;
+  --visual-muted: #666664;
+  --visual-line: #d0d0cd;
+  --visual-line-strong: #777774;
+  --visual-accent: #111111;
+  --visual-code-bg: #e9e9e7;
+  --visual-quote-bg: #efefed;
+}
+
+/* Moon：银灰、安静、低对比 */
+html[data-theme=moon] {
+  --visual-bg: #e7e7e5;
+  --visual-surface: #dededb;
+  --visual-surface-soft: #e2e2df;
+  --visual-text: #3d3d3a;
+  --visual-muted: #777772;
+  --visual-line: #c8c8c3;
+  --visual-line-strong: #aaa9a3;
+  --visual-accent: #484844;
+  --visual-code-bg: #d9d9d5;
+  --visual-quote-bg: #e0e0dc;
+}
+
+/* Willow：灰米色与灰褐色 */
+html[data-theme=willow] {
+  --visual-bg: #e9e5dc;
+  --visual-surface: #ded9ce;
+  --visual-surface-soft: #e4e0d6;
+  --visual-text: #454239;
+  --visual-muted: #7c776c;
+  --visual-line: #c7c0b3;
+  --visual-line-strong: #a49c8e;
+  --visual-accent: #514c41;
+  --visual-code-bg: #d9d3c7;
+  --visual-quote-bg: #e1dccf;
+}
+
+/* Inkwell：中性纸白与墨灰 */
+html[data-theme=inkwell] {
+  --visual-bg: #f5f5f3;
+  --visual-surface: #ebebe8;
+  --visual-surface-soft: #f0f0ed;
+  --visual-text: #242424;
+  --visual-muted: #6a6a67;
+  --visual-line: #d0d0cc;
+  --visual-line-strong: #a4a4a0;
+  --visual-accent: #171717;
+  --visual-code-bg: #e6e6e2;
+  --visual-quote-bg: #eeeeea;
 }
 
 /* ========================================
- * Post Content
- * ======================================== */
-html[data-theme] .post .post-content {
+   Base
+======================================== */
+html[data-theme] {
+  background-color: var(--visual-bg);
   color: var(--visual-text);
 }
 
-html[data-theme] .post .post-content p,
-html[data-theme] .post .post-content li {
+html[data-theme] body {
+  background-color: var(--visual-bg);
+  color: var(--visual-text);
+}
+
+html[data-theme] a {
+  color: var(--visual-accent);
+}
+
+html[data-theme] a:hover {
+  opacity: 0.72;
+}
+
+/* ========================================
+   Header / Navigation
+======================================== */
+html[data-theme] .header,
+html[data-theme] .header-inner,
+html[data-theme] .nav,
+html[data-theme] .navbar {
+  background-color: var(--visual-bg);
+  color: var(--visual-text);
+}
+
+html[data-theme] .header a,
+html[data-theme] .nav a,
+html[data-theme] .navbar a {
   color: var(--visual-text);
 }
 
 /* ========================================
- * Post Content Headings
- * ======================================== */
-html[data-theme] .post .post-content h1,
-html[data-theme] .post .post-content h2,
-html[data-theme] .post .post-content h3,
-html[data-theme] .post .post-content h4,
-html[data-theme] .post .post-content h5,
-html[data-theme] .post .post-content h6 {
+   Post / Typography
+======================================== */
+html[data-theme] .post,
+html[data-theme] .post-list,
+html[data-theme] .post-content {
   color: var(--visual-text);
 }
 
+html[data-theme] .post-title,
+html[data-theme] .post-title a,
+html[data-theme] .post-content h1,
+html[data-theme] .post-content h2,
+html[data-theme] .post-content h3,
+html[data-theme] .post-content h4,
+html[data-theme] .post-content h5,
+html[data-theme] .post-content h6 {
+  color: var(--visual-text);
+}
+
+html[data-theme] .post-meta,
+html[data-theme] .post-meta a,
+html[data-theme] .post-date,
+html[data-theme] .post-author,
+html[data-theme] .archive-year,
+html[data-theme] .archive-date {
+  color: var(--visual-muted);
+}
+
 /* ========================================
- * Post Content HR
- * ======================================== */
+   Lines / Separators
+======================================== */
+html[data-theme] hr,
 html[data-theme] .post .post-content hr {
   border-color: var(--visual-line);
-  opacity: var(--visual-line-opacity);
-  transition: border-color 0.35s ease, opacity 0.35s ease;
+}
+
+html[data-theme] .post .post-content hr {
+  border-top-color: var(--visual-line-strong);
+}
+
+html[data-theme] .post,
+html[data-theme] .archive,
+html[data-theme] .widget,
+html[data-theme] .sidebar,
+html[data-theme] .footer {
+  border-color: var(--visual-line);
 }
 
 /* ========================================
- * Post Content Links
- * ======================================== */
-html[data-theme] .post .post-content a {
-  color: var(--visual-accent);
-  transition: color 0.25s ease, opacity 0.25s ease;
-}
-
-html[data-theme] .post .post-content a:hover {
-  color: var(--visual-accent);
-  opacity: 0.65;
-}
-
-/* ========================================
- * Blockquote
- * ======================================== */
-html[data-theme] .post .post-content blockquote {
-  color: var(--visual-muted);
-  border-left-color: var(--visual-line);
-}
-
-/* ========================================
- * Code
- * ======================================== */
-html[data-theme] .post .post-content code {
+   Code / Quote / Tables
+======================================== */
+html[data-theme] code,
+html[data-theme] pre {
+  background-color: var(--visual-code-bg);
   color: var(--visual-text);
+}
+
+html[data-theme] blockquote {
+  background-color: var(--visual-quote-bg);
+  border-left-color: var(--visual-line-strong);
+  color: var(--visual-muted);
+}
+
+html[data-theme] table,
+html[data-theme] th,
+html[data-theme] td {
+  border-color: var(--visual-line);
+}
+
+html[data-theme] th {
   background-color: var(--visual-surface);
 }
 
-html[data-theme] .post .post-content pre {
-  color: var(--visual-text);
+html[data-theme] tr:nth-child(even) {
+  background-color: var(--visual-surface-soft);
+}
+
+/* ========================================
+   Sidebar / Cards / Search
+======================================== */
+html[data-theme] .widget,
+html[data-theme] .search,
+html[data-theme] .search-form,
+html[data-theme] input,
+html[data-theme] textarea,
+html[data-theme] select {
   background-color: var(--visual-surface);
-}
-
-/* ========================================
- * Tables
- * ======================================== */
-html[data-theme] .post .post-content table {
   color: var(--visual-text);
   border-color: var(--visual-line);
 }
 
-html[data-theme] .post .post-content th,
-html[data-theme] .post .post-content td {
-  color: var(--visual-text);
-  border-color: var(--visual-line);
-}
-
-/* ========================================
- * Meta
- * ======================================== */
-html[data-theme] .post-meta {
-  color: var(--visual-muted);
-}
-
-html[data-theme] .post-date {
+html[data-theme] input::placeholder,
+html[data-theme] textarea::placeholder {
   color: var(--visual-muted);
 }
 
 /* ========================================
- * Archive
- * ======================================== */
-html[data-theme] .archive {
-  color: var(--visual-text);
-}
-
-html[data-theme] .archive a {
-  color: var(--visual-accent);
-}
-
-/* ========================================
- * Tags
- * ======================================== */
-html[data-theme] .tag,
-html[data-theme] .tags {
-  color: var(--visual-muted);
-}
-
-html[data-theme] .tag a,
-html[data-theme] .tags a {
-  color: var(--visual-accent);
-}
-
-/* ========================================
- * Sidebar
- * ======================================== */
-html[data-theme] .sidebar {
-  color: var(--visual-text);
-}
-
-html[data-theme] .sidebar a {
-  color: var(--visual-accent);
-}
-
-/* ========================================
- * Pagination
- * ======================================== */
-html[data-theme] .pagination {
-  color: var(--visual-text);
-  border-color: var(--visual-line);
-}
-
+   Buttons / Pagination / Tags
+======================================== */
+html[data-theme] button,
+html[data-theme] .btn,
 html[data-theme] .pagination a,
-html[data-theme] .pagination span {
-  color: var(--visual-accent);
+html[data-theme] .page-number,
+html[data-theme] .tag,
+html[data-theme] .category {
   border-color: var(--visual-line);
 }
 
+html[data-theme] button,
+html[data-theme] .btn {
+  background-color: var(--visual-surface);
+  color: var(--visual-text);
+}
+
+html[data-theme] .pagination .current,
+html[data-theme] .page-number.current {
+  background-color: var(--visual-accent);
+  color: var(--visual-bg);
+}
+
 /* ========================================
- * Footer
- * ======================================== */
-html[data-theme] footer {
+   Footer
+======================================== */
+html[data-theme] .footer {
+  background-color: var(--visual-bg);
   color: var(--visual-muted);
 }
 
-html[data-theme] footer a {
-  color: var(--visual-accent);
+html[data-theme] .footer a {
+  color: var(--visual-text);
 }
 
 /* ========================================
@@ -4927,10 +5002,15 @@ html[data-theme=inkwell] .post .post-content blockquote {
   width: 22px;
   height: 22px;
   pointer-events: none;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLjg3IDE1LjA3bC0yLjU0LTIuNTEuMDMtLjAzYzEuNzQtMS45NCAyLjk4LTQuMTcgMy43MS02LjUzSDE3VjRoLTdWMkg4djJIMXYxLjk5aDExLjE3QzExLjUgNy45MiAxMC41IDkuNzUgOSAxMS4zNSA4LjAzIDEwLjI4IDcuMjMgOS4wOCA2LjYxIDcuOTlINC42Yy43IDEuNTcgMS42NSAzLjA1IDIuODUgNC4zOGwtNC44NiA0LjhMNCAxOC41OGw0LjgtNC44IDIuOTkgMi45OWMuNDEuNDEuOTUuNjQgMS41Mi42NC41NyAwIDEuMTEtLjIyIDEuNTEtLjYzTDE1LjUgMTYuMWwtMi42My0xLjAzek0xOS41IDEwaC0yTDEzIDIyaDJsMS4xMi0zaDQuNzZMMjIgMjJoMmwtNC41LTEyem0tMi42MiA3TDE4LjUgMTIuNjcgMjAuMTIgMTdoLTMuMjR6Ii8+PC9zdmc+");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  /* 使用 SVG 作为遮罩，只保留图形轮廓 */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.5 9.75 9 11.35 8.03 10.28 7.23 9.08 6.61 7.99H4.6c.7 1.57 1.65 3.05 2.85 4.38l-4.86 4.8L4 18.58l4.8-4.8 2.99 2.99c.41.41.95.64 1.52.64.57 0 1.11-.22 1.51-.63L15.5 16.1l-2.63-1.03zM19.5 10h-2L13 22h2l1.12-3h4.76L22 22h2l-4.5-12zm-2.62 7l1.62-4.33L20.12 17h-3.24z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.5 9.75 9 11.35 8.03 10.28 7.23 9.08 6.61 7.99H4.6c.7 1.57 1.65 3.05 2.85 4.38l-4.86 4.8L4 18.58l4.8-4.8 2.99 2.99c.41.41.95.64 1.52.64.57 0 1.11-.22 1.51-.63L15.5 16.1l-2.63-1.03zM19.5 10h-2L13 22h2l1.12-3h4.76L22 22h2l-4.5-12zm-2.62 7l1.62-4.33L20.12 17h-3.24z'/%3E%3C/svg%3E") center/contain no-repeat;
+  background-color: #fff;
+}
+
+/* 暗色模式：图标保持浅色 */
+html[data-dark=true] .translate-icon {
+  background-color: #222;
 }
 
 .translate-menu {
