@@ -4783,24 +4783,49 @@ html[data-theme] tr:nth-child(even) {
 }
 
 /* ========================================
-   Sidebar / Cards / Search
+Sidebar / Search
+只修改颜色，不重设插件布局与背景
 ======================================== */
-html[data-theme] .widget,
-html[data-theme] .search,
-html[data-theme] .search-form,
-html[data-theme] input,
-html[data-theme] textarea,
-html[data-theme] select {
-  background-color: var(--visual-surface);
+/* 侧边栏文字 */
+html[data-theme] .sidebar {
+  color: var(--visual-text);
+}
+
+html[data-theme] .sidebar a {
+  color: var(--visual-muted);
+}
+
+html[data-theme] .sidebar a:hover {
+  color: var(--visual-accent);
+}
+
+/* 插件标题 */
+html[data-theme] .sidebar .widget-title,
+html[data-theme] .sidebar .widget h3 {
   color: var(--visual-text);
   border-color: var(--visual-line);
 }
 
-html[data-theme] input::placeholder,
-html[data-theme] textarea::placeholder {
+/* 插件分隔线 */
+html[data-theme] .sidebar hr,
+html[data-theme] .sidebar .widget li {
+  border-color: var(--visual-line);
+}
+
+/* 搜索框只调整文字与边框，不强制改变背景 */
+html[data-theme] .sidebar input,
+html[data-theme] .sidebar textarea,
+html[data-theme] .sidebar select {
+  color: var(--visual-text);
+  border-color: var(--visual-line);
+}
+
+html[data-theme] .sidebar input::placeholder,
+html[data-theme] .sidebar textarea::placeholder {
   color: var(--visual-muted);
 }
 
+/* 不修改侧边栏插件中的图片 */
 /* ========================================
    Buttons / Pagination / Tags
 ======================================== */
