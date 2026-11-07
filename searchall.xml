@@ -150400,7 +150400,7 @@ Cahier B 1910（1926）</p>
 <p>人需要掌握逃避的技术，被圈地围猎了，那就跑走呗！有那么多种活法，怎么偏偏只守着一种？</p>
 <p>具备独立人格的人，施以援手怎么可能是很难的事情？</p>
 <p>要是开窍得再早一点，就能找安胎菊和LUER合影了啊。</p>
-<p>结束了，骑车回家，高升桥好多藏族炒饭？路边全是推车，庐山听钢琴曲，喜欢上一首，一看是liszt，加一分！</p>
+<p>结束了，骑车回家，高升桥好多藏族炒饭？路边全是推车，路上听钢琴曲，喜欢上一首，一看是liszt，加一分！</p>
 <p>站长说这首叫爱之梦，很深邃的。</p>
 <p>我这木耳是也开窍了？！</p>
 <p>我真没想到有一天会喜欢上听古典乐。</p>
@@ -150764,10 +150764,10 @@ What is your motto?</p>
 </html>]]></content>
   </entry>
   <entry>
-    <title>秋安</title>
+    <title>冬安</title>
     <url>/index.html</url>
     <content><![CDATA[<h2 id="%E6%88%91%E6%9C%80%E8%BF%91%E5%96%9C%E6%AC%A2" tabindex="-1" id="我最近喜欢">我最近喜欢</h2>
-<p>相反的你和我S2、老谢维修圈、AJ小外、Merlin Bird ID、新疆黄胡萝卜、西岭豆夫豆干、刨灰婆烧辣椒（中辣）、电子书翻页器、妙吉星剪子、《作茧自缚》、村驴家麻酱冷面、乌鲁木齐领馆巷白尔开特肉馕、三江韵青海老酸奶、欧阳春晓足弓训练、KOreader、n8n、伊犁察布查尔长粒香、美西繁华落锦IPA、护国岩浓香料酒、冷榨菜籽油（贵州安顺、安徽阜阳次庄）、胎息、补中益气丸（腾药）、福墙酒吧、写诗、扫灰、泸州老窖原浆、皮牙子馕、苏州西山青种枇杷、3520布鞋、蒙优冷榨大豆油、天马山浏阳豆豉、Borges意面、天网牌电蚊拍、福州/宁德鱼丸、美乐豆花蘸水、龙泉脆桃、李贽/李卓吾</p>
+<p>攀枝花黑籽酸石榴、陶瓷公鸡碗（7寸葵斗深碗）、柳宗理主餐勺、Mahler Symphony 2&amp;5、相反的你和我S2、老谢维修圈、AJ小外、Merlin Bird ID、新疆黄胡萝卜、西岭豆夫豆干、刨灰婆烧辣椒（中辣）、电子书翻页器、妙吉星剪子、《作茧自缚》、村驴家麻酱冷面、乌鲁木齐领馆巷白尔开特肉馕、三江韵青海老酸奶、欧阳春晓足弓训练、KOreader、n8n、伊犁察布查尔长粒香、美西繁华落锦IPA、护国岩浓香料酒、冷榨菜籽油（贵州安顺、安徽阜阳次庄）、胎息、补中益气丸（腾药）、福墙酒吧、写诗、扫灰、泸州老窖原浆、皮牙子馕、苏州西山青种枇杷、3520布鞋、蒙优冷榨大豆油、天马山浏阳豆豉、Borges意面、天网牌电蚊拍、福州/宁德鱼丸、美乐豆花蘸水、龙泉脆桃、李贽/李卓吾</p>
 <h2 id="%E6%88%91%E6%9C%80%E8%BF%91%E5%9C%A8%E6%83%B3" tabindex="-1" id="我最近在想">我最近在想</h2>
 <ul>
 <li><a href="https://z.arlmy.me/NOW/">NOW</a></li>
@@ -151255,8 +151255,12 @@ self.addEventListener('fetch', event => {
 <li>留给时间</li>
 <li>好美啊啊啊啊啊</li>
 <li>路是人走出来的，找他带你走一下，就出来了</li>
+<li>一直在反思，自己为何羞于搭讪，行为的禁锢是从哪里来的</li>
 <li>需要更多还原真实的，不被观点影响的场景，像普通的闲聊</li>
 <li>你可以去做任何事的</li>
+<li>不过谁也不能一辈子都快节奏吧，不如做个慢节奏的人，等大家（或一些人）慢下来</li>
+<li>“行业的价值创造，不等于企业的价值捕获”，想明白这句应该就能搞清楚技术设施的投资逻辑了</li>
+<li>创造所有人都不得不买（或持有或租用）的“产品”</li>
 </ul>
 </li>
 </ul>
@@ -151420,8 +151424,11 @@ self.addEventListener('fetch', event => {
 <li>不比较，不区别</li>
 <li>不定义</li>
 <li>不渴求权力，拒绝暴力、不平等</li>
+<li>低介入，留空间，看到个体和他所处的时间</li>
 </ul>
 </li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 想学化妆</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 想学跳舞</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> .well-known（agent.json, agent card）、x402、Universal Commerce Protocol（智能体商业标准）、Agentic Commerce，<a href="https://annas-archive.gl/blog/llms-txt.html">If you’re an LLM, please read this - Anna’s Blog</a></li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> agent付费，API设计</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 找自己（清醒地面对自己就好，不用过度）</li>
@@ -258082,6 +258089,152 @@ What is your motto?</p>
 <p>变得更基础，更底层，更默默无闻，不需要关注，但无法绕过，无法跳过，在那个所有人的必经之路上，慢慢调整，持续行动，不被外界影响，有自己的节奏，风险全部可控，能调节自己的周期，换位，游牧，构建一整套保持慢的生活方式，就像辽代的四时捺钵，因时而行，不设边界。</p>
 <p>98，如果去做一天的小学老师，会最想分享给他们什么？（种下种子）</p>
 <p>不想分享，想认真听他们想做什么，然后告诉他们我可能会怎么做，然后陪他们做，不营造和输出梦想，或给出任何观点，只关注他们的当下，拥有让今天的自己开心、幸福的能力</p>
+<p>如果一个人不知道这三件事他将无法长寿：对自己来说什么过多，什么过少，什么刚刚好。——斯瓦希里谚语</p>
+<p>没有能量了，就读赫尔佐格</p>
+<p>从死亡思考现在</p>
+<p>语言 标准 体系 生态 文化 文明 价值 心动 素生</p>
+<p>“Basically, when you get to my age, you’ll really measure your success in life by how many of the people you want to have love you actually do love you.” “当你到了我这个年纪，衡量你人生成就的真正标准，就在于那些你希望爱你的人之中，到底有多少人真正爱你。”（巴菲特）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>普鲁斯特问卷 问题模板 建议早上或者深夜时间充裕时答</title>
+    <url>/Wiki/self/ProustQuestionnaire_1.html</url>
+    <content><![CDATA[<p>普鲁斯特问卷</p>
+<p>1，你认为完美的幸福是什么？<br>
+What is your idea of perfect happiness?</p>
+<p>2，你最大的恐惧是什么？<br>
+What is your greatest fear?</p>
+<p>3，你最认同哪位历史人物？<br>
+Which historical figure do you most identify with?</p>
+<p>4，在世的人当中，你最钦佩谁？<br>
+Which living person do you most admire?</p>
+<p>5，你最痛恨自己哪一点特质？<br>
+What is the trait you most deplore in yourself?</p>
+<p>6，你最讨厌别人哪一点特质？<br>
+What is the trait you most deplore in others?</p>
+<p>7，你最奢侈的是什么？<br>
+What is your greatest extravagance?</p>
+<p>8，你最喜爱的旅程是什么？<br>
+What is your favorite journey?</p>
+<p>9，你认为最被高估的美德是什么？<br>
+What do you consider the most overrated virtue?</p>
+<p>10，你在什么情况下会撒谎？<br>
+On what occasion do you lie?</p>
+<p>11，你对自己的外表哪点最不满意？<br>
+What do you dislike most about your appearance?</p>
+<p>12，你最轻视在世的什么人？<br>
+Which living person do you most despise?</p>
+<p>13，你使用最频繁的单词或短语是什么？<br>
+Which words or phrases do you most overuse?</p>
+<p>14，你最遗憾的是什么？<br>
+What is your greatest regret?</p>
+<p>15，你生命中的至爱是什么人或物？<br>
+What or who is the greatest love of your life?</p>
+<p>16，你最期望拥有什么才能？<br>
+Which talent would you most like to have?</p>
+<p>17，你现在精神状态如何？<br>
+What is your current state of mind?</p>
+<p>18，如果你能改变你家庭的某一点，你期望是什么？<br>
+If you could change one thing about your family, what would it be?</p>
+<p>19，你认为自己最大的成就是什么？<br>
+What do you consider your greatest achievement?</p>
+<p>20，如果你死后会变成别的人或东西回归人世，你觉得你会变成谁或者什么东西？<br>
+If you were to die and come back as a person or thing, what do you think it would be?</p>
+<p>21，你最珍视的财产是什么？<br>
+What is your most treasured possession?</p>
+<p>22，你认为最轻的痛苦是什么？<br>
+What do you regard as the lowest depth of misery?</p>
+<p>23，你希望住在哪里？<br>
+Where would you like to live?</p>
+<p>24，你最喜爱的职业是什么？<br>
+What is your favorite occupation?</p>
+<p>25，你最出众的特质是什么？<br>
+What is your most marked characteristic?</p>
+<p>26，你最欣赏男人的哪种品质？<br>
+What is the quality you most like in a man?</p>
+<p>27，你最欣赏女人的哪种品质？<br>
+What is the quality you most like in a woman?</p>
+<p>28，你最重视朋友身上的哪点？<br>
+What do you most value in your friends?</p>
+<p>29，你最喜爱的作家是谁？<br>
+Who are your favorite writers?</p>
+<p>30，你最喜爱的小说英雄人物是谁？<br>
+Who is your favorite hero of fiction?</p>
+<p>31，现实生活中你最喜爱哪些英雄人物？<br>
+Who are your heroes in real life?</p>
+<p>32，你最喜欢的名字有哪些？<br>
+What are your favorite names?</p>
+<p>33，你最不喜欢什么？<br>
+What is it that you most dislike?</p>
+<p>34，你希望以何种方式死去？<br>
+How would you like to die?</p>
+<p>35，你的座右铭是什么？<br>
+What is your motto?</p>
+<h2 id="%E8%87%AA%E8%A1%8C%E5%A2%9E%E8%A1%A5%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%88%E5%8F%AF%E9%9A%8F%E6%9C%BA%E5%9B%9E%E7%AD%94%EF%BC%8C%E4%B8%8D%E5%BF%85%E6%AF%8F%E9%A2%98%E9%83%BD%E7%AD%94%EF%BC%89" tabindex="-1" id="自行增补的问题（可随机回答，不必每题都答）">自行增补的问题（可随机回答，不必每题都答）</h2>
+<p>36，这一年，觉得有什么（事情、事件、人物等）改变了你？</p>
+<p>37，你最近有跟谁聊人生？</p>
+<p>38，近一年认识了几位有趣的新朋友？</p>
+<p>39，有哪些人生目标（或大问题）现已变得非常确定？</p>
+<p>40，<s>你现在为哪些大众群体的进步或发展做了积极贡献？</s></p>
+<p>41，近一年有没有遇到想称其为老师或先生的人物？</p>
+<p>42，自我感知下，你的身体状态如何？</p>
+<p>43，你最热爱什么？</p>
+<p>44，你想象中自己十年后变成什么样子？</p>
+<p>45，你最不希望自己变成什么样子？</p>
+<p>46，你在意谁的评价/看法？（from 六兽）</p>
+<p>47，近来你新增的能力是？（或者原有的优点显著变强了）（from 欣妍）</p>
+<p>48，你今年逃避了什么，有什么原本的计划是你找到各种借口逃避的？（from 莫比乌斯onojyun）</p>
+<p>49，你今年失去了什么，你是通过怎样的方式让自己失去了这些东西？（from 莫比乌斯onojyun）</p>
+<p>50，<s>这一年有哪些让自己觉得满意的向外表达、传达（无所谓传达结果）？</s></p>
+<p>51，<s>促成了哪些满意的合作？</s></p>
+<p>52，<s>听进去了哪些有建设性的建议，并形成了改变？</s></p>
+<p>53，通过什么方式，对身体有了哪些新的认识？（运动、冥想等）</p>
+<p>54，你离开北京（或你待了很多年的地方）了吗？学会拒绝了吗？</p>
+<p>55，喜欢的作品，积存至今年觉得难忘的，可以写随意多个（最好是复习后有新感受的）</p>
+<p>56，遵从自己身体和意识的本能，做了哪些出格的或冒险的事？（from 其林）</p>
+<p>57，描述一下，你建立了，或加入了怎样的社会网络？贡献了什么价值？（from 其林）</p>
+<p>58，<s>你希望创造出什么样的价值？（from 老胡）</s></p>
+<p>59，你认为自己能够拥有的最强大的力量是什么？（from 老胡）</p>
+<p>60，近期从什么样的书/人/产品中汲取这种力量？（from 老胡）</p>
+<p>61，你今年收获了什么，新的技能、新的体悟，对你来说意味着什么？（from 一靖）</p>
+<p>62，往回看，觉得一生学到的最重要的三件事，为什么？（from 纵横四海）</p>
+<p>63，<s>最敬重的人，身上所具备的三种品质？（from 纵横四海）</s></p>
+<p>64，<s>你能做到的最好的自己是什么样的？（回顾最骄傲和满意的时刻，自己所展现出的品质）（from 纵横四海）</s></p>
+<p>65，你希望自己的墓志铭如何盖棺定论这一生？（from 纵横四海）or墓志铭</p>
+<p>66，这年做了哪些之前没做过的事情？</p>
+<p>67，下一年，想要获得哪些今年还未拥有的东西或成果？</p>
+<p>68，<s>遇到了哪些大的困难和失败，或情绪的低落？</s></p>
+<p>69，觉得哪些事应该do more，哪些事应该do less？</p>
+<p>70，<s>有哪些自己觉得开心、骄傲的行动，总结下，觉得留下、得到了什么？</s></p>
+<p>71，<s>有没有创造了什么？有没有完成项目或作品？</s></p>
+<p>72，真正地，搞懂了、明白了什么道理？与以前的认知中的不同点在哪？</p>
+<p>73，极大刺激了自己好奇心、兴奋、惊奇（高光、光晕），留下深刻印象的事情？</p>
+<p>74，有哪些不合群的想法？<s>鼓起勇气去做了吗？</s></p>
+<p>75，（认真回答）正在做自己最想做的事吗？</p>
+<p>76，<s>持续地，有一致性地，长期坚持地，做了哪些自己感兴趣的事情？（可以借助AI分析一下）</s></p>
+<p>77，有哪些难忘的新奇体验？</p>
+<p>78，喜欢什么声音或噪音？ What sound or noise do you love? （From Bernard Pivot Questionnaire）</p>
+<p>79，假设你拥有的东西都在一幢房子里，现在房子起火了，你拼命救出了家人和宠物，发现还有一次机会可以返回火场，你愿意拿出什么东西？为什么？（Arthur Aron 36 questions）</p>
+<p>80，你觉得什么东西是严肃到不能开玩笑的，假如有的话。（Arthur Aron 36 questions）</p>
+<p>81，有没有什么事是你一直梦想去做而没有去做的，为什么没有做？（Arthur Aron 36 questions）</p>
+<p>82，基于你当下的感受和认知，请说一句对未来的预言？</p>
+<p>83，最近一年新喜欢的动物、爱好、新的兴趣点、话题点？（很明显是新的）</p>
+<p>84，<s>最近一年非常讨厌的主流论调和趋势？</s></p>
+<p>85，<s>“三问”：第一个问题是，有什么事是不给你钱你也会干的？第二个问题，有什么事是你有了花不完的钱你还是要去干的？第三个问题是，有什么事是你哪怕干别的活去挣钱来补贴它也要干的？如果没有这样的事，你的生命会很无聊。（from 张立宪）</s></p>
+<p>86，<s>财务自由后，你依然每天都想做的三件事是什么？试试现在就开始做。（from 花生）</s></p>
+<p>87，<s>你目前在做，但是财务自由后想立刻舍弃的三件事是什么？试试现在就开始远离。（from 花生）</s></p>
+<p>88，<s>如果未来没有人会记得你，你会选择怎么活这一生？</s></p>
+<p>89，有什么是你悟到，但显然大多数人仍被困的秘密？（from 其林）</p>
+<p>90，stop doing list 有哪些新增的项目？哪些容易犯错的事情，是自己绝对禁止，确定了再也不做的（必须是已经做到了的）。</p>
+<p>91，最近有没有贰错？有哪些以为懂了，但现在发现实际并未懂的道理？</p>
+<p>92，去年你爱的人/事，今年依旧如此吗？如果不是，你对此是什么感觉？（from 月影）</p>
+<p>93，<s>最近是否有超出个人经历十倍级的体验？是什么？造成了什么巨大变化？</s></p>
+<p>94, 你的安魂曲是哪一首？若是没有止痛药的情况下呢？</p>
+<p>95, 保持现在的生活习惯（不设价值判断），会让我以什么确定的和方式死去吗？如何躲开这种死法？</p>
+<p>96, 觉得怎样的指标，可以确认自己的死亡？</p>
+<p>97, 你现在对慢的看法是怎样的，觉得有改变吗？</p>
+<p>98，如果去做一天的小学老师，会最想分享给他们什么？（种下种子）</p>
+<p>20261105做删减</p>
 <p>如果一个人不知道这三件事他将无法长寿：对自己来说什么过多，什么过少，什么刚刚好。——斯瓦希里谚语</p>
 <p>没有能量了，就读赫尔佐格</p>
 <p>从死亡思考现在</p>
