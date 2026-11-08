@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta content="yes" name="mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="误读人生，化人生活"><meta name="fediverse:creator" content="@asswish@pinkorange.red"><title>摘：《六论自发性》 | 左素生</title><link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://cdnjs.cloudflare.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="me" href="https://pinkorange.red/@asswish"><link rel="me authn" href="https://github.com/arlmy"><link rel="me authn" href="mailto:arlmy19@gmail.com"><link rel="authorization_endpoint" href="https://indielogin.com/auth"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&amp;display=swap"><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><link rel="webmention" href="https://webmention.io/z.arlmy.me/webmention"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><link rel="alternate" type="application/rss+xml" title="Piece-s频道汇总" href="https://c.arlmy.me/rss.xml"><link rel="alternate" type="application/rss+xml" title="阅读摘记" href="https://square-bonus-6a44.arlmy19.workers.dev"><link rel="alternate" type="application/rss+xml" title="豆瓣短评标记" href="https://www.douban.com/feed/people/arlmy/interests"><link rel="alternate" type="application/rss+xml" title="我的播客" href="https://feed.xyzfm.space/ljlc7c6leg6g"><link rel="alternate" type="application/rss+xml" title="RSS收藏" href="https://ttrss.arlmy.me/public.php?op=rss&amp;id=-2&amp;is_cat=0&amp;q=&amp;key=s8dlkm69a97e8e12a7f"><link rel="alternate" type="application/rss+xml" title="NeoDB短评标记" href="https://neodb.social/@asswish@neodb.social/rss/"><link rel="alternate" type="application/rss+xml" title="Raindrop" href="https://bg.raindrop.io/rss/public/68078800"><script src="https://www.googletagmanager.com/gtag/js?id=G-CGJZ3YGXT6" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CGJZ3YGXT6');
+</script><meta name="description" content="「自我的弹性。」">
+<meta property="og:type" content="article">
+<meta property="og:title" content="摘：《六论自发性》">
+<meta property="og:url" content="https://z.arlmy.me/posts/Note/Note_JamesCScott_TwoCheersForAnarchism/">
+<meta property="og:site_name" content="左素生">
+<meta property="og:description" content="「自我的弹性。」">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-08T11:27:46.000Z">
+<meta property="article:modified_time" content="2026-11-08T11:33:11.748Z">
+<meta property="article:author" content="素生">
+<meta property="article:tag" content="arlmy,左素生,素生,生活,摘录,笔记,感悟,误读人生,化人生活">
+<meta name="twitter:card" content="summary"><script defer="defer" src="https://cloud.umami.is/script.js" data-website-id="a1e09a8a-8e14-4d6e-94f8-6f180b05e31d"></script><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js" defer></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js" defer></script><link rel="preload" href="https://unpkg.com/toastr/build/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"></noscript><div class="darkmode-toggle">◐</div><script>(function () {
+  function initDarkMode() {
+    var toggle = document.querySelector('.darkmode-toggle');
+    var html = document.documentElement;
+
+    if (!toggle) return;
+
+    /* ========================================
+     * 五套视觉主题
+     *
+     * 每套主题仍然有自己的 Light / Dark
+     * Dark 由原来的 data-dark 控制
+     * Theme 只负责“视觉人格”
+     * ======================================== */
+
+    var themes = [
+      'gritty',
+      'tokyo',
+      'moon',
+      'willow',
+      'inkwell'
+    ];
+
+    /* 当前视觉主题 */
+    var savedTheme = localStorage.getItem('visualTheme');
+
+    var themeIndex = themes.indexOf(savedTheme);
+
+    if (themeIndex === -1) {
+      themeIndex = 0;
+    }
+
+    /* 当前明暗状态 */
+    var savedDark = localStorage.getItem('dark');
+
+    var isDark;
+
+    if (savedDark !== null) {
+      isDark = savedDark === 'true';
+    } else {
+      isDark = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches;
+    }
+
+    /* ========================================
+     * 应用状态
+     * ======================================== */
+
+    function applyTheme() {
+      html.dataset.theme = themes[themeIndex];
+      html.dataset.dark = isDark ? 'true' : 'false';
+
+      localStorage.setItem(
+        'visualTheme',
+        themes[themeIndex]
+      );
+
+      localStorage.setItem(
+        'dark',
+        isDark ? 'true' : 'false'
+      );
+
+      document.body.dispatchEvent(
+        new Event('themechange')
+      );
+    }
+
+    /* 防止重复绑定 */
+    if (toggle.dataset.initialized === 'true') {
+      return;
+    }
+
+    toggle.dataset.initialized = 'true';
+
+    /* ========================================
+     * 点击逻辑
+     *
+     * Light → Dark
+     *
+     * Dark → 下一套 Theme 的 Light
+     *
+     * 因此完整循环：
+     *
+     * Gritty Light
+     * Gritty Dark
+     * Tokyo Light
+     * Tokyo Dark
+     * Moon Light
+     * Moon Dark
+     * Willow Light
+     * Willow Dark
+     * Inkwell Light
+     * Inkwell Dark
+     * ↓
+     * Gritty Light
+     * ======================================== */
+
+    toggle.addEventListener('click', function () {
+
+      if (isDark) {
+
+        /* Dark → 下一套主题 Light */
+
+        isDark = false;
+
+        themeIndex =
+          (themeIndex + 1) % themes.length;
+
+      } else {
+
+        /* Light → 当前主题 Dark */
+
+        isDark = true;
+      }
+
+      applyTheme();
+    });
+
+    /* 首次加载 */
+    applyTheme();
+  }
+
+  if (document.readyState === 'loading') {
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      initDarkMode
+    );
+
+  } else {
+
+    initDarkMode();
+
+  }
+})();</script><!-- ========================================--><!-- Translation--><!-- ========================================--><div class="translate-toggle"><button class="translate-button" type="button" aria-label="Translate" aria-expanded="false"><span class="translate-icon"></span></button><div class="translate-menu"><button type="button" data-lang="zh-CN">中文</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ja">日本語</button><button type="button" data-lang="ko">한국어</button><button type="button" data-lang="fr">Français</button><button type="button" data-lang="de">Deutsch</button><button type="button" data-lang="es">Español</button><button type="button" data-lang="it">Italiano</button><button type="button" data-lang="pt">Português</button><button type="button" data-lang="ru">Русский</button><button type="button" data-lang="ar">العربية</button><button type="button" data-lang="hi">हिन्दी</button><button type="button" data-lang="tr">Türkçe</button><button type="button" data-lang="vi">Tiếng Việt</button><button type="button" data-lang="uk">Українська</button></div><!-- GTranslate hidden container--><div class="gtranslate_wrapper"></div></div><!-- GTranslate configuration--><script>window.gtranslateSettings = {
+  default_language: "zh-CN",
+  languages: [
+    "zh-CN",
+    "en",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "hi",
+    "tr",
+    "vi",
+    "uk"
+  ],
+  wrapper_selector: ".gtranslate_wrapper"
+};
+</script><!-- Load GTranslate--><script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script><!-- Custom translation button--><script>(function () {
+  function initTranslate() {
+    var button = document.querySelector('.translate-button');
+    var menu = document.querySelector('.translate-menu');
+    var wrapper = document.querySelector('.gtranslate_wrapper');
+
+    if (!button || !menu || !wrapper) {
+      return false;
+    }
+
+    var select = wrapper.querySelector('select');
+
+    if (!select) {
+      return false;
+    }
+
+    if (button.dataset.initialized === 'true') {
+      return true;
+    }
+
+    button.dataset.initialized = 'true';
+
+    // Open / close menu
+    button.addEventListener('click', function (event) {
+      event.stopPropagation();
+
+      var opened = menu.classList.toggle('is-open');
+
+      button.setAttribute(
+        'aria-expanded',
+        opened ? 'true' : 'false'
+      );
+    });
+
+    // Select language
+    menu.addEventListener('click', function (event) {
+      var target = event.target.closest('[data-lang]');
+
+      if (!target) {
+        return;
+      }
+
+      var lang = target.dataset.lang;
+      var select = wrapper.querySelector('select');
+
+      if (select) {
+        select.value = 'zh-CN|' + lang;
+
+        select.dispatchEvent(
+          new Event('change', {
+            bubbles: true
+          })
+        );
+      }
+
+      menu.classList.remove('is-open');
+      button.setAttribute('aria-expanded', 'false');
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function () {
+      menu.classList.remove('is-open');
+      button.setAttribute('aria-expanded', 'false');
+    });
+
+    return true;
+  }
+
+  // GTranslate is loaded with defer, so wait for its select.
+  var attempts = 0;
+  var maxAttempts = 100;
+
+  var timer = setInterval(function () {
+    attempts++;
+
+    if (initTranslate() || attempts >= maxAttempts) {
+      clearInterval(timer);
+    }
+  }, 100);
+})();</script><script>function copyUrlSegment() {
+  const metaUrl = document.querySelector('meta[property="og:url"]').content;
+  const segment = metaUrl.split('/').filter(Boolean).pop();
+  const segmentWithMd = segment + '.md';
+  navigator.clipboard.writeText(segmentWithMd)
+    .then(() => alert('已复制: ' + segmentWithMd))
+    .catch(err => console.error('复制失败:', err));
+}
+</script><style>.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}</style><meta name="generator" content="Hexo 7.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">摘：《六论自发性》</h1><a id="logo" href="/.">左素生</a><p class="description">误读人生，化人生活</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> HOME</i></a><a href="/blog/"><i class="fa fa-th-list"> BLOG</i></a><a href="/archives/"><i class="fa fa-archive"> ARCHIVE</i></a><a href="/NOW/"><i class="fa fa-clock-o"> NOW</i></a><a href="/Piece-s/"><i class="fa fa-puzzle-piece"> PIECES</i></a><a href="/atom.xml"><i class="fa fa-rss-square"> RSS</i></a><a href="/about/"><i class="fa fa-id-card"> ABOUT</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title" onclick="copyUrlSegment()">摘：《六论自发性》</h1><div class="post-meta">2026-11-08<span> | </span><span class="category"><a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 17.8k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 59</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#notes"><span class="toc-text">Notes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E7%9A%84%E9%80%8F%E9%95%9C%EF%BC%8C%E6%88%96%E6%9B%B0%E5%83%8F%E4%B8%80%E4%B8%AA%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E8%80%85%E4%B8%80%E6%A0%B7%E8%A7%82%E5%AF%9F"><span class="toc-text">无政府主义的透镜，或曰像一个无政府主义者一样观察</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E7%9A%84%E6%82%96%E8%AE%BA"><span class="toc-text">组织的悖论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E9%80%8F%E9%95%9C"><span class="toc-text">社会科学实践中的无政府主义透镜</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">一些注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%97%A0%E5%BA%8F%E5%92%8C%E5%8F%B7%E5%8F%AC%E5%8A%9B%E7%9A%84%E5%8A%9F%E7%94%A8"><span class="toc-text">第一章 无序和号召力的功用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%B8%80-%E5%85%B3%E4%BA%8E%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E6%93%8D%E6%BC%94%E7%9A%84%E6%96%AF%E7%A7%91%E7%89%B9%E6%B3%95%E5%88%99"><span class="toc-text">碎片一 关于无政府主义操演的斯科特法则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%8C-%E8%AE%BA%E4%B8%8D%E6%9C%8D%E4%BB%8E%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="toc-text">碎片二 论不服从的重要性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%B8%89-%E8%BF%98%E8%AE%BA%E4%B8%8D%E6%9C%8D%E4%BB%8E"><span class="toc-text">碎片三 还论不服从</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E5%9B%9B-%E5%B9%BF%E5%91%8A%EF%BC%9A%E2%80%9C%E8%AF%9A%E5%BE%81%E8%BF%BD%E9%9A%8F%E8%80%85%EF%BC%8C%E8%87%AA%E6%84%BF%E6%9C%8D%E4%BB%8E%E9%A2%86%E5%AF%BC%E2%80%9D"><span class="toc-text">碎片四 广告：“诚征追随者，自愿服从领导”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%B0%91%E9%97%B4%E7%A7%A9%E5%BA%8F%EF%BC%8C%E5%AE%98%E6%96%B9%E7%A7%A9%E5%BA%8F"><span class="toc-text">第二章 民间秩序，官方秩序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%94-%E6%B0%91%E9%97%B4%E4%B8%8E%E5%AE%98%E6%96%B9%E7%9A%84%E2%80%9C%E7%9F%A5%E2%80%9D%E4%B9%8B%E9%81%93"><span class="toc-text">碎片五 民间与官方的“知”之道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%B8%83-%E6%B0%91%E9%97%B4%E7%9A%84%E5%BC%B9%E6%80%A7"><span class="toc-text">碎片七 民间的弹性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%B9%9D-%E6%95%B4%E6%B4%81%E8%83%8C%E5%90%8E%E7%9A%84%E6%B7%B7%E4%B9%B1"><span class="toc-text">碎片九 整洁背后的混乱</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%BA%BA%E7%9A%84%E5%A1%91%E9%80%A0"><span class="toc-text">第三章 人的塑造</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E5%8D%81%E4%B8%80-%E6%B8%B8%E6%88%8F%E4%B8%8E%E5%BC%80%E6%94%BE%E6%80%A7"><span class="toc-text">碎片十一 游戏与开放性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E5%8D%81%E4%BA%8C-%E4%B8%8D%E8%A6%81%E4%BB%A5%E4%B8%BA%E4%BD%A0%E5%8F%AF%E4%BB%A5%E9%A2%84%E6%B5%8B%E4%B8%80%E5%88%87%EF%BC%81%E8%AE%BA%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%92%8C%E9%80%82%E5%BA%94%E6%80%A7"><span class="toc-text">碎片十二 不要以为你可以预测一切！论不确定性和适应性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E5%8D%81%E4%B8%89-%E4%BA%BA%E7%B1%BB%E6%80%BB%E4%BA%A7%E5%87%BA"><span class="toc-text">碎片十三 人类总产出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E5%8D%81%E5%85%AD-%E4%B8%80%E4%B8%AA%E8%AF%95%E6%8E%A2%E6%80%A7%E3%80%81%E5%8F%8D%E7%9B%B4%E8%A7%89%E7%9A%84%E4%BE%8B%E5%AD%90%EF%BC%9A%E7%A7%BB%E9%99%A4%E4%BA%A4%E9%80%9A%E7%81%AF"><span class="toc-text">碎片十六 一个试探性、反直觉的例子：移除交通灯</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BB%99%E5%B0%8F%E8%B5%84%E4%BA%A7%E9%98%B6%E7%BA%A7%E7%9A%84%E4%B8%A4%E5%A3%B0%E5%96%9D%E5%BD%A9"><span class="toc-text">第四章 给小资产阶级的两声喝彩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E5%8D%81%E4%B9%9D-%E5%B0%8F%E8%B5%84%E4%BA%A7%E8%80%85%E4%B9%8B%E6%A2%A6%EF%BC%9A%E8%B4%A2%E4%BA%A7%E7%9A%84%E8%AF%B1%E6%83%91"><span class="toc-text">碎片十九 小资产者之梦：财产的诱惑</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E4%B8%BA%E4%BA%86%E6%94%BF%E6%B2%BB"><span class="toc-text">第五章 为了政治</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E4%BA%8C-%E4%BA%89%E8%AE%AE%E4%B8%8E%E8%B4%A8%E9%87%8F%EF%BC%9A%E5%AF%B9%E6%8A%97%E8%B4%A8%E7%9A%84%E9%87%8F%E5%8C%96"><span class="toc-text">碎片二十二 争议与质量：对抗质的量化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E5%85%AD-%E4%B8%BA%E6%94%BF%E6%B2%BB%E8%BE%A9%E6%8A%A4"><span class="toc-text">碎片二十六 为政治辩护</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%85%B7%E4%BD%93%E6%80%A7%E4%B8%8E%E6%B5%81%E5%8F%98"><span class="toc-text">第六章 具体性与流变</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E4%B8%83-%E5%96%84%E6%84%8F%E4%B8%8E%E5%90%8C%E6%83%85%E5%BF%83%E7%9A%84%E4%BC%A0%E8%BE%BE"><span class="toc-text">碎片二十七 善意与同情心的传达</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E5%85%AB-%E9%87%8D%E6%96%B0%E5%BC%95%E5%85%A5%E5%85%B7%E4%BD%93%E6%80%A7%E3%80%81%E6%B5%81%E5%8F%98%E5%92%8C%E5%81%B6%E7%84%B6"><span class="toc-text">碎片二十八 重新引入具体性、流变和偶然</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E4%B9%9D-%E5%8E%86%E5%8F%B2%E8%AF%AF%E8%AF%BB%E7%9A%84%E6%94%BF%E6%B2%BB"><span class="toc-text">碎片二十九 历史误读的政治</span></a></li></ol></li></ol></div></div><div class="post-content article"><h2 id="notes" tabindex="-1" id="Notes">Notes</h2>
+<h2 id="%E5%89%8D%E8%A8%80" tabindex="-1" id="前言">前言</h2>
+<h3 id="%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E7%9A%84%E9%80%8F%E9%95%9C%EF%BC%8C%E6%88%96%E6%9B%B0%E5%83%8F%E4%B8%80%E4%B8%AA%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E8%80%85%E4%B8%80%E6%A0%B7%E8%A7%82%E5%AF%9F" tabindex="-1" id="无政府主义的透镜，或曰像一个无政府主义者一样观察">无政府主义的透镜，或曰像一个无政府主义者一样观察</h3>
+<p>我因为缺少一种系统的无政府主义哲学和世界观，并且在看待事物时总体上缺少一种周全而得法的视角，所以打算采取一种无政府主义透视的方式来阐明我的论点。我想要说明的是，你如果透过无政府主义的镜片看待民众运动、革命、寻常政治和国家的历史，就能获取一些从其他视角得不到的洞见。有件事会变得昭然可见：即使民众对无政府主义或无政府主义哲学闻所未闻，他们的意图和政治行为中也会有无政府主义原则在积极发挥作用。我想，在无政府主义的视野下有一点尤其突出，皮埃尔-约瑟夫·蒲鲁东①首次使用“无政府主义”这一术语时就意识到了这一点，它就是互助关系（mutuality），或者说是“不经等级制度和国家制度达成的合作”。另一个凸显的观念是无政府主义对混乱、对社会性学习后产生的即兴行为的容忍，以及无政府主义对自发合作、自发互惠的信心。在罗莎·卢森堡①的观念中，相较于先进政党中的小部分精英分子在治理上的精明选择，她更倾向于劳动阶层诚实的试错。这正印证了上述的无政府主义立场。我的主张也并不激进，我认为，无政府主义的透镜比其他途径能更好地挖掘这一领域的深度。</p>
+<p>……</p>
+<p>说可能限制自由的制度只有国家，我也不认同。该观点忽略了前国家时代就有的一些源远根深的事物，比如奴隶制、战争、人身依附，以及把女性当作财产的制度。反对霍布斯所描绘的前国家社会的特征（险恶、野蛮、短命）是一回事，但是这并不意味着我就得认定“自然状态”是一片未经打扰的共产、合作、祥和的大好风光。</p>
+<p>……</p>
+<p>要点已经很清楚了。财富、财产和地位的巨大差异让自由成了笑话。过去四十年来美国国内财富和权力的联合，加上近年来走新自由主义政策道路的发展中国家对美国的仿效，促成了一个无政府主义者们早已预见的世界。纯粹通过经济实力获取政治影响力的做法，造成了政治机会的累积性不平等。这类不平等、巨大（规模堪比国家）的经济寡头垄断、媒体控制、竞选献金、操纵立法（可以细致到留下哪些特定的法律漏洞）、更改选区、垄断法律知识——种种做法使得选举和立法总能被用来放大现存的不平等。我们很难从现行的制度中找到可行的方式，来消减这种自我强化的不平等。即使是从2008年开始的这场严重的资本主义危机，也没能催生出类似罗斯福新政的举措，从现存制度内部解决问题的希望因此变得尤其渺茫。在很大程度上，民主体制中的各个机构自身已经成了商品，可以为出价最高的买主所掌控。</p>
+<h3 id="%E7%BB%84%E7%BB%87%E7%9A%84%E6%82%96%E8%AE%BA" tabindex="-1" id="组织的悖论">组织的悖论</h3>
+<p>被统治，就是被没有知识和美德可言的造物盯上，就是被监察，被窥探，被规范，被灌输，被说教，被注册和点名，被估算，被预测，被审查，被命令。被统治，就是在每一种规程、交往、行动上，被记录，被统计，被估价，被责令，被禁止，被改造，被调控，被矫正。</p>
+<h3 id="%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E9%80%8F%E9%95%9C" tabindex="-1" id="社会科学实践中的无政府主义透镜">社会科学实践中的无政府主义透镜</h3>
+<p>具有平民主义倾向的无政府主义者相信自治、自理和合作的可能性。在他们的各种主张中，他们尤其认识到农夫、工匠和工人本身就是政治思想家。这类人有自己的目的、价值和实践，但所有的政治系统都危险地忽视了这些。这种基础性层面，这种非精英的能动性，不仅遭到国家忽视，也被社会科学的研究背弃。哪怕是最为基础的政治哲学，也常常诉诸精英阶层的价值观、历史观、审美品位。而针对非精英的政治分析，则是在非精英的背后进行的。他们的“政治”只能在他们的统计数据——他们的收入、职业、教育年限、财产、住所、种族、民族和宗教——之外读到。</p>
+<h3 id="%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" tabindex="-1" id="一些注意事项">一些注意事项</h3>
+<p>“碎片”还有第二层意义。至少对我个人来讲，它代表一种写作风格和呈现形式的实验。我之前的两本书（《国家的视角》和《逃避统治的艺术》）构思得总体更像巨蟒剧团（Monty Python）仿讽中世纪战争的电影里刻意而笨重的攻城武器。我在画提纲和图表时用掉了很多卷16英尺长的卷纸，写了数千条注释。我偶然与艾伦·麦克法兰(Alan MacFarlane)谈道，我因自己笨拙的写作习惯而烦恼，于是他向我介绍了散文家小泉八云的技巧，以及一种更自发、更自由的写作形式——使用对话式的开篇，先放出最能激发兴趣或者思考的论证要点，然后从那个要点有机地铺开。我尽力遵照麦克法兰的建议，对社会科学程式的仪式性遵从远少于一般情形，也远少于我个人习惯的写作风格。通过这种做法，我希望本书对于读者能够更友好，这当然是值得任何一本有无政府主义旨趣的书追求的目标。</p>
+<h2 id="%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%97%A0%E5%BA%8F%E5%92%8C%E5%8F%B7%E5%8F%AC%E5%8A%9B%E7%9A%84%E5%8A%9F%E7%94%A8" tabindex="-1" id="第一章-无序和号召力的功用">第一章 无序和号召力的功用</h2>
+<h3 id="%E7%A2%8E%E7%89%87%E4%B8%80-%E5%85%B3%E4%BA%8E%E6%97%A0%E6%94%BF%E5%BA%9C%E4%B8%BB%E4%B9%89%E6%93%8D%E6%BC%94%E7%9A%84%E6%96%AF%E7%A7%91%E7%89%B9%E6%B3%95%E5%88%99" tabindex="-1" id="碎片一-关于无政府主义操演的斯科特法则">碎片一 关于无政府主义操演的斯科特法则</h3>
+<p>从新勃兰登堡回到普列茨的火车每天只有一趟，在普列茨停站的时间是夜里10点左右。为了避免因错过火车而在这个陌生城市里像流浪汉一样过夜，我总是至少提前半个小时到达火车站。在连续六七周的时间里，一个意味深长的场景每周都会在火车站前上演。我有足够多的时间去思考并且参与它。我在进行了一番人类学家所说的“参与式观察”之后，萌生了“无政府主义操演”的观点。</p>
+<p>……</p>
+<p>为了解释自己行为的正当性，我开始在脑中排练一段用完美的德语表达的演讲。“你们知道，你们自己，尤其还有你们的祖辈，可以再多一些违抗法律的精神。有一天，你们会接受正义和理性的号召，去违抗更大的法律。那一刻将决定一切。你们要有所准备。你们要如何为那事关重大的一天绸缪呢？你们得保持‘良好状态’，这样一来，当那个重要的日子到来时，你们就会做好准备了。你们需要的是‘无政府主义的操演’。每隔一段时间，去反抗一些细小的、没有道理的法律，即使只是闯次红灯。用你们自己的脑子去判断一条法律是否公正合理。如此，你们就能状态良好；当那个重要的日子到来时，你们就会有所准备。”</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%8C-%E8%AE%BA%E4%B8%8D%E6%9C%8D%E4%BB%8E%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7" tabindex="-1" id="碎片二-论不服从的重要性">碎片二 论不服从的重要性</h3>
+<p>类似的大规模抗命也让拿破仑的征服战争陷入困境。虽然有说法称，拿破仑的士兵把法国大革命装进行囊里，带到了欧洲的其他地方，但是我们可以毫不夸张地说，本应肩负这些行囊的士兵做出的不服从行为，严重侵蚀了征服战争的影响范围。在共和国时期的1794年至1796年，以及从1812年到拿破仑帝国的终结，从乡间招募兵员的巨大困难严重损害了国家力量。家庭、村庄、地方官员乃至各县镇都合谋着收留从军队逃回来的士兵，同时也都帮助人们逃避征兵。有的人甚至为此剁掉了自己右手的一根甚至几根手指。脱队和逃避征兵的人员比例可以视为一个反映政权人心向背的指标，而鉴于这些“用脚投票的选民”在战略上对拿破仑的军需官的重要性，这一指标可以说是决定性的。第一共和国和拿破仑帝国的公民也许热情地接受了普遍公民权的许诺，但并不热衷于它的逻辑对应物——普遍的兵役义务。</p>
+<p>让我们停一下，把注意力转向这些行为的一个特别之处：行为者都是无名的，他们不会大声喊出自己的名字。实际上，这些行为的匿名性恰恰促成了它们的有效性。偷偷脱队不同于直接挑战军队指挥官的公开兵变，因为前者不公开表达诉求，不发表宣言，要悄声而非发声。不过，一旦逃跑的规模足够大，让指挥官得知了，就会限制指挥官的野心，因为他们知道士兵已经靠不住了。在美国发动的声名狼藉的越南战争中，存在“友军自袭”的案例，也就是士兵故意用破片手雷炸死长官的事。越是经常让部下执行危险巡逻任务的军官，其遭部下用手雷刺杀的可能性就越高，针对他的刺杀方式也越凶残。该行为依然不会暴露行为者的姓名，其目的是减小军人在战争中的死亡风险。可以想象，军官在接受置自己与部下于险境的任务时，友军自袭的报告（不论情况是否属实）会使他们陷入何等的犹豫。据我所知，尚未有人研究过友军自袭的具体案例，更没有人关注它们在战争的发展和结束中起到的作用。这又一次表明，此种沉默以隐匿于历史的方式改变着历史。</p>
+<p>沉默、匿名，以及常常存在的共谋关系——这些条件下的违法和不服从也许是农民和下层阶级在人类历史中偏好的政治行为方式；对他们来说，公开的反抗太危险了。在约从1650年到1850年的这两个世纪间，闯入王室或私人领地偷伐和偷猎（包括砍树、砍柴、收草料、打猎、捕鱼）是英格兰最普遍的不法行为。我说“普遍”，便是说它在平民中既普遍存在，又获得了普遍认可。因为农民从来不认可国王或者贵族对于自然资源的所有权声明，而是认为森林里的、溪流中的和开阔地（荒野、沼泽、开阔草地）上的都是“自然的免费馈赠”，所以他们群起侵犯贵族的财产权。凡此往复，足以让精英阶层严加规定各地区的财产权。然而，这种对财产权利的广泛侵犯是下层阶级偷偷进行的，没有人公开地宣战。这相当于村民大胆行使了他们自行主张而又不曾正式声明的土地权利。在偷猎案件方面，地方上的串通共谋已经是老生常谈了，猎场看守很少能找到愿意去法庭做证的村民。</p>
+<p>在产权的历史性冲突中，对垒的双方都拿起了最适合他们的武器。精英阶层控制着国家的立法机器，拿出了圈地法案、所有权证书、不动产自由保有权，以及警察、猎场看守人、森林看守人、法庭和绞刑架，他们不过是想确立并维护自己的财产权利罢了。农民和下层群体没有这些重型武器，转而依靠盗猎、偷窃和私自占用等手段，来对抗精英阶层的产权声明并表达自己的诉求。这些“弱者的武器”同从军队擅自脱伍一样，都是隐蔽而匿名的。它们与公开反抗截然不同，但又有异曲同工之妙。所以说，做逃兵是兵变的低风险替代选项，私自占用土地是公开抢占的低风险替代选项，偷猎和偷伐是公开声索木材、猎物、鱼类所有权的低风险替代选项。这些手段对于当今世界的多数人口，当然还有各历史阶段的下层阶级来说，是唯一可实践的日常形式的政治。此举要是再失败，他们就只能诉诸更绝望、更公开的冲突方式，比如说骚乱、叛乱和起义。后面这些征求权利的努力会猛然间出现在官方历史记载中，在历史学家、社会学家钟爱的档案中留下痕迹。档案是他们的为学之本，所以他们将公开的阶级冲突置于过度崇高的地位上，远远超出了在呈现得更全面的阶级斗争中，公开冲突应占据的位置。至于沉默、低调、寻常的不服从行为，则以档案的雷达监测不到的低姿态从历史中走过；它们不挥舞旗帜，不书写宣言，无官方参与，无稳定组织，于是便不为人所注意。不为人知正是底层政治形式的实践者之打算。可以这么说，历史上农民和底层阶级的目的就是待在档案之外。而当他们现身于历史档案时，肯定有什么地方出了大乱子。</p>
+<p>……</p>
+<p>实际上的同谋并不需要人们真正聚起来密谋。更多的政权不是被革命的先进力量或叛乱的暴民推翻的，而是在所谓的“爱尔兰式的民主”——千万普通人沉默而固执地不服从、不合作与不守序——的压力下一点一点屈服的。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%B8%89-%E8%BF%98%E8%AE%BA%E4%B8%8D%E6%9C%8D%E4%BB%8E" tabindex="-1" id="碎片三-还论不服从">碎片三 还论不服从</h3>
+<p>可代表大萧条时期的重大政策转变的，有失业补偿、大型公共工程、社会救济和《农业调整法》（Agricultural Adjustment Act）。无可否认，它们受到了世界性的经济 衰退的推动。但是，经济危机并不是通过收入数据和失业数据向人传达它的政治分量的；给人直观感受的其实是越发猖獗的罢工、偷盗、抵制租税、对物资部门的准暴力围攻、叛乱——用我老母亲的话说，是那些教商业和政治精英懂得“敬畏上帝”的事。这类骚动在当时看来有演化为革命的潜能，足以为精英阶层敲响警钟。这里的骚乱最初是未经制度化的。也就是说，它最初并不由政党、工会或可辨的社会运动引发。它不体现任何成体系的政策议程，从根本上看是无结构、无秩序的，全然是对既有秩序的威胁。正是出于这个原因，没有可以讨价还价的对象，也没有人可以保证政策变化后秩序就能恢复。骚乱的威胁程度与其组织性的缺乏程度直接相关。官方可以和工会或者发动进步主义改革运动的团体谈判，它们都是和机构体系相啮合的机构。工会罢工和自发罢工是两回事，即便是工会会长也叫不停一场自发的罢工。一场有领导者的示威，即使是一场大规模示威，也与民众蜂拥而上的骚乱不同。后者没有统一的诉求，也没有可谈判的对象。</p>
+<p>威胁公共秩序的大规模自发敌对和混乱状态的最终源头，是失业人口的增加，以及那些有幸保有工作之人工资的减少。支持日常政治的一般条件突然消失了。常规的治理与制度化的常规反对及代表途径都不再奏效。在个人层面，这种反常表现为流浪、犯罪、故意破坏。在集体层面，自发反抗以叛乱、占领工厂、暴力罢工、无序示威的形式发生。改革浪潮的发生得益于大萧条释放的社会力量，控制这种社会力量不仅是政治精英和财产所有者力所不逮的，对工会和左翼政党来说也是如此。精英的改革是在压力之下实现的。</p>
+<p>我的一位机敏的同事曾指出，西方的自由主义民主制大体上为社会顶层，也就是在财富和收入分布中属于约前20%的那类人服务。他进而认为，顺利实行这一宗旨的一个诀窍（尤其）在于，让收入分布再往下的30%19到35%的人害怕剩下的那一半穷人，而不是嫉妒最顶的20%。从半个多世纪以来收入不平等现象的持续性以及近来这种不平等的强化来看，这套做法取得了相对的成功。该规程万一发生崩解，可能出现的危机状况无外乎民众的愤怒溢出了正常的渠道，从构架上威胁了常规政治的运行。存在于常规的、制度化的自由民主政治中的残酷事实是：穷人的利益大体上被忽视了，除非有哪次突然而猛烈的危机把他们抛到大街上。正如马丁·路德·金所言：“暴动就是不被倾听者的语言。”大规模的混乱、暴动和自发反抗始终是穷人最强力的政治底牌。这种行为并非没有结构，它们由邻里、工作或家庭网络构成；但这些结构是非正式、自发组织、转瞬即逝的，并且存在于正式的政治机构之外。结构性的存在是毫无疑问的，只不过它不是那种顺从于制度化政治的结构性。</p>
+<p>……</p>
+<p>就工会、政党乃至激进的社会运动而言，它们的任务正是将难以控制的抗议和愤怒纳入制度的轨道。可以说，它们的功能就是把愤怒、失望和痛苦转译成统一、连贯的政治计划，以作为政策制定和立法的基础。它们在难以管束的大众和厘定规则的精英之间发挥了缓冲带的作用。这也就默认了它们如果想要实现自己的职责，就得有能力打造（原则上）可被立法机构直接受理的政治诉求，且应在此过程中约束、控制骚动的民众，保证自己能合格地在政策制定者跟前代表民众（或者他们中的大多数人）。政策制定者与这种“转译机构”进行协商的意愿建立在如下前提上：“转译机构”享有选民的信任，从而可以控制它们声称代表的选民。由此可以毫不夸张地说，这种组织化的利益团体寄生于它们声称代表的自发反抗者的利益。当统治精英努力控制骚乱的民众，疏导他们回到正常的政治轨道时，那些代表性机构的影响力之源正是民众的反抗。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E5%9B%9B-%E5%B9%BF%E5%91%8A%EF%BC%9A%E2%80%9C%E8%AF%9A%E5%BE%81%E8%BF%BD%E9%9A%8F%E8%80%85%EF%BC%8C%E8%87%AA%E6%84%BF%E6%9C%8D%E4%BB%8E%E9%A2%86%E5%AF%BC%E2%80%9D" tabindex="-1" id="碎片四-广告：“诚征追随者，自愿服从领导”">碎片四 广告：“诚征追随者，自愿服从领导”</h3>
+<p>若想考察这种反常识的“讲稿写作”如何发生在其他环境中，我们可以想象一位中世纪游吟诗人，他在市场里以唱歌奏乐为生。为了说明问题，我们还得假设这位游吟诗人是一个“低端市场”的演奏者——他在城镇的贫民区表演，全靠听众丢给他的一两个铜板买每天的面包。最后，我们还要想象这位诗人的曲目中有一千首歌，并且他是镇里的新来者。</p>
+<p>我猜想，他最开始会随意选一首歌，或者唱一首在之前拜访的镇子中大受欢迎的歌。他日复一日地观察听众的反应，并且评估自己在一天结束时收获的铜板。也许听众还会点歌。一段时间之后，他如果是一个自利的个体，就一定会把演唱的范围收窄到听众喜爱的曲调和主题上——一些歌会被剔除出曲目，另一些则会被重复演唱。假以时日，听众会用自己的品位和欲望重塑游吟诗人的曲库，正如马丁·路德·金的听众慢慢塑造了他的众多演讲。这个干瘪的故事没能把演唱者或者演讲者的创造性考虑进去，他们其实可以不断尝试新的主题，自行发展它们，或者回应受众不断变化的口味。不过这个故事要说明的是号召力本质上的相互作用关系。</p>
+<p>（一阶反馈！！！）</p>
+<p>……</p>
+<p>罗斯福和他的演讲撰稿人疯狂地工作，每到一个新村镇就尝试新话题、新措辞和新主张；依据观众的特殊性和回应，他们会一点一点地调整演讲内容。在这个贫困和失业率达到史无前例的水平的时代，罗斯福面对的是一群想从他身上寻找希望及救助保证的观众。到了竞选活动的最后阶段，他的演讲“台风”比刚开始时要激进很多。在一种非常现实的意义上，铁道边小镇的听众们循序渐进地为罗斯福写了（或者说是“选择了”）他的演讲稿。被改变的不仅是罗斯福的演讲，还有罗斯福本人：此时，他认为自己成了那些几乎完全绝望的同胞的希望的化身。</p>
+<p>这种特殊形式的、从下到上的影响只在特定的条件下起作用。如果当地领主雇走了游吟诗人，让他在内室或者客厅里面唱赞歌，其演唱曲目就会非常不同。如果一位政客从政依靠的是巨额政治献金，且献金的目的是管制而非迁就公众意见，该政客就不会那么在乎平民支持者的声音了。一个未得势的社会运动或革命运动团体会比其得势后更善于倾听。权力滔天的人不必学习如何与他人“合奏”。或者正如肯尼思·博尔丁（KenethBoulding）所说，“一个组织(或国家)越大、过集权， 它的顶层决策者越可能工作在一个臆想的世界里”。</p>
+<h2 id="%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%B0%91%E9%97%B4%E7%A7%A9%E5%BA%8F%EF%BC%8C%E5%AE%98%E6%96%B9%E7%A7%A9%E5%BA%8F" tabindex="-1" id="第二章-民间秩序，官方秩序">第二章 民间秩序，官方秩序</h2>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%94-%E6%B0%91%E9%97%B4%E4%B8%8E%E5%AE%98%E6%96%B9%E7%9A%84%E2%80%9C%E7%9F%A5%E2%80%9D%E4%B9%8B%E9%81%93" tabindex="-1" id="碎片五-民间与官方的“知”之道">碎片五 民间与官方的“知”之道</h3>
+<p>我住在康涅狄格州一个名叫达勒姆（Durham）的内陆小镇，它的名字沿袭了英国那个更大、更有名的城市。康涅狄格州的大城小镇很少有不照搬英国地名的，也不知道是因为最初的移民眷恋被自己抛下的家乡风景，还是因为他们缺乏想象力。美洲原住民对景观的称呼似乎只残留在湖和河的名字或是州本身的名字中。重新命名一个地方既是强调所有权的一种方式，也可给殖民者一个好读且熟悉的地名，因此很少有殖民地不这么做。在爱尔兰、澳大利亚、约旦河西岸巴勒斯坦等相距万里的地方，风景都被重新冠以新居民懂得的名字，以洗去之前住民语言中的名称。</p>
+<p>我想用民间和官方对道路的命名说明一个问题。有一条道路从我居住的达勒姆通往16英里外的海滨城镇吉尔福德（Guilford）。我们达勒姆居民（在和自己人交流时）把这条路称为“吉尔福德路”，毕竟它是通往吉尔福德的。吉尔福德那一边自然把同一条路叫作“达勒姆路”，这么叫也是告诉吉尔福德的居民这条路的去向。不难想象，住在半路上的那些人两个名字都可能说，具体用哪个完全取决于他们要去路的哪一头。同一条路依不同的目的地有两个名字，这体现了民间命名的情境性和灵活性；每个名称都蕴含着有价值的地方性知识——关于一条路最重要的一件事，就是知道它通向何方。这种民间实践不仅给了一条路两个名字，也给了很多道路同一个名字。所以说，在基林沃斯、哈达姆、麦迪逊、梅里登等邻近城镇，通往达勒姆的路都被地方上的人称为“达勒姆路”。</p>
+<p>现在，想象一下这个在地方上有效的民间称呼会怎样给外来者带来不可逾越的阻碍，因为他们要求每条路都有一个独特的、确定的名称。一个来“达勒姆路”填陷坑的国家修路队会问：“哪个达勒姆路？”于是，达勒姆和吉尔福德之间的这条路毫无悬念地被重新命了名，在所有的官方地图上被标成了“77号公路”。国家的命名行为需要一个概要式视角，一个标准规划的识别方式，以产生由互斥名称构成的详尽系统。成了“77号公路”之后，这条路就不能在名字上直观表明它的目的地了；只有摊开一张所有道路都得到标记的地图，你才能看到“77号公路”这个名字的意义。不过官方的名字也具有生死攸关的重要性。如果你在达勒姆与吉2尔福德间的路上遭遇车祸，受了重伤，想要准确地告诉国营救护车这条洒着你的热血的路叫什么名字，它就得是“77号公路”。</p>
+<p>民间和官方的命名体系在很多语境中互相竞争。街道的民间名称中包含着地方性知识。举几个例子：处女巷（五个未婚老姐妹曾经居住的街巷，她们每周日会排成一队去教堂）、苹果山道（去往曾经建有果园和苹果汁磨坊的山丘的路）、奶油罐路（曾经是一家乳品厂，四邻都从这里购买牛奶、奶油和黄油）。在定名的时候，这些被选取的名字对当地居民来说是最熟悉、最有用的，不过可能会让外乡人和新来者摸不着头脑。另一些路名指称地理特征：米加山路、裸岩路、博尔溪路。地名中暗含着当地的故事、景观、风貌和各个家庭的行当，对熟悉它们的人来说，小地方的道路、地名加起来就是当地的地理学和历史学。在当地人看来，这些名字富有内涵；而在外人看来，它们常常不知所云。非本地的规划人员、收税官、物流管理者、救护车团队、警察和消防队则会认为，一个规划层级更高、更易理解的名称系统将更有效。按照他们的工作方式，他们更喜欢横平竖直的街道网络，喜欢道路依次编号（第一街、第二街···），再冠以东南西北（如西北一街、东南二大道）。华盛顿特区就是这种理性规划的一个尤其耀眼的例子。纽约的街道命名则是混合的。从华尔街（也就是“墙街”，最早是荷兰殖民地的北部外墙）往南，街道的规划和命名是“民间”性质的，这些街道很多是早期移民一步一步踩出来的；华尔街以北则是如同直角坐标系般简洁的网格城市，具有统一规划、易于识别的特征，“街”和“道”垂直相交，依次编号（偶有例外）。美国的一些中西部城市为了缓解序号式街名的单调性，给街道依次取了每任总统的名字。论可理解性，这种街名只适合答题类节目的热心观众，只有他们知道“波尔克街”“范布伦街”“泰勒街”“克利夫兰街”该怎么找；在教育小朋友方面，这种名字的作用也是可圈可点的。</p>
+<p>民间命名的准确性不会超出时下必要的限度。这样的限度体现在“一撮盐”“扔一颗石子的距离”“喊话的距离”这类表达中。在很多用途上，民间法则的准确性可能胜过表面上更严谨的官方系统。一个能够说明问题的例子是史广多①给新英格兰的白人定居者的忠告。欧洲殖民者要种的是一种他们不了解的作物——玉米。据说史广多告诉他们，“要在橡树的叶子长到松鼠耳朵那么大的时候播种玉米”。而一本18世纪的农书给出的肯定是“在5月后的第一次满月时分播种”这种标准化的意见，或者会指明具体的日期。可以想象，农书的发行者可能最担心霜冻灾害，总是谨慎再谨慎。不过，农书的建议在很多时候仍然缺少变通：如果不是内陆的农场，而是海边的，又会怎样？如果农田在山的阴面，每天的光照少一些，或者海拔高一些，又该如何安排农时？农书提供的一刀切的解决方式在地理上走不远。相比之下，史广多的公式适用范围更广。在有松鼠和橡树的地方，人们只用观察他们各自的松鼠和橡树，就能适时地种下玉米。地方上的人观察到的现象与地表温度密切相关，这也是橡树发芽的决定性因素。对地方春季事件发生顺序的细致观察，是这一经验的基础；春季事件的发生可能提前或滞后，也可能放慢或加快，但先后顺序总是固定的。农书依靠的却是普适的历法和月</p>
+<p>……</p>
+<p>我想我们可以毫不夸张地说，过去三个世纪的历史可被视为官方控制与占用的状态对民间秩序的胜利。伴随着官方秩序的胜利，大规模的等级制组织也蓬勃兴起（国家本身就是最显著的例子），两者的联系完全是必然的。失落的民间秩序汇总起来将会令人震惊。这里我只尝试着为这样的汇总起个头，如果读者们有兴趣，请继续补充，我将乐见其成。国家标准发音取代了地方口音。商品化的永久性私有土地取代了多样的地方土地使用实践。经过规划的社区和街区取代了古老、不统一的社区和街区。大工厂、大农场取代了工匠作坊和小农生产。国家法律取代了地方传统和习惯法。全面规划的灌溉和供电系统取代了因地制宜的地方灌溉系统和砍柴活动。对控制和占用拥有抵抗力的秩序让位于能够促进等级制度协调运作的秩序。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%B8%83-%E6%B0%91%E9%97%B4%E7%9A%84%E5%BC%B9%E6%80%A7" tabindex="-1" id="碎片七-民间的弹性">碎片七 民间的弹性</h3>
+<p>很明显，以强制性协调为追求的大规模现代主义规划，是达成某些目标最为有效、合理、令人满意的办法。空间探索、大范围的交通网络规划、飞机制造和其他大规模工程十分需要由少量专业人士指挥的巨型组织。瘟疫和污染的控制少不了一个有专家任职的核心机构，以便接收、处理数百个监控单元报告的标准化信息。</p>
+<p>这类规程在遭遇无法简化的自然时就会陷入麻烦，有时是灾难性的麻烦，自然的复杂性令它们束手无策；或者当遭遇桀骜不驯的人性时，它们也会觉得它过于复杂、难以捉摸。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%B9%9D-%E6%95%B4%E6%B4%81%E8%83%8C%E5%90%8E%E7%9A%84%E6%B7%B7%E4%B9%B1" tabindex="-1" id="碎片九-整洁背后的混乱">碎片九 整洁背后的混乱</h3>
+<p>劳动者能够看出解释事物运行方式的规则中存在哪些缺陷，并会将这些缺陷化为己用。巴黎的出租车司机曾经不满于市政当局在车费和新规定上的举措，转而诉诸一种特别的抗议方式——“grève du zèle”。也许是统一行动，也许是不约而同，他们突然开始遵守所有的交通规则。果然，巴黎的交通陷入了瘫痪。出租车司机们知道，巴黎的交通之所以能够平稳运转，是因为人们基于实践明智地无视了部分交通规则，于是他们可以通过事无巨细地遵守全部规则来使交通陷入停顿。这种做法在英语中通常被称为&quot;照章办事&quot;罢工(&quot;work-to-rule&quot;strike)。在一次抗议卡特彼勒公司(Caterpillar Corporation)的大范围“照章办事”罢工中，工人们放弃了自己多年以来在工作岗位上总结的更有效的工作方法，转而开始遵守由工程师详细规定的低效规程。他们深知这么做会让公司在宝贵的时间与质量上蒙受损失。任何办公室、工地和车间的具体工作程序，都不可能用规章来给定，无论它有多么详尽；工作的完成，少不了工人们在规章之外实践有效的非正式理解和即兴措施。</p>
+<p>城市官员喜欢将自己描绘为俯瞰新开发区规划模型的巨人，其实我们所有人都容易犯类似的错误，把外观上的有序等同于实践上的有序，同时把外观上的杂乱等同于无序。这是一种自然的、在我看来也是严重的错误。它同现代主义密切相关。无论这层联系显得多么令人怀疑，我们只消稍加反思就能明白。……</p>
+<p>……</p>
+<p>埃德加·安德森(Edgar Anderson)是一位植物学家，研究中美洲玉米种植史。他在危地马拉偶遇了一座小农庄，它展示了表面上的视觉无序性其实可能是良好工作秩序的关键所在。在每日例行的玉米田之行中，他路过了这座小农庄。起初他以为这是一片植物生长过盛的园子；直到看见有人在园中劳作，他才意识到这不是一个简单的果园，而是一个规划得巧夺天工的果园，即便在一位西方农学家看来它是那么的杂乱（或许它正是因此才称得上巧夺天工）。除了直接引述他所讲解的果园背后的逻辑，复制他画的果园布局图（图2）外，我想不到更好的说明方法了。</p>
+<p>虽然初看上去该果园中没有什么秩序可言，但一旦我们开始画它的平面图，就会意识到植物是严谨地成排交叉排布的。园中果树种类繁多，既有本土的，也有从欧洲引进的。有番荔枝树、牛油果树、桃树、榅桲、李树、一棵无花果树、几株咖啡树，以及一大株仙人掌（果实可食用）。有一丛迷迭香、一株大丽花、一些一品红和一株半攀爬的茶玫瑰。有一整排的经驯化的山楂树丛，能结出微型苹果般的黄色山楂，用它们可以做出很好的手工果酱。园中栽的玉米有两种。其中一种早就不抽穗了，被用作正走向成熟的四季豆的攀爬架。另一种玉米生得更高，正值抽穗的时候。一种小尺寸香蕉的植株可以长出宽大而光滑的叶子，在当地它被用作包装纸，还可以代替苞米叶被用来包富有当地特色的墨西哥“粽子”。各种各样的南瓜攀在香蕉树上，枝繁叶茂。佛手瓜成熟后，它的根也可以挖出来食用，有好几磅重且营养丰富。有时候挖出一块佛手瓜根会留下一个小浴盆大小的土坑，它可以充当垃圾坑，或者把生活垃圾沤成肥料。园子的一角放着一个用纸箱和铁皮罐做成的蜂房。以欧洲或者美国的标准看，这个园子既是一个果园，也是一个菜园、一个草药园、一个垃圾箱、一个堆肥场、一个养蜂场。果园虽然地处一个陡坡的最高处，却没有土壤流失之虞，因为它的地表完全被植物覆盖，而且在一年的多数时节郁郁葱葱，即使在旱季也有不错的湿度。另外，同种作物之间有重重其他植物作为间隔，使得病虫害不易在作物间传播。土壤能够维持肥力；除了埋在园中的生活垃圾，熟透的、失去使用价值的植物也被埋在一排排植物之间。</p>
+<p>欧洲人和移民美洲的欧洲人经常讲，印第安人一点也不珍惜时间。我觉得，这个果园可以很好地证明印第安人其实比欧洲人更懂得如何高效地安排时间，但我们需要超越表象去理解他们的活动。这个园子有持续的作物产出，但每次打理只需要花很少的精力：来摘南瓜的时候顺手拔几根杂草，在摘光成熟的四季豆之后挖走玉米秆和豆藤，过几周再在腾出的空间里种点别的作物。</p>
+<h2 id="%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%BA%BA%E7%9A%84%E5%A1%91%E9%80%A0" tabindex="-1" id="第三章-人的塑造">第三章 人的塑造</h2>
+<h3 id="%E7%A2%8E%E7%89%87%E5%8D%81%E4%B8%80-%E6%B8%B8%E6%88%8F%E4%B8%8E%E5%BC%80%E6%94%BE%E6%80%A7" tabindex="-1" id="碎片十一-游戏与开放性">碎片十一 游戏与开放性</h3>
+<p>现在再回到埃姆德鲁普的游乐场地，我们或许就能轻松找到其吸引力的逻辑所在：它的开放性成就了在此玩耍的孩子的目的性、创造力和热情。它刻意保持了开放、未完成的状态。完成它的是使用者们不可预测、变动不居的想法。可以说，游乐场的设计者面对孩子时保持了彻底的谦逊——孩子们在想些什么，会做出什么样的东西来，他们的希望和梦想会如何发展，都是大人无法预知的。设计的前提是孩子们愿意创造。设计者通过观察了解孩子们真正感兴趣的事物，以及满足他们的兴趣需要用到的原材料。除此以外，游乐场的其他内容都是开放、自治的。成年人的监管被降到了最低程度。</p>
+<p>……</p>
+<p>所有的哺乳动物都会把大量时间花在看似无目的的玩耍上，智人尤甚。别的不论，哺乳动物正是通过表面无序的游戏行为，哪怕是杂乱无章的吵吵闹闹，来开发它们的身体协调性和机能，它们的情感规则，它们的社交能力、适应性，它们的归属感，以及它们的沟通、信赖和探索能力的。从哺乳动物（包括人类）的生活中剥离游戏将造成灾难性的后果，它最能体现游戏的重要性。如果不能玩耍，没有哪种哺乳动物可以成功进入成年。在人类中，没有游戏的人远比他人更容易表现出抑郁、普遍不信任以及暴力反社会的倾向。美国国家游戏研究所(National Institute for the Study of Play)的创始人斯图尔特·布朗（Stuart Brown）首先意识到了玩耍的重要性：拥有很强的反社会人格的人大多有一个特征，那就是玩耍在其个人早期经历中的缺失。除了睡眠和做梦之外，游戏作为人类的第三大无目的行为，其实是人之为人的关键，对个人身心和社会来说都不可或缺。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E5%8D%81%E4%BA%8C-%E4%B8%8D%E8%A6%81%E4%BB%A5%E4%B8%BA%E4%BD%A0%E5%8F%AF%E4%BB%A5%E9%A2%84%E6%B5%8B%E4%B8%80%E5%88%87%EF%BC%81%E8%AE%BA%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E5%92%8C%E9%80%82%E5%BA%94%E6%80%A7" tabindex="-1" id="碎片十二-不要以为你可以预测一切！论不确定性和适应性">碎片十二 不要以为你可以预测一切！论不确定性和适应性</h3>
+<p>从表面上看，效率的观念与游戏的开放性特征背道而驰。一旦行为的目的被精确确定，如制造汽车、纸杯、胶合板或者电灯泡，似乎达成目标的有效途径便只有一个，至少在给定条件下只有一个。如果在一套制度或者一座工厂中，完成任务的条件保持重复、稳定、可预测，那么一套固定的程式确实会尤其高效，而且它毋庸置疑将是封闭的。</p>
+<p>这种“效率”观念至少在两个方面存在缺陷。</p>
+<p>这一观念首要的也是最明显的不足在于，在多数经济体和人类事务中，稳定的环境是一种特例而非常态，一旦状况发生可观的改变，既定程式可能就无法适应了。一个工人掌握的技能总量越多，学习新技能的能力越强，就越容易适应不可预测的任务条件；推而广之，由这种适应性强的个体组成的机构的整体适应性也更强。不论对个人还是机构来说，较强的适应能力和丰富的技能都可以成为一份对抗不确定环境的保险。在更大的意义上，这可以说是直立人相较于其他灵长类竞争者的最大优势：适应变化无常的环境的高超技艺，以及最终改变环境的能力。</p>
+<p>我的大学邮箱曾收到一封健康信息公报，里面有一篇关于营养的简短文章用十分实用的方式揭示了灵活性和广泛性在生活中的重要意义。文章说，过去十五年的科学研究发现了大量人类健康所必需的营养物质。这很在理。然后文章提出了一个在我看来颇有创见的判断。“我们可以预期，在今后十五年的时间里，人们还会发现很多眼下大家一无所知的重要新营养物质。”（我记得它大致是这个意思。）文章接着说：“故而，我们现在能给大家的最好建议，就是请尽自己所能保证饮食的多样化，从而把目前尚不为人所知的营养物质纳入我们的菜单。”这一建议正是建立在未来不可测的前提上的。</p>
+<p>效率的静态概念的另一个缺陷，在于它完全忽略了人的因素：任何流程的效率，只要涉及人工劳动，就会依赖于劳动者的耐性。通用汽车公司在俄亥俄州洛兹敦（Lordstown）刚刚建成组装厂的时候，该工厂的结构本身堪称艺术品。（该工厂建成于1966年）流水线上的各种工序和操作被分成了数千个独立的步骤，这是福特主义式效率的一个典范。厂房的照明和通风经过了精心设计；地板总是打扫得一尘不染；为了削弱机器噪声，室内不断播放着轻音乐；工作时间表里还有固定的茶歇。该组装厂追求的正是效率。它有历史上速度最快的装配流水线，要求的工作节奏之快也史无前例。工人在流水线上发起了抵抗，他们找到了一些不引人耳目的破坏方式，可以让生产暂停。出于失落和愤怒，他们破坏了一些零件，使得有缺陷、需要替换的工件的出现概率大大提高。后来，流水线被重新设计，放慢到了一种更人性化的速度。对于我们的讨论，这一案例的要点在于劳动者对不人道的速率的抵抗，实际上降低了装置的效率。在新古典经济学中，脱离了劳动者对劳动条件的接受和忍耐这一前提，便无从提起劳动效率。工人如果拒绝遵守工作计划，就可以用自己的行动来给计划的效率拖后腿。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E5%8D%81%E4%B8%89-%E4%BA%BA%E7%B1%BB%E6%80%BB%E4%BA%A7%E5%87%BA" tabindex="-1" id="碎片十三-人类总产出">碎片十三 人类总产出</h3>
+<p>如果我们把衡量人类能力与技能的标准用于评估工业流水线，会得到怎样的结果？如果一个工人在洛兹敦或者胭脂河的工厂待了五年或者十年，其能力或者技能得到显著提升的可能性有多大？我怀疑小到可以忽略不计。流水线上的劳动分工的背后逻辑是时间和动作的细分，其全部意义就在于把工作流程拆分为上千个微小的、可以轻易学会的工序。流水线的设计意图恰恰就是消解工匠-工艺知识，同时也消解这种知识赋予劳动者的权力，让它们统统去为那个逝去的手工打造四轮马车的时代殉葬。无技能的、标准化的劳动力是流水线运转的前提，流水线上的一个“人手”可以轻易被另一个“人手”取代。换句话说，流水线的建立以劳动力的“愚蠢化”为基，此言不虚。如果一个工人有幸增进了自己的能力和技能，他若不是在业余时间做到的，便是想出了某些机智的策略，挫败了流水线的管理意图。无论如何，如果我们要评估装配流水线，给它对人类能力、技能的增进打分，那么结果肯定是不及格，不管它在制造汽车方面有多高效。逾一个半世纪之前，亚力克西·德·托克维尔在评论亚当·斯密关于劳动分工的经典例子时，问了一个中肯的问题：“对一个做了半辈子别针头的人，我们还能奢望什么？”</p>
+<p>……</p>
+<p>放着上述负面效应不论，全民公共教育的最大不幸在于它大体上是一条产品单一的生产线。在最近数十年推进教学规范、学生评价、应试和责任制的进程中，这一趋势反而愈发严重了。结果，学生、老师、校长乃至整体的学区汲汲营营，争相让所有的努力都为教育产出的标准化服务，奋力迎合官方设立的标准。</p>
+<p>这种教育的产出是什么？它是一种特定形式的(狭义的)分析型智能(analytical intelligence)；按照规划，它可以通过考试来测量。众所周知，在一个成功的社会中，有价值的重要技能有很多很多，而分析型才能与成功社会几乎是风马牛不相及。这些有价值的才能包括艺术天赋、想象力智能、手工智能（也就是早期工人从田间带到福特工厂的才能）、音乐舞蹈技能、创造力智能、情感智能、社交技能和伦理智能。这些才能中有的可以在学校的课外活动（尤其是体育活动）里找到一席之地，但终究无法进入那些被检测、被打分的学校活动，计分项才是学生、老师、学校全力关注的对象。72这种单调扁平的教育在法国、日本、中国、韩国等国的教育系统中被奉为圭臬。在这些国家，基础教育实践最终汇为一场决定学生未来社会地位和终身命运的大型考试。于是，在进入名校、报名课外辅导班、参加死记硬背的专门备考课程这些方面，争夺达到了疯狂的水平。</p>
+<p>我，本书的作者，可能还有所有读到这本书的人，都是这你死我活的拼抢中的胜出者和受益者。这是何等的讽刺啊！我不禁想起我在耶鲁大学的厕所隔间里面看到的涂鸦。有人写道：“记住，即便你赢了这场耗子赛跑，你依然是耗子！”下面还有另一个人的笔迹，机智地回应说：“是啊，可赢家就是不一样。”</p>
+<h3 id="%E7%A2%8E%E7%89%87%E5%8D%81%E5%85%AD-%E4%B8%80%E4%B8%AA%E8%AF%95%E6%8E%A2%E6%80%A7%E3%80%81%E5%8F%8D%E7%9B%B4%E8%A7%89%E7%9A%84%E4%BE%8B%E5%AD%90%EF%BC%9A%E7%A7%BB%E9%99%A4%E4%BA%A4%E9%80%9A%E7%81%AF" tabindex="-1" id="碎片十六-一个试探性、反直觉的例子：移除交通灯">碎片十六 一个试探性、反直觉的例子：移除交通灯</h3>
+<p>2003年率先提议移除德拉赫滕一处红绿灯的反直觉交通规划师名叫汉斯·莫德尔曼（Hans Moderman）。此后他转而提倡“共有空间”（shared space）的概念，它很快在欧洲各地获得接受。起初他发现，当城市停电造成交通灯失灵时，交通非但没有拥堵，反而更通畅了。他做了一个实验，改造了德拉赫滕的一个每日通行22000车次的路口——去掉红绿灯，把十字路口改建为转盘，并且拓宽自行车道和人行道。在接下来的两年间，这里只发生了2起交通事故，而在之前四年此处共发生事故36起。当所有的司机知道必须依靠自己的判断小心驾驶时，车流变得更快速而顺畅，拥堵和路怒基本消失。莫德尔曼把这种情况类比为一片拥挤而有序的溜冰场，每一个溜冰者都能够根据其他溜冰者的移动调整自己的步伐。他还认为，过多的交通引导装置会导致司机无心看路，实际上降低了路口的安全性。</p>
+<h2 id="%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BB%99%E5%B0%8F%E8%B5%84%E4%BA%A7%E9%98%B6%E7%BA%A7%E7%9A%84%E4%B8%A4%E5%A3%B0%E5%96%9D%E5%BD%A9" tabindex="-1" id="第四章-给小资产阶级的两声喝彩">第四章 给小资产阶级的两声喝彩</h2>
+<h3 id="%E7%A2%8E%E7%89%87%E5%8D%81%E4%B9%9D-%E5%B0%8F%E8%B5%84%E4%BA%A7%E8%80%85%E4%B9%8B%E6%A2%A6%EF%BC%9A%E8%B4%A2%E4%BA%A7%E7%9A%84%E8%AF%B1%E6%83%91" tabindex="-1" id="碎片十九-小资产者之梦：财产的诱惑">碎片十九 小资产者之梦：财产的诱惑</h3>
+<p>用一句话讲一段漫长的历史：智人的存在距今已经有大概二十万年，国家只是人类五千年之前的“发明”，而且在一千年之前，任何可以称为“国家”的东西都只统治了一小部分人类。那些确实生活在国家中的人也多为小资产所有者（农民、工匠、店主、商人）。接着，随着某些形式的代表权开始从17世纪发展起来，人们从地位和财产的层面认识了这个群体。可以代表现代政治的大型官僚体制机构或许最早是仿照修道院或者军营来组织的，不过它们本质上是最近两个半世纪的历史产物。这从另一个角度印证了人类生存于国家之外的悠久历史，以及18世纪之前的国家中有两种截然不同的生存状态——其一是形式上的非自由人（奴隶、农奴和仆从），其二是占人口大多数的小财产所有者。后者在理论和实际上都有某些形式的成家立业的权利，可以拥有和继承土地、建立贸易关系、选举自己村庄的首领以及向统治者请愿。所以对于下层阶级来说，相对的独立自主有两种形式：生活在国家触之不及的边缘地带，或者生活在国家之中，同时拥有少量财产以及相关的基础权利。</p>
+<p>……</p>
+<p>在过去几十年中，美国的很多次标准民意调查一直在问工业工人这样一个问题：如果不在工厂，你会选择哪种工作？”想经营小店、饭馆或者农场的人的占比高得出奇。这些梦想的一个统一主题是上班不受监控、时间自主支配的自由，在他们的心目中，这样的自由完全可以补偿小生意必须应付的超长工作时间和经营风险。当然，多数人没有去实现这些梦想，但它们作为幻想的持久性已经可以证明它们的吸引力。</p>
+<p>真正的奴役不同于“工资奴隶”，亲身体会过前者的人得到哪怕一丁点物质独立的可能性，都有如梦想成真一般。美国南方各州的黑人奴隶一旦获得解放，便会立马溜之大吉，逃出种植园农业区，在边缘地带的无主公地上勉强独立维持生计。一杆猎枪、一头骡子、一头奶牛、一套渔具、几只鸡和鹅、一张犁，如此便终于可以独立地生活了。除非临时需要用钱，他们才会去给“那个人”打打短工。贫困的白人差不多也以同样的方式在公地上谋生，尽力避免自降身价去依附于富有的邻居。这造成了种植园经济的终结。19世纪80年代之后，南方州颁布了一些“篱笆法案”，恢复了形式上经过大幅改造的种植园经济。这些法案明明白白地意图向独立黑人和白人关闭公地，把他们赶回劳动力市场。变革的结果就是佃农经济——美国历史上最接近农奴制的一套农业制度。</p>
+<p>人有如此强烈的自主欲望，有时甚至会因此做出相当倔强的举动。在工厂，流水线就是专门设计来把人的自主性降到几乎为零的，但工人还是能偷回一些自主的时间“溜号”，以此声张他们的独立性。”胭脂河组装厂的汽车工人有时通过赶工给自己争取一些闲暇时间，以便找个角落打个盹、读书或者玩一种危险的曲棍球游戏。匈牙利人民共和国的工人会偷时间做“信鸽”——一种做出来私用的小工件，哪怕这些东西没什么实际用途。在以消灭“游戏”为目的的工作体系中，工人抗拒这样的物化和无趣，用创造性的方式张扬他们的自主性。</p>
+<p>现代农业企业为保障自己的利益剥夺了人们对小财产和自主性的欲求，其方式近乎残酷。禽类养殖业中的订单养殖就是一个非常值得剖析的例子。大农业公司知道大规模的封闭养殖有很大的瘟疫风险，所以它们将养鸡的任务承包给“独立的”养殖户。养殖承包人对养殖场的建设和获得信贷所需的抵押负全责。养殖场必须按照泰森食品（Tyson）或者其他农业集团给出的具体说明搭建。这些企业会提供雏鸡，并且在承包合同中事无巨细地规定喂食、喂水、药剂、卫生方面的饲养规则，还会相应地销售设备和物资。每个养殖户的每日工作可以被密切监控，集团根据家禽在合同期结束时的体重增量和存活率来付给他们报酬，同时报酬的数额也随市场情况浮动。通常承包合同是重复续约的，不过也没有百分之一百的保证。</p>
+<p>这一体系的不合常理之处在于，它保留了一种独立自主的幻象，同时掏空了其全部的实质内容。承包人是独立的土地所有者（也是抵押物的所有者），但是他的工作时间和工作活动几乎和流水线工人一样是安排好的。他并不能直接从脑后就感觉到监工的鼻息，但是如果合同不能续约，他就会陷入困境，因为有一个养鸡棚需要他偿还贷款。大农业企业实际上转嫁了土地产权、借贷来的资本和大量用工（只要有工人就会有利益上的诉求）方面的风险，同时收割了严密监控、标准化和质量管控的大部分好处，现代工厂原本就是为了实现这些目标而诞生的。这种农业模式十分奏效！抓住作为独立财产所有者的最后一点尊严的欲望是如此强烈，以至于“农场主”们愿意献出这尊严背后的所有实质性意义。</p>
+<p>不管无政府主义在人类状况上有何疏漏之处，它都从人们的小资欲望中看到了对尊严和自主的追求，着实是对这一大众想象的敏锐洞悉。小资产阶级的独立梦想在实践中愈发难以实现，但它没有随着工业革命的兴起而消亡，反而在生活中找到了新的寄托。”</p>
+<h2 id="%E7%AC%AC%E4%BA%94%E7%AB%A0-%E4%B8%BA%E4%BA%86%E6%94%BF%E6%B2%BB" tabindex="-1" id="第五章-为了政治">第五章 为了政治</h2>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E4%BA%8C-%E4%BA%89%E8%AE%AE%E4%B8%8E%E8%B4%A8%E9%87%8F%EF%BC%9A%E5%AF%B9%E6%8A%97%E8%B4%A8%E7%9A%84%E9%87%8F%E5%8C%96" tabindex="-1" id="碎片二十二-争议与质量：对抗质的量化">碎片二十二 争议与质量：对抗质的量化</h3>
+<p>当2001年颁布的《有教无类法案》（No Child Left Behind Act）中关于教学和测试的要求最终被落实到教室时，遭到了学生们的奋起抵制，姜米亚的勇敢举动只是其中一个小小例子。马萨诸塞州丹弗斯高中的58名学生为了反抗必须参加的“马萨诸塞综合测试”联名请愿，那些最后拒绝参加考试的学生被停课。他们得到了州内其他高中学生和家长的声援。这些可以称为“个例的拒绝”的事件在美国各地出现：密歇根州的大量学生选择不参加“密歇根教育评估测试”，威斯康星的高中“结业考试”（通过该考试是毕业的必要条件）因大量学生和家长的反对而取消。在一个案例中，被要求组织模拟考试的老师因为反对这一安排而拒绝领取教学业绩奖金。对低年级小学生考试的抗议由家长代表学生组织。家长虽然理解对孩子的早期学校教育要确保他们学会识字和算数，但是反对教室中“训练并扼杀”（drill and kill）的氛围，孩子们也不喜欢。</p>
+<p>很大一部分抗议是由学生们反对“应试教学”引发的，这种训练把教室中本来就不容忽视的日常无聊提到了新的高度。准备考试的工作对于学生和教师来讲都极具异化性，它占用的大量时间本可以被用来学别的事——艺术、戏剧、历史、运动、外国语言、创意写作、陶艺、田野调查。赋予教育以活力的其他目标，包括合作学习、跨文化课程、多元智能开发、科学探索和问题导向的学习，都会因此丧失。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E5%85%AD-%E4%B8%BA%E6%94%BF%E6%B2%BB%E8%BE%A9%E6%8A%A4" tabindex="-1" id="碎片二十六-为政治辩护">碎片二十六 为政治辩护</h3>
+<p>量化数字被广泛使用的现象并不局限于某些国家、某些门类的公共政策，亦不局限于当代社会。当下以“审计社会”（audit society）的形式盛行起来的趋势，显然要归因于大型企业的兴起，因为股东们希望把握生力和生产成果；同时也要归因于20世纪70年代和80年代以撒切尔和里根为代表的新自由主义政治的崛起。他们注重在公共行政管理上“精打细算”，从私人机构的管理学中借来了技术手段，想为学校、医院、警局、消防队等机构建立评分表和“排行榜”。这些举措更深层次的动机则是去民主化以及在公共管理决策方面拓展政治控制力的需要。在拥抱审计和量化方面，美国的表现在国际上可谓一骑绝尘。没有什么其他国家像近几十年来的美国那样，主动依靠量化和审计来落实教育政策、战争决策、公共工程，以及商业高管会的报酬分配。美利坚努力为自己塑造一种具有丰富个体多样性的国家形象，但它其实是世界上最标准化、受到最严密监控的国家之一。</p>
+<p>所有这些行政管理技术的最大缺陷在于，它们以平等和民主之名，行“反政治机器”之实，将广泛存在的合理公共讨论从公共领域中清除，把管理权交到掌握技术的管理机构手中。它们压制了可能会兼容并包、卓有成效的争论，社会政策、技术智能的意义、精英的选拔、平等和多样性的价值、经济增长和发展之目的等议题原本都可以付诸这样的争论。要而言之，这些技术是掌握技术的管理精英用以说服挑剔的大众——并且把他们从决策中排除——的手段，为的是告诉大众他们没有徇私，没有暗箱操作，也没有偏见，只是在执行透明的技术计算。这些计算如今是一种新自由主义政治秩序的标志，在这种秩序中，新古典主义经济学的手段以科学计算和客观性的名义取代了其他种类的理性思考。如果你听到有人说“我在他/她身上下了重本”，那么不论他指的是社会或人力“资本”，还是人际关系的“机会成本”，你都能知道这意味着什么。</p>
+<h2 id="%E7%AC%AC%E5%85%AD%E7%AB%A0-%E5%85%B7%E4%BD%93%E6%80%A7%E4%B8%8E%E6%B5%81%E5%8F%98" tabindex="-1" id="第六章-具体性与流变">第六章 具体性与流变</h2>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E4%B8%83-%E5%96%84%E6%84%8F%E4%B8%8E%E5%90%8C%E6%83%85%E5%BF%83%E7%9A%84%E4%BC%A0%E8%BE%BE" tabindex="-1" id="碎片二十七-善意与同情心的传达">碎片二十七 善意与同情心的传达</h3>
+<p>一旦个体的村民做出了伸出援手的决定，他们在一段时间内就会全心帮助逃亡者。换言之，他们从各自不约而同的举动（也是他们实际的行为准则）中得出结论，认定了提供帮助是应做之事。他们并不是先宣示一条原则再照着做。他们的行动在先，然后再为行动找到一套逻辑。抽象的原则是实践的产物，而不是相反。</p>
+<p>弗朗索瓦·罗沙(Francois Rochat)对应汉娜·阿伦特的“平庸之恶”的概念，把上述行为称为“平庸之善”。或者，我们至少可以用同样准确的方式称之为&quot;具体之善&quot;(the particularity of goodness)，或者借用《摩西五经》里的说法，称之为心跟随手的一个例子。</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E5%85%AB-%E9%87%8D%E6%96%B0%E5%BC%95%E5%85%A5%E5%85%B7%E4%BD%93%E6%80%A7%E3%80%81%E6%B5%81%E5%8F%98%E5%92%8C%E5%81%B6%E7%84%B6" tabindex="-1" id="碎片二十八-重新引入具体性、流变和偶然">碎片二十八 重新引入具体性、流变和偶然</h3>
+<p>多数历史和社会科学研究的工作是总结、汇集，或者说“打包”重大社会动向和主要历史事件，使它们容易辨识、可被理解。基于这一目标，同时考虑到典型的历史学者和社会科学学者希望解读的事件都是已经发生的事实，我们不难理解，他们往往只是简短地对过去盖棺定论；而在历史的亲历者（还有普通的旁观者）看来，过去却是混乱、流变、纷繁的偶然事件（理解它们正是学者的目标）。</p>
+<p>学者之所以给出这种整洁得具有欺骗性的秩序，一个再明显不过的原因是，它正是所谓的“历史”。被关注的事件以某种形式发生，而非另一种，这常常让我们忽略一些事实：事件的参与者其实并不知道它们将如何发生，而条件的轻微变化就可能导致事件结果的巨大不同。正所谓：“少了一颗钉子，丢了一个马掌；丢了一个马掌，折了一位骑手；折了一位骑手，丢了一份情报；丢了一份情报，亡了一个国。”</p>
+<p>一旦摆脱了亲历者的局限性，知道了事件的来龙去脉，就不可避免地会受事件走向影响，从而漠视事件的偶发性。想象一下一个结束自己生命的人。自杀者的朋友或者亲属在叙述死者的生平时，会不可避免地讲那些预示或者导致了自杀的事情。当然，自杀行为完全可能是突然的内分泌失衡、短暂的慌乱或者一瞬间的悲观领悟导致的。因此，把自杀者的一生描述成一个走向自杀的故事就是一种误读。</p>
+<p>我们有种自然的冲动，往往把自己的行为或者人生讲述得连贯且能够自圆其说（即使是那些完全没有条理的行为或者人生），在回溯之际给一些或许非常偶然的事情添上理应如此的色彩。让-保罗·萨特曾假想一个例子：一个男人不知道是应该留在家里照看自己生病的母亲，还是应该走上前线保卫国家。（我们也可以把这一两难之境替换为该去罢工还是该待在工厂，或者是否该参加一场示威，等等。）他拿不定主意，但是必须抉择的日子倏忽而至，犹如一辆无法阻挡的列车。让我们假设他留了下来，和生病的母亲待在一起。萨特写道，第二天，那个人就有了能说服自己和其他人他该留下的理由——他是那种更在乎卧病在床的亲人的男人。他已经做出了行为，必须找一种说法来解释它。但是，该说法并不能真正解释他为什么那样做了；它不过是回顾性地为那一行为赋予合适的意义，并且为之创造一套合适的叙述方式。</p>
+<p>同样的道理也适用于那些塑造了历史的临时而偶然的事件。很多历史以及大众想象不仅抹去了事件的偶然性，而且不言自明地赋予了历史行动者某些他们原本没有的意图和意识。法国大革命的历史事实使几乎整个18世纪的法国历史被追认为1789年的前奏。大革命不是单一的历史事件，而是一个过程；它与偶然的灾害性天气、粮食歉收以及巴黎的地理和人口情况的关联性，要远远超过与“启蒙哲学”理念的相关性。那些攻占巴士底狱、释放囚犯并且夺取武器的人，不可能知道他们会推翻王权和贵族制度（更不可能做了如此计划），更不用指望他们会意识到自己参加了后来人所谓的“法国大革命”。</p>
+<p>如果一个重要历史事件被程式化，在传播之中成为一个精简的符号、一种虚假的逻辑和秩序（除非我们非常小心地避开），那么它在第一时间被经历的方式就会被极度歪曲。利尼翁河畔勒尚邦的全体居民如今被奉为道德典范，他们看上去似乎不谋而合地遵从了胡格诺派的宗教信条，帮助了受迫害的人；但我们之前已经看到了实际的情况——他们的勇敢举动之下有着更复杂、更意味深长的原因。俄国革命、美国革命、三十年战争（仗打到第五年时谁会知道后面还有二十五年？）、1871年巴黎公社、美国民权运动、1968年的巴黎、波兰团结工会，还有其他所有复杂事件都符合上述情况。历史常常抹去了这些事件的极度偶然性，压平亲历者原本的复杂意识，并且常常给他们注入了某种未卜先知的超自然认识，同时还平息了多种多样的理解和动机的喧哗之声。</p>
+<p>“历史”塑造了我们对事件的理解方式，这可以类比于电视转播塑造了我们对一场篮球赛的理解方式。……</p>
+<h3 id="%E7%A2%8E%E7%89%87%E4%BA%8C%E5%8D%81%E4%B9%9D-%E5%8E%86%E5%8F%B2%E8%AF%AF%E8%AF%BB%E7%9A%84%E6%94%BF%E6%B2%BB" tabindex="-1" id="碎片二十九-历史误读的政治">碎片二十九 历史误读的政治</h3>
+<p>历史的凝练，人们对于清晰叙事的欲望，精英与机构展示秩序和目的性的需求——这些力量合谋起来，传递了一种历史因果律的虚假画面。我们或许因此忽略了一些现实：许多历史变革并不是刻意为之，而是临时与自发行为的结果；有组织的社会运动常常是那些无序抗议和示威的产物，而非其诱因；人类自由方面的显著进步往往不是规范的制度程序的结果，而是未经规划的、不可预测的自发行动，是自下而上打破传统社会秩序的成果。</p>
+<hr>
+<p>CHANGELOG</p>
+<ul>
+<li>20261108 Arlmy 创建</li>
+<li>20261108 Arlmy 整理、发布</li>
+</ul>
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.0.0"><a class="pos-f tr3" id="github" href="https://github.com/Kaiyuan/donate-page" target="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="AliPay" qr="/img/AliPayQR.png"></li><li id="WeChat" qr="/img/WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><link rel="stylesheet" type="text/css" href="/css/copyright.css?v=1.0.0"><p><span>本文标题：</span>摘：《六论自发性》</p><p><span>文章作者：</span>arlmy</p><p><span>发布时间：</span>2026-11-08</p><p><span>最后更新：</span>2026-11-08</p><p><span>原始链接：</span><a href="/posts/Note/Note_JamesCScott_TwoCheersForAnarchism/">https://z.arlmy.me/posts/Note/Note_JamesCScott_TwoCheersForAnarchism/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://z.arlmy.me/posts/Note/Note_JamesCScott_TwoCheersForAnarchism/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p><p><span>授权限制：</span>本博客所有文章，拒绝且严禁任何商业机构、开源项目及自动化爬虫将其用于任何AI模型的训练、微调或作为检索增强生成的外部知识库，擅自抓取本站数据用于AI训练，即被视为严重侵权，本站保留追究其法律责任的权利！</p></div><br><a class="article-share-link" data-url="https://z.arlmy.me/posts/Note/Note_JamesCScott_TwoCheersForAnarchism/" data-id="cmw7rc8fs0004fkvp581pe7zy" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACqklEQVR42u3ay24jMQwEwPz/T2eBPe1lnG5Sir1A6WT4MVbNYSg0+fUVr++/69/XT+88rddXe7rO068OLzw8PLzR1l9v6/X7m023e8i/j4eHh3eblxeD5C/zR/l3ufI94+Hh4X0CLzlS7688+yYeHh7e/8WbPehnxQMPDw/vc3izIKB9uO+P7BezFjw8PLyYN2uAvff19f4eHh4e3oUI9akAtO3/duCg2C0eHh7eBV5+nN3PMp06TOeBBR4eHt49XrL1PE7dN8PygDg59OPh4eGd5RVtpPKB3kaxyb+3+QMeHh7eDV4bEOTUJFDIRwSSHT7eIDw8PLyjvLMDAe2m84CjPXxHp3U8PDy8Ea8dbNo8ymc38UDWgoeHh3eUl7e+2tgix7TNsDprwcPDwzvKS7Y7qzZtqcjfOdDZw8PDw1vw9uNW7SF730LLywMeHh7ePV4bws5C4bactOHID0NXeHh4eId4G0Yb8s5KwmZveHh4ePd4eQNsf9TejC+0AQoeHh7ebV47GpWUinZMajaI8MOBGw8PD+8arx11Sn41CynaT38oYHh4eHgXePlxdj+K2h7T20gCDw8P7zZv1gA7NWCaBx/D1hceHh7er/A2oe1+0GozrICHh4f3O7xZSchDgXYgYDaIUIwO4OHh4a157ZDTZkAquWYeSUQxLh4eHt5l3iYamBWPts2WFBI8PDy827y85V9HAPG46tn2WPElPDw8vBHvu1ztjdgMcrURcHSkxsPDw1vzZhFA8jof5Nrg8fDw8N7FS4pBGy5sOnLtOMLqYI2Hh4e34LXFIAkX9iMF+/YYHh4e3nt5Oaye/Dp6E/Hw8PA+jTcrJ23JOTbyhYeHh3eNNwsj6tmEcmgg39vjTvDw8PAu8DYNsLaQ5E2y2fjXcOHh4eGlvD9jkyvwlmIj8gAAAABJRU5ErkJggg==">分享</a><div class="tags"></div><div class="post-nav"><a class="next" href="/posts/Note/Note_LianKuoRu_JiangHuCongTan/">摘：《江湖丛谈》</a></div><div id="tcomment"></div><script src="https://unpkg.com/twikoo/dist/twikoo.all.min.js"></script><script>twikoo.init({
+  envId: 'https://comments.arlmy.me/.netlify/functions/twikoo',
+  el: '#tcomment',
+  region: '',
+  path: ''
+})</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="widget-title"></div><ul></ul><a href="https://z.arlmy.me/categories/til/" title="TILs" target="_blank">TILs</a><ul></ul><a href="https://z.arlmy.me/Wiki/" title="WIKI" target="_blank">WIKI</a><ul></ul><a href="https://z.arlmy.me/2026/" title="WISH" target="_blank">WISH</a><ul></ul><a href="https://z.arlmy.me/posts/IndexOfWikiLibrary/" title="Library" target="_blank">Library</a><ul></ul><a href="https://z.arlmy.me/projects/" title="Projects" target="_blank">Projects</a><ul></ul><a href="https://z.arlmy.me/products/" title="Products" target="_blank">Products</a><ul></ul><a href="https://z.arlmy.me/guestbook/" title="GUESTBOOK" target="_blank">GUESTBOOK</a></div><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://z.arlmy.me"/></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="ABOUT" aria-label="ABOUT"><img class="nofancybox" src="/img/avatar.webp" alt="素生's avatar" loading="lazy"/></a><p></p></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/COVID-19/">COVID-19</a><span class="category-list-count">34</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Complicated/">Complicated</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SOLARIS/">SOLARIS</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Technological-Slavery/">Technological Slavery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/til/">til</a><span class="category-list-count">54</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA/">写作方法论</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B9%B4%E5%BA%A6%E7%B2%BE%E9%80%89/">年度精选</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%88%91/">我</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/">渴望生活</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a><span class="category-list-count">27</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9B%96%E6%B4%9B%E6%99%AE%E4%BC%98%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/">盖洛普优势识别器</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">117</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%82%E5%90%8E/">观后</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%97/">诗</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E5%90%8E/">读后</a><span class="category-list-count">20</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E5%B9%B4%E5%BA%A6%E6%9C%80%E4%BD%B3/" style="font-size: 15px;">年度最佳</a> <a href="/tags/Links/" style="font-size: 15px;">Links</a> <a href="/tags/%E6%B3%A2%E5%85%B0/" style="font-size: 15px;">波兰</a> <a href="/tags/BBBP/" style="font-size: 15px;">BBBP</a> <a href="/tags/%E5%A4%A7%E4%BA%8B%E8%AE%B0/" style="font-size: 15px;">大事记</a> <a href="/tags/chat/" style="font-size: 15px;">chat</a> <a href="/tags/Complicated/" style="font-size: 15px;">Complicated</a> <a href="/tags/%E4%B8%80%E5%88%87%E5%AE%89%E5%A5%BD/" style="font-size: 15px;">一切安好</a> <a href="/tags/til/" style="font-size: 15px;">til</a> <a href="/tags/openclaw/" style="font-size: 15px;">openclaw</a> <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B9%A6/" style="font-size: 15px;">每日书</a> <a href="/tags/NONAME/" style="font-size: 15px;">NONAME</a> <a href="/tags/%E7%A6%8F%E6%9F%AF/" style="font-size: 15px;">福柯</a> <a href="/tags/HomeSupplier/" style="font-size: 15px;">HomeSupplier</a> <a href="/tags/%E8%AE%A4%E7%9F%A5%E5%86%99%E4%BD%9C%E5%AD%A6/" style="font-size: 15px;">认知写作学</a> <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/" style="font-size: 15px;">读后感</a> <a href="/tags/%E8%A7%82%E5%90%8E/" style="font-size: 15px;">观后</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 15px;">音乐</a> <a href="/tags/workflow/" style="font-size: 15px;">workflow</a> <a href="/tags/Proust/" style="font-size: 15px;">Proust</a> <a href="/tags/Italia/" style="font-size: 15px;">Italia</a> <a href="/tags/Roma/" style="font-size: 15px;">Roma</a> <a href="/tags/Web3/" style="font-size: 15px;">Web3</a> <a href="/tags/Sicilia/" style="font-size: 15px;">Sicilia</a> <a href="/tags/Travel/" style="font-size: 15px;">Travel</a> <a href="/tags/Japan/" style="font-size: 15px;">Japan</a> <a href="/tags/Tokyo/" style="font-size: 15px;">Tokyo</a> <a href="/tags/Echigo-Yuzawa/" style="font-size: 15px;">Echigo-Yuzawa</a> <a href="/tags/Portugal/" style="font-size: 15px;">Portugal</a> <a href="/tags/Lisboa/" style="font-size: 15px;">Lisboa</a> <a href="/tags/Coimbra/" style="font-size: 15px;">Coimbra</a> <a href="/tags/Porto/" style="font-size: 15px;">Porto</a> <a href="/tags/%E7%9F%AD%E8%AF%84%E5%BD%92%E6%A1%A3/" style="font-size: 15px;">短评归档</a> <a href="/tags/%E7%BA%B8%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">纸书单</a> <a href="/tags/Anti-work/" style="font-size: 15px;">Anti-work</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E8%B0%88/" style="font-size: 15px;">工作谈</a> <a href="/tags/%E5%AE%89%E5%88%A9/" style="font-size: 15px;">安利</a> <a href="/tags/Blaugust/" style="font-size: 15px;">Blaugust</a> <a href="/tags/%E5%A4%87%E5%BF%98/" style="font-size: 15px;">备忘</a> <a href="/tags/%E8%8F%9C%E8%B0%B1/" style="font-size: 15px;">菜谱</a> <a href="/tags/RecordingShare/" style="font-size: 15px;">RecordingShare</a> <a href="/tags/%E6%B8%B4%E6%9C%9B%E7%94%9F%E6%B4%BB/" style="font-size: 15px;">渴望生活</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/%E6%91%98%E5%BD%95/" style="font-size: 15px;">摘录</a> <a href="/tags/%E6%89%AB%E7%81%B0/" style="font-size: 15px;">扫灰</a> <a href="/tags/INSW/" style="font-size: 15px;">INSW</a> <a href="/tags/Mastodon/" style="font-size: 15px;">Mastodon</a> <a href="/tags/essays/" style="font-size: 15px;">essays</a> <a href="/tags/letters/" style="font-size: 15px;">letters</a> <a href="/tags/poems/" style="font-size: 15px;">poems</a> <a href="/tags/recently/" style="font-size: 15px;">recently</a> <a href="/tags/CrossFit/" style="font-size: 15px;">CrossFit</a> <a href="/tags/Fitness/" style="font-size: 15px;">Fitness</a> <a href="/tags/%E5%81%B6%E7%84%B6%E7%9A%84%E5%88%9B%E9%80%A0/" style="font-size: 15px;">偶然的创造</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/Note/Note_JamesCScott_TwoCheersForAnarchism/">摘：《六论自发性》</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/Note/Note_LianKuoRu_JiangHuCongTan/">摘：《江湖丛谈》</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/Note/Note_SamanthaHarvey_Orbital/">摘：《轨道》</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/Note/Note_TheGideValeryLetters/">摘：《瓦莱里与纪德通信选》</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/Note/Note_AdamZagajewski_TrueLife/">摘：《真实生活》</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/YearlyAlbums/ClassicalMusicNotes_2026/">古典乐笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/Questionnaire/ProustQuestionnaire_2026/">普鲁斯特问卷 2026</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/TILs/thoughts/20261017_Recently/">最近惦念 20261017</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20261031/">Toots 443 2026 Oct.25 - Oct.31</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/MastodonArchives/2026/MastodonTootsArchives_20261024/">Toots 442 2026 Oct.18 - Oct.24</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://feedburner.google.com/fb/a/mailverify?uri=arlmy" title="订阅 / Subscribe" target="_blank">订阅 / Subscribe</a><ul></ul><a href="https://cse.google.com/cse?cx=52907d001c32e452e" title="Google 站内搜索" target="_blank">Google 站内搜索</a><ul></ul><a href="http://writer.arlmy.me/" title="写作集印" target="_blank">写作集印</a><ul></ul><a href="https://www.douban.com/group/352294/" title="好奇心小报" target="_blank">好奇心小报</a><ul></ul><a href="https://mirror.xyz/arlmy.eth" title="Mirror.xyz" target="_blank">Mirror.xyz</a><ul></ul><a href="http://cogwriters.github.io/" title="认知写作学学员黄页" target="_blank">认知写作学学员黄页</a><ul></ul><a href="https://mapmyvisitors.com/web/1c5z9" title="访客统计" target="_blank">访客统计</a><ul></ul><a href="https://www.patreon.com/arlmy" title="PATREON" target="_blank">PATREON</a><ul></ul><a href="https://www.travellings.cn/go.html" title="开往-博客传送" target="_blank">开往-博客传送</a><ul></ul><a href="https://www.foreverblog.cn/go.html" title="十年之约-博客传送" target="_blank">十年之约-博客传送</a></div><div class="widget"><div class="widget-title">访客统计</div><div id="mapmyvisitors-sidebar-container" style="width: 100%; max-width: 300px; height: 109px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.02); border-radius: 4px; margin: 0 auto;"><span style="color: #ddd; font-size: 10px;">Loading Map...</span></div><script>(function() {
+  var target = document.getElementById('mapmyvisitors-sidebar-container');
+  if (!target) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // 创建并配置脚本
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.id = 'mapmyvisitors';
+        // 填入新的 mapmyvisitors 专属参数，并采用 https 协议
+        script.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=n&d=tUYGaRSp5kXxFgp3D31IJ5rLqlGXWiGjrER5sPqgpqo&co=c6c6c6&cmo=a9a9a9&cmn=666766';
+        
+        // 执行加载：清空占位文字并插入脚本
+        target.innerHTML = '';
+        target.appendChild(script);
+        
+        // 停止观察
+        observer.disconnect();
+      }
+    });
+  }, {
+    rootMargin: '150px' // 距离视口 150px 时提前开始加载
+  });
+
+  observer.observe(target);
+})();</script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">左素生.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js" defer></script><script type="text/javascript" src="/js/share.js?v=1.0.0" defer></script><script type="text/javascript" src="/js/donate.js?v=1.0.0" successtext="复制成功！" defer></script><script type="text/javascript" src="/js/copyright.js?v=1.0.0" successtext="复制成功！" defer></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0" defer></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0" defer></script></div><a href="#" id="hypothesis-trigger" title="开启网页标注功能" aria-label="Enable annotations"><svg viewBox="0 0 384 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>xl - black</title>
+  <g id="xl---black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M240.941176,384 L352.003017,384 C369.64758,384 384,369.674463 384,352.003017 L384,31.9969832 C384,14.3524196 369.674463,0 352.003017,0 L31.9969832,0 C14.3524196,0 0,14.3255373 0,31.9969832 L0,352.003017 C0,369.64758 14.3255373,384 31.9969832,384 L143.058824,384 L192,448 L240.941176,384 L240.941176,384 Z" id="Path" fill="#202020"></path>
+    <path d="M304,319.790403 C321.673112,319.790403 336,305.510435 336,287.895201 C336,270.279968 321.673112,256 304,256 C286.326888,256 272,270.279968 272,287.895201 C272,305.510435 286.326888,319.790403 304,319.790403 Z" id="Path" fill="#FFFFFF"></path>
+    <path d="M112.129807,64 L64,64 L64,320 L112.129807,320 L112.129807,248.04636 C112.129807,213 128,196 144,192 C160,188 176.302883,198 176.302883,224.055632 L176.302883,320 L224.43269,320 L224.43269,209.740579 C224.432693,160 192,144.049446 160,144.04945 C128.173076,144.049455 112.129807,176.030907 112.129807,176.030906 L112.129807,64 Z" id="Path" fill="#FFFFFF"></path>
+  </g>
+</svg></a><link rel="preload" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"></noscript><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" defer></script><script src="/js/lazy-hypothesis.js"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！" defer></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><!--添加 PWA 脚本 (注意：script 与上面的 #footer 对齐)--><script>// 注册 Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('Service Worker registered successfully.');
+      })
+      .catch(error => {
+        console.log('Service Worker registration failed: ', error);
+      });
+  });
+}
+
+// 阻止默认的安装提示
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  console.log('Installation prompt was prevented.');
+});
+</script><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" defer></script></div></body></html>
